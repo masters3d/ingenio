@@ -1,1 +1,11 @@
-motorer
+incharge
+github
+grep
+http
+perl
+PHD
+ubuntu
+wiki
+wikipedia
+www
+yyyy
