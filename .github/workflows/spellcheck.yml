@@ -1,4 +1,3 @@
-# This is workflow for spell checking using PySpelling lib (https://pypi.org/project/pyspelling/)
 name: Spellcheck
 # Controls when the action will run.
 on:
@@ -17,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Spellcheck
-      - uses: actions/checkout@v2
-      - uses: igsekor/pyspelling-any@v0.0.2
+      # The checkout step
+      - uses: actions/checkout@master
+      - uses: rojopolis/spellcheck-github-actions@0.16.0
         name: Spellcheck
