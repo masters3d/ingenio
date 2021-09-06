@@ -10,7 +10,7 @@ With this little history of the origins of the words, we could consider engineer
 
 ## Software
 
-Engineering is a well stablished profferssion whith many different branches. Usually these are tided to real word tactable things like bridges or rockets. As of 2020s, software is enbeeded in most human related technology from coffee makers to space exploration robots. The idea of software engineering as a profession is difficult to explain to more stablished engineering regulatory bodies. In the USA most software engineers are not licensed engineers like on other countries where the title is reseved for proffecianal engineers. 
+Engineering is a well stablished profession whith many different branches. Usually these are tided to real word tactable things like bridges or rockets. As of 2020s, software is enbeeded in most human related technology from coffee makers to space exploration robots. The idea of software engineering as a profession is difficult to explain to more stablished engineering regulatory bodies. In the USA most software engineers are not licensed engineers like on other countries where the title is reseved for professional engineers. 
 
 
 

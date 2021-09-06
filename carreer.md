@@ -1,6 +1,6 @@
 ## Career
 
-According to [wikipedia](https://en.wikipedia.org/wiki/Career#Etymology) the word career comes from the latin _carrus_ which means chariot. The chariots of our time (cars) are powered by engines. The main purpuse of a car is to provide movement in a similar manner that a carrer is meant to provide progression of one profession. 
+According to [wikipedia](https://en.wikipedia.org/wiki/Career#Etymology) the word career comes from the latin _carrus_ which means chariot. The chariots of our time (cars) are powered by engines. The main purpose of a car is to provide movement in a similar manner that a carrer is meant to provide progression of one profession. 
 
 ## Progression
 
