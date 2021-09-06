@@ -1,22 +1,31 @@
-name: Spellcheck
-# Controls when the action will run.
+name: Spell checking
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  pull_request_target:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  issue_comment:
+    types: [created]
+
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  spelling:
+    name: Spell checking
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # The checkout step
-      - uses: actions/checkout@master
-      - uses: rojopolis/spellcheck-github-actions@0.16.0
-        name: Spellcheck
+    - name: checkout-merge
+      if: "contains(github.event_name, 'pull_request')"
+      uses: actions/checkout@v2
+      with:
+        ref: refs/pull/${{github.event.pull_request.number}}/merge
+    - name: checkout
+      if: ${{ github.event_name == 'push' ||
+        (
+          contains(github.event.comment.body, '@check-spelling-bot apply')
+        ) }}
+      uses: actions/checkout@v2
+    - uses: check-spelling/check-spelling@main
+      id: spelling
+      if: ${{ github.event_name != 'issue_comment' ||
+        (
+          contains(github.event.comment.body, '@check-spelling-bot apply')
+        ) }}
+      with:
+        experimental_apply_changes_via_bot: 1
