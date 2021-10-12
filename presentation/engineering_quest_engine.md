@@ -10,6 +10,6 @@ _Oct, 2021_
 
 ---
 
-# Test image
+# Engineering Quest Engine
 
 ![](../media/synergies.png)
