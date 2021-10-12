@@ -19,6 +19,14 @@ _Oct, 2021_
 * 
 
 ---
+# End goals
+## Highlight behaviors that maximize context sharing
+##  Stablish patterns to detect gaps in context and how to keep context alive
+
+
+---
+# Context about context
+---
 # Etymology of context
 
 - Root Latin `contextus`, from `con`- ‘together’ + `texere` ‘to weave’.
@@ -27,7 +35,7 @@ _Oct, 2021_
 ---
 # Human Context w.r.t Engineering product
 
-* Folks Contributing
+* Folks Contributing (We will focus here)
 * Folks using product
 
 ---
