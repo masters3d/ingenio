@@ -71,7 +71,14 @@ _Oct, 2021_
         * Tutorials
 
 ---
-# Synchronous Context
-* Realtime Collaboration
-* Single use. Need to repeat for every new person or group of folks. 
+# Synchronous Context Medium
+* Realtime Collaboration. 
+    * Meeting, live chat, in person conversation
+* Single use. Need to repeat for every new person or group of folks.
+* Doesn't scale but they are useful.
 
+---
+# Desired qualities of context sharing
+* Available in asynchronous medium in a way that is easy for the consumer and to contribute updates.
+* Subject matter experts are available over asynchronous communication to help clarify questions. Sync meetings can be arranged on case by case basis as need arises (this should enhance asynchronous communication)
+* 
