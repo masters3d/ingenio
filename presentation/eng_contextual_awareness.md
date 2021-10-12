@@ -3,7 +3,7 @@ marp: true
 
 ---
 
-# Content Awareness
+# Contextual Awareness
 
 Chéyo Jiménez, MSE
 _Oct, 2021_
