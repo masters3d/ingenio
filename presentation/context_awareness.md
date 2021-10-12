@@ -33,5 +33,37 @@ _Oct, 2021_
 ---
 # Folks Contributing
 
-* Async vs synchronous work
-* Fixing (In and out, Short term) vs Maintainer (Mid to Long term) 
+* Async vs synchronous contribution
+* ReadWrite vs ReadOnly
+* Short Term vs (Mid to Long term) 
+    * Fixing a bug vs Maintainer 
+---
+# Async Context ReadWrite Medium 
+
+* Text
+    * Markdown, Wiki, Word
+* Visual
+    * Graphics
+        * Drawings
+            * Paint app, photo of markerboard/smartboard, vector app.
+    * Presentation
+        * PowerPoint Slides
+* Interactive
+    * PR collaboration
+    * Word document comments
+    * Email
+---
+# Async Context ReadOnly Medium 
+
+* Audio/Visual
+    * Recorded presentation
+* Documentation Website (No process to contribute)
+    * Guides
+        * Troubleshooting Guides
+        * Tutorials
+
+---
+# Synchronous Context
+* Realtime Collaboration
+* Single use. Need to repeat for every new person or group of folks. 
+
