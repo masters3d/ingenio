@@ -30,3 +30,8 @@ _Oct, 2021_
 * Folks Contributing
 * Folks using product
 
+---
+# Folks Contributing
+
+* Async vs synchronous work
+* Fixing (In and out, Short term) vs Maintainer (Mid to Long term) 
