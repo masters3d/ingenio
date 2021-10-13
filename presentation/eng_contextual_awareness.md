@@ -1,8 +1,16 @@
+---
+marp: true
+
+---
+
 # Contextual Awareness
 
 Chéyo Jiménez, MSE
 _Oct, 2021_
 
+
+
+---
 
 # What is context?
 
@@ -13,15 +21,24 @@ _Oct, 2021_
     - Static wrt past revisions. Dynamic wrt to now.
 
 
+
+---
+
 # End goals
 - Highlight behaviors that maximize context sharing
 -  Stablish patterns to detect gaps in context and how to keep context alive
 
 
+
+---
+
 # Context about context
 - It's contexts all the way down
 
 
+
+
+---
 
 # Etymology of context
 
@@ -30,12 +47,18 @@ _Oct, 2021_
 
 
 
+
+---
+
 # Human Context w.r.t Engineering product
 
 - Folks Contributing (We will focus here)
 - Folks using product
 
 
+
+
+---
 
 # Folks Contributing
 
@@ -45,6 +68,9 @@ _Oct, 2021_
     - Fixing a bug vs Maintainer 
 
 
+
+
+---
 
 # Async Context ReadWrite Medium 
 
@@ -63,6 +89,9 @@ _Oct, 2021_
 
 
 
+
+---
+
 # Async Context ReadOnly Medium 
 
 - Audio/Visual
@@ -74,12 +103,18 @@ _Oct, 2021_
 
 
 
+
+---
+
 # Synchronous Context Medium
 - Realtime Collaboration. 
     - Meeting, live chat, in person conversation
 - Single use. Need to repeat for every new person or group of folks.
 - Doesn't scale but they are useful.
 
+
+
+---
 
 # Desired qualities of context sharing
 - Available in asynchronous medium in a way that is easy for the consumer and to contribute updates.
