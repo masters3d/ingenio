@@ -1,6 +1,13 @@
 ## Summary
 
-There are few different ways we can make presentations with markdown. I am going to be experimenting with https://marp.app 
+```
+pandoc engineering_quest_engine.md -o ./render/engineering_quest_engine.pptx
+
+```
+
+pandoc only supports md -> pptx. 
+
+There are few different ways we can make presentations with markdown. I am going to be experimenting with https://marp.app  Currently using the vscode extension to preview changes but using pandoc to do the actual conversion.
 
 marp doesn't yet have direct support for mermaid.js https://github.com/marp-team/marp-core/issues/139
 
