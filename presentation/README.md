@@ -1,9 +1,12 @@
 ## Summary
 
-```
-pandoc engineering_quest_engine.md -o ./render/engineering_quest_engine.pptx
+```powershell
+.\render.ps1  
 
+.\render.ps1   -clearCache  $true
 ```
+Please run it from inside the presentation folder otherwise contextual image paths will fail to load. 
+> File ../media/synergies.png not found in resource path
 
 pandoc only supports md -> pptx. 
 
