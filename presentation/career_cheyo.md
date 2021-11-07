@@ -1,16 +1,11 @@
 ---
+date: 2021-11
+author: "Chéyo Jiménez, MSE"
 title: "Personal Journey"
 output:
   powerpoint_presentation:
     reference_doc: reference_one.pptx
 marp: true
----
-
-# Personal Journey
-
-Chéyo Jiménez, MSE
-_Nov, 2021_
-
 ---
 
 # ~12 years as of 2021

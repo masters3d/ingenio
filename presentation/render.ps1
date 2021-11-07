@@ -10,13 +10,46 @@
 $location = Split-Path $script:MyInvocation.MyCommand.Path  
 $renderLocation = "$location/render"
 
+# A way to clean up incompatible tokens
+function replacingTokenReturnPath {
+    param (
+        [string]$textFilePath
+        )
+    $tokens = @{'<!---:::'=':::';':::--->'=":::"}
+    $fileContents = Get-Content -Path $textFilePath -Encoding UTF8
+
+    foreach ($each in $tokens.GetEnumerator()) {
+        $fileContents =  $fileContents -replace $each.Name, $each.Value
+    }
+
+    if ($fileContents -ne (Get-Content -Path $textFilePath)) {
+        $tempFile = $textFilePath -replace ".md", "_temp.md"
+        Write-Output  $fileContents | Out-File -FilePath $tempFile -Encoding utf8 
+        return $tempFile
+    }
+
+    return $textFilePath
+}
+
+
+
 function executeWithFilename {
     param (
         [string]$name
         )
         Write-Output "creating powerpoint for $name"
-        pandoc $location/$name.md -o $renderLocation/$name.pptx --reference-doc=$location/pandoc_reference/reference_one.pptx
-}
+        $newPath = replacingTokenReturnPath $location/$name.md
+        pandoc $newPath -o $renderLocation/$name.pptx --reference-doc=$location/pandoc_reference/reference_one.pptx
+        
+        if ($clearCache)
+        {
+            if ( $newPath -ne "$location/$name.md")
+            {
+                Write-Output "Cleaning up $newPath"
+                Remove-Item $newPath
+            }
+        }
+    }
 
 if ($single -ne "none") {
     executeWithFilename $single
