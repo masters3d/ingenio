@@ -135,6 +135,8 @@ class TwoContentSlideLayout(SlideLayout):
       if len(self.find_with_heritage(f'.//p:ph[@type="{tpe}"]', heritage)) > 0:
         self.warning(f'has body placeholder (p:ph) with type="{tpe}" under {" / ".join(heritage)} (expected no type attribute)')
 
+print(sys.argv[1])
+
 with zipfile.ZipFile(sys.argv[1], 'r') as pptx:
   errors = 0
   warnings = 0

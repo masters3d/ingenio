@@ -15,7 +15,7 @@ function executeWithFilename {
         [string]$name
         )
         Write-Output "creating powerpoint for $name"
-        pandoc $location/$name.md -o $renderLocation/$name.pptx
+        pandoc $location/$name.md -o $renderLocation/$name.pptx --reference-doc=$location/pandoc_reference/reference_one.pptx
 }
 
 if ($single -ne "none") {
@@ -32,7 +32,6 @@ if ($clearCache) {
             Write-Output "deleting $each"
             Remove-Item $renderLocation/$each
         }
-     
     }
 }
 

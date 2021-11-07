@@ -1,6 +1,9 @@
 ---
+title: "Personal Journey"
+output:
+  powerpoint_presentation:
+    reference_doc: reference_one.pptx
 marp: true
-
 ---
 
 # Personal Journey
@@ -17,7 +20,18 @@ _Nov, 2021_
 
 ---
 
-# Senior Video Editor at NonProfit (~4yrs)
+
+
+![](../media/journey_cheyo.png)
+
+<!---::: notes
+
+Not included here are college jobs that would not qualify. For example, working at as a package loader motivated me to not want to do that as a career. The same goes for summer helping family with home construction projects.
+
+:::--->
+---
+
+# Video Editor at NonProfit
 
 * Motivation: Helping people in need and getting other people to help. Different than most traditional non profits.
 * Ability: Creating digital artifacts to get more people involved in helping people.
@@ -25,7 +39,7 @@ _Nov, 2021_
 
 ---
 
-# Project Manager at Portable Buildings Company  (~4yrs)
+# Project Manager at Portable Buildings Company
 
 * Motivation: I was creating less and less digital content that I thought it might be better for me to switch career where they may be better pay.
 * Ability: Work hard. Leadership and confidence. Support sales people to sell more structures.
@@ -33,15 +47,7 @@ _Nov, 2021_
 
 ---
 
-# Career Pivot (~2yrs)
-
-* Motivation: Chase dreams. Graduate school.
-* Ability: Retool. Bootstrap. Self direction.
-* Learnings:  Sabbaticals are cool but I also learned that I will not like retirement much. Taking more vacations works better for me. Quality of life > career. 
-
----
-
-# Software Engineer at Tech Company (~4yrs)
+# Software Engineer at Tech Company
 
 * Motivation: I love to code.
 * Ability: Create clarity from ambiguity. All previous abilities. 
