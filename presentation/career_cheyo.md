@@ -27,10 +27,13 @@ Not included here are college jobs that would not qualify. For example, working 
 ---
 
 # Video Editor at NonProfit
+![](../media/third_party\editing-g66024be12_1920.png)
 
+<!---::: notes
 * Motivation: Helping people in need and getting other people to help. Different than most traditional non profits.
 * Ability: Creating digital artifacts to get more people involved in helping people.
 * Learnings: How to work hard (Ability). Aligned to the mission (Motivation). Leadership and confidence (Motivation)
+:::--->
 
 ---
 
