@@ -8,15 +8,31 @@ output:
 marp: true
 ---
 
-# ~12 years as of 2021
+# What is your story?
+* Our professional lives are part of our life narrative. It is not the whole story.
+* It is up to you to control this narrative.
 
+<!---::: notes
+* ~12 years as of 2021
 * Young professional figuring how to get paid for doing what I love
 * Our professional life may take different paths but the journey is the same
+:::--->
+---
+
+# Path
+![](../media/synergies_narrative_part0.png)
+
+
 
 ---
 
+# Path 
 
+![](../media/synergies_narrative_part1.png)
 
+---
+
+# Back[Story]
 ![](../media/journey_cheyo.png)
 
 <!---::: notes
@@ -48,8 +64,6 @@ Not included here are college jobs that would not qualify. For example, working 
 :::--->
 ---
 
-
-
 # Software Engineer at Tech Company
 ![](../media/third_party\radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.png)
 
@@ -60,5 +74,42 @@ Not included here are college jobs that would not qualify. For example, working 
 Constant Mastery > arriving. Enjoy the journey > getting to a destination.
 :::--->
 
+---
+
+# Path
+
+![](../media/synergies_narrative_part1.png)
 
 
+---
+
+## Narrative 
+
+"If a tree were to fall on an island where there were no human beings would there be any sound?"
+https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest
+
+---
+
+# Path
+
+![](../media/synergies_narrative_part2.png)
+
+
+---
+
+# Narrative Context
+- Back[Story]: Past (Also History)
+- Story: Current (Learnings)
+- User[Story]: Future (similar to Agile)
+
+---
+
+# Narrative/Context
+
+![](../media/synergies_narrative_part3.png)
+
+<!---::: notes
+* It is the manifestation of your _why_ you did something. Why you do what you do. Why will you do it again in the future. 
+* It is the story of how you did something. How you are doing that thing now. And how you plan to improve.
+* It is socializing ideas. Building communities. Leaving your mark in this world.
+:::--->
