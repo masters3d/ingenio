@@ -39,19 +39,26 @@ Not included here are college jobs that would not qualify. For example, working 
 
 # Project Manager at Portable Buildings Company
 
+![](../media/third_party\pexels-andrea-piacquadio-3771045.png)
+
+<!---::: notes
 * Motivation: I was creating less and less digital content that I thought it might be better for me to switch career where they may be better pay.
 * Ability: Work hard. Leadership and confidence. Support sales people to sell more structures.
 * Learnings: International Travel is overrated. A company (where you work) should not be part of your identity. Money as a primary motivation did not work for me.
-
+:::--->
 ---
 
-# Software Engineer at Tech Company
 
+
+# Software Engineer at Tech Company
+![](../media/third_party\radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.png)
+
+<!---::: notes
 * Motivation: I love to code.
 * Ability: Create clarity from ambiguity. All previous abilities. 
 * Learnings: More money doesn't remove career angst. 
 Constant Mastery > arriving. Enjoy the journey > getting to a destination.
-
+:::--->
 
 
 
