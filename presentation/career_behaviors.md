@@ -96,25 +96,63 @@ https://en.wikipedia.org/wiki/Flow_(psychology)
 * Definition of done
 * User Stories
 * Iterative progress
-* Well understood. Ability.
+* Well understood as Ability.
   - Can I do it? 
 
 ---
 
 # Behavior #2: Intrinsic Drive
 
-* Somewhat understood. Motivation
- - Is it worth it?
+* Sense of Ownership 
+* Feeling of Autonomy.
+* Mastery (always improving)
+* Somewhat understood as Motivation
+  - Is it worth it?
+
+<!---::: notes
+Attribution:  
+
+Drive: The Surprising Truth About What Motivates Us 
+by Daniel H. Pink 
+2011
+
+Start with Why: How Great Leaders Inspire Everyone to Take Action 
+by Simon Sinek
+
+:::--->
+
+---
+
+# Intrinsic Drive
+
+* Beyond Mission, Vision statement from company. 
+* Motivation that can only be intrinsic to the individual.
+* Can not come directly from delegation. 
+* External motivations like money only temporarily boots motivation.
+
 
 ---
 
 # Behavior #3:  Contextual Awareness
 
+* The act of seeking awareness (as input) across the scalar dimensionality of people, software components, and time.
+* The act of transporting awareness outside of their contextual environment into the short, medium term future.
+* Not well understood
+  - akin to human consciousness but for human software systems. 
 
+<!---::: notes
+Attribution:
+
+Now: The Physics of Time 
+by Richard A. Muller
+
+:::--->
 ---
 
+# Contextual Awareness
 
 * Focus on concrete behaviors that somebody can adopt.
 * 
+
 
 
