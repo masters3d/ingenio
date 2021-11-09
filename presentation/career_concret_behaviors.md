@@ -10,20 +10,65 @@ marp: true
 
 # Why this talk?
 
-* Since Pandemic I started to feel disconnected with work. 
+* Since Pandemic I started to feel disconnected with work so I started to search for answers. 
 * I wanted to find ways to make my job more enjoyable while also having the greatest impact.
-* I want to grow as an engineer.
+* I want to grow as an engineer and also help others on the way.
 
 ---
 
-# Behaviors
+# How
 
-* I will show you (3) behavios that helped me feel back in control of my projects and career.
-* These are things that worked for me and I hope can get something of of these ideas, not matter your level.
+* I will show you (3) behaviors groups that helped me feel back in control of my projects and career.
+* These are things that worked for me and I hope can get something out of these ideas to develop your own behaviors.
+* Everybody is different. This is just one perspective.
+
+---
+# Dimensionality
+
+* People scalar (Person, Team, Group)
+* Software scalar (Component, Cluster, System)
+* Time scalar (Short, Medium, Long)
+
+---
+# Scope
+* People and Software from same team.
+* Time scale of short to medium term.
 
 ---
 
-# Clear Strategy
+# Meta Procedure
+
+- We will start with the individual person and a singular project (component).
+- We will explore current, short term future, medium term future
+- We will do a temporal shift to past (current), present (short term), future (medium term)
+- This part is well understood.
+---
+
+# Meta Stage
+
+- We will start with the individual person and a singular project (component).
+- We will explore current, short term future, medium term future
+- We will do a temporal shift to past (current), present (short term), future (medium term)
+- This part is well understood.
+---
+
+# Meta Stage Next
+
+- We will continue with the singular person but we will introduce multiple projects at different levels of progress.
+- Some projects are fun while others are not.
+- How does this individual feel motivated? (now add a pandemic on top of this)
+- This part is somewhat understood.
+----
+
+# Meta Stage Redo
+
+- We will imagine a team of individuals (each with different systems of components) that need to interact with each other. 
+- New people being added, and people moving teams, projects changing ownership. 
+- Team and software over time.
+- This part is not well understood. 
+----
+
+# Behavior #1: Clear Strategy
 
 * Clear goals. (Know what to do next). 
 * Clear signal of progression towards goals (Tight feedback loop)
@@ -39,13 +84,24 @@ https://en.wikipedia.org/wiki/Flow_(psychology)
 
 --- 
 
+# Clear Strategy
 
-# Intrinsic Drive
+* Agile methodology attempts to address this.
+* Definition of done
+* User Stories
+* Iterative progress
+* Well understood. Ability.
+  - Can I do it? 
+---
 
+# Behavior #2: Intrinsic Drive
+
+* Somewhat understood. Motivation
+ - Is it worth it?
 
 ---
 
-# Contextual Awareness
+# Behavior #3:  Contextual Awareness
 
 ---
 
