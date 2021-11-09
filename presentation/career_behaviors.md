@@ -23,6 +23,7 @@ marp: true
 * Everybody is different. This is just one perspective.
 
 ---
+
 # Dimensionality
 
 * People scalar (Person, Team, Group)
@@ -30,6 +31,7 @@ marp: true
 * Time scalar (Short, Medium, Long)
 
 ---
+
 # Scope
 * People and Software from same team.
 * Time scale of short to medium term.
@@ -41,7 +43,8 @@ marp: true
 - We will start with the individual person and a singular project (component).
 - We will explore current, short term future, medium term future
 - We will do a temporal shift to past (current), present (short term), future (medium term)
-- This part is well understood.
+- This part is well understood
+
 ---
 
 # Meta Stage
@@ -50,6 +53,7 @@ marp: true
 - We will explore current, short term future, medium term future
 - We will do a temporal shift to past (current), present (short term), future (medium term)
 - This part is well understood.
+
 ---
 
 # Meta Stage Next
@@ -58,6 +62,7 @@ marp: true
 - Some projects are fun while others are not.
 - How does this individual feel motivated? (now add a pandemic on top of this)
 - This part is somewhat understood.
+
 ----
 
 # Meta Stage Redo
@@ -65,7 +70,8 @@ marp: true
 - We will imagine a team of individuals (each with different systems of components) that need to interact with each other. 
 - New people being added, and people moving teams, projects changing ownership. 
 - Team and software over time.
-- This part is not well understood. 
+- This part is not well understood.
+
 ----
 
 # Behavior #1: Clear Strategy
@@ -76,7 +82,7 @@ marp: true
 * Full control over the activity (Ownership / Authority) 
 
 
-<!---:::
+<!---::: notes
 Attribution:  
 Mihaly Csikszentmihályi (1990). Flow: The Psychology of Optimal Experience. 
 https://en.wikipedia.org/wiki/Flow_(psychology)
@@ -92,6 +98,7 @@ https://en.wikipedia.org/wiki/Flow_(psychology)
 * Iterative progress
 * Well understood. Ability.
   - Can I do it? 
+
 ---
 
 # Behavior #2: Intrinsic Drive
@@ -102,6 +109,7 @@ https://en.wikipedia.org/wiki/Flow_(psychology)
 ---
 
 # Behavior #3:  Contextual Awareness
+
 
 ---
 
