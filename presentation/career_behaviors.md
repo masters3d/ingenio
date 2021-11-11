@@ -136,9 +136,10 @@ by Simon Sinek
 # Behavior #3:  Contextual Awareness
 
 * The act of seeking awareness (as input) across the scalar dimensionality of people, software components, and time.
-* The act of transporting awareness outside of their contextual environment into the short, medium term future.
-* Not well understood
-  - akin to human consciousness but for human software systems. 
+* The act of transporting awareness outside of their contextual environment into the future short term and medium term.
+* Visibility of work over time.
+* Somewhat understood as DCog (Distributed Cognition)
+  - 
 
 <!---::: notes
 Attribution:
@@ -146,13 +147,28 @@ Attribution:
 Now: The Physics of Time 
 by Richard A. Muller
 
+Distributed Cognition
+https://en.wikipedia.org/wiki/Distributed_cognition
+
+Cognitive System
+https://ise.osu.edu/faculty-research/human-systems-integration/cognitive-systems-engineering
+
+https://www.researchgate.net/profile/David-Woods-19
+https://github.com/lorin/resilience-engineering#david-woods
+
 :::--->
 ---
 
 # Contextual Awareness
 
 * Focus on concrete behaviors that somebody can adopt.
-* 
+* TODO:  Downsides. Easier to replace. 
+* Understanding of the system. HOw to get understanding.
+
+---
+
+## TODO: Add insights about levels
+
 
 
 
