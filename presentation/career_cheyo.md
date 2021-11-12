@@ -40,6 +40,7 @@ marp: true
 Not included here are college jobs that would not qualify. For example, working at as a package loader motivated me to not want to do that as a career. The same goes for summer helping family with home construction projects.
 
 :::--->
+
 ---
 
 # Video Editor at NonProfit
