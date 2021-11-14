@@ -63,41 +63,41 @@ marp: true
 ![](../media/temporal_group_01.png)
 
 
-<!---::: notes
+<!--::: notes
 - We will start with the individual person and a singular project (component).
 - We will explore current, short term future, medium term future
 - We will do a temporal shift to past (current), present (short term), future (medium term)
 - This part is well understood
-:::--->
+:::-->
 
 ---
 
 # Staging Projects
 ![](../media/projects_commits_drawing.png)
 
-<!---::: notes
+<!--::: notes
 
 - We will continue with the singular person but we will introduce multiple projects at different levels of progress.
 - Some projects are fun while others are not.
 - How does this individual feel motivated? (now add a pandemic on top of this)
 - This part is somewhat understood.
-:::--->
+:::-->
 
-----
+---
 # Staging Groups
 
 ![](../media/temporal_group_02.png)
-<!---::: notes
+<!--::: notes
 - We will imagine a team of individuals (each with different systems of components) that need to interact with each other. 
 - New people being added, and people moving teams, projects changing ownership. 
 - People agents and software agents over time.
 - This part is somewhat understood.
-:::--->
-----
+:::-->
+---
 # Staging Groups
 ![](../media/temporal_group_03.png)
 
-----
+---
 
 # Behavior #1: Clear Strategy
 
@@ -107,11 +107,11 @@ marp: true
 * Full control over the activity (Ownership / Authority) 
 
 
-<!---::: notes
+<!--::: notes
 Attribution:  
 Mihaly Csikszentmihályi (1990). Flow: The Psychology of Optimal Experience. 
 https://en.wikipedia.org/wiki/Flow_(psychology)
-:::--->
+:::-->
 
 --- 
 
@@ -134,7 +134,7 @@ https://en.wikipedia.org/wiki/Flow_(psychology)
 * Somewhat understood as Motivation
   - Is it worth it?
 
-<!---::: notes
+<!--::: notes
 Attribution:  
 
 Drive: The Surprising Truth About What Motivates Us 
@@ -144,7 +144,7 @@ by Daniel H. Pink
 Start with Why: How Great Leaders Inspire Everyone to Take Action 
 by Simon Sinek
 
-:::--->
+:::-->
 
 ---
 
@@ -165,9 +165,8 @@ by Simon Sinek
 * Visibility of work over time.
 * Somewhat understood as DCog (Distributed Cognition)
 
-  - 
 
-<!---::: notes
+<!--::: notes
 Attribution:
 
 Now: The Physics of Time 
@@ -182,7 +181,7 @@ https://ise.osu.edu/faculty-research/human-systems-integration/cognitive-systems
 https://www.researchgate.net/profile/David-Woods-19
 https://github.com/lorin/resilience-engineering#david-woods
 
-:::--->
+:::-->
 ---
 
 # Contextual Awareness
@@ -191,11 +190,11 @@ https://github.com/lorin/resilience-engineering#david-woods
 * Cognitive Artifacts
 * Share understanding of the group
 
-<!---::: notes
+<!--::: notes
 * Focus on concrete behaviors that somebody can adopt.
 * Understanding of the inner system. HOw to get understanding.
 
-:::--->
+:::-->
 
 ---
 
@@ -228,11 +227,11 @@ https://github.com/lorin/resilience-engineering#david-woods
 # Back[Story]
 ![](../media/journey_cheyo.png)
 
-<!---::: notes
+<!--::: notes
 
 Not included here are college jobs that would not qualify. For example, working at as a package loader motivated me to not want to do that as a career. The same goes for summer helping family with home construction projects.
 
-:::--->
+:::-->
 
 ---
 

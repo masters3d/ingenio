@@ -1,7 +1,7 @@
 
 
  param (
-    [bool]$clearCache = $false,
+    [bool]$clearCache = $true,
     [string]$single = "none"
  )
 
@@ -11,11 +11,16 @@ $location = Split-Path $script:MyInvocation.MyCommand.Path
 $renderLocation = "$location/render"
 
 # A way to clean up incompatible tokens
+
+$newWinLine = "`r`n"
+$findNewPage = '---'
+$replaceNewPage = "$newWinLine$newWinLine---$newWinLine$newWinLine"
+
 function replacingTokenReturnPath {
     param (
         [string]$textFilePath
         )
-    $tokens = @{'<!---:::'=':::';':::--->'=":::"}
+    $tokens = @{'<!--:::'=':::';':::-->'=":::";$findNewPage=$replaceNewPage;}
     $fileContents = Get-Content -Path $textFilePath -Encoding UTF8
 
     foreach ($each in $tokens.GetEnumerator()) {
@@ -76,6 +81,11 @@ foreach ($each in Get-ChildItem -Path "$location" ) {
     $filetype = ".md"
     if ("$each".EndsWith($filetype))
     {
+        if ("$each".EndsWith("_temp$filetype"))
+        {
+            continue
+        }
+
         $name = "$each".Substring(0, "$each".Length - $filetype.Length)
         executeWithFilename $name
     }
