@@ -120,3 +120,10 @@ _Oct, 2021_
 - Available in asynchronous medium in a way that is easy for the consumer and to contribute updates.
 - Subject matter experts are available over asynchronous communication to help clarify questions. Sync meetings can be arranged on case by case basis as need arises (this should enhance asynchronous communication)
 
+
+---
+
+# Economics 
+
+Tragedy of the commons
+https://en.wikipedia.org/wiki/Tragedy_of_the_commons

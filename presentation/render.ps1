@@ -1,7 +1,7 @@
 
 
  param (
-    [bool]$clearCache = $false,
+    [bool]$clearCache = $true,
     [string]$single = "none"
  )
 
@@ -10,13 +10,51 @@
 $location = Split-Path $script:MyInvocation.MyCommand.Path  
 $renderLocation = "$location/render"
 
+# A way to clean up incompatible tokens
+
+$newWinLine = "`r`n"
+$findNewPage = '---'
+$replaceNewPage = "$newWinLine$newWinLine---$newWinLine$newWinLine"
+
+function replacingTokenReturnPath {
+    param (
+        [string]$textFilePath
+        )
+    $tokens = @{'<!--:::'=':::';':::-->'=":::";$findNewPage=$replaceNewPage;}
+    $fileContents = Get-Content -Path $textFilePath -Encoding UTF8
+
+    foreach ($each in $tokens.GetEnumerator()) {
+        $fileContents =  $fileContents -replace $each.Name, $each.Value
+    }
+
+    if ($fileContents -ne (Get-Content -Path $textFilePath)) {
+        $tempFile = $textFilePath -replace ".md", "_temp.md"
+        Write-Output  $fileContents | Out-File -FilePath $tempFile -Encoding utf8 
+        return $tempFile
+    }
+
+    return $textFilePath
+}
+
+
+
 function executeWithFilename {
     param (
         [string]$name
         )
         Write-Output "creating powerpoint for $name"
-        pandoc $location/$name.md -o $renderLocation/$name.pptx
-}
+        $newPath = replacingTokenReturnPath $location/$name.md
+        pandoc $newPath -o $renderLocation/$name.pptx --reference-doc=$location/pandoc_reference/reference_one.pptx -i
+        
+        if ($clearCache)
+        {
+            if ( $newPath -ne "$location/$name.md")
+            {
+                Write-Output "Cleaning up $newPath"
+                Remove-Item $newPath
+            }
+        }
+    }
 
 if ($single -ne "none") {
     executeWithFilename $single
@@ -32,7 +70,6 @@ if ($clearCache) {
             Write-Output "deleting $each"
             Remove-Item $renderLocation/$each
         }
-     
     }
 }
 
@@ -44,6 +81,11 @@ foreach ($each in Get-ChildItem -Path "$location" ) {
     $filetype = ".md"
     if ("$each".EndsWith($filetype))
     {
+        if ("$each".EndsWith("_temp$filetype"))
+        {
+            continue
+        }
+
         $name = "$each".Substring(0, "$each".Length - $filetype.Length)
         executeWithFilename $name
     }
