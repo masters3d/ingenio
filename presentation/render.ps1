@@ -44,7 +44,7 @@ function executeWithFilename {
         )
         Write-Output "creating powerpoint for $name"
         $newPath = replacingTokenReturnPath $location/$name.md
-        pandoc $newPath -o $renderLocation/$name.pptx --reference-doc=$location/pandoc_reference/reference_one.pptx
+        pandoc $newPath -o $renderLocation/$name.pptx --reference-doc=$location/pandoc_reference/reference_one.pptx -i
         
         if ($clearCache)
         {
