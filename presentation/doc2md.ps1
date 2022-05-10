@@ -43,6 +43,12 @@ function executeWithFilename {
         Write-Output "outputFile $outputFile" 
 
         pandoc $sourceFileTemp --extract-media $renderLocationForMediaForFile -t gfm -o $outputFile
+
+        Write-Output "Adding note to top of file $outputFile" 
+
+        $contentsOfFile = "GENERATED FILE. DO NOT EDIT`n" + (Get-Content -Path $outputFile -Raw)
+
+        Set-Content -Path $outputFile -Value $contentsOfFile
     }
 
 if ($single -ne "none") {
