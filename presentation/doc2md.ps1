@@ -41,6 +41,9 @@ function executeWithFilename {
 
         Write-Output "sourceFile $sourceFile"
         Write-Output "outputFile $outputFile" 
+        
+        # There might be a way to pre process with styles so that the source document can depict code block correctly
+        # https://pandoc.org/MANUAL.html#custom-styles
 
         pandoc $sourceFileTemp --extract-media $renderLocationForMediaForFile -t gfm -o $outputFile
 
