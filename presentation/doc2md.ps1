@@ -45,7 +45,7 @@ function executeWithFilename {
         # There might be a way to pre process with styles so that the source document can depict code block correctly
         # https://pandoc.org/MANUAL.html#custom-styles
 
-        pandoc $sourceFileTemp --extract-media $renderLocationForMediaForFile -t gfm -o $outputFile
+        pandoc $sourceFileTemp --wrap=none --extract-media $renderLocationForMediaForFile -t gfm -o $outputFile
 
         Write-Output "Adding note to top of file $outputFile" 
 
