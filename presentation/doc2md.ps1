@@ -49,7 +49,15 @@ function executeWithFilename {
 
         Write-Output "Adding note to top of file $outputFile" 
 
-        $contentsOfFile = "GENERATED FILE. DO NOT EDIT`n" + (Get-Content -Path $outputFile -Raw)
+        ## Fix code blocks
+        $tokens = @{'    ```'='```';}
+        $fileContents = (Get-Content -Path $outputFile -Raw)
+
+        foreach ($each in $tokens.GetEnumerator()) {
+            $fileContents =  $fileContents -replace $each.Name, $each.Value
+        }
+
+        $contentsOfFile = "GENERATED FILE. DO NOT EDIT`n" + $fileContents
 
         Set-Content -Path $outputFile -Value $contentsOfFile
     }
