@@ -127,3 +127,50 @@ _Oct, 2021_
 
 Tragedy of the commons
 https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+
+---
+
+# Software Observability
+
+![](../media/synergies_telemetry_20221007.png)
+
+---
+#  Observability via Telemetry
+
+
+The three pillars of observability are as follows:
+
+- Logs: A record of what’s happening within your software.
+- Metrics: A numerical assessment of application performance and resource utilization.
+- Traces: How operations move throughout a system, from one node to another.
+
+Source https://www.ibm.com/cloud/blog/observability-vs-monitoring
+
+
+---
+#  Observability is Contextual
+
+- It depends on the observer (Audience). 
+- The word `project` is ambiguous in this context. 
+
+---
+#  Project Architecture
+
+- Component (Software)
+- Cluster of components
+- Systems of clusters
+
+---
+#  Audience
+
+- High Level: Project Leadership
+    - Service Level Agreement (SLA)
+- Med Level: Engineering Leadership
+    - Service Level Objectives (SLO)
+- Low Level: Engineers
+    - Service Level Indicators (SLI)
+<!--::: notes
+Reference:
+https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
+
+:::-->
