@@ -146,6 +146,11 @@ The three pillars of observability are as follows:
 
 Source https://www.ibm.com/cloud/blog/observability-vs-monitoring
 
+---
+# Model: Push vs Pull
+
+- Crawler is a pull mode (On demand). 
+- Agent that pushes is a push model. (Scheduled)
 
 ---
 #  Observability is Contextual
@@ -161,14 +166,14 @@ Source https://www.ibm.com/cloud/blog/observability-vs-monitoring
 - Systems of clusters
 
 ---
-#  Audience
+#  Audience Encapsulation
 
 - High Level: Project Leadership
-    - Service Level Agreement (SLA)
+    - Service Level Agreement (SLA) (Public)
 - Med Level: Engineering Leadership
-    - Service Level Objectives (SLO)
+    - Service Level Objectives (SLO) (Internal)
 - Low Level: Engineers
-    - Service Level Indicators (SLI)
+    - Service Level Indicators (SLI) (Private)
 <!--::: notes
 Reference:
 https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
