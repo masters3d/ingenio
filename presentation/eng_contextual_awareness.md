@@ -164,7 +164,7 @@ Source https://www.ibm.com/cloud/blog/observability-vs-monitoring
 - System (Software Service)
   - Subsystem
     - Component (Unit)
-        - Subcomponent 
+        - SubComponent
 
 
 ---
