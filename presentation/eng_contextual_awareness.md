@@ -161,9 +161,11 @@ Source https://www.ibm.com/cloud/blog/observability-vs-monitoring
 ---
 #  Project Architecture
 
-- Component (Software)
-- Cluster of components
-- Systems of clusters
+- System (Software Service)
+  - Subsystem
+    - Component (Unit)
+        - Subcomponent 
+
 
 ---
 #  Audience Encapsulation
