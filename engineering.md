@@ -37,11 +37,14 @@ Most teams have sister teams which I am going to call, groups. Groups will have 
 An organization is composed of groups of teams. For the most part organization are going to be business driven. Big companies have these organization to make it easier to compartmentalize the different efforts for a company. In many ways an organization functions like a small/medium sized company. Some companies only have one organization. 
 
 ## Software Systems
-Lets take some words to describe a generalize architecture
+Lets take some words to describe a generalize architecture. The word `project` is ambiguous in this context.
+
+- Software component
+- Cluster of components
+- Systems of clusters
 
 
-
-### Software Component
+## Software Component
 
 ## Cluster of components
 
