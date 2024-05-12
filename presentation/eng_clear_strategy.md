@@ -8,6 +8,27 @@ marp: true
 Chéyo Jiménez, MSE
 _Oct, 2021_
 
+
+---
+
+# Clear
+
+- Clear Goals
+ - Mile Stoned Defined
+- Definition of Done
+  - Scope Clear
+  - Time Boxed 
+---
+
+# Strategy
+
+- Coherent Action
+- Behaviors (Feed back loops)
+  - Stablish
+  - Mantain
+- Exit Strategy
+   - Definition of Done for the whole project
+
 ---
 
 # Clear Strategy Architecture
