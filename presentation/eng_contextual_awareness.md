@@ -127,3 +127,57 @@ _Oct, 2021_
 
 Tragedy of the commons
 https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+
+---
+
+# Software Observability
+
+![](../media/synergies_telemetry_20221007.png)
+
+---
+#  Observability via Telemetry
+
+
+The three pillars of observability are as follows:
+
+- Logs: A record of what’s happening within your software.
+- Metrics: A numerical assessment of application performance and resource utilization.
+- Traces: How operations move throughout a system, from one node to another.
+
+Source https://www.ibm.com/cloud/blog/observability-vs-monitoring
+
+---
+# Model: Push vs Pull
+
+- Crawler is a pull mode (On demand). 
+- Agent that pushes is a push model. (Scheduled)
+
+---
+#  Observability is Contextual
+
+- It depends on the observer (Audience). 
+- The word `project` is ambiguous in this context. 
+
+---
+#  Project Architecture
+
+- System (Software Service)
+  - Subsystem
+    - Component (Unit)
+        - SubComponent
+
+
+---
+#  Audience Encapsulation
+
+- High Level: Project Leadership
+    - Service Level Agreement (SLA) (Public)
+- Med Level: Engineering Leadership
+    - Service Level Objectives (SLO) (Internal)
+- Low Level: Engineers
+    - Service Level Indicators (SLI) (Private)
+<!--::: notes
+Reference:
+https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
+
+:::-->
