@@ -100,6 +100,8 @@ https://github.com/rust-lang/rfcs/blob/master/text/1068-rust-governance.md
 
 # Sprint Planning
 
+- Sprint Planning is not only about future sprint but also the restrospective of previous sprint. 
+
 <!--::: notes
 Reference:
 :::-->
@@ -108,6 +110,8 @@ Reference:
 
 # Daily Plan
 
+- Scrum/Agile this would be the burn down chart
+- Burn down of daily activities.
 <!--::: notes
 Reference:
 :::-->
