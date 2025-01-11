@@ -1,4 +1,4 @@
-Will be using mermaid.js to create some graphics.
+Will be using mermaid.js to create some graphics embedded in markdown files. In cases where the inlined markdown preview does not work, please use the below exteion to open the .mmd files. 
 
 VS Extension used:
 https://github.com/tomoyukim/vscode-mermaid-editor

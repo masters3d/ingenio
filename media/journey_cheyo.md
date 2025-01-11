@@ -1,3 +1,4 @@
+```mermaid
 journey
     title Cheyo's Paths as of 2021
     section Pre-Career
@@ -8,3 +9,4 @@ journey
       Software Engineer: 7: Current Me
     section Post-Career
       Retired: 3: Future Me
+```
