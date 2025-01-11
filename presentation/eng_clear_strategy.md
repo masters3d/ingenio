@@ -8,6 +8,27 @@ marp: true
 Chéyo Jiménez, MSE
 _Oct, 2021_
 
+
+---
+
+# Clear
+
+- Clear Goals
+ - Mile Stone Defined
+- Definition of Done
+  - Scope Clear
+  - Time Boxed 
+---
+
+# Strategy
+
+- Coherent Action
+- Behaviors (Feed back loops)
+  - Stablish
+  - Mantain
+- Exit Strategy
+   - Definition of Done for the whole project
+
 ---
 
 # Clear Strategy Architecture
@@ -79,6 +100,8 @@ https://github.com/rust-lang/rfcs/blob/master/text/1068-rust-governance.md
 
 # Sprint Planning
 
+- Sprint Planning is not only about future sprint but also the restrospective of previous sprint. 
+
 <!--::: notes
 Reference:
 :::-->
@@ -87,6 +110,8 @@ Reference:
 
 # Daily Plan
 
+- Scrum/Agile this would be the burn down chart
+- Burn down of daily activities.
 <!--::: notes
 Reference:
 :::-->
