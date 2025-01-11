@@ -14,7 +14,7 @@ _Oct, 2021_
 # Clear
 
 - Clear Goals
- - Mile Stoned Defined
+ - Mile Stone Defined
 - Definition of Done
   - Scope Clear
   - Time Boxed 
