@@ -1,3 +1,5 @@
+# Cheyo's Journey
+
 ```mermaid
 journey
     title Cheyo's Paths as of 2021

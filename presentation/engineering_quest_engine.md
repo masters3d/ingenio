@@ -12,4 +12,4 @@ _Oct, 2021_
 
 # Engineering Quest Engine
 
-![](../media/synergies.png)
+![Synergies diagram showing the interconnection between motivation, narrative, and ability](../media/synergies.png)
