@@ -1,8 +1,10 @@
 # ingenio
 
-This is repo is for notes dedicated to the career of software engineering. The word Ingenio means sugar cane mill in Latin American Spanish. https://en.wikipedia.org/wiki/Engenho
+This is repo is for notes dedicated to the career of software engineering. The word Ingenio means sugar cane mill in
+Latin American Spanish. [Wikipedia: Engenho](https://en.wikipedia.org/wiki/Engenho)
 
-Unless stated clearly in the text. All the thoughts in these documents are *opinions* of its author. Please think of them as personal notes in a public repo.
+Unless stated clearly in the text. All the thoughts in these documents are _opinions_ of its author. Please think of
+them as personal notes in a public repo.
 
 ## 🤖 GitHub Actions & Automation
 
@@ -40,6 +42,7 @@ gh workflow run "GitHub Agent Integration" -f agent_task=content_analysis
 ```
 
 Available agent tasks:
+
 - `status_check`: Basic health and status verification
 - `content_analysis`: Deep analysis of markdown content and links
 - `presentation_render`: Presentation automation and validation
@@ -53,6 +56,7 @@ The repository includes PowerShell scripts for presentation generation:
 - `presentation/doc2md.ps1`: Converts Word documents to markdown
 
 These scripts work with:
+
 - **Marp**: Modern presentation framework using markdown
 - **Pandoc**: Universal document converter for PowerPoint generation
 
@@ -70,4 +74,5 @@ cd presentation
 - `.markdown-link-check.json`: Link checking configuration
 - Workflows automatically install and configure required tools
 
-The GitHub Actions provide a foundation for automated content validation, presentation generation, and repository maintenance, making this knowledge repository more reliable and maintainable. 
+The GitHub Actions provide a foundation for automated content validation, presentation generation, and repository
+maintenance, making this knowledge repository more reliable and maintainable.

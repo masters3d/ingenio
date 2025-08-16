@@ -33,11 +33,25 @@ jobs:
     
     - name: Lint Markdown files
       run: |
-        find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | xargs markdownlint --config .markdownlint.json || true
+        echo "Running markdown linting..."
+        find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | while read -r file; do
+          echo "Linting: $file"
+          markdownlint --config .markdownlint.json "$file" || echo "⚠️ Lint issues found in $file"
+        done
+        echo "Markdown linting completed"
     
     - name: Check Markdown links
       run: |
-        find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | xargs -I {} markdown-link-check {} || true
+        echo "Checking markdown links..."
+        failed_files=0
+        find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | while read -r file; do
+          echo "Checking links in: $file"
+          if ! markdown-link-check "$file" --config .markdown-link-check.json; then
+            echo "⚠️ Link issues found in $file"
+            failed_files=$((failed_files + 1))
+          fi
+        done
+        echo "Link checking completed"
     
     - name: Setup PowerShell
       shell: pwsh
