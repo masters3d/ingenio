@@ -1,0 +1,109 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch full history for better analysis
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: |
+        npm install -g markdownlint-cli
+        npm install -g markdown-link-check
+    
+    - name: Lint Markdown files
+      run: |
+        find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | xargs markdownlint --config .markdownlint.json || true
+    
+    - name: Check Markdown links
+      run: |
+        find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | xargs -I {} markdown-link-check {} || true
+    
+    - name: Setup PowerShell
+      shell: pwsh
+      run: |
+        Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
+    
+    - name: Validate PowerShell scripts
+      shell: pwsh
+      run: |
+        $scripts = Get-ChildItem -Recurse -Filter "*.ps1" -Exclude "*.Tests.ps1"
+        foreach ($script in $scripts) {
+          Write-Host "Analyzing $($script.FullName)"
+          Invoke-ScriptAnalyzer -Path $script.FullName -Severity Warning,Error
+        }
+    
+    - name: Check repository structure
+      run: |
+        echo "Repository structure validation"
+        echo "- Checking for required files..."
+        test -f README.md && echo "✓ README.md exists" || echo "✗ README.md missing"
+        test -d presentation && echo "✓ presentation directory exists" || echo "✗ presentation directory missing"
+        echo "- File counts:"
+        echo "  Markdown files: $(find . -name '*.md' -not -path './node_modules/*' -not -path './.git/*' | wc -l)"
+        echo "  PowerShell scripts: $(find . -name '*.ps1' | wc -l)"
+
+  build-presentations:
+    runs-on: ubuntu-latest
+    needs: validate
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Pandoc
+      uses: r-lib/actions/setup-pandoc@v2
+      with:
+        pandoc-version: 'latest'
+    
+    - name: Install Marp CLI
+      run: npm install -g @marp-team/marp-cli
+    
+    - name: Validate presentation files
+      run: |
+        echo "Validating presentation structure..."
+        cd presentation
+        
+        # Check for marp presentations
+        marp_files=$(find . -name "*.md" -exec grep -l "^---$" {} \; -exec grep -l "marp: true" {} \; 2>/dev/null | sort | uniq -d)
+        if [ ! -z "$marp_files" ]; then
+          echo "Found Marp presentations:"
+          echo "$marp_files"
+          
+          # Validate each marp file
+          for file in $marp_files; do
+            echo "Validating $file with Marp..."
+            marp --html "$file" --output "/tmp/$(basename "$file" .md).html" || echo "Warning: Issues found in $file"
+          done
+        else
+          echo "No Marp presentations found"
+        fi
+        
+        # Check PowerShell rendering scripts
+        if [ -f "render.ps1" ]; then
+          echo "✓ Found render.ps1 script"
+        fi
+        
+        if [ -f "doc2md.ps1" ]; then
+          echo "✓ Found doc2md.ps1 script"
+        fi

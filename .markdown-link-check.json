@@ -1,0 +1,43 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^../media/"
+    },
+    {
+      "pattern": "^./media/"
+    },
+    {
+      "pattern": "^media/"
+    },
+    {
+      "pattern": "^#"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^../media/",
+      "replacement": "https://github.com/masters3d/ingenio/blob/main/media/"
+    },
+    {
+      "pattern": "^./media/",
+      "replacement": "https://github.com/masters3d/ingenio/blob/main/media/"
+    },
+    {
+      "pattern": "^media/",
+      "replacement": "https://github.com/masters3d/ingenio/blob/main/media/"
+    }
+  ],
+  "httpHeaders": [
+    {
+      "urls": ["https://github.com/"],
+      "headers": {
+        "User-Agent": "GitHub-Actions-Link-Checker"
+      }
+    }
+  ],
+  "timeout": "10s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206, 300, 301, 302, 303, 304, 307, 308, 403, 999]
+}

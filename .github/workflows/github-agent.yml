@@ -1,0 +1,266 @@
+name: GitHub Agent Integration
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent_task:
+        description: 'Agent task to execute'
+        required: false
+        default: 'status_check'
+        type: choice
+        options:
+          - status_check
+          - content_analysis
+          - presentation_render
+          - full_analysis
+  schedule:
+    # Run daily at 06:00 UTC for maintenance tasks
+    - cron: '0 6 * * *'
+  repository_dispatch:
+    types: [agent-trigger]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: read
+  metadata: read
+  pages: read
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  agent-health-check:
+    runs-on: ubuntu-latest
+    
+    outputs:
+      agent_status: ${{ steps.health_check.outputs.status }}
+      repo_metrics: ${{ steps.metrics.outputs.metrics }}
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Agent Health Check
+      id: health_check
+      run: |
+        echo "Performing GitHub Agent health check..."
+        
+        # Check GitHub API access
+        api_status=$(curl -s -o /dev/null -w "%{http_code}" \
+          -H "Authorization: token $GITHUB_TOKEN" \
+          "https://api.github.com/repos/${{ github.repository }}")
+        
+        if [ "$api_status" = "200" ]; then
+          echo "✓ GitHub API access: OK"
+          echo "status=healthy" >> $GITHUB_OUTPUT
+        else
+          echo "✗ GitHub API access: FAILED (HTTP $api_status)"
+          echo "status=unhealthy" >> $GITHUB_OUTPUT
+        fi
+        
+        # Check repository permissions
+        echo "Checking repository permissions..."
+        echo "- Contents: ${{ permissions.contents }}"
+        echo "- Issues: ${{ permissions.issues }}"
+        echo "- Pull requests: ${{ permissions.pull-requests }}"
+        echo "- Actions: ${{ permissions.actions }}"
+    
+    - name: Repository Metrics
+      id: metrics
+      run: |
+        echo "Collecting repository metrics..."
+        
+        # File metrics
+        md_count=$(find . -name "*.md" -not -path "./.git/*" | wc -l)
+        ps_count=$(find . -name "*.ps1" | wc -l)
+        
+        # Git metrics
+        commit_count=$(git rev-list --count HEAD)
+        last_commit=$(git log -1 --format="%cd" --date=iso)
+        
+        metrics="{\"markdown_files\":$md_count,\"powershell_scripts\":$ps_count,\"total_commits\":$commit_count,\"last_commit\":\"$last_commit\"}"
+        echo "metrics=$metrics" >> $GITHUB_OUTPUT
+        
+        echo "Repository metrics:"
+        echo "- Markdown files: $md_count"
+        echo "- PowerShell scripts: $ps_count"
+        echo "- Total commits: $commit_count"
+        echo "- Last commit: $last_commit"
+
+  agent-content-analysis:
+    runs-on: ubuntu-latest
+    needs: agent-health-check
+    if: ${{ needs.agent-health-check.outputs.agent_status == 'healthy' && (github.event.inputs.agent_task == 'content_analysis' || github.event.inputs.agent_task == 'full_analysis' || github.event_name == 'schedule') }}
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js for analysis tools
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    
+    - name: Install analysis tools
+      run: |
+        npm install -g markdownlint-cli
+        npm install -g markdown-link-check
+        npm install -g @marp-team/marp-cli
+    
+    - name: Content Quality Analysis
+      run: |
+        echo "# GitHub Agent Content Analysis Report" > /tmp/analysis_report.md
+        echo "Generated on: $(date)" >> /tmp/analysis_report.md
+        echo "" >> /tmp/analysis_report.md
+        
+        # Markdown analysis
+        echo "## Markdown Quality Check" >> /tmp/analysis_report.md
+        md_files=$(find . -name "*.md" -not -path "./.git/*")
+        total_md=$(echo "$md_files" | wc -l)
+        echo "- Total markdown files: $total_md" >> /tmp/analysis_report.md
+        
+        # Link validation
+        echo "" >> /tmp/analysis_report.md
+        echo "## Link Validation" >> /tmp/analysis_report.md
+        broken_links=0
+        for file in $md_files; do
+          if ! markdown-link-check "$file" > /dev/null 2>&1; then
+            broken_links=$((broken_links + 1))
+            echo "- ⚠️ Broken links found in: $file" >> /tmp/analysis_report.md
+          fi
+        done
+        
+        if [ $broken_links -eq 0 ]; then
+          echo "- ✅ All links are valid" >> /tmp/analysis_report.md
+        fi
+        
+        # Presentation analysis
+        echo "" >> /tmp/analysis_report.md
+        echo "## Presentation Files Analysis" >> /tmp/analysis_report.md
+        marp_files=$(find . -name "*.md" -exec grep -l "marp: true" {} \; 2>/dev/null || true)
+        if [ ! -z "$marp_files" ]; then
+          marp_count=$(echo "$marp_files" | wc -l)
+          echo "- Marp presentations found: $marp_count" >> /tmp/analysis_report.md
+          echo "$marp_files" | while read file; do
+            echo "  - $file" >> /tmp/analysis_report.md
+          done
+        else
+          echo "- No Marp presentations found" >> /tmp/analysis_report.md
+        fi
+        
+        echo "" >> /tmp/analysis_report.md
+        echo "## Repository Structure" >> /tmp/analysis_report.md
+        echo "- Main documentation files:" >> /tmp/analysis_report.md
+        ls -la *.md 2>/dev/null | awk '{print "  - " $9}' >> /tmp/analysis_report.md || echo "  - No markdown files in root" >> /tmp/analysis_report.md
+        echo "- Presentation directory: $(test -d presentation && echo "✅ Present" || echo "❌ Missing")" >> /tmp/analysis_report.md
+        echo "- Media directory: $(test -d media && echo "✅ Present" || echo "❌ Missing")" >> /tmp/analysis_report.md
+        
+        cat /tmp/analysis_report.md
+
+  agent-presentation-automation:
+    runs-on: ubuntu-latest
+    needs: agent-health-check
+    if: ${{ needs.agent-health-check.outputs.agent_status == 'healthy' && (github.event.inputs.agent_task == 'presentation_render' || github.event.inputs.agent_task == 'full_analysis') }}
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Pandoc
+      uses: r-lib/actions/setup-pandoc@v2
+    
+    - name: Setup Marp CLI
+      run: npm install -g @marp-team/marp-cli
+    
+    - name: Setup PowerShell
+      shell: pwsh
+      run: |
+        $PSVersionTable.PSVersion
+        Write-Host "PowerShell is ready for automation tasks"
+    
+    - name: Presentation Automation Check
+      run: |
+        echo "# GitHub Agent Presentation Automation Report" > /tmp/presentation_report.md
+        echo "Generated on: $(date)" >> /tmp/presentation_report.md
+        echo "" >> /tmp/presentation_report.md
+        
+        cd presentation 2>/dev/null || {
+          echo "❌ Presentation directory not found" >> /tmp/presentation_report.md
+          cat /tmp/presentation_report.md
+          exit 0
+        }
+        
+        echo "## PowerShell Automation Scripts" >> /tmp/presentation_report.md
+        
+        if [ -f "render.ps1" ]; then
+          echo "- ✅ render.ps1 found" >> /tmp/presentation_report.md
+          echo "  - Purpose: Convert markdown presentations to PowerPoint" >> /tmp/presentation_report.md
+        else
+          echo "- ❌ render.ps1 not found" >> /tmp/presentation_report.md
+        fi
+        
+        if [ -f "doc2md.ps1" ]; then
+          echo "- ✅ doc2md.ps1 found" >> /tmp/presentation_report.md
+          echo "  - Purpose: Convert Word documents to markdown" >> /tmp/presentation_report.md
+        else
+          echo "- ❌ doc2md.ps1 not found" >> /tmp/presentation_report.md
+        fi
+        
+        echo "" >> /tmp/presentation_report.md
+        echo "## Marp Presentation Validation" >> /tmp/presentation_report.md
+        
+        marp_presentations=$(find . -name "*.md" -exec grep -l "marp: true" {} \; 2>/dev/null || true)
+        
+        if [ ! -z "$marp_presentations" ]; then
+          echo "Found Marp presentations:" >> /tmp/presentation_report.md
+          echo "$marp_presentations" | while read file; do
+            echo "- $file" >> /tmp/presentation_report.md
+            # Test marp compilation
+            if marp --html "$file" --output "/tmp/test_$(basename "$file" .md).html" 2>/dev/null; then
+              echo "  - ✅ Compiles successfully" >> /tmp/presentation_report.md
+            else
+              echo "  - ⚠️ Compilation issues detected" >> /tmp/presentation_report.md
+            fi
+          done
+        else
+          echo "- No Marp presentations found in presentation directory" >> /tmp/presentation_report.md
+        fi
+        
+        echo "" >> /tmp/presentation_report.md
+        echo "## Automation Recommendations" >> /tmp/presentation_report.md
+        echo "- Consider setting up automated presentation builds on content changes" >> /tmp/presentation_report.md
+        echo "- PowerShell scripts can be triggered via GitHub Actions for CI/CD automation" >> /tmp/presentation_report.md
+        echo "- Marp presentations can be automatically published to GitHub Pages" >> /tmp/presentation_report.md
+        
+        cat /tmp/presentation_report.md
+
+  agent-status-summary:
+    runs-on: ubuntu-latest
+    needs: [agent-health-check, agent-content-analysis, agent-presentation-automation]
+    if: always()
+    
+    steps:
+    - name: Generate Agent Status Summary
+      run: |
+        echo "# GitHub Agent Status Summary"
+        echo "Workflow run: ${{ github.run_id }}"
+        echo "Triggered by: ${{ github.event_name }}"
+        echo "Repository: ${{ github.repository }}"
+        echo "Ref: ${{ github.ref }}"
+        echo ""
+        echo "## Agent Health"
+        echo "Status: ${{ needs.agent-health-check.outputs.agent_status }}"
+        echo ""
+        echo "## Job Results"
+        echo "- Health Check: ${{ needs.agent-health-check.result }}"
+        echo "- Content Analysis: ${{ needs.agent-content-analysis.result }}"
+        echo "- Presentation Automation: ${{ needs.agent-presentation-automation.result }}"
+        echo ""
+        echo "## Repository Metrics"
+        echo '${{ needs.agent-health-check.outputs.repo_metrics }}' | jq -r 'to_entries[] | "- \(.key): \(.value)"' || echo "Metrics unavailable"
+        echo ""
+        echo "GitHub Agent integration is active and monitoring repository health."
