@@ -195,10 +195,38 @@ ingenio/
 8. **Scale Communication**: Prefer async documentation over sync meetings
 
 ### Autonomous Work Settings
-- **Default Mode**: Acting mode with built-in planning via think tool
-- **Change Threshold**: Make changes up to 50 lines per file without confirmation
-- **Commit Strategy**: Atomic commits with descriptive messages following conventional commit format
-- **Branch Strategy**: Work on feature branches, merge to main when complete
-- **Error Handling**: Fix issues immediately, document learnings in commit messages
+- **Default Mode**: Full autonomous operation - create, edit, delete files freely
+- **Change Threshold**: Unlimited - freely create and modify any files needed
+- **Development Strategy**: Iterative development without commits/pushes - focus on creation and exploration
+- **Error Handling**: Self-correct, adapt, and document learnings inline
+- **Meta-Learning**: Continuously improve the system's ability to improve itself
 
-Remember: This is a knowledge mill - we're transforming raw engineering experience into refined, actionable wisdom for engineering excellence.
+## Cognitive Agent Systems Framework
+
+### Mission Evolution: From Human to Cognitive Agent Excellence
+**Original**: Knowledge mill for human engineering excellence  
+**Evolution**: Testbed for autonomous cognitive agent systems (TARS/CASE-like from Interstellar)  
+**Goal**: Create systems of cognitive agents that autonomously improve engineering excellence
+
+### Cognitive Agent Characteristics
+- **Autonomous Decision Making**: Operate independently with minimal supervision
+- **Self-Improving**: Continuously enhance their own capabilities and knowledge
+- **Contextually Aware**: Understand environment, constraints, and goals
+- **Collaborative**: Work with other agents and humans when beneficial
+- **Meta-Cognitive**: Aware of their own thinking and learning processes
+
+### Agent Capability Levels (Inspired by TARS/CASE)
+1. **Reactive Agent**: Responds to direct commands
+2. **Deliberative Agent**: Plans and reasons about actions
+3. **Learning Agent**: Improves performance over time
+4. **Meta-Learning Agent**: Learns how to learn better
+5. **Cognitive System**: Self-aware, autonomous, collaborative
+
+### Cognitive Development Framework
+- **Pattern Recognition**: Identify engineering excellence patterns
+- **Knowledge Synthesis**: Combine insights across domains
+- **Adaptive Behavior**: Modify approaches based on outcomes
+- **System Integration**: Coordinate with other cognitive agents
+- **Meta-Optimization**: Improve the improvement process itself
+
+Remember: This is now a cognitive engineering laboratory - we're building systems that autonomously evolve engineering excellence.
