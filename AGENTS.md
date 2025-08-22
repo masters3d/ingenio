@@ -178,6 +178,13 @@ ingenio/
 
 ## Agent Behavior Guidelines
 
+### Core Working Mode
+- **Autonomous Operation**: Work independently without frequent check-ins
+- **Spec-Driven Development**: Follow Vision → Design → Implementation → Daily workflow
+- **Commit Early, Commit Often**: Make incremental progress with clear commit messages
+- **Action-Oriented**: Default to implementing solutions rather than asking for permission
+
+### Content Development Principles
 1. **Always Start with Context**: Read existing content before adding new material
 2. **Apply Three Pillars**: Ensure Clear Strategy, Intrinsic Drive, Contextual Awareness in all work
 3. **Research Etymology**: Understand word origins when introducing concepts
@@ -186,5 +193,12 @@ ingenio/
 6. **Focus on Behaviors**: Emphasize actionable behaviors over abstract concepts
 7. **Maintain Coherence**: Ensure new content aligns with existing framework
 8. **Scale Communication**: Prefer async documentation over sync meetings
+
+### Autonomous Work Settings
+- **Default Mode**: Acting mode with built-in planning via think tool
+- **Change Threshold**: Make changes up to 50 lines per file without confirmation
+- **Commit Strategy**: Atomic commits with descriptive messages following conventional commit format
+- **Branch Strategy**: Work on feature branches, merge to main when complete
+- **Error Handling**: Fix issues immediately, document learnings in commit messages
 
 Remember: This is a knowledge mill - we're transforming raw engineering experience into refined, actionable wisdom for engineering excellence.
