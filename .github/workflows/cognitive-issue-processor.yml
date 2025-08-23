@@ -4,8 +4,8 @@ on:
   issues:
     types: [opened, edited, labeled]
   schedule:
-    # Run daily at 2 AM UTC to process all open issues
-    - cron: '0 2 * * *'
+    # Run every hour to continuously process open issues
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       force_all:
