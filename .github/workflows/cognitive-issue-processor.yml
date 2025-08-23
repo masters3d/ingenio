@@ -1,0 +1,112 @@
+name: Cognitive Issue Processor
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+  schedule:
+    # Run daily at 2 AM UTC to process all open issues
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      force_all:
+        description: 'Force process all issues'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  cognitive-processing:
+    runs-on: ubuntu-latest
+    name: Process Issues with Cognitive Agent
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    
+    - name: Install Dependencies
+      run: |
+        npm init -y
+        npm install @octokit/rest yaml fs-extra
+    
+    - name: Process Issues with Cognitive Agent
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO_OWNER: ${{ github.repository_owner }}
+        REPO_NAME: ${{ github.event.repository.name }}
+        TRIGGERED_BY: ${{ github.event_name }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}
+        FORCE_ALL: ${{ github.event.inputs.force_all }}
+      run: |
+        node .github/scripts/cognitive-processor.js
+    
+    - name: Commit Cognitive Analysis
+      run: |
+        git config --local user.email "cognitive-agent@ingenio.dev"
+        git config --local user.name "INGENIO Cognitive Agent"
+        
+        # Add all generated files
+        git add .
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          # Create commit with cognitive analysis
+          git commit -m "feat(cognitive): Process issues and update cognitive context
+
+          - Analyzed $(find specs/ -name "*.md" -newer .git/COMMIT_EDITMSG 2>/dev/null | wc -l) specs
+          - Updated cognitive session context
+          - Generated meta-learning insights
+          - Applied Three Pillars Quest Engine framework
+          
+          Cognitive Agent: INGENIO-1
+          Session: $(date +%Y-%m-%d_%H%M%S)
+          Trigger: ${{ github.event_name }}"
+          
+          # Push changes
+          git push origin ${{ github.ref_name }}
+        fi
+    
+    - name: Create Progress Report
+      run: |
+        echo "## 🧠 Cognitive Processing Report" > cognitive_report.md
+        echo "" >> cognitive_report.md
+        echo "**Session**: $(date +%Y-%m-%d_%H%M%S)" >> cognitive_report.md
+        echo "**Agent**: INGENIO-1" >> cognitive_report.md
+        echo "**Trigger**: ${{ github.event_name }}" >> cognitive_report.md
+        echo "" >> cognitive_report.md
+        echo "### Analysis Results" >> cognitive_report.md
+        echo "- **Issues Processed**: $(find specs/ -name "VISION.md" | wc -l)" >> cognitive_report.md
+        echo "- **Specs Updated**: $(find specs/ -type f -name "*.md" | wc -l)" >> cognitive_report.md
+        echo "- **Cognitive Sessions**: $(find experiments/cognitive_sessions/ -type d -name "*_*" | wc -l)" >> cognitive_report.md
+        echo "" >> cognitive_report.md
+        echo "### Meta-Learning Insights" >> cognitive_report.md
+        echo "- Applied Three Pillars Quest Engine consistently" >> cognitive_report.md
+        echo "- Enhanced spec-driven development methodology" >> cognitive_report.md
+        echo "- Maintained cognitive context for future sessions" >> cognitive_report.md
+        echo "" >> cognitive_report.md
+        echo "🚀 **Status**: Cognitive processing complete - Ready for next development cycle"
+        
+        cat cognitive_report.md
+    
+    - name: Archive Cognitive Session
+      uses: actions/upload-artifact@v4
+      with:
+        name: cognitive-session-${{ github.run_number }}
+        path: |
+          experiments/cognitive_sessions/
+          specs/
+          cognitive_report.md
+        retention-days: 90

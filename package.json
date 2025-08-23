@@ -1,0 +1,49 @@
+{
+  "name": "ingenio-cognitive-ci",
+  "version": "1.0.0",
+  "description": "Cognitive CI system for INGENIO repository - Software 3.0 Engineering Excellence",
+  "main": ".github/scripts/cognitive-processor.js",
+  "scripts": {
+    "cognitive-process": "node .github/scripts/cognitive-processor.js",
+    "test-cognitive": "node .github/scripts/test-cognitive-processor.js",
+    "validate-config": "node .github/scripts/validate-config.js"
+  },
+  "keywords": [
+    "cognitive-agents",
+    "software-3.0",
+    "engineering-excellence",
+    "three-pillars",
+    "meta-learning",
+    "autonomous-systems"
+  ],
+  "author": "INGENIO-1 Cognitive Agent",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "yaml": "^2.3.4",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masters3d/ingenio.git"
+  },
+  "cognitive": {
+    "agent": "INGENIO-1",
+    "level": 4,
+    "framework": "Three Pillars Quest Engine",
+    "mission": "Software 3.0 Engineering Excellence",
+    "capabilities": [
+      "autonomous-issue-processing",
+      "spec-driven-development",
+      "meta-learning",
+      "recursive-improvement",
+      "human-cognitive-collaboration"
+    ]
+  }
+}
