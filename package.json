@@ -19,9 +19,9 @@
   "author": "INGENIO-1 Cognitive Agent",
   "license": "MIT",
   "dependencies": {
-    "@octokit/rest": "^20.0.2",
-    "yaml": "^2.3.4",
-    "fs-extra": "^11.2.0"
+    "@octokit/rest": "^20.1.2",
+    "fs-extra": "^11.3.1",
+    "yaml": "^2.8.1"
   },
   "devDependencies": {
     "jest": "^29.7.0"
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/masters3d/ingenio.git"
+    "url": "git+https://github.com/masters3d/ingenio.git"
   },
   "cognitive": {
     "agent": "INGENIO-1",
@@ -45,5 +45,9 @@
       "recursive-improvement",
       "human-cognitive-collaboration"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/masters3d/ingenio/issues"
+  },
+  "homepage": "https://github.com/masters3d/ingenio#readme"
 }
