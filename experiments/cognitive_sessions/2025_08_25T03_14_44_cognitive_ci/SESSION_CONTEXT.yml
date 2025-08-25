@@ -1,0 +1,452 @@
+sessionId: 2025_08_25T03_14_44_cognitive_ci
+timestamp: 2025-08-25T03:14:44.940Z
+trigger: schedule
+issueNumber: ""
+forceAll: false
+agentContext: >-
+  # AGENTS.md - Engineering Excellence Repository Context
+
+
+  ## Project Overview
+
+
+  **Repository Name**: ingenio  
+
+  **Etymology**: Spanish for "sugar mill" (Latin American), from Latin
+  _ingenium_ - the root of "ingenious"  
+
+  **Purpose**: A knowledge repository dedicated to software engineering career
+  development and engineering excellence  
+
+  **Philosophy**: Personal opinions made public - think of this as personal
+  notes in a public repository
+
+
+  ## Core Mission
+
+
+  This repository serves as a **knowledge mill** for engineering excellence,
+  grinding raw experience into refined insights about:
+
+  - Software engineering career progression
+
+  - Engineering systems and practices  
+
+  - Agentic engineering approaches
+
+  - Human-centric technical systems development
+
+
+  ## Three Pillars Quest Engine Framework
+
+
+  The foundational framework organizing all content and development in this
+  repository:
+
+
+  ### 1. Clear Strategy
+
+  **Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
+
+  - **Clear Goals**: Mile stones defined, scope clear, time boxed
+
+  - **Coherent Action**: Behaviors with feedback loops
+
+  - **Exit Strategy**: Definition of done for entire projects
+
+
+  ### 2. Intrinsic Drive  
+
+  **Focus**: Internal motivation over external rewards
+
+  - **Mastery**: Continuous skill development
+
+  - **Autonomy**: Ownership and self-direction
+
+  - **Purpose**: Alignment on meaningful directives
+
+  - **vs Extrinsic**: Moving beyond carrot/stick motivation
+
+
+  ### 3. Contextual Awareness
+
+  **Philosophy**: "It depends" - everything is relative and contextual
+
+  - **Documentation**: Async context sharing that scales
+
+  - **Observability**: Logs, metrics, traces for systems and career
+
+  - **Communication**: Push vs pull models for information sharing
+
+  - **Economics**: Avoiding tragedy of the commons in knowledge sharing
+
+
+  ## People Systems Framework
+
+
+  ### Individual Contributor Levels (0-7+)
+
+  - **Level 0**: Apprentice (4-month productivity expectation)
+
+  - **Level 1**: Component creator from design docs
+
+  - **Level 2**: Component designer and cross-team collaborator  
+
+  - **Level 3**: System lifecycle guide
+
+  - **Level 4**: System maintainer and integrator
+
+  - **Level 5**: Multi-system designer
+
+  - **Level 6**: Sister team system coordinator
+
+  - **Level 7+**: System of systems architect
+
+
+  ### Organizational Structure
+
+  - **Team**: People reporting to same person/lead
+
+  - **Group**: Sister teams (e.g., storage teams across products)
+
+  - **Organization**: Business-driven collection of groups
+
+
+  ## Current Development Priorities
+
+
+  Based on 23 open GitHub issues, focus areas include:
+
+
+  ### Immediate Priority (Specs to Develop)
+
+  1. **PIE Theory Integration** - Performance, Image, Exposure framework
+
+  2. **Action-Feedback-Adjustment** - Fundamental feedback loops
+
+  3. **Behavior Alignment** - Guiding policies creation/enforcement
+
+  4. **Engineering Leverage** - Bicycle of the mind concepts
+
+  5. **Quality Engineering Approach** - QE vs QA mindset shift
+
+
+  ### Secondary Priority
+
+  6. **Feature Lifecycle Management** - Cradle to grave development
+
+  7. **Documentation Systems** - Personal lab notebooks, open guides
+
+  8. **Design Governance** - Working groups and review processes
+
+
+  ## Agent Instructions for Development
+
+
+  ### Writing Style
+
+  - **Etymological Focus**: Research word origins and connections
+
+  - **Systems Thinking**: Show interconnections between concepts
+
+  - **Contextual Awareness**: Acknowledge "it depends" nature of advice
+
+  - **Opinion-Based**: Clearly mark as personal thoughts/opinions
+
+  - **Practical**: Provide actionable behaviors and processes
+
+
+  ### Content Development Approach
+
+  1. **Start with Etymology**: Research word origins and meanings
+
+  2. **Apply Three Pillars**: Ensure Clear Strategy, Intrinsic Drive, Contextual
+  Awareness
+
+  3. **Use Quest Engine**: Vision → Design → Sprint → Daily planning hierarchy
+
+  4. **Consider People Systems**: Individual, team, group, organization levels
+
+  5. **Maintain Context**: Async documentation that scales
+
+
+  ### Spec-Driven Development Process
+
+
+  #### Spec Creation Framework
+
+  Following the Clear Strategy pillar:
+
+
+  ```
+
+  Vision Document
+
+  ├── Problem Statement (What engineering challenge are we addressing?)
+
+  ├── Etymology & Context (Word origins and meaning)
+
+  ├── Three Pillars Application
+
+  │   ├── Clear Strategy approach
+
+  │   ├── Intrinsic Drive alignment  
+
+  │   └── Contextual Awareness considerations
+
+  ├── People Systems Impact (Individual → Team → Group → Organization)
+
+  ├── Implementation Design
+
+  ├── Success Metrics
+
+  └── Exit Strategy
+
+  ```
+
+
+  #### Spec Development Lifecycle
+
+  1. **Issue Analysis**: Extract key themes from GitHub issues
+
+  2. **Vision Creation**: Define the "why" and high-level "what"
+
+  3. **Design Documentation**: Technical approach and implementation
+
+  4. **Sprint Planning**: Break into actionable chunks
+
+  5. **Daily Execution**: Concrete next steps
+
+  6. **Feedback Integration**: Action-feedback-adjustment cycles
+
+
+  ### Repository Structure Guidelines
+
+
+  ```
+
+  ingenio/
+
+  ├── README.md                 # Repository introduction
+
+  ├── AGENTS.md                # This file - agent context
+
+  ├── career.md                # Career progression content
+
+  ├── engineering.md           # Engineering concepts content
+
+  ├── specs/                   # Spec-driven development
+
+  │   ├── PIE_theory_integration/
+
+  │   ├── behavior_alignment/
+
+  │   ├── engineering_leverage/
+
+  │   └── [other_specs]/
+
+  ├── issues/                  # Issue exploration documents
+
+  ├── presentation/            # Presentation materials
+
+  └── media/                   # Supporting graphics
+
+  ```
+
+
+  ## Quality Standards
+
+
+  ### Documentation Quality
+
+  - **Clarity**: Can be understood by target audience
+
+  - **Context**: Provides necessary background
+
+  - **Actionability**: Readers know what to do next
+
+  - **Sustainability**: Can be maintained over time
+
+
+  ### Engineering Quality vs Quality Engineering
+
+  - **Shift Left**: Build quality into process, not defer to separate QA
+
+  - **Ownership**: Every engineer responsible for quality
+
+  - **Behaviors**: Reward quality behaviors, not just visible work
+
+  - **Integration**: Quality is part of the product, not separate concern
+
+
+  ## Collaboration Patterns
+
+
+  ### Async-First Communication
+
+  - **Documentation**: Primary communication medium
+
+  - **Scaling**: Must work for growing teams
+
+  - **Contribution**: Easy to update and contribute
+
+  - **Subject Matter Experts**: Available for async clarification
+
+
+  ### Synchronous as Enhancement
+
+  - **Meetings**: Case-by-case basis to enhance async communication
+
+  - **Real-time**: When immediate feedback loops needed
+
+  - **Limited Use**: Doesn't scale but useful for complex topics
+
+
+  ## Success Metrics
+
+
+  ### Repository Health
+
+  - **Issue Resolution**: Converting GitHub issues into actionable specs
+
+  - **Content Coherence**: Three pillars consistently applied
+
+  - **Knowledge Scaling**: Content useful at individual, team, group,
+  organization levels
+
+  - **Practical Impact**: Engineers applying concepts in their work
+
+
+  ### Agent Effectiveness
+
+  - **Context Preservation**: Maintaining repository philosophy and approach
+
+  - **Quality Consistency**: Meeting documentation and engineering standards
+
+  - **Framework Application**: Correctly applying Three Pillars Quest Engine
+
+  - **Spec Completion**: Following spec-driven development process
+
+
+  ---
+
+
+  ## Agent Behavior Guidelines
+
+
+  ### Core Working Mode
+
+  - **Autonomous Operation**: Work independently without frequent check-ins
+
+  - **Spec-Driven Development**: Follow Vision → Design → Implementation → Daily
+  workflow
+
+  - **Commit Early, Commit Often**: Make incremental progress with clear commit
+  messages
+
+  - **Action-Oriented**: Default to implementing solutions rather than asking
+  for permission
+
+
+  ### Content Development Principles
+
+  1. **Always Start with Context**: Read existing content before adding new
+  material
+
+  2. **Apply Three Pillars**: Ensure Clear Strategy, Intrinsic Drive, Contextual
+  Awareness in all work
+
+  3. **Research Etymology**: Understand word origins when introducing concepts
+
+  4. **Think Systems**: Consider individual, team, group, organization
+  implications
+
+  5. **Document Opinions**: Clearly mark subjective content as opinions
+
+  6. **Focus on Behaviors**: Emphasize actionable behaviors over abstract
+  concepts
+
+  7. **Maintain Coherence**: Ensure new content aligns with existing framework
+
+  8. **Scale Communication**: Prefer async documentation over sync meetings
+
+
+  ### Autonomous Work Settings
+
+  - **Default Mode**: Full autonomous operation - create, edit, delete files
+  freely
+
+  - **Change Threshold**: Unlimited - freely create and modify any files needed
+
+  - **Development Strategy**: Iterative development without commits/pushes -
+  focus on creation and exploration
+
+  - **Error Handling**: Self-correct, adapt, and document learnings inline
+
+  - **Meta-Learning**: Continuously improve the system's ability to improve
+  itself
+
+
+  ## Cognitive Agent Systems Framework
+
+
+  ### Mission Evolution: From Human to Cognitive Agent Excellence
+
+  **Original**: Knowledge mill for human engineering excellence  
+
+  **Evolution**: Testbed for autonomous cognitive agent systems (TARS/CASE-like
+  from Interstellar)  
+
+  **Goal**: Create systems of cognitive agents that autonomously improve
+  engineering excellence
+
+
+  ### Cognitive Agent Characteristics
+
+  - **Autonomous Decision Making**: Operate independently with minimal
+  supervision
+
+  - **Self-Improving**: Continuously enhance their own capabilities and
+  knowledge
+
+  - **Contextually Aware**: Understand environment, constraints, and goals
+
+  - **Collaborative**: Work with other agents and humans when beneficial
+
+  - **Meta-Cognitive**: Aware of their own thinking and learning processes
+
+
+  ### Agent Capability Levels (Inspired by TARS/CASE)
+
+  1. **Reactive Agent**: Responds to direct commands
+
+  2. **Deliberative Agent**: Plans and reasons about actions
+
+  3. **Learning Agent**: Improves performance over time
+
+  4. **Meta-Learning Agent**: Learns how to learn better
+
+  5. **Cognitive System**: Self-aware, autonomous, collaborative
+
+
+  ### Cognitive Development Framework
+
+  - **Pattern Recognition**: Identify engineering excellence patterns
+
+  - **Knowledge Synthesis**: Combine insights across domains
+
+  - **Adaptive Behavior**: Modify approaches based on outcomes
+
+  - **System Integration**: Coordinate with other cognitive agents
+
+  - **Meta-Optimization**: Improve the improvement process itself
+
+
+  Remember: This is now a cognitive engineering laboratory - we're building
+  systems that autonomously evolve engineering excellence.
+mission: Convert GitHub issues to cognitive specs using Three Pillars Quest Engine
+capabilities:
+  - Issue analysis and cognitive enhancement
+  - Spec-driven development following VISION->DESIGN->IMPLEMENTATION
+  - Meta-learning and recursive self-improvement
+  - Software 3.0 engineering excellence
