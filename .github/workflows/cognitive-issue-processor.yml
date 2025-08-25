@@ -51,34 +51,6 @@ jobs:
       run: |
         node .github/scripts/cognitive-processor.js
     
-    - name: Commit Cognitive Analysis
-      run: |
-        git config --local user.email "cognitive-agent@ingenio.dev"
-        git config --local user.name "INGENIO Cognitive Agent"
-        
-        # Add all generated files
-        git add .
-        
-        # Check if there are changes to commit
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          # Create commit with cognitive analysis
-          git commit -m "feat(cognitive): Process issues and update cognitive context
-
-          - Analyzed $(find specs/ -name "*.md" -newer .git/COMMIT_EDITMSG 2>/dev/null | wc -l) specs
-          - Updated cognitive session context
-          - Generated meta-learning insights
-          - Applied Three Pillars Quest Engine framework
-          
-          Cognitive Agent: INGENIO-1
-          Session: $(date +%Y-%m-%d_%H%M%S)
-          Trigger: ${{ github.event_name }}"
-          
-          # Push changes
-          git push origin ${{ github.ref_name }}
-        fi
-    
     - name: Create Progress Report
       run: |
         echo "## 🧠 Cognitive Processing Report" > cognitive_report.md
@@ -86,18 +58,27 @@ jobs:
         echo "**Session**: $(date +%Y-%m-%d_%H%M%S)" >> cognitive_report.md
         echo "**Agent**: INGENIO-1" >> cognitive_report.md
         echo "**Trigger**: ${{ github.event_name }}" >> cognitive_report.md
+        echo "**Filter**: Only issues with 'sos oficial' label" >> cognitive_report.md
         echo "" >> cognitive_report.md
         echo "### Analysis Results" >> cognitive_report.md
         echo "- **Issues Processed**: $(find specs/ -name "VISION.md" | wc -l)" >> cognitive_report.md
-        echo "- **Specs Updated**: $(find specs/ -type f -name "*.md" | wc -l)" >> cognitive_report.md
+        echo "- **Specs Generated**: $(find specs/ -type f -name "*.md" | wc -l)" >> cognitive_report.md
+        echo "- **Pull Requests Created**: Automatic PR creation for each processed issue" >> cognitive_report.md
         echo "- **Cognitive Sessions**: $(find experiments/cognitive_sessions/ -type d -name "*_*" | wc -l)" >> cognitive_report.md
         echo "" >> cognitive_report.md
         echo "### Meta-Learning Insights" >> cognitive_report.md
         echo "- Applied Three Pillars Quest Engine consistently" >> cognitive_report.md
         echo "- Enhanced spec-driven development methodology" >> cognitive_report.md
         echo "- Maintained cognitive context for future sessions" >> cognitive_report.md
+        echo "- Implemented PR-based workflow for better code review" >> cognitive_report.md
         echo "" >> cognitive_report.md
-        echo "🚀 **Status**: Cognitive processing complete - Ready for next development cycle"
+        echo "### Workflow Improvements" >> cognitive_report.md
+        echo "- ✅ **Label Filtering**: Only processes issues with 'sos oficial' tag" >> cognitive_report.md
+        echo "- ✅ **PR Creation**: Creates pull requests instead of direct commits" >> cognitive_report.md
+        echo "- ✅ **Branch Management**: Dedicated branches for each specification" >> cognitive_report.md
+        echo "- ✅ **Review Process**: Enables human review before merging specs" >> cognitive_report.md
+        echo "" >> cognitive_report.md
+        echo "🚀 **Status**: Cognitive processing complete - PRs ready for review"
         
         cat cognitive_report.md
     

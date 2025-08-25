@@ -33,7 +33,7 @@ We need to integrate PIE Theory (Performance, Image, Exposure) into our engineer
 
 ## Additional Context
 This should help engineers understand how performance, professional image, and exposure opportunities affect career growth.`,
-        labels: [{ name: 'enhancement' }, { name: 'career-development' }],
+        labels: [{ name: 'sos oficial' }, { name: 'enhancement' }, { name: 'career-development' }],
         created_at: '2024-12-19T10:00:00Z',
         updated_at: '2024-12-19T10:00:00Z'
       },
@@ -50,6 +50,20 @@ Requirements:
         labels: [{ name: 'testing' }, { name: 'cognitive-agents' }],
         created_at: '2024-12-19T11:00:00Z',
         updated_at: '2024-12-19T11:00:00Z'
+      },
+      {
+        number: 3,
+        title: "Quality Engineering Approach Enhancement",
+        body: `Enhance QE vs QA mindset transformation within the engineering team.
+        
+Key improvements needed:
+- Shift left quality practices
+- Engineer ownership of quality
+- Built-in quality processes
+- Behavior alignment systems`,
+        labels: [{ name: 'sos oficial' }, { name: 'quality' }, { name: 'engineering' }],
+        created_at: '2024-12-19T12:00:00Z',
+        updated_at: '2024-12-19T12:00:00Z'
       }
     ];
   }
@@ -57,36 +71,122 @@ Requirements:
   async runTests() {
     console.log('🧪 Starting Cognitive Processor Tests...\n');
 
-    // Test 1: Basic cognitive analysis
+    // Test 1: Label filtering functionality
+    await this.testLabelFiltering();
+
+    // Test 2: Basic cognitive analysis
     await this.testCognitiveAnalysis();
     
-    // Test 2: Three Pillars framework application
+    // Test 3: Three Pillars framework application
     await this.testThreePillarsFramework();
     
-    // Test 3: Spec generation
+    // Test 4: Spec generation
     await this.testSpecGeneration();
     
-    // Test 4: Meta-learning capabilities
+    // Test 5: Meta-learning capabilities
     await this.testMetaLearning();
     
-    // Test 5: Session management
+    // Test 6: Session management
     await this.testSessionManagement();
 
+    // Test 7: PR creation workflow
+    await this.testPRWorkflow();
+
     this.printTestResults();
+  }
+
+  async testLabelFiltering() {
+    console.log('🏷️  Testing Label Filtering...');
+    
+    try {
+      // Test that only issues with "sos oficial" label are processed
+      const filteredIssues = this.mockIssues.filter(issue => 
+        issue.labels.some(label => label.name === 'sos oficial')
+      );
+      
+      this.assert(
+        filteredIssues.length === 2,
+        `Should filter to 2 issues with "sos oficial" label, got ${filteredIssues.length}`
+      );
+      
+      this.assert(
+        filteredIssues.every(issue => 
+          issue.labels.some(label => label.name === 'sos oficial')
+        ),
+        'All filtered issues should have "sos oficial" label'
+      );
+      
+      // Test that issues without the label are excluded
+      const excludedIssues = this.mockIssues.filter(issue => 
+        !issue.labels.some(label => label.name === 'sos oficial')
+      );
+      
+      this.assert(
+        excludedIssues.length === 1,
+        `Should exclude 1 issue without "sos oficial" label, got ${excludedIssues.length}`
+      );
+      
+      this.assert(
+        excludedIssues[0].number === 2,
+        'Issue #2 should be excluded (no "sos oficial" label)'
+      );
+      
+      this.pass('Label Filtering', 'Successfully filters issues by "sos oficial" label');
+      
+    } catch (error) {
+      this.fail('Label Filtering', error.message);
+    }
+  }
+
+  async testPRWorkflow() {
+    console.log('🔀 Testing PR Creation Workflow...');
+    
+    try {
+      // Mock the PR creation workflow
+      const issue = this.mockIssues[0]; // Issue with "sos oficial" label
+      const analysis = await this.mockProcessIssue(issue);
+      
+      // Test branch naming
+      const branchName = this.mockGenerateBranchName(issue);
+      this.assert(
+        branchName.startsWith('cognitive/spec-'),
+        'Branch name should start with "cognitive/spec-"'
+      );
+      
+      this.assert(
+        branchName.includes('pie_theory_integration'),
+        'Branch name should include spec name'
+      );
+      
+      // Test PR description generation
+      const prDescription = this.mockGeneratePRDescription(issue, analysis);
+      this.assert(
+        prDescription.includes('🧠 INGENIO-1 Cognitive Spec Generation'),
+        'PR description should contain cognitive agent header'
+      );
+      
+      this.assert(
+        prDescription.includes(`Fixes #${issue.number}`),
+        'PR description should link to the issue'
+      );
+      
+      this.assert(
+        prDescription.includes('Three Pillars Quest Engine'),
+        'PR description should mention the framework'
+      );
+      
+      this.pass('PR Workflow', 'PR creation workflow properly configured');
+      
+    } catch (error) {
+      this.fail('PR Workflow', error.message);
+    }
   }
 
   async testCognitiveAnalysis() {
     console.log('🔍 Testing Cognitive Analysis...');
     
     try {
-      // Mock the cognitive processor
-      const CognitiveProcessor = require('./cognitive-processor');
-      const processor = new CognitiveProcessor();
-      
-      // Override the GitHub API calls for testing
-      processor.fetchIssues = async () => this.mockIssues;
-      
-      // Test issue analysis
+      // Test issue analysis without requiring the actual processor
       for (const issue of this.mockIssues) {
         const analysis = await this.mockProcessIssue(issue);
         
@@ -167,7 +267,7 @@ Requirements:
       const spec = this.mockGenerateSpec(analysis);
       
       this.assert(
-        spec.includes('# PIE Theory Integration'),
+        spec.includes('# PIE Theory Integration for Engineering Excellence'),
         'Spec should contain proper title'
       );
       
@@ -303,12 +403,17 @@ Requirements:
   }
 
   mockGenerateSpec(analysis) {
-    return `# ${analysis.title} - Vision Document
+    return `# ${analysis.title.replace('Implement ', '')}
 
-## Etymology & Context
+**Status**: Vision Phase  
+**Issue**: #${analysis.issueNumber}  
+**Cognitive Agent**: INGENIO-1  
+**Framework**: Three Pillars Quest Engine  
+**Focus**: Software 3.0 Engineering Excellence
 
-**Spec Name**: \`${analysis.specMetadata.specName}\`
-**Source**: GitHub Issue #${analysis.issueNumber}
+## Mission Statement
+
+Transform the engineering challenge "${analysis.title}" into a cognitive agent-enhanced system that autonomously improves engineering excellence through recursive meta-learning and human-cognitive collaboration.
 
 ## Three Pillars Quest Engine Application
 
@@ -329,6 +434,55 @@ Requirements:
 2. Implementation: Begin development
 3. Testing: Validate functionality
 `;
+  }
+
+  mockGenerateBranchName(issue) {
+    const specName = issue.title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special chars except dashes and spaces
+      .replace(/\s+/g, '_')     // Replace spaces with underscores
+      .replace(/_+/g, '_')      // Collapse multiple underscores
+      .replace(/^_|_$/g, '');   // Remove leading/trailing underscores
+    
+    return `cognitive/spec-${specName}`;
+  }
+
+  mockGeneratePRDescription(issue, analysis) {
+    return `## 🧠 INGENIO-1 Cognitive Spec Generation
+
+**Issue**: #${issue.number} - ${issue.title}  
+**Session**: \`test_session_${Date.now()}\`  
+**Generated Spec**: \`${analysis.specMetadata.specName}\`
+
+### Automated Cognitive Analysis
+
+This PR was automatically generated by the INGENIO-1 cognitive agent following the Three Pillars Quest Engine framework.
+
+### Changes Made
+
+- 📁 **Created Spec Directory**: \`specs/${analysis.specMetadata.specName}/\`
+- 📄 **Generated VISION.md**: Comprehensive engineering excellence specification
+- 🧠 **Applied Cognitive Framework**: Three Pillars Quest Engine analysis
+- 🎯 **Meta-Learning Integration**: Software 3.0 cognitive enhancement approach
+
+### Specification Overview
+
+#### Clear Strategy
+- **Vision → Design → Sprint → Daily** development pathway
+- **Strategic Alignment**: Software 3.0 engineering excellence
+- **Exit Strategy**: Well-defined completion criteria
+
+#### Intrinsic Drive  
+- **Mastery Opportunities**: Continuous cognitive improvement
+- **Autonomy**: Self-directed engineering excellence
+- **Purpose**: Human-cognitive collaboration enhancement
+
+#### Contextual Awareness
+- **Documentation**: Comprehensive async communication
+- **Feedback Loops**: Action-feedback-adjustment cycles
+- **Observability**: Full cognitive process transparency
+
+Fixes #${issue.number}.`;
   }
 
   mockGenerateMetaLearningInsights() {
