@@ -126,38 +126,48 @@ Focus areas:
     console.log('🏷️  Testing Label Filtering...');
     
     try {
-      // Test that only issues with "sos oficial" or "Ingenio-1" labels are processed
+      // Test that only issues with "Ingenio-1" label are processed
       const filteredIssues = this.mockIssues.filter(issue => 
         !issue.pull_request && // Exclude PRs
-        issue.labels.some(label => label.name === 'sos oficial' || label.name === 'Ingenio-1')
+        issue.labels.some(label => label.name === 'Ingenio-1')
       );
       
       this.assert(
-        filteredIssues.length === 3,
-        `Should filter to 3 issues with "sos oficial" or "Ingenio-1" labels (excluding PRs), got ${filteredIssues.length}`
+        filteredIssues.length === 1,
+        `Should filter to 1 issue with "Ingenio-1" label (excluding PRs), got ${filteredIssues.length}`
       );
       
       this.assert(
         filteredIssues.every(issue => 
-          issue.labels.some(label => label.name === 'sos oficial' || label.name === 'Ingenio-1')
+          issue.labels.some(label => label.name === 'Ingenio-1')
         ),
-        'All filtered issues should have "sos oficial" or "Ingenio-1" label'
+        'All filtered issues should have "Ingenio-1" label'
       );
       
-      // Test that issues without the labels are excluded
+      // Test that issues without the label are excluded
       const excludedByLabel = this.mockIssues.filter(issue => 
         !issue.pull_request && // Only consider actual issues
-        !issue.labels.some(label => label.name === 'sos oficial' || label.name === 'Ingenio-1')
+        !issue.labels.some(label => label.name === 'Ingenio-1')
       );
       
       this.assert(
-        excludedByLabel.length === 1,
-        `Should exclude 1 issue without required labels, got ${excludedByLabel.length}`
+        excludedByLabel.length === 3,
+        `Should exclude 3 issues without "Ingenio-1" label, got ${excludedByLabel.length}`
       );
       
       this.assert(
-        excludedByLabel[0].number === 2,
-        'Issue #2 should be excluded (no required labels)'
+        excludedByLabel.some(issue => issue.number === 1),
+        'Issue #1 should be excluded (no "Ingenio-1" label)'
+      );
+      
+      this.assert(
+        excludedByLabel.some(issue => issue.number === 2),
+        'Issue #2 should be excluded (no "Ingenio-1" label)'
+      );
+      
+      this.assert(
+        excludedByLabel.some(issue => issue.number === 3),
+        'Issue #3 should be excluded (no "Ingenio-1" label)'
       );
       
       // Test that PRs are excluded
@@ -174,17 +184,8 @@ Focus areas:
       );
       
       // Test specific label filtering
-      const sosOficialIssues = filteredIssues.filter(issue => 
-        issue.labels.some(label => label.name === 'sos oficial')
-      );
-      
       const ingenioOneIssues = filteredIssues.filter(issue => 
         issue.labels.some(label => label.name === 'Ingenio-1')
-      );
-      
-      this.assert(
-        sosOficialIssues.length === 2,
-        `Should find 2 issues with "sos oficial" label, got ${sosOficialIssues.length}`
       );
       
       this.assert(
@@ -192,7 +193,7 @@ Focus areas:
         `Should find 1 issue with "Ingenio-1" label, got ${ingenioOneIssues.length}`
       );
       
-      this.pass('Label Filtering', 'Successfully filters issues by "sos oficial" or "Ingenio-1" labels and excludes PRs');
+      this.pass('Label Filtering', 'Successfully filters issues by "Ingenio-1" label and excludes PRs');
       
     } catch (error) {
       this.fail('Label Filtering', error.message);
@@ -204,7 +205,7 @@ Focus areas:
     
     try {
       // Mock the PR creation workflow
-      const issue = this.mockIssues[0]; // Issue with "sos oficial" label
+      const issue = this.mockIssues[3]; // Issue with "Ingenio-1" label
       const analysis = await this.mockProcessIssue(issue);
       
       // Test branch naming
@@ -215,7 +216,7 @@ Focus areas:
       );
       
       this.assert(
-        branchName.includes('pie_theory_integration'),
+        branchName.includes('cognitive_engineering_level_5_capabilities'),
         'Branch name should include spec name'
       );
       
