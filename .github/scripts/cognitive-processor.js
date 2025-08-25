@@ -248,15 +248,18 @@ Fixes #${issue.number}.`;
     this.log('📥 Fetching open issues from GitHub');
     
     try {
-      const { data: issues } = await this.octokit.issues.listForRepo({
+      const { data: allItems } = await this.octokit.issues.listForRepo({
         owner: this.repoOwner,
         repo: this.repoName,
         state: 'open',
         per_page: 100,
-        labels: 'sos oficial'  // Only fetch issues with "sos oficial" label
+        labels: 'sos oficial,Ingenio-1'  // Fetch issues with either "sos oficial" or "Ingenio-1" label
       });
       
-      this.log(`Found ${issues.length} open issues with "sos oficial" label`);
+      // Filter out pull requests - only process actual issues
+      const issues = allItems.filter(item => !item.pull_request);
+      
+      this.log(`Found ${issues.length} open issues with "sos oficial" or "Ingenio-1" labels (excluded PRs)`);
       return issues;
     } catch (error) {
       this.log(`Error fetching issues: ${error.message}`, 'error');
@@ -734,7 +737,7 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
     const issues = await this.fetchOpenIssues();
     
     if (issues.length === 0) {
-      this.log('No issues with "sos oficial" label to process');
+      this.log('No issues with "sos oficial" or "Ingenio-1" labels to process');
       return;
     }
     
@@ -843,7 +846,7 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
 *Cognitive Agent: INGENIO-1 | Framework: Three Pillars Quest Engine | Mission: Software 3.0 Engineering Excellence*
 
 ---
-*This is an automated comment from the INGENIO cognitive CI system. Only issues with "sos oficial" label are processed.*`;
+*This is an automated comment from the INGENIO cognitive CI system. Only issues with "sos oficial" or "Ingenio-1" labels are processed.*`;
   }
 
   generatePRCreatedComment(issue, spec, pr) {

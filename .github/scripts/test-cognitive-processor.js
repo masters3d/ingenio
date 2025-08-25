@@ -64,6 +64,33 @@ Key improvements needed:
         labels: [{ name: 'sos oficial' }, { name: 'quality' }, { name: 'engineering' }],
         created_at: '2024-12-19T12:00:00Z',
         updated_at: '2024-12-19T12:00:00Z'
+      },
+      {
+        number: 4,
+        title: "Cognitive Engineering Level 5 Capabilities",
+        body: `Develop advanced cognitive engineering capabilities for autonomous system improvement.
+        
+Focus areas:
+- Meta-learning enhancement
+- Recursive self-improvement
+- Collaborative intelligence protocols
+- Emergent behavior management`,
+        labels: [{ name: 'Ingenio-1' }, { name: 'cognitive-engineering' }, { name: 'meta-learning' }],
+        created_at: '2024-12-19T13:00:00Z',
+        updated_at: '2024-12-19T13:00:00Z'
+      },
+      {
+        number: 5,
+        title: "Test Pull Request for Cognitive Processing",
+        body: `This is a test pull request to verify that PRs are excluded from cognitive processing.`,
+        labels: [{ name: 'sos oficial' }, { name: 'test' }],
+        pull_request: {  // This makes it a PR, not an issue
+          url: 'https://api.github.com/repos/masters3d/ingenio/pulls/5',
+          html_url: 'https://github.com/masters3d/ingenio/pull/5',
+          diff_url: 'https://github.com/masters3d/ingenio/pull/5.diff'
+        },
+        created_at: '2024-12-19T14:00:00Z',
+        updated_at: '2024-12-19T14:00:00Z'
       }
     ];
   }
@@ -99,39 +126,73 @@ Key improvements needed:
     console.log('🏷️  Testing Label Filtering...');
     
     try {
-      // Test that only issues with "sos oficial" label are processed
+      // Test that only issues with "sos oficial" or "Ingenio-1" labels are processed
       const filteredIssues = this.mockIssues.filter(issue => 
-        issue.labels.some(label => label.name === 'sos oficial')
+        !issue.pull_request && // Exclude PRs
+        issue.labels.some(label => label.name === 'sos oficial' || label.name === 'Ingenio-1')
       );
       
       this.assert(
-        filteredIssues.length === 2,
-        `Should filter to 2 issues with "sos oficial" label, got ${filteredIssues.length}`
+        filteredIssues.length === 3,
+        `Should filter to 3 issues with "sos oficial" or "Ingenio-1" labels (excluding PRs), got ${filteredIssues.length}`
       );
       
       this.assert(
         filteredIssues.every(issue => 
-          issue.labels.some(label => label.name === 'sos oficial')
+          issue.labels.some(label => label.name === 'sos oficial' || label.name === 'Ingenio-1')
         ),
-        'All filtered issues should have "sos oficial" label'
+        'All filtered issues should have "sos oficial" or "Ingenio-1" label'
       );
       
-      // Test that issues without the label are excluded
-      const excludedIssues = this.mockIssues.filter(issue => 
-        !issue.labels.some(label => label.name === 'sos oficial')
-      );
-      
-      this.assert(
-        excludedIssues.length === 1,
-        `Should exclude 1 issue without "sos oficial" label, got ${excludedIssues.length}`
+      // Test that issues without the labels are excluded
+      const excludedByLabel = this.mockIssues.filter(issue => 
+        !issue.pull_request && // Only consider actual issues
+        !issue.labels.some(label => label.name === 'sos oficial' || label.name === 'Ingenio-1')
       );
       
       this.assert(
-        excludedIssues[0].number === 2,
-        'Issue #2 should be excluded (no "sos oficial" label)'
+        excludedByLabel.length === 1,
+        `Should exclude 1 issue without required labels, got ${excludedByLabel.length}`
       );
       
-      this.pass('Label Filtering', 'Successfully filters issues by "sos oficial" label');
+      this.assert(
+        excludedByLabel[0].number === 2,
+        'Issue #2 should be excluded (no required labels)'
+      );
+      
+      // Test that PRs are excluded
+      const excludedPRs = this.mockIssues.filter(issue => issue.pull_request);
+      
+      this.assert(
+        excludedPRs.length === 1,
+        `Should exclude 1 pull request, got ${excludedPRs.length}`
+      );
+      
+      this.assert(
+        excludedPRs[0].number === 5,
+        'Item #5 should be excluded (it is a PR)'
+      );
+      
+      // Test specific label filtering
+      const sosOficialIssues = filteredIssues.filter(issue => 
+        issue.labels.some(label => label.name === 'sos oficial')
+      );
+      
+      const ingenioOneIssues = filteredIssues.filter(issue => 
+        issue.labels.some(label => label.name === 'Ingenio-1')
+      );
+      
+      this.assert(
+        sosOficialIssues.length === 2,
+        `Should find 2 issues with "sos oficial" label, got ${sosOficialIssues.length}`
+      );
+      
+      this.assert(
+        ingenioOneIssues.length === 1,
+        `Should find 1 issue with "Ingenio-1" label, got ${ingenioOneIssues.length}`
+      );
+      
+      this.pass('Label Filtering', 'Successfully filters issues by "sos oficial" or "Ingenio-1" labels and excludes PRs');
       
     } catch (error) {
       this.fail('Label Filtering', error.message);
@@ -370,34 +431,35 @@ Key improvements needed:
       labels: issue.labels.map(l => l.name),
       threePillarsAnalysis: {
         clearStrategy: {
-          vision: { hasVisionKeywords: true, extractedConcepts: ['implement', 'integrate'] },
-          goals: { hasActionableGoals: true, extractedGoals: ['create', 'develop', 'integrate'] },
-          scope: { estimatedComplexity: 'medium', domains: ['career-development'] },
+          vision: { hasVisionKeywords: true, extractedConcepts: ['implement', 'integrate', 'develop'] },
+          goals: { hasActionableGoals: true, extractedGoals: ['create', 'develop', 'integrate', 'enhance'] },
+          scope: { estimatedComplexity: issue.number === 4 ? 'high' : 'medium', domains: issue.number === 4 ? ['cognitive-engineering'] : ['career-development'] },
           exitCriteria: { hasExitCriteria: true, hasCheckboxes: true }
         },
         intrinsicDrive: {
-          mastery: { learningOpportunities: ['career-development'], skillDevelopment: ['engineering'] },
-          autonomy: { autonomyLevel: 2, ownership: 'clear' },
-          purpose: { purposeClarity: 3, businessValue: 'high' }
+          mastery: { learningOpportunities: issue.number === 4 ? ['meta-learning', 'cognitive-engineering'] : ['career-development'], skillDevelopment: ['engineering'] },
+          autonomy: { autonomyLevel: issue.number === 4 ? 4 : 2, ownership: 'clear' },
+          purpose: { purposeClarity: issue.number === 4 ? 4 : 3, businessValue: issue.number === 4 ? 'very-high' : 'high' }
         },
         contextualAwareness: {
           documentation: { needsDocumentation: true, documentationType: 'spec' },
-          observability: { needsObservability: false },
-          communication: { communicationNeeds: ['share'], stakeholders: ['engineers'] },
-          economics: { hasEconomicConsiderations: false, resourceRequirements: 'medium' }
+          observability: { needsObservability: issue.number === 4 ? true : false },
+          communication: { communicationNeeds: ['share'], stakeholders: issue.number === 4 ? ['cognitive-agents', 'engineers'] : ['engineers'] },
+          economics: { hasEconomicConsiderations: false, resourceRequirements: issue.number === 4 ? 'high' : 'medium' }
         }
       },
       engineeringConcepts: {
-        architecture: ['framework'],
-        technologies: [],
-        practices: ['assessment', 'testing'],
-        quality: ['career-development']
+        architecture: issue.number === 4 ? ['cognitive-systems', 'meta-architecture'] : ['framework'],
+        technologies: issue.number === 4 ? ['ai', 'machine-learning'] : [],
+        practices: issue.number === 4 ? ['meta-learning', 'recursive-improvement'] : ['assessment', 'testing'],
+        quality: issue.number === 4 ? ['cognitive-engineering', 'autonomous-quality'] : ['career-development']
       },
       specMetadata: {
-        specName: 'pie_theory_integration',
-        priority: 'high',
-        complexity: 'medium',
-        estimatedEffort: 'medium'
+        specName: issue.number === 4 ? 'cognitive_engineering_level_5_capabilities' : 
+                   issue.number === 3 ? 'quality_engineering_approach_enhancement' : 'pie_theory_integration',
+        priority: issue.number === 4 ? 'critical' : 'high',
+        complexity: issue.number === 4 ? 'high' : 'medium',
+        estimatedEffort: issue.number === 4 ? 'high' : 'medium'
       }
     };
   }
