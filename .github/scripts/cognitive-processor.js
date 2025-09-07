@@ -131,10 +131,10 @@ class CognitiveIssueProcessor {
         return null;
       }
       
-      // Create commit
+      // Create commit message with proper escaping
       const commitMessage = `feat(cognitive): Generate spec for issue #${issue.number}
 
-- Created comprehensive VISION.md for "${issue.title}"
+- Created comprehensive VISION.md for "${issue.title.replace(/"/g, '\\"')}"
 - Applied Three Pillars Quest Engine framework
 - Generated cognitive analysis and meta-learning insights
 - Implemented Software 3.0 engineering excellence approach
@@ -143,7 +143,15 @@ Cognitive Agent: INGENIO-1
 Session: ${this.sessionId}
 Issue: #${issue.number}`;
       
-      execSync(`git commit -m "${commitMessage}"`);
+      // Use a safer method to commit with complex messages
+      const fs = require('fs');
+      const tmpCommitFile = `/tmp/commit-message-${Date.now()}.txt`;
+      fs.writeFileSync(tmpCommitFile, commitMessage);
+      
+      execSync(`git commit -F "${tmpCommitFile}"`);
+      
+      // Clean up temp file
+      fs.unlinkSync(tmpCommitFile);
       
       // Push branch
       execSync(`git push origin ${this.currentSpecBranch}`);
@@ -257,7 +265,7 @@ Fixes #${issue.number}.`;
       });
       
       // Filter for target label (case insensitive) and exclude pull requests
-      const targetLabel = 'ingenio-1';
+      const targetLabel = 'Ingenio-1';
       const issues = allItems.filter(item => 
         !item.pull_request && // Exclude pull requests
         item.labels.some(label => 
@@ -265,7 +273,7 @@ Fixes #${issue.number}.`;
         )
       );
       
-      this.log(`Found ${issues.length} open issues with "ingenio-1" label (case insensitive, excluded PRs)`);
+      this.log(`Found ${issues.length} open issues with "Ingenio-1" label (case insensitive, excluded PRs)`);
       return issues;
     } catch (error) {
       this.log(`Error fetching issues: ${error.message}`, 'error');
