@@ -58,7 +58,7 @@ jobs:
         echo "**Session**: $(date +%Y-%m-%d_%H%M%S)" >> cognitive_report.md
         echo "**Agent**: INGENIO-1" >> cognitive_report.md
         echo "**Trigger**: ${{ github.event_name }}" >> cognitive_report.md
-        echo "**Filter**: Only issues with 'sos oficial' label" >> cognitive_report.md
+        echo "**Filter**: Only issues with 'ingenio-1' label" >> cognitive_report.md
         echo "" >> cognitive_report.md
         echo "### Analysis Results" >> cognitive_report.md
         echo "- **Issues Processed**: $(find specs/ -name "VISION.md" | wc -l)" >> cognitive_report.md
@@ -73,7 +73,7 @@ jobs:
         echo "- Implemented PR-based workflow for better code review" >> cognitive_report.md
         echo "" >> cognitive_report.md
         echo "### Workflow Improvements" >> cognitive_report.md
-        echo "- ✅ **Label Filtering**: Only processes issues with 'sos oficial' tag" >> cognitive_report.md
+        echo "- ✅ **Label Filtering**: Only processes issues with 'ingenio-1' tag" >> cognitive_report.md
         echo "- ✅ **PR Creation**: Creates pull requests instead of direct commits" >> cognitive_report.md
         echo "- ✅ **Branch Management**: Dedicated branches for each specification" >> cognitive_report.md
         echo "- ✅ **Review Process**: Enables human review before merging specs" >> cognitive_report.md

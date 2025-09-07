@@ -253,13 +253,13 @@ Fixes #${issue.number}.`;
         repo: this.repoName,
         state: 'open',
         per_page: 100,
-        labels: 'Ingenio-1'  // Fetch issues with "Ingenio-1" label
+        labels: 'ingenio-1'  // Fetch issues with "ingenio-1" label
       });
       
       // Filter out pull requests - only process actual issues
       const issues = allItems.filter(item => !item.pull_request);
       
-      this.log(`Found ${issues.length} open issues with "Ingenio-1" label (excluded PRs)`);
+      this.log(`Found ${issues.length} open issues with "ingenio-1" label (excluded PRs)`);
       return issues;
     } catch (error) {
       this.log(`Error fetching issues: ${error.message}`, 'error');
@@ -737,7 +737,7 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
     const issues = await this.fetchOpenIssues();
     
     if (issues.length === 0) {
-      this.log('No issues with "Ingenio-1" label to process');
+      this.log('No issues with "ingenio-1" label to process');
       return;
     }
     

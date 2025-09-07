@@ -75,7 +75,7 @@ Focus areas:
 - Recursive self-improvement
 - Collaborative intelligence protocols
 - Emergent behavior management`,
-        labels: [{ name: 'Ingenio-1' }, { name: 'cognitive-engineering' }, { name: 'meta-learning' }],
+        labels: [{ name: 'ingenio-1' }, { name: 'cognitive-engineering' }, { name: 'meta-learning' }],
         created_at: '2024-12-19T13:00:00Z',
         updated_at: '2024-12-19T13:00:00Z'
       },
@@ -126,48 +126,48 @@ Focus areas:
     console.log('🏷️  Testing Label Filtering...');
     
     try {
-      // Test that only issues with "Ingenio-1" label are processed
+      // Test that only issues with "ingenio-1" label are processed
       const filteredIssues = this.mockIssues.filter(issue => 
         !issue.pull_request && // Exclude PRs
-        issue.labels.some(label => label.name === 'Ingenio-1')
+        issue.labels.some(label => label.name === 'ingenio-1')
       );
       
       this.assert(
         filteredIssues.length === 1,
-        `Should filter to 1 issue with "Ingenio-1" label (excluding PRs), got ${filteredIssues.length}`
+        `Should filter to 1 issue with "ingenio-1" label (excluding PRs), got ${filteredIssues.length}`
       );
       
       this.assert(
         filteredIssues.every(issue => 
-          issue.labels.some(label => label.name === 'Ingenio-1')
+          issue.labels.some(label => label.name === 'ingenio-1')
         ),
-        'All filtered issues should have "Ingenio-1" label'
+        'All filtered issues should have "ingenio-1" label'
       );
       
       // Test that issues without the label are excluded
       const excludedByLabel = this.mockIssues.filter(issue => 
         !issue.pull_request && // Only consider actual issues
-        !issue.labels.some(label => label.name === 'Ingenio-1')
+        !issue.labels.some(label => label.name === 'ingenio-1')
       );
       
       this.assert(
         excludedByLabel.length === 3,
-        `Should exclude 3 issues without "Ingenio-1" label, got ${excludedByLabel.length}`
+        `Should exclude 3 issues without "ingenio-1" label, got ${excludedByLabel.length}`
       );
       
       this.assert(
         excludedByLabel.some(issue => issue.number === 1),
-        'Issue #1 should be excluded (no "Ingenio-1" label)'
+        'Issue #1 should be excluded (no "ingenio-1" label)'
       );
       
       this.assert(
         excludedByLabel.some(issue => issue.number === 2),
-        'Issue #2 should be excluded (no "Ingenio-1" label)'
+        'Issue #2 should be excluded (no "ingenio-1" label)'
       );
       
       this.assert(
         excludedByLabel.some(issue => issue.number === 3),
-        'Issue #3 should be excluded (no "Ingenio-1" label)'
+        'Issue #3 should be excluded (no "ingenio-1" label)'
       );
       
       // Test that PRs are excluded
@@ -185,15 +185,15 @@ Focus areas:
       
       // Test specific label filtering
       const ingenioOneIssues = filteredIssues.filter(issue => 
-        issue.labels.some(label => label.name === 'Ingenio-1')
+        issue.labels.some(label => label.name === 'ingenio-1')
       );
       
       this.assert(
         ingenioOneIssues.length === 1,
-        `Should find 1 issue with "Ingenio-1" label, got ${ingenioOneIssues.length}`
+        `Should find 1 issue with "ingenio-1" label, got ${ingenioOneIssues.length}`
       );
       
-      this.pass('Label Filtering', 'Successfully filters issues by "Ingenio-1" label and excludes PRs');
+      this.pass('Label Filtering', 'Successfully filters issues by "ingenio-1" label and excludes PRs');
       
     } catch (error) {
       this.fail('Label Filtering', error.message);
@@ -205,7 +205,7 @@ Focus areas:
     
     try {
       // Mock the PR creation workflow
-      const issue = this.mockIssues[3]; // Issue with "Ingenio-1" label
+      const issue = this.mockIssues[3]; // Issue with "ingenio-1" label
       const analysis = await this.mockProcessIssue(issue);
       
       // Test branch naming
