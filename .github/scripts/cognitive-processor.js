@@ -252,14 +252,20 @@ Fixes #${issue.number}.`;
         owner: this.repoOwner,
         repo: this.repoName,
         state: 'open',
-        per_page: 100,
-        labels: 'ingenio-1'  // Fetch issues with "ingenio-1" label
+        per_page: 100
+        // Fetch all issues - we'll filter by label client-side for case insensitivity
       });
       
-      // Filter out pull requests - only process actual issues
-      const issues = allItems.filter(item => !item.pull_request);
+      // Filter for target label (case insensitive) and exclude pull requests
+      const targetLabel = 'ingenio-1';
+      const issues = allItems.filter(item => 
+        !item.pull_request && // Exclude pull requests
+        item.labels.some(label => 
+          label.name.toLowerCase() === targetLabel.toLowerCase()
+        )
+      );
       
-      this.log(`Found ${issues.length} open issues with "ingenio-1" label (excluded PRs)`);
+      this.log(`Found ${issues.length} open issues with "ingenio-1" label (case insensitive, excluded PRs)`);
       return issues;
     } catch (error) {
       this.log(`Error fetching issues: ${error.message}`, 'error');
@@ -737,7 +743,7 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
     const issues = await this.fetchOpenIssues();
     
     if (issues.length === 0) {
-      this.log('No issues with "ingenio-1" label to process');
+      this.log('No issues with "ingenio-1" label to process (case insensitive)');
       return;
     }
     
