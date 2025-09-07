@@ -257,7 +257,7 @@ Fixes #${issue.number}.`;
       });
       
       // Filter for target label (case insensitive) and exclude pull requests
-      const targetLabel = 'ingenio-1';
+      const targetLabel = 'Ingenio-1';
       const issues = allItems.filter(item => 
         !item.pull_request && // Exclude pull requests
         item.labels.some(label => 
@@ -265,7 +265,7 @@ Fixes #${issue.number}.`;
         )
       );
       
-      this.log(`Found ${issues.length} open issues with "ingenio-1" label (case insensitive, excluded PRs)`);
+      this.log(`Found ${issues.length} open issues with "Ingenio-1" label (case insensitive, excluded PRs)`);
       return issues;
     } catch (error) {
       this.log(`Error fetching issues: ${error.message}`, 'error');
