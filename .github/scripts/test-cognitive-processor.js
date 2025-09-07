@@ -75,7 +75,7 @@ Focus areas:
 - Recursive self-improvement
 - Collaborative intelligence protocols
 - Emergent behavior management`,
-        labels: [{ name: 'Ingenio-1' }, { name: 'cognitive-engineering' }, { name: 'meta-learning' }],
+        labels: [{ name: 'ingenio-1' }, { name: 'cognitive-engineering' }, { name: 'meta-learning' }],
         created_at: '2024-12-19T13:00:00Z',
         updated_at: '2024-12-19T13:00:00Z'
       },
@@ -91,6 +91,22 @@ Focus areas:
         },
         created_at: '2024-12-19T14:00:00Z',
         updated_at: '2024-12-19T14:00:00Z'
+      },
+      {
+        number: 6,
+        title: "Test Issue with Capital Ingenio Label",
+        body: `Test issue to verify case insensitive label filtering.`,
+        labels: [{ name: 'Ingenio-1' }, { name: 'test' }],
+        created_at: '2024-12-19T15:00:00Z',
+        updated_at: '2024-12-19T15:00:00Z'
+      },
+      {
+        number: 7,
+        title: "Test Issue with All Caps Label", 
+        body: `Another test issue for case insensitive filtering.`,
+        labels: [{ name: 'INGENIO-1' }, { name: 'test' }],
+        created_at: '2024-12-19T16:00:00Z',
+        updated_at: '2024-12-19T16:00:00Z'
       }
     ];
   }
@@ -126,48 +142,72 @@ Focus areas:
     console.log('🏷️  Testing Label Filtering...');
     
     try {
-      // Test that only issues with "Ingenio-1" label are processed
+      // Test case-insensitive label filtering
+      const targetLabel = 'ingenio-1';
       const filteredIssues = this.mockIssues.filter(issue => 
         !issue.pull_request && // Exclude PRs
-        issue.labels.some(label => label.name === 'Ingenio-1')
+        issue.labels.some(label => 
+          label.name.toLowerCase() === targetLabel.toLowerCase()
+        )
       );
       
       this.assert(
-        filteredIssues.length === 1,
-        `Should filter to 1 issue with "Ingenio-1" label (excluding PRs), got ${filteredIssues.length}`
+        filteredIssues.length === 3,
+        `Should filter to 3 issues with "ingenio-1" label (case insensitive, excluding PRs), got ${filteredIssues.length}`
       );
       
       this.assert(
         filteredIssues.every(issue => 
-          issue.labels.some(label => label.name === 'Ingenio-1')
+          issue.labels.some(label => 
+            label.name.toLowerCase() === targetLabel.toLowerCase()
+          )
         ),
-        'All filtered issues should have "Ingenio-1" label'
+        'All filtered issues should have "ingenio-1" label (case insensitive)'
+      );
+      
+      // Verify specific case variations are included
+      const issueNumbers = filteredIssues.map(issue => issue.number);
+      this.assert(
+        issueNumbers.includes(4),
+        'Issue #4 with "ingenio-1" should be included'
+      );
+      
+      this.assert(
+        issueNumbers.includes(6),
+        'Issue #6 with "Ingenio-1" should be included (case insensitive)'
+      );
+      
+      this.assert(
+        issueNumbers.includes(7),
+        'Issue #7 with "INGENIO-1" should be included (case insensitive)'
       );
       
       // Test that issues without the label are excluded
       const excludedByLabel = this.mockIssues.filter(issue => 
         !issue.pull_request && // Only consider actual issues
-        !issue.labels.some(label => label.name === 'Ingenio-1')
+        !issue.labels.some(label => 
+          label.name.toLowerCase() === targetLabel.toLowerCase()
+        )
       );
       
       this.assert(
         excludedByLabel.length === 3,
-        `Should exclude 3 issues without "Ingenio-1" label, got ${excludedByLabel.length}`
+        `Should exclude 3 issues without "ingenio-1" label (case insensitive), got ${excludedByLabel.length}`
       );
       
       this.assert(
         excludedByLabel.some(issue => issue.number === 1),
-        'Issue #1 should be excluded (no "Ingenio-1" label)'
+        'Issue #1 should be excluded (no "ingenio-1" label)'
       );
       
       this.assert(
         excludedByLabel.some(issue => issue.number === 2),
-        'Issue #2 should be excluded (no "Ingenio-1" label)'
+        'Issue #2 should be excluded (no "ingenio-1" label)'
       );
       
       this.assert(
         excludedByLabel.some(issue => issue.number === 3),
-        'Issue #3 should be excluded (no "Ingenio-1" label)'
+        'Issue #3 should be excluded (no "ingenio-1" label)'
       );
       
       // Test that PRs are excluded
@@ -183,17 +223,7 @@ Focus areas:
         'Item #5 should be excluded (it is a PR)'
       );
       
-      // Test specific label filtering
-      const ingenioOneIssues = filteredIssues.filter(issue => 
-        issue.labels.some(label => label.name === 'Ingenio-1')
-      );
-      
-      this.assert(
-        ingenioOneIssues.length === 1,
-        `Should find 1 issue with "Ingenio-1" label, got ${ingenioOneIssues.length}`
-      );
-      
-      this.pass('Label Filtering', 'Successfully filters issues by "Ingenio-1" label and excludes PRs');
+      this.pass('Label Filtering', 'Successfully filters issues by "ingenio-1" label (case insensitive) and excludes PRs');
       
     } catch (error) {
       this.fail('Label Filtering', error.message);
@@ -205,7 +235,7 @@ Focus areas:
     
     try {
       // Mock the PR creation workflow
-      const issue = this.mockIssues[3]; // Issue with "Ingenio-1" label
+      const issue = this.mockIssues[3]; // Issue with "ingenio-1" label
       const analysis = await this.mockProcessIssue(issue);
       
       // Test branch naming
