@@ -127,8 +127,30 @@ class CognitiveIssueProcessor {
       // Check if there are changes to commit
       const status = execSync('git status --porcelain', { encoding: 'utf8' });
       if (status.trim() === '') {
-        this.log('No changes to commit');
-        return null;
+        this.log('No new changes to commit - creating empty commit for existing spec PR');
+        // For existing specs, create an empty commit to enable PR creation
+        const existingCommitMessage = `feat(cognitive): Create PR for existing spec - issue #${issue.number}
+
+- Existing spec found for "${issue.title.replace(/"/g, '\\"')}"
+- Creating PR for review and integration into main branch
+- No new content generated - spec already exists
+
+Cognitive Agent: INGENIO-1
+Session: ${this.sessionId}
+Issue: #${issue.number}`;
+        
+        const fs = require('fs');
+        const tmpCommitFile = `/tmp/commit-message-${Date.now()}.txt`;
+        fs.writeFileSync(tmpCommitFile, existingCommitMessage);
+        
+        execSync(`git commit --allow-empty -F "${tmpCommitFile}"`);
+        fs.unlinkSync(tmpCommitFile);
+        
+        // Push branch
+        execSync(`git push origin ${this.currentSpecBranch}`);
+        
+        this.log(`✅ Committed empty commit and pushed to ${this.currentSpecBranch} for existing spec`);
+        return this.currentSpecBranch;
       }
       
       // Create commit message with proper escaping
@@ -747,6 +769,36 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
 *Mission: Software 3.0 Engineering Excellence*`;
   }
 
+  async checkExistingPR(issue, specName) {
+    try {
+      // Search for PRs that mention this issue number or spec name
+      const { data: pulls } = await this.octokit.rest.pulls.list({
+        owner: this.repoOwner,
+        repo: this.repoName,
+        state: 'all',
+        per_page: 100
+      });
+      
+      // Look for PRs that reference this issue or spec
+      const existingPR = pulls.find(pr => 
+        pr.title.includes(`#${issue.number}`) ||
+        pr.title.includes(issue.title.substring(0, 30)) ||
+        pr.body?.includes(`#${issue.number}`) ||
+        pr.body?.includes(specName)
+      );
+      
+      if (existingPR) {
+        this.log(`Found existing PR #${existingPR.number} for issue #${issue.number}`);
+        return true;
+      }
+      
+      return false;
+    } catch (error) {
+      this.log(`Error checking existing PRs: ${error.message}`, 'error');
+      return false; // Assume no PR exists if we can't check
+    }
+  }
+
   async processIssues() {
     const issues = await this.fetchOpenIssues();
     
@@ -757,13 +809,21 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
     
     for (const issue of issues) {
       try {
-        // Skip if spec already exists (unless force_all)
+        // Check if spec already exists
         const specName = this.generateSpecName(issue);
         const specPath = `specs/${specName}/VISION.md`;
+        const specExists = await fs.pathExists(specPath);
         
-        if (!this.forceAll && await fs.pathExists(specPath)) {
-          this.log(`⏭️  Skipping issue #${issue.number} - spec already exists`);
-          continue;
+        if (!this.forceAll && specExists) {
+          // Check if a PR already exists for this issue
+          const hasPR = await this.checkExistingPR(issue, specName);
+          if (hasPR) {
+            this.log(`⏭️  Skipping issue #${issue.number} - spec and PR already exist`);
+            continue;
+          } else {
+            this.log(`🔄 Issue #${issue.number} has spec but no PR - creating PR for existing spec`);
+            // Continue to create PR for existing spec
+          }
         }
         
         // Post comment that we're working on this issue
@@ -772,13 +832,23 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
         // Create branch for this spec
         const branchName = await this.createSpecBranch(issue);
         
-        // Perform cognitive analysis
-        const analysis = await this.cognitiveAnalysis(issue);
+        let spec;
+        if (specExists) {
+          // Use existing spec instead of generating a new one
+          spec = {
+            specName,
+            specPath: `specs/${specName}`,
+            vision: null // We don't need the vision content for PR creation
+          };
+          this.log(`📁 Using existing spec for issue #${issue.number}`);
+        } else {
+          // Perform cognitive analysis and generate new spec
+          const analysis = await this.cognitiveAnalysis(issue);
+          spec = await this.generateVisionSpec(issue, analysis);
+          this.log(`📝 Generated new spec for issue #${issue.number}`);
+        }
         
-        // Generate spec
-        const spec = await this.generateVisionSpec(issue, analysis);
-        
-        // Commit and push changes
+        // Commit and push changes (this will handle both new specs and existing specs)
         const pushedBranch = await this.commitAndPushChanges(issue, spec);
         
         if (pushedBranch) {
