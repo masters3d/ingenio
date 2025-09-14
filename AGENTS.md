@@ -58,7 +58,7 @@ The foundational framework organizing all content and development in this reposi
 
 ## Current Development Priorities
 
-Based on 23 open GitHub issues, focus areas include:
+Based on 25 open GitHub issues, focus areas include:
 
 ### Immediate Priority (Specs to Develop)
 1. **PIE Theory Integration** - Performance, Image, Exposure framework
@@ -71,6 +71,12 @@ Based on 23 open GitHub issues, focus areas include:
 6. **Feature Lifecycle Management** - Cradle to grave development
 7. **Documentation Systems** - Personal lab notebooks, open guides
 8. **Design Governance** - Working groups and review processes
+
+### Recently Addressed Issues
+9. **Cognitive CI Processor Fixes** - Fixed session metadata pollution in PRs (PR #44 analysis)
+   - Excluded `experiments/cognitive_sessions/` from git commits
+   - Updated logic to skip redundant PR creation for existing specs
+   - Improved deliverable content vs metadata separation
 
 ## Agent Instructions for Development
 
@@ -133,19 +139,25 @@ ingenio/
 └── media/                   # Supporting graphics
 ```
 
-## Quality Standards
+### Quality Standards
 
-### Documentation Quality
+#### Documentation Quality
 - **Clarity**: Can be understood by target audience
 - **Context**: Provides necessary background
 - **Actionability**: Readers know what to do next
 - **Sustainability**: Can be maintained over time
 
-### Engineering Quality vs Quality Engineering
+#### Engineering Quality vs Quality Engineering
 - **Shift Left**: Build quality into process, not defer to separate QA
 - **Ownership**: Every engineer responsible for quality
 - **Behaviors**: Reward quality behaviors, not just visible work
 - **Integration**: Quality is part of the product, not separate concern
+
+#### Cognitive CI Quality Standards
+- **Deliverable Content Only**: PRs should contain only specs and deliverable artifacts
+- **Session Metadata Separation**: Keep cognitive session logs separate from deliverable content
+- **Redundancy Prevention**: Avoid creating PRs for existing specs without new content
+- **Clear PR Intent**: PR descriptions must accurately reflect what's included
 
 ## Collaboration Patterns
 
@@ -173,6 +185,8 @@ ingenio/
 - **Quality Consistency**: Meeting documentation and engineering standards
 - **Framework Application**: Correctly applying Three Pillars Quest Engine
 - **Spec Completion**: Following spec-driven development process
+- **PR Quality**: Creating clean PRs with only deliverable content
+- **Redundancy Avoidance**: Not duplicating work or creating unnecessary PRs
 
 ---
 

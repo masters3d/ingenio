@@ -121,8 +121,8 @@ class CognitiveIssueProcessor {
       execSync('git config --local user.email "cognitive-agent@ingenio.dev"');
       execSync('git config --local user.name "INGENIO Cognitive Agent"');
       
-      // Add all generated files
-      execSync('git add .');
+      // Add only spec files, exclude session metadata
+      execSync('git add specs/');
       
       // Check if there are changes to commit
       const status = execSync('git status --porcelain', { encoding: 'utf8' });
@@ -821,8 +821,8 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
             this.log(`⏭️  Skipping issue #${issue.number} - spec and PR already exist`);
             continue;
           } else {
-            this.log(`🔄 Issue #${issue.number} has spec but no PR - creating PR for existing spec`);
-            // Continue to create PR for existing spec
+            this.log(`⏭️  Skipping issue #${issue.number} - spec already exists, not creating redundant PR`);
+            continue; // Skip creating PR for existing specs
           }
         }
         
