@@ -53,3 +53,6 @@ temp/
 *.session
 *.trace
 !experiments/*/
+
+# Cognitive CI sessions - metadata only, not for PRs
+experiments/cognitive_sessions/
