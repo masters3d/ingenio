@@ -332,7 +332,7 @@ Engineering teams and individual contributors face a persistent challenge: the g
 
 ### The Amazon Two-Way Door Principle
 
-The above decision framework is grounded in Amazon's **Two-Way Door Principle**, which categorizes decisions by reversibility:
+The above decision framework is grounded in Amazon's **Two-Way Door Principle**, introduced by Jeff Bezos in his 2015 shareholder letter, which categorizes decisions by reversibility:
 
 **Type 1 Decisions (One-Way Doors)** - Irreversible or very difficult to reverse:
 - Require careful deliberation
@@ -504,7 +504,7 @@ Create environment where action is safe:
 
 **Action Bias Application**:
 - Start improving code now in small increments, don't wait for "technical debt quarter"
-- **Boy Scout Rule**: "Always leave the code cleaner than you found it" - make small improvements as you work rather than waiting for dedicated refactoring time
+- **Boy Scout Rule**: "Always leave the code cleaner than you found it" - This principle, adapted from the Boy Scouts of America motto by Robert C. Martin in his book _Clean Code_, encourages making small improvements as you work rather than waiting for dedicated refactoring time
 - Track improvements to demonstrate value and build momentum
 
 ### Scenario 4: Cross-Team Dependency Blocking Work
@@ -726,7 +726,7 @@ High Agency + Bias Towards Action drives faster action-feedback-adjustment cycle
 
 6. **Remote Work**: Does distributed work reduce or increase opportunities for high agency?
 
-7. **Cognitive Agents & High Agency**: How do we instill appropriate high agency in autonomous AI systems? This is particularly relevant to this repository's mission as a cognitive engineering laboratory. Cognitive agents need high agency to operate autonomously, but must calibrate action bias appropriately based on decision reversibility and risk.
+7. **Cognitive Agents & High Agency**: How do we instill appropriate high agency in autonomous AI systems? This is particularly relevant to this repository's mission as a cognitive engineering laboratory. Cognitive agents need high agency to operate autonomously, but must calibrate action bias appropriately based on decision reversibility and risk. For example, an agent should act quickly on code refactoring (Type 2 decision) but deliberate carefully on API design changes affecting multiple systems (Type 1 decision).
 
 8. **Action-Quality Balance**: What's the optimal point on the spectrum from "move fast and break things" to "measure twice, cut once"?
 
