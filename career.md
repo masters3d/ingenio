@@ -97,6 +97,41 @@ Software engineering careers progress through distinct capability levels, each w
 - Attend optional team events and technical discussions when possible
 - Build relationships with team members through informal interactions
 
+##### Locus of Control - Level 0
+
+**Adaptive Control Mindset**: "I control my learning, code quality, and response to feedback. I accept guidance on architecture and priorities while building expertise to influence these over time."
+
+**What You CAN Control**:
+- Personal learning velocity and skill development
+- Code quality in assigned components
+- Testing thoroughness for your code
+- Documentation of your work
+- Response to code review feedback
+- Time management and work habits
+- Questions asked and help requested
+
+**What You CANNOT Control**:
+- Team architecture decisions
+- Project prioritization
+- Technology stack choices
+- Organizational processes
+- Senior engineer availability
+- Deployment schedules
+
+**Healthy Behaviors**:
+- ✅ Own your code quality regardless of time pressure
+- ✅ Ask clarifying questions when specifications are unclear
+- ✅ Acknowledge learning gaps while taking action to address them
+- ✅ Accept architectural guidance while understanding the reasoning
+
+**Anti-Patterns to Avoid**:
+- ❌ Waiting passively for perfect task specifications (too external)
+- ❌ Attempting to redesign system architecture without experience (too internal)
+- ❌ Blaming all bugs on unclear requirements (too external)
+- ❌ Taking personal responsibility for team delivery failures (too internal)
+
+*See [Locus of Control spec](../specs/locus_of_control/VISION.md) for comprehensive framework.*
+
 #### Level 1: Component Creator
 **Primary Focus**: Creating components from design documents
 
@@ -153,6 +188,31 @@ Software engineering careers progress through distinct capability levels, each w
 - Write blog posts or documentation about technical challenges overcome
 - Present component demos or technical deep-dives to broader team
 - Build relationships with engineers on teams that consume your components
+
+##### Locus of Control - Level 1
+
+**Adaptive Control Mindset**: "I control my component implementation and code quality. I'm building influence in design discussions while accepting architectural guidance from senior engineers."
+
+**What You CAN Control** (Expanding):
+- Independent implementation from technical specifications
+- Component-level quality and testing strategy
+- Documentation and knowledge sharing
+- Response to technical challenges
+- Mentoring support for Level 0 engineers
+- Personal technical skill development
+
+**What You're BEGINNING TO INFLUENCE**:
+- Component design discussions
+- Team coding practices and standards
+- Technical approach within your components
+
+**Healthy Behaviors**:
+- ✅ Take ownership of feature delivery from design to deployment
+- ✅ Contribute implementation insights to design discussions
+- ✅ Proactively identify and address component-level issues
+- ✅ Build expertise that expands your influence over time
+
+*See [Locus of Control spec](../specs/locus_of_control/VISION.md) for comprehensive framework.*
 
 #### Level 2: Component Designer & Cross-Team Collaborator
 **Primary Focus**: Designing components and collaborating across team boundaries
@@ -211,6 +271,45 @@ Software engineering careers progress through distinct capability levels, each w
 - Write technical blog posts or documentation that benefits broader organization
 - Build relationships with product managers, designers, and other stakeholders
 
+##### Locus of Control - Level 2
+
+**Adaptive Control Mindset**: "I control technical decisions within my domain and can influence broader technical direction. I accept that business strategy is set by leadership while providing technical input to inform those decisions."
+
+**What You CAN Control** (Expanded Sphere):
+- Component and system design decisions
+- Technical approach and architecture within domain
+- Team technical practices and standards
+- Mentoring effectiveness for junior engineers
+- Cross-team technical collaboration
+- Code review standards and practices
+- Technical debt management strategies
+
+**What You CAN INFLUENCE** (Growing Sphere):
+- Technology stack evolution through proposals
+- Team processes through retrospectives
+- Organizational technical standards through leadership
+- Cross-team integration approaches through collaboration
+
+**What You CANNOT Control**:
+- Business strategy and product direction
+- Budget and resource allocation
+- Organizational structure changes
+- Executive technical decisions
+- Other teams' technical choices
+
+**Healthy Behaviors**:
+- ✅ Own system design and technical approach decisions
+- ✅ Influence organizational technical standards through leadership
+- ✅ Accept business constraints while finding technical solutions within them
+- ✅ Build relationships to expand sphere of influence over time
+
+**Anti-Patterns to Avoid**:
+- ❌ Accepting poor technical decisions because "management decided" (too external)
+- ❌ Unilaterally changing cross-team APIs without collaboration (too internal)
+- ❌ Believing you can't influence team technical practices (too external)
+
+*See [Locus of Control spec](../specs/locus_of_control/VISION.md) for comprehensive framework.*
+
 #### Level 3: System Lifecycle Guide
 **Primary Focus**: Guiding entire system lifecycle from conception to maintenance
 
@@ -267,6 +366,43 @@ Software engineering careers progress through distinct capability levels, each w
 - Participate in engineering hiring, promotion, and technical direction decisions
 - Speak at internal engineering conferences or external meetups about your domain
 - Build strategic relationships with other senior engineers and technical leaders
+
+##### Locus of Control - Level 3
+
+**Adaptive Control Mindset**: "I control system lifecycle from conception to maintenance and strongly influence organizational technical direction. I collaborate on business strategy while providing essential technical perspective."
+
+**What You CAN Control** (Significant Sphere):
+- End-to-end system design and implementation
+- Technical debt management and strategic refactoring
+- System performance optimization and monitoring
+- Team technical culture and mentoring programs
+- Organizational technical standards contribution
+
+**What You CAN INFLUENCE** (Substantial Sphere):
+- Group-level technical practices and standards
+- Technology platform evolution
+- Engineering hiring and promotion decisions
+- Technical strategy development
+- Cross-functional collaboration approaches
+
+**What You CANNOT Control**:
+- Company business model and strategic direction
+- Market conditions and customer behavior
+- Budget allocation and headcount decisions
+- Regulatory and legal constraints
+
+**Healthy Behaviors**:
+- ✅ Own technical architecture and long-term system evolution
+- ✅ Influence organizational technology direction through expertise
+- ✅ Accept market realities while positioning systems for adaptation
+- ✅ Build industry relationships to expand influence beyond organization
+
+**Anti-Patterns to Avoid**:
+- ❌ Accepting business decisions that ignore technical reality (too external)
+- ❌ Making unilateral decisions affecting multiple teams (too internal)
+- ❌ Believing you can't shape engineering culture (too external)
+
+*See [Locus of Control spec](../specs/locus_of_control/VISION.md) for comprehensive framework.*
 
 #### Level 4: System Maintainer & Integrator
 **Primary Focus**: Maintaining complex systems and integrating across multiple systems
@@ -351,6 +487,64 @@ Software engineering careers progress through distinct capability levels, each w
 ### PIE Theory Application by Individual Contributor Level
 
 The following sections enhance each IC level with specific PIE guidance while maintaining the Three Pillars framework. Each level includes **Performance**, **Image**, and **Exposure** strategies appropriate for that career stage.
+
+## Locus of Control in Engineering Excellence
+
+**Locus of control** is the psychological concept of where you believe control over outcomes originates - internally (your actions) or externally (luck, others, circumstances). For engineers, cultivating an **adaptive locus of control** is critical for both effectiveness and wellbeing.
+
+### Core Framework
+
+**Adaptive Locus of Control** = Accurately distinguishing between:
+- **What you CAN control**: Your code quality, learning, communication, decisions within scope
+- **What you CAN influence**: Team practices, architecture direction, organizational standards  
+- **What you must ACCEPT**: Business strategy, market conditions, organizational constraints
+
+### Why It Matters for Engineering Excellence
+
+**Too Internal Locus** (Over-responsibility):
+- Leads to burnout from trying to control the uncontrollable
+- Ignores need for collaboration and organizational support
+- Takes personal blame for systemic failures
+- Example: "If I just work harder, I can overcome this unrealistic deadline"
+
+**Too External Locus** (Learned Helplessness):
+- Reduces initiative and personal agency
+- Waits passively for permission or perfect conditions
+- Blames all problems on external factors
+- Example: "There's nothing I can do about code quality - management doesn't care"
+
+**Adaptive Locus** (Optimal):
+- Focuses energy on controllable, high-impact factors
+- Builds influence through expertise and relationships
+- Accepts realistic constraints while finding creative solutions
+- Example: "I control my code quality. I'll communicate trade-offs and deliver the best quality possible within timeline while documenting technical debt."
+
+### Integration with Three Pillars
+
+**Locus of Control ↔ Clear Strategy**: Understanding what you control enables better strategic planning and prioritization.
+
+**Locus of Control ↔ Intrinsic Drive**: Internal locus for controllable factors enables genuine autonomy and mastery. External awareness prevents burnout.
+
+**Locus of Control ↔ Contextual Awareness**: Adaptive locus requires deep understanding of organizational context and realistic constraints.
+
+### Expanding Your Sphere of Control
+
+As you progress through IC levels, your sphere of control naturally expands:
+- **Level 0-1**: Control learning and code; accept architecture guidance
+- **Level 2-3**: Control component design; influence team practices
+- **Level 4-7+**: Control system architecture; influence organizational strategy
+
+The key is **accepting your current sphere while building expertise and relationships to expand it over time**.
+
+### Daily Practice
+
+Self-reflection questions to cultivate adaptive locus:
+- Before work: "What outcomes can I directly affect today?"
+- When blocked: "Is this controllable or a constraint to navigate?"
+- When frustrated: "Am I trying to control something outside my sphere?"
+- After setbacks: "What could I have done differently vs what was outside my control?"
+
+*For comprehensive framework, practical scenarios, and assessment tools, see the [Locus of Control specification](../specs/locus_of_control/VISION.md).*
 
 ### Organizational Structure
 
