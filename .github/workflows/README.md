@@ -57,7 +57,7 @@ The workflow uses the existing `package.json` which includes:
 The workflow requires these permissions:
 - `contents: write` - To create branches and commits
 - `issues: write` - To post comments on issues
-- `pull-requests: write` - To create pull requests
+- `pull_requests: write` - To create pull requests
 
 ### Environment Variables
 
@@ -75,8 +75,8 @@ The workflow requires these permissions:
 **Possible causes:**
 
 1. **Workflow not on default branch**
-   - The workflow file MUST be on the default branch (main) for issue events to trigger it
-   - Solution: Ensure `.github/workflows/cognitive-issue-processor.yml` exists on main
+   - The workflow file MUST be on the default branch (e.g., main or master) for issue events to trigger it
+   - Solution: Ensure `.github/workflows/cognitive-issue-processor.yml` exists on your default branch
 
 2. **Repository Actions settings**
    - Check Settings → Actions → General

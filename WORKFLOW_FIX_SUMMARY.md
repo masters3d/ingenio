@@ -59,7 +59,7 @@ GitHub Actions workflows with issue event triggers have specific requirements:
 
 3. **Issues must have the required label**
    - Label required: "ingenio-1" (case insensitive)
-   - Issue #47 has NO labels, so it won't be processed
+   - Issues without this label won't be processed
 
 ### Verification Steps After Merge
 
@@ -120,7 +120,7 @@ The fix is successful when:
 2. Create a test issue with "ingenio-1" label
 3. Verify workflow triggers automatically
 4. If it doesn't trigger, check Actions settings
-5. Close issue #47 or add "ingenio-1" label to process it
+5. Close old issues or add "ingenio-1" label to process them
 
 **For Future Issues:**
 - Always add the "ingenio-1" label to issues that should be processed
