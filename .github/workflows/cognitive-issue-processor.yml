@@ -37,8 +37,7 @@ jobs:
     
     - name: Install Dependencies
       run: |
-        npm init -y
-        npm install @octokit/rest yaml fs-extra
+        npm install
     
     - name: Process Issues with Cognitive Agent
       env:
