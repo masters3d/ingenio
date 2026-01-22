@@ -836,6 +836,7 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
         const branchName = await this.createSpecBranch(issue);
         
         let spec;
+        let analysis = null; // Initialize analysis to null for scoping
         if (specExists) {
           // Use existing spec instead of generating a new one
           spec = {
@@ -846,7 +847,7 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
           this.log(`📁 Using existing spec for issue #${issue.number}`);
         } else {
           // Perform cognitive analysis and generate new spec
-          const analysis = await this.cognitiveAnalysis(issue);
+          analysis = await this.cognitiveAnalysis(issue);
           spec = await this.generateVisionSpec(issue, analysis);
           this.log(`📝 Generated new spec for issue #${issue.number}`);
         }
