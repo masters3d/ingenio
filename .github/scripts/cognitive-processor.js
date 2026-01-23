@@ -102,14 +102,43 @@ class CognitiveIssueProcessor {
     const branchName = `cognitive/spec-${specName}`;
     
     try {
-      // Create and checkout new branch
-      execSync(`git checkout -b ${branchName}`, { encoding: 'utf8' });
+      // Check if branch exists locally
+      let branchExists = false;
+      try {
+        execSync(`git rev-parse --verify ${branchName}`, { encoding: 'utf8', stdio: 'pipe' });
+        branchExists = true;
+      } catch {
+        // Branch doesn't exist locally
+        branchExists = false;
+      }
+      
+      if (branchExists) {
+        // Branch exists locally - check it out and reset to base branch
+        this.log(`📍 Branch ${branchName} already exists locally, checking out and resetting`);
+        execSync(`git checkout ${branchName}`, { encoding: 'utf8' });
+        execSync(`git reset --hard ${this.currentBaseBranch}`, { encoding: 'utf8' });
+      } else {
+        // Try to create new branch, but use -B to force creation even if remote exists
+        this.log(`🌿 Creating new branch: ${branchName}`);
+        execSync(`git checkout -B ${branchName}`, { encoding: 'utf8' });
+      }
+      
       this.currentSpecBranch = branchName;
-      this.log(`🌿 Created spec branch: ${branchName}`);
+      this.log(`✅ Spec branch ready: ${branchName}`);
       return branchName;
     } catch (error) {
-      this.log(`Error creating branch: ${error.message}`, 'error');
-      throw error;
+      this.log(`Error with branch ${branchName}: ${error.message}`, 'error');
+      // Try one more time with force flag
+      try {
+        this.log(`🔄 Attempting force checkout to ${branchName}`);
+        execSync(`git checkout -B ${branchName}`, { encoding: 'utf8' });
+        this.currentSpecBranch = branchName;
+        this.log(`✅ Force checkout successful: ${branchName}`);
+        return branchName;
+      } catch (retryError) {
+        this.log(`Failed to create/checkout branch after retry: ${retryError.message}`, 'error');
+        throw retryError;
+      }
     }
   }
 
@@ -146,10 +175,17 @@ Issue: #${issue.number}`;
         execSync(`git commit --allow-empty -F "${tmpCommitFile}"`);
         fs.unlinkSync(tmpCommitFile);
         
-        // Push branch
-        execSync(`git push origin ${this.currentSpecBranch}`);
+        // Push branch - use force push in case remote branch exists
+        try {
+          execSync(`git push origin ${this.currentSpecBranch}`, { encoding: 'utf8' });
+          this.log(`✅ Committed empty commit and pushed to ${this.currentSpecBranch} for existing spec`);
+        } catch (pushError) {
+          // If normal push fails, try force push
+          this.log(`⚠️  Normal push failed, attempting force push: ${pushError.message}`, 'warn');
+          execSync(`git push --force origin ${this.currentSpecBranch}`, { encoding: 'utf8' });
+          this.log(`✅ Force pushed empty commit to ${this.currentSpecBranch} for existing spec`);
+        }
         
-        this.log(`✅ Committed empty commit and pushed to ${this.currentSpecBranch} for existing spec`);
         return this.currentSpecBranch;
       }
       
@@ -175,10 +211,17 @@ Issue: #${issue.number}`;
       // Clean up temp file
       fs.unlinkSync(tmpCommitFile);
       
-      // Push branch
-      execSync(`git push origin ${this.currentSpecBranch}`);
+      // Push branch - use force push in case remote branch exists
+      try {
+        execSync(`git push origin ${this.currentSpecBranch}`, { encoding: 'utf8' });
+        this.log(`✅ Committed and pushed changes to ${this.currentSpecBranch}`);
+      } catch (pushError) {
+        // If normal push fails, try force push (branch might exist remotely)
+        this.log(`⚠️  Normal push failed, attempting force push: ${pushError.message}`, 'warn');
+        execSync(`git push --force origin ${this.currentSpecBranch}`, { encoding: 'utf8' });
+        this.log(`✅ Force pushed changes to ${this.currentSpecBranch}`);
+      }
       
-      this.log(`✅ Committed and pushed changes to ${this.currentSpecBranch}`);
       return this.currentSpecBranch;
       
     } catch (error) {
