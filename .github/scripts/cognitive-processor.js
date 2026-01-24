@@ -251,6 +251,33 @@ Issue: #${issue.number}`;
       return pr;
       
     } catch (error) {
+      // Handle race condition where PR already exists (multiple workflows running simultaneously)
+      if (error.message && error.message.includes('pull request already exists')) {
+        this.log(`⚠️  PR already exists for branch ${branchName}, checking for existing PR`, 'warn');
+        
+        try {
+          // Find the existing PR for this branch
+          const { data: existingPRs } = await this.octokit.rest.pulls.list({
+            owner: this.repoOwner,
+            repo: this.repoName,
+            head: `${this.repoOwner}:${branchName}`,
+            state: 'open'
+          });
+          
+          if (existingPRs && existingPRs.length > 0) {
+            const existingPR = existingPRs[0];
+            this.log(`✅ Found existing PR #${existingPR.number}: ${existingPR.html_url}`);
+            return existingPR;
+          }
+        } catch (listError) {
+          this.log(`Error finding existing PR: ${listError.message}`, 'error');
+        }
+        
+        // If we can't find the existing PR, log the issue but don't fail
+        this.log(`⚠️  Could not find existing PR, but one exists for ${branchName}`, 'warn');
+        return null;
+      }
+      
       this.log(`Error creating PR: ${error.message}`, 'error');
       throw error;
     }
@@ -899,11 +926,17 @@ ${this.identifyRecursiveImprovements().map(improvement => `- ${improvement}`).jo
         const pushedBranch = await this.commitAndPushChanges(issue, spec);
         
         if (pushedBranch) {
-          // Create pull request
+          // Create pull request (may return null if PR already exists due to race condition)
           const pr = await this.createPullRequest(issue, spec, branchName);
           
-          // Post completion comment with PR link
-          await this.postIssueComment(issue.number, this.generatePRCreatedComment(issue, spec, pr));
+          // Post completion comment with PR link (only if PR was created or found)
+          if (pr) {
+            await this.postIssueComment(issue.number, this.generatePRCreatedComment(issue, spec, pr));
+          } else {
+            // PR already exists but we couldn't retrieve it - post a generic completion comment
+            this.log(`⚠️  PR creation skipped for issue #${issue.number} - PR already exists`, 'warn');
+            await this.postIssueComment(issue.number, this.generateCompletionComment(issue, spec));
+          }
         }
         
         // Return to base branch for next iteration
