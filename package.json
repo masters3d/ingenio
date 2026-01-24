@@ -6,7 +6,8 @@
   "scripts": {
     "cognitive-process": "node .github/scripts/cognitive-processor.js",
     "test-cognitive": "node .github/scripts/test-cognitive-processor.js",
-    "validate-config": "node .github/scripts/validate-config.js"
+    "validate-config": "node .github/scripts/validate-config.js",
+    "validate-ci": "node .github/scripts/validate-cognitive-ci.js"
   },
   "keywords": [
     "cognitive-agents",
