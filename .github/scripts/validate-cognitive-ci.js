@@ -83,8 +83,15 @@ class CognitiveSystemValidator {
       if (configExists) {
         // Parse and validate config (handle multi-document YAML)
         const configContent = await fs.readFile(configPath, 'utf8');
-        const docs = yaml.parseAllDocuments(configContent);
-        const config = docs[0].toJSON();
+        try {
+          const docs = yaml.parseAllDocuments(configContent);
+          if (!docs || docs.length === 0) {
+            throw new Error('No YAML documents found in configuration file');
+          }
+          const config = docs[0].toJSON();
+          if (!config) {
+            throw new Error('First YAML document is empty or invalid');
+          }
 
         this.recordResult('Agent Configuration Valid', 
           config.agent && config.agent.name === 'INGENIO-1',
@@ -100,6 +107,9 @@ class CognitiveSystemValidator {
         this.recordResult('Issue Processing Configured',
           config.processing && config.processing.issue_processing,
           'Issue processing settings defined');
+        } catch (yamlError) {
+          throw new Error(`YAML parsing error in ${configPath}: ${yamlError.message}`);
+        }
       }
 
     } catch (error) {
@@ -136,11 +146,27 @@ class CognitiveSystemValidator {
     try {
       const { execSync } = require('child_process');
       
+      // Check if test script exists first
+      const packageJson = await fs.readJson('package.json');
+      if (!packageJson.scripts || !packageJson.scripts['test-cognitive']) {
+        this.recordResult('Test Suite Execution', false,
+          'test-cognitive script not found in package.json');
+        return;
+      }
+      
       // Run the test suite
-      const testOutput = execSync('npm run test-cognitive', { 
-        encoding: 'utf8',
-        stdio: 'pipe'
-      });
+      let testOutput;
+      try {
+        testOutput = execSync('npm run test-cognitive', { 
+          encoding: 'utf8',
+          stdio: 'pipe'
+        });
+      } catch (execError) {
+        // Test suite failed
+        this.recordResult('Test Suite Execution', false,
+          `Test suite failed with exit code ${execError.status}`);
+        return;
+      }
 
       const successMatch = testOutput.match(/Success Rate: ([\d.]+)%/);
       const successRate = successMatch ? parseFloat(successMatch[1]) : 0;
@@ -290,14 +316,19 @@ class CognitiveSystemValidator {
         
         if (await fs.pathExists(resultsPath)) {
           const resultsContent = await fs.readFile(resultsPath, 'utf8');
-          const results = yaml.parse(resultsContent);
+          try {
+            const results = yaml.parse(resultsContent);
 
-          this.recordResult('Recent Run Logged', true,
-            `Session: ${latestSession}`);
+            this.recordResult('Recent Run Logged', true,
+              `Session: ${latestSession}`);
 
-          this.recordResult('Recent Run Completed', 
-            results.processedIssues !== undefined,
-            `Processed ${results.processedIssues ? results.processedIssues.length : 0} issues`);
+            this.recordResult('Recent Run Completed', 
+              results.processedIssues !== undefined,
+              `Processed ${results.processedIssues ? results.processedIssues.length : 0} issues`);
+          } catch (yamlError) {
+            this.recordResult('Recent Run Logged', false,
+              `YAML parsing error in ${resultsPath}: ${yamlError.message}`);
+          }
         }
       } else {
         this.recordResult('Recent Runs Found', false, 'No recent sessions');
