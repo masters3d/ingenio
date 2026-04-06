@@ -20,45 +20,56 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 
 ## The Three Sub-Pillars of Contextual Awareness
 
-Based on the original presentation structure: async vs synchronous context sharing, the three pillars of observability (logs, metrics, traces), and the push vs pull communication models with audience encapsulation (SLA/SLO/SLI).
+**Framework Foundation**: Contextual Awareness answers "HOW to KNOW the environment." It synthesizes search engine information retrieval, robotics sensing/perception, military situational awareness (OODA), and cognitive science.
 
-### 1. Async vs Sync Context Sharing
+**Core Insight**: Awareness is about KNOWING - building and maintaining an accurate model of the operating environment through systematic discovery, continuous updating, and persistent preservation.
 
-**Definition**: Choosing the appropriate temporal communication model based on scalability, urgency, and context preservation needs.
+**Critical Differentiation**:
+- **Contextual Awareness** = KNOWING the environment (Observe + Orient in OODA loop)
+- **Clear Strategy** = ACTING in the environment (Decide + Act in OODA loop)
 
-**Origin**: From the original presentation "Folks Contributing: Async vs synchronous contribution" and "ReadWrite vs ReadOnly" mediums. Rooted in the philosophy that async documentation scales while sync communication doesn't, but both have appropriate uses.
+**You can only act effectively on what you accurately understand.**
+
+### 1. Discover and Index Knowledge
+
+**Definition**: Systematically find and organize information for retrieval - you can only act on what you can find.
+
+**Theoretical Roots**:
+- **Search Engine Crawling & Indexing**: Web crawlers systematically discover pages; indexers organize for fast retrieval
+- **Robotics Sensor Perception**: Multiple sensors (lidar, camera, IMU) gather environmental data
+- **OODA Observe Phase**: Raw data collection from all available sources without interpretation
+- **Information Foraging Theory** (Pirolli & Card): Humans seek information like animals forage for food - follow information scent
+- **Military Intelligence**: Reconnaissance and surveillance for battlefield awareness
 
 #### Components
 
-**Async Context - ReadWrite Medium** (Scales, Persistent)
-- **Text**: Markdown, Wiki, Word documents
-- **Visual**: Graphics, drawings (paint app, whiteboard photos, vector apps), presentations (PowerPoint/Marp slides)
-- **Interactive**: PR collaboration, document comments, email threads
-- **Benefits**: Persistent record, searchable, timezone-flexible, enables deep work
-- **Use When**: Documentation, code review, design proposals, knowledge sharing
+**Crawl Your Domain** (Systematic Discovery)
+- **Code Repositories**: Where does the code live? What are the dependencies?
+- **Documentation**: READMEs, wikis, design docs, ADRs - follow the information scent
+- **People**: Who are the domain experts? Who has context?
+- **Systems**: What services exist? How do they connect?
+- **Automatic Discovery**: Leverage tools (code search, dependency analyzers, service meshes)
 
-**Async Context - ReadOnly Medium** (Broadcast)
-- **Audio/Visual**: Recorded presentations, video demos
-- **Documentation Websites**: Guides, troubleshooting, tutorials (no contribution process)
-- **Benefits**: One-to-many distribution, consistent message
-- **Limitation**: No feedback loop, can become stale
+**Index for Retrieval** (Organization)
+- **Search-Friendly Structure**: Use consistent naming, tags, hierarchies
+- **Metadata Enrichment**: Add context (author, date, purpose) to make findable
+- **Cross-References**: Link related information (code → docs → tickets → discussions)
+- **Information Scent**: Leave trails for others to follow (breadcrumbs, related links)
+- **Tools**: Code search (Sourcegraph), doc search (Algolia), observability (Datadog, Grafana)
 
-**Synchronous Context Medium** (Real-time)
-- **Real-time Collaboration**: Meetings, live chat, in-person conversation, pair programming
-- **Characteristics**: Single use, must repeat for every new person/group
-- **Benefits**: Immediate feedback, nuanced discussion, relationship building
-- **Limitation**: Doesn't scale, interrupts focus, context lost unless recorded
-- **Use When**: Incidents, complex alignment, relationship building, urgent decisions
+**Multi-Sensor Fusion** (Multiple Sources)
+- **Code as Source**: What does the implementation actually do?
+- **Logs as Source**: What happened at runtime?
+- **Metrics as Source**: How is the system performing?
+- **Documentation as Source**: What was the intent?
+- **People as Source**: Ask domain experts for context
+- **Fuse into Coherent Picture**: Combine sources to triangulate truth
 
-**Context Contribution Models**
-- **Short-term vs Long-term**: Fixing a bug (short-term) vs Maintainer (long-term)
-- **ReadWrite**: Can contribute updates and improvements
-- **ReadOnly**: Can only consume, cannot improve
-
-**Desired Qualities** (From Original Presentation)
-- Available in async medium, easy to consume and contribute updates
-- Subject matter experts available over async communication for clarification
-- Sync meetings arranged case-by-case as enhancement to async (not replacement)
+**Continuous Refresh** (Information Decay)
+- **Knowledge Half-Life**: Context degrades without maintenance
+- **Refresh Cycles**: Critical docs reviewed quarterly, code comments on change
+- **Staleness Detection**: Flag outdated information
+- **Automatic Updates**: Generate docs from code, metrics from instrumentation
 
 **Communication Mode Selection**
 
@@ -121,257 +132,134 @@ Based on the original presentation structure: async vs synchronous context shari
 
 ---
 
-### 2. Observability via Telemetry & Push vs Pull Models
+### 2. Build and Maintain World Models
 
-**Definition**: Making systems and careers observable through structured telemetry (logs, metrics, traces) and choosing appropriate information delivery models (push vs pull).
+**Definition**: Create accurate mental models of the environment and continuously update them - the map is not the territory, but you need a map.
 
-**Origin**: From the original presentation "The three pillars of observability" (logs, metrics, traces) and "Model: Push vs Pull". Observability enables understanding of complex systems and career progression through data rather than guesswork. Based on IBM Cloud observability framework and monitoring best practices.
+**Theoretical Roots**:
+- **Robotics SLAM (Mapping aspect)**: Simultaneous Localization and Mapping - build internal representation of environment while navigating it
+- **OODA Orient Phase**: Synthesize observations into coherent understanding through analysis, synthesis, and cultural/experiential filters
+- **Search Engine Ranking**: Relevance scoring - determining what matters most in this context
+- **Sensor Fusion Integration**: Combine disparate data sources into unified world model
+- **Mental Models (Johnson-Laird)**: Internal representations guide reasoning and decision-making
 
 #### Components
 
-**The Three Pillars of Observability** (Industry Standard)
+**Create Mental Models** (Understanding Systems)
+- **System Architecture**: How components connect and interact
+- **Data Flow**: How information moves through the system
+- **Business Logic**: Why the system exists, what problems it solves
+- **Failure Modes**: What can go wrong and how
+- **Use OODA Orient**: Analyze, synthesize, integrate observations into coherent picture
 
-1. **Logs: A record of what's happening within your software**
-   - Structured logging (JSON, key-value pairs)
-   - Contextual information (trace IDs, user IDs, timestamps)
-   - Severity levels (DEBUG, INFO, WARN, ERROR, FATAL)
-   - Use: Debugging specific issues, audit trails, compliance
+**Update Models Continuously** (SLAM Replanning)
+- **Reality Check**: Compare mental model to observed behavior
+- **Divergence Detection**: Where does reality differ from expectation?
+- **Model Revision**: Update understanding as you learn new information
+- **Avoid Stale Models**: "We've always done it this way" is a warning sign
 
-2. **Metrics: A numerical assessment of application performance and resource utilization**
-   - Time series data (counters, gauges, histograms)
-   - Golden signals: Latency, Traffic, Errors, Saturation
-   - System metrics: CPU, memory, disk, network
-   - Business metrics: Conversion rates, revenue, user engagement
-   - Use: Dashboards, alerts, capacity planning, SLO monitoring
+**Contextualize Information** (Relevance Ranking)
+- **Audience Awareness**: Execs need SLA, leads need SLO, engineers need SLI
+- **Decision Context**: What information matters for THIS decision?
+- **Priority Signals**: What's most important right now?
+- **Filter Noise**: Ignore irrelevant information to reduce cognitive load
 
-3. **Traces: How operations move throughout a system, from one node to another**
-   - Distributed tracing across microservices
-   - Request flow visualization
-   - Latency breakdown by service
-   - Dependency mapping
-   - Use: Performance optimization, understanding system interactions
-
-**Push vs Pull Communication Models**
-
-**Push Model** (Scheduled, Proactive)
-- **Agent that pushes**: Metrics agent sends data on schedule
-- **Characteristics**: Regular intervals, predictable load, immediate alerting
-- **Examples**: Prometheus push gateway, log shippers, alert notifications
-- **When to Use**: Real-time monitoring, critical alerts, SLO dashboards
-- **Benefits**: Proactive awareness, immediate notification
-- **Costs**: Can overwhelm, alert fatigue, noise
-
-**Pull Model** (On Demand, Reactive)
-- **Crawler is pull mode**: Scraper fetches data when needed
-- **Characteristics**: On-demand, scales with consumer needs
-- **Examples**: Prometheus scraping, documentation searches, API calls
-- **When to Use**: Reference information, self-service, exploration
-- **Benefits**: Consumer controls timing, reduces push noise
-- **Costs**: May miss time-sensitive information, requires knowing where to look
-
-**Observability is Contextual** (Audience-Dependent)
-- **It depends on the observer (Audience)**: Different stakeholders need different views
-- **Project Architecture Levels**:
-  - System (Software Service)
-    - Subsystem
-      - Component (Unit)
-        - SubComponent
-
-**Audience Encapsulation** (SLA/SLO/SLI Framework)
-
-From Atlassian's incident management framework, observability must be scoped to audience:
-
-- **High Level: Project Leadership** → **Service Level Agreement (SLA)** (Public)
-  - External commitments to customers
-  - Example: "99.9% uptime, <200ms P95 latency"
-  - Penalties if violated
-  - Push: Violation alerts
-
-- **Med Level: Engineering Leadership** → **Service Level Objectives (SLO)** (Internal)
-  - Internal targets with buffer below SLA
-  - Example: "99.95% uptime, <150ms P95 latency"
-  - Error budget tracking
-  - Push: SLO burn rate alerts
-
-- **Low Level: Engineers** → **Service Level Indicators (SLI)** (Private)
-  - Detailed implementation metrics
-  - Example: "/health endpoint every 10s, alert if 3 consecutive failures"
-  - Raw telemetry: all logs, metrics, traces
-  - Pull: Engineers query as needed for debugging
-
-**Career Observability** (Apply to People Systems)
-- **Logs**: Work history, project involvement, incident participation
-- **Metrics**: Delivery velocity, code review participation, uptime
-- **Traces**: How work flows through you and your collaborators
-- **Audience**: Performance reviews use SLA/SLO/SLI model for different audiences
+**Map Dependencies** (System Topology)
+- **Component Dependencies**: What depends on what?
+- **Data Dependencies**: What reads/writes what data?
+- **Team Dependencies**: Who owns what? Who do I need to coordinate with?
+- **Change Impact**: If I modify X, what else changes?
+- **Critical Path**: What's the dependency chain for this work?
 
 #### Engineering Behaviors
 
 **Level 0-1 (Apprentice/Component Creator)**
-- Adds structured logging to code they write
-- Reviews dashboards to understand system health
-- Uses traces to debug their own code
-- Understands team's SLIs
+- Builds mental model of components they work on
+- Asks "why does this work this way?" to understand rationale
+- Updates their understanding when behavior surprises them
+- References architecture docs before making changes
 
 **Level 2-3 (Designer/System Guide)**
-- Designs observability into components (logs, metrics, traces)
-- Creates dashboards for features they own
-- Sets up alerts based on SLOs
-- Documents what metrics mean
+- Creates component architecture diagrams
+- Documents key decisions and tradeoffs (ADRs)
+- Maps dependencies for features they design
+- Updates mental models based on production behavior
 
 **Level 4-5 (System Maintainer/Multi-System Designer)**
-- Establishes SLOs for systems they own
-- Builds comprehensive monitoring strategy
-- Implements push alerts for critical issues
-- Provides pull-based dashboards for exploration
+- Maintains system architecture documentation
+- Performs dependency impact analysis before changes
+- Creates runbooks that capture operational mental models
+- Identifies and documents system invariants and failure modes
 
 **Level 6-7+ (Coordinator/Architect)**
-- Sets observability standards across organization
-- Defines SLA/SLO/SLI hierarchy for stakeholders
-- Builds observability platforms
-- Balances push (alerts) vs pull (dashboards) strategies
+- Builds organizational understanding of multi-system architecture
+- Maintains cross-team dependency maps
+- Facilitates shared mental model alignment across teams
+- Creates visualizations that communicate system complexity
 
 #### Applied Examples
 
-**Bad Observability** (No Telemetry)
-> "The system is slow. I don't know why. Let me add print statements and redeploy."
+**Bad Mental Model** (Stale Understanding)
+> "I thought service A called service B directly. Turns out there's a queue between them. My 'quick fix' broke the entire async workflow."
 
-**Good Observability** (Three Pillars)
-> "P95 latency spiked to 2s at 14:30 (metrics). Trace shows database query taking 1.8s (traces). Query log shows full table scan on users table (logs). Adding index."
+**Good Mental Model** (SLAM - Continuous Update)
+> "Deployed the change. Error rate spiked. My mental model said this was a leaf service, but traces show it's called by 5 other services. Updating my architecture diagram and rolling back."
 
-**Bad Push/Pull Balance** (Alert Fatigue)
-> "Every metric change triggers a Slack message. Team ignores all alerts. Production is down and nobody noticed."
+**Bad Contextualization** (Wrong Level Detail)
+> Engineer shows executive 47-slide deck of database query optimization details when asked "Is the site fast?"
 
-**Good Push/Pull Balance** (Appropriate Channels)
-> "Push: SLO violations alert on-call immediately. Pull: Engineers check dashboards for deep dives. Weekly SLO review pulls trend data."
+**Good Contextualization** (Audience-Aware)
+> Executive: "Site loads in <2s, meets SLA" | Engineering lead: "P95 is 1.8s, 20% into error budget" | Engineer: "Query X taking 800ms, needs index on column Y"
 
-**Bad Audience Encapsulation** (Wrong Level)
-> "CEO asks about uptime. Engineer responds with 'container restart count and heap memory graphs.'"
+**Bad Dependency Mapping** (Surprise Breakage)
+> "I changed the API response format. Didn't realize 12 services depended on that exact schema. Everything broke."
 
-**Good Audience Encapsulation** (SLA/SLO/SLI)
-> "CEO: Here's our SLA dashboard showing 99.95% uptime. Engineering Lead: Here's SLO burn rate, we're 80% into error budget. Engineers: Here are the specific SLI metrics and traces."
+**Good Dependency Mapping** (Impact Analysis)
+> "This API has 12 downstream consumers (from service mesh). I'll add the new field while keeping old fields, then migrate consumers one-by-one."
 
 ---
 
-### 3. Economics of Context & Tragedy of the Commons
+### 3. Preserve and Share Context
 
-**Definition**: Managing context as a shared resource, avoiding its degradation through economic incentives and systemic solutions.
+**Definition**: Externalize knowledge into durable cognitive artifacts and incentivize their maintenance - shared context scales the organization.
 
-**Origin**: From the original presentation "Economics: Tragedy of the commons" (Wikipedia reference). Context is like a commons - everyone benefits from good documentation and knowledge sharing, but creating and maintaining it costs individual time. Without intervention, the commons degrades.
+**Theoretical Roots**:
+- **Cognitive Artifacts** (Donald Norman): External representations that extend cognitive capacity (notes, diagrams, documentation)
+- **Distributed Cognition** (Edwin Hutchins): Cognition distributed across people, artifacts, and environment
+- **Tragedy of the Commons** (Garrett Hardin): Shared resources degrade without proper incentives
+- **Organizational Memory** (Walsh & Ungson): Knowledge stored in organizational artifacts, not just individual minds
+- **Context Decay/Half-Life**: Information degrades over time without active maintenance
 
 #### Components
 
-**Tragedy of the Commons** (Economic Problem)
+**Create Cognitive Artifacts** (External Memory)
+- **Documentation**: READMEs, design docs, ADRs, runbooks
+- **Code Comments**: Explain WHY, not WHAT (code shows what)
+- **Diagrams**: Architecture diagrams, sequence diagrams, data flow
+- **Decision Records**: Capture what was decided, why, and context
+- **Runbooks**: Operational knowledge for common scenarios
+- **Externalize to Scale**: Knowledge in heads doesn't scale; knowledge in artifacts does
 
-From Garrett Hardin's 1968 paper - a shared resource tends to be overused and under-maintained when individuals act in self-interest.
+**Maintain the Commons** (Fight Decay)
+- **Knowledge Half-Life**: Documentation degrades ~50% per year without maintenance
+- **Ownership Assignment**: Every doc needs an owner who keeps it current
+- **Staleness Detection**: Flag docs that haven't been reviewed in 6+ months
+- **Update on Change**: When code changes, update related docs immediately
+- **Review Cycles**: Quarterly review of critical documentation
 
-**Context as Commons**:
-- **Shared Resource**: Documentation, tribal knowledge, code context
-- **Benefits**: Everyone gains from good context (faster onboarding, fewer interruptions, better decisions)
-- **Costs**: Individual time to create and maintain (writing docs, code comments, ADRs)
-- **Problem**: Everyone consumes (reads docs), few contribute (writes docs) → context degrades over time
+**Systemic Incentives** (Tragedy of Commons Solutions)
+- **Make It Easy**: Low-friction tools (Markdown, wikis, docs-as-code)
+- **Make It Visible**: Credit doc authors, celebrate knowledge sharing
+- **Make It Required**: DoD includes docs, PR requires doc updates
+- **Make It Integrated**: Docs live with code (README, ADRs in repo)
+- **Make It Rewarded**: Performance reviews value documentation contributions
 
-**Context Decay** (Half-Life of Knowledge)
-- **Code without comments**: 6 months until original intent is lost
-- **Documentation without ownership**: 1 year until significantly stale
-- **Tribal knowledge**: Lost immediately when person leaves company
-- **Undocumented decisions**: Rediscovered painfully through archeology
-
-**Systemic Solutions to the Commons Problem**
-
-1. **Make It Easy** (Reduce Individual Cost)
-   - Low-friction documentation tools (Markdown, wikis, docs-as-code)
-   - Templates and examples
-   - Auto-generated docs from code (Swagger, TSDoc, Javadoc)
-   - Bots that remind/prompt for documentation
-
-2. **Make It Visible** (Reward Contributors)
-   - Credit documentation authors
-   - Track documentation contributions in performance reviews
-   - Celebrate knowledge sharing (internal tech talks, blog posts)
-   - Make "improved documentation" visible in sprint demos
-
-3. **Make It Required** (Enforce via Process)
-   - Code review requires documentation updates
-   - Definition of Done includes docs
-   - No PR merge without updated README/ADR
-   - Documentation coverage metrics like test coverage
-
-4. **Make It Integrated** (Docs Live with Code)
-   - Code comments and docstrings
-   - README in every repo
-   - ADRs in `/docs` directory
-   - Tests as documentation of expected behavior
-
-**Cognitive Artifacts** (Preserving Context)
-
-**Documentation Artifacts** (Permanent Record)
-- **Design Docs**: Architectural decisions and reasoning
-- **ADRs (Architectural Decision Records)**: Why we chose X over Y, with date and status
-- **Runbooks**: Operational procedures for incidents
-- **READMEs**: How to get started with a codebase
-- **Code Comments**: Why this non-obvious code exists (not what it does)
-- **Commit Messages**: What changed and why (semantic commits)
-
-**Observability Artifacts** (Runtime Context)
-- **Logs**: What happened (event stream) - Already covered in Sub-Pillar 2
-- **Metrics**: How much/how often (time series) - Already covered in Sub-Pillar 2
-- **Traces**: How requests flow (distributed execution) - Already covered in Sub-Pillar 2
-- **Dashboards**: Visual representation of system state
-- **Alerts**: Automated attention direction
-
-**Process Artifacts** (Work Context)
-- **Issue Trackers**: What needs doing and why (Jira, GitHub Issues)
-- **Pull Requests**: Code change context and discussion
-- **RFCs (Request for Comments)**: Proposal and feedback process
-- **Post-Mortems**: What went wrong, how to prevent recurrence
-- **Sprint Plans**: What we're doing and why now
-- **Meeting Notes**: Decisions and action items (async record of sync)
-
-**Organizational Artifacts** (Structure Context)
-- **Team Charters**: Why this team exists, mission, ownership
-- **Career Ladders**: What growth looks like at each IC level
-- **OKRs/Goals**: What success means this quarter
-- **Org Charts**: Who does what, reporting structure
-- **On-call Rotations**: Who's responsible when
-
-**Code as Cognitive Artifact** (Living Documentation)
-- **Type Systems**: Compiler-enforced context (TypeScript, Rust, Go)
-- **Tests**: Expected behavior codified (unit, integration, E2E)
-- **API Contracts**: Interface guarantees (OpenAPI, Protocol Buffers)
-- **Version Control**: Historical context (git history, git blame)
-- **Code Structure**: Architectural intent (file organization, naming)
-
-**Context Sharing Economics**
-
-**Push Model Costs** (Creating Context):
-- Time to write documentation
-- Cognitive load to articulate tacit knowledge
-- Maintenance burden (keeping docs current)
-
-**Pull Model Benefits** (Consuming Context):
-- Faster onboarding (don't need to ask people)
-- Better decisions (historical context available)
-- Fewer interruptions (self-service instead of asking)
-- Organizational memory (survives people leaving)
-
-**Optimal Strategy**: Internalize benefits through systems that reduce individual costs and increase individual incentives
-
-#### Cognitive Artifact Quality
-
-**Good Artifacts**
-- **Discoverable**: Can be found when needed
-- **Current**: Reflects present reality, not outdated
-- **Clear**: Understandable by target audience
-- **Actionable**: Enables decisions and actions
-- **Maintained**: Someone updates them
-
-**Poor Artifacts**
-- **Hidden**: Exists but can't be found
-- **Stale**: Describes how things used to work
-- **Cryptic**: Only original author understands
-- **Academic**: Interesting but not useful
-- **Abandoned**: Nobody updates when context changes
+**Async-First Context Sharing** (Temporal Model)
+- **Async Medium (Default)**: Documentation, wikis, recorded presentations - scales, persistent
+- **Synchronous Enhancement (Case-by-Case)**: Meetings, pair programming when async insufficient
+- **ReadWrite Preferred**: Text, interactive formats allow contribution
+- **ReadOnly for Broadcast**: Videos, presentations for one-to-many sharing
+- **Subject Matter Experts Available**: Async Q&A, office hours
 
 #### Engineering Behaviors
 
@@ -380,208 +268,115 @@ From Garrett Hardin's 1968 paper - a shared resource tends to be overused and un
 - Writes clear commit messages explaining changes
 - Updates README when onboarding gaps are found
 - Documents solutions to problems they solved
+- Creates code comments for non-obvious logic
 
 **Level 2-3 (Designer/System Guide)**
 - Writes design docs for significant changes
-- Creates runbooks for operational procedures
+- Creates ADRs for architectural decisions
 - Documents tribal knowledge into team wiki
-- Records architectural decisions (ADRs)
+- Establishes documentation for components they own
+- Ensures PRs include documentation updates
 
 **Level 4-5 (System Maintainer/Multi-System Designer)**
-- Establishes documentation standards
-- Builds observability into systems (logs, metrics, traces)
-- Creates dashboards for system health
-- Writes post-mortems that prevent future incidents
+- Establishes documentation standards for systems
+- Assigns documentation ownership
+- Builds systems for context preservation (wikis, doc platforms)
+- Creates dashboards and runbooks for operational context
+- Reviews and maintains critical documentation quarterly
 
 **Level 6-7+ (Coordinator/Architect)**
 - Designs organization-wide knowledge systems
-- Establishes RFD/RFC processes for decisions
-- Creates platforms for cognitive artifact creation
+- Establishes RFC/ADR processes for decisions
+- Creates incentives for documentation contributions
 - Ensures critical context survives team transitions
+- Balances async-first communication across organization
 
 #### Applied Examples
 
-**Good Cognitive Artifact**
-> **ADR-015: Why We Chose PostgreSQL Over MongoDB**
-> **Context**: We need persistent storage for user data.
-> **Decision**: PostgreSQL with JSONB for semi-structured data.
-> **Rationale**: Strong consistency, ACID transactions, JSON flexibility.
-> **Consequences**: Excellent for transactional data, requires schema thought.
-> **Date**: 2024-03-15
-> **Status**: Accepted
+**Bad Context Preservation** (Tribal Knowledge)
+> "Sarah was the only one who knew how the billing system worked. She left the company. Now every billing change takes 3x longer while we rediscover the logic."
 
-**Poor Cognitive Artifact**
-> "We use Postgres because it's good."
+**Good Context Preservation** (Cognitive Artifacts)
+> "Sarah documented the billing system architecture, wrote ADRs for key decisions, and created a runbook. When she left, new team picked up with minimal disruption."
 
-**Good Observability**
-> Service emits structured logs with trace IDs, exposes /metrics endpoint with RED metrics (Rate, Errors, Duration), traces show cross-service latency breakdown.
+**Bad Commons Management** (Tragedy Unfolds)
+> "Everyone reads the wiki but nobody updates it. Docs are 2 years stale. New hires stop reading docs and just ask people questions instead. Productivity drops."
 
-**Poor Observability**
-> Random print statements in code, no metrics, "check the logs" means grepping gigabytes.
+**Good Commons Management** (Systemic Solutions)
+> "Every PR requires doc updates (enforced). Documentation contributions tracked in reviews (rewarded). Quarterly doc review sprint (maintained). Easy-to-use Markdown in repo (low friction)."
 
----
+**Bad Async Communication** (Sync Dependency)
+> "Every decision requires a meeting. Meeting notes aren't written. Knowledge trapped in attendees' heads. Can't make progress without scheduling meetings."
 
-## The Economics of Context
-
-### Tragedy of the Commons
-
-**Problem**: Context is a shared resource. Everyone benefits from good documentation, but creating it costs individual time.
-
-**Without Intervention**: Everyone consumes (reads docs), nobody contributes (writes docs), context degrades.
-
-**Solutions**:
-- **Make it Easy**: Low-friction tools for documentation
-- **Make it Visible**: Reward context creators
-- **Make it Required**: Code review requires documentation updates
-- **Make it Integrated**: Docs live with code (e.g., docstrings, README)
-
-### Context Decay
-
-**Half-Life of Context**: Without maintenance, context decays exponentially
-- **Code without comments**: 6 months until original intent is lost
-- **Documentation without ownership**: 1 year until significantly stale
-- **Tribal knowledge**: Lost when person leaves company
-
-**Solutions**:
-- **Living Documentation**: Docs that update with code
-- **Ownership Assignment**: Someone responsible for each doc
-- **Periodic Review**: Quarterly doc freshness checks
-- **Redundancy**: Context in multiple places (code, docs, ADRs)
-
-### Push vs Pull Models
-
-**Push Model** (Proactive)
-- **Characteristics**: Information sent to recipients
-- **Examples**: Email notifications, Slack messages, dashboard alerts
-- **When to Use**: Time-sensitive, small audience, action required
-- **Risk**: Information overload, alert fatigue
-
-**Pull Model** (On-Demand)
-- **Characteristics**: Information retrieved when needed
-- **Examples**: Documentation sites, wikis, search, dashboards you check
-- **When to Use**: Reference information, large audience, self-service
-- **Risk**: Information not discovered when needed
-
-**Optimal Mix**: Push for urgent/actionable, pull for reference/context
+**Good Async Communication** (Scales)
+> "Decisions documented in ADRs with context and rationale. RFC process for proposals with async feedback. Meetings recorded and summarized. New team members catch up by reading artifacts."
 
 ---
 
 ## Integration with Other Pillars
 
 ### With Clear Strategy
-- **Async vs Sync**: Enables **Forward Progress** through focused work
-- **Ahead of Time vs JiT**: Shapes **Breaking Down** work appropriately
-- **Cognitive Artifacts**: Preserve **Direction** across time
+- **Discover and Index** provides the knowledge needed for **Define Clear Waypoints**
+- **Build World Models** enables **Execute in Feedback Loops** through accurate understanding
+- **Preserve Context** supports **Decompose to Actionable Units** through documented patterns
 
 ### With Intrinsic Drive
-- **Async vs Sync**: Protects **Autonomy** through focus time
-- **Ahead of Time vs JiT**: Supports **Mastery** through timely learning
-- **Cognitive Artifacts**: Clarify **Purpose** through shared understanding
+- **Discover and Index** reduces friction for **Autonomy** (find what you need yourself)
+- **Build World Models** accelerates **Mastery** (understand systems deeply)
+- **Preserve Context** clarifies **Purpose** (see why work matters)
 
 ---
 
 ## Anti-Patterns
 
-### Meeting Culture
-**Symptom**: 6 hours of meetings daily, no time for actual work
-**Root Cause**: Over-reliance on sync communication
-**Solution**: Async-first default, meetings only when truly needed
-
-### Premature Optimization
-**Symptom**: Massive complexity for hypothetical future needs
-**Root Cause**: Over-indexing on ahead-of-time preparation
-**Solution**: YAGNI principle, optimize when data shows need
-
-### Tribal Knowledge
+### Information Hoarding
 **Symptom**: "Only Bob knows how this works"
-**Root Cause**: Failure to create cognitive artifacts
-**Solution**: Document as you go, pair programming, knowledge sharing
+**Root Cause**: Failure to externalize knowledge into cognitive artifacts
+**Solution**: Document as you go, pair programming, knowledge transfer sessions
 
 ### Stale Documentation
-**Symptom**: Docs describe system from 2 years ago
-**Root Cause**: Documentation not maintained as artifact
-**Solution**: Living docs, ownership assignment, docs-as-code
+**Symptom**: Documentation last updated 2 years ago, nobody trusts it
+**Root Cause**: No ownership, no maintenance cycles, no enforcement
+**Solution**: Assign owners, quarterly reviews, make doc updates required in DoD
+
+### Meeting Culture
+**Symptom**: 6 hours of meetings daily, no time for deep work
+**Root Cause**: Over-reliance on synchronous communication
+**Solution**: Async-first default, meetings only when truly needed
+
+### Discovery Failure
+**Symptom**: "We already built that 6 months ago in another team"
+**Root Cause**: No systematic discovery, poor indexing, siloed teams
+**Solution**: Cross-team code search, architecture reviews, tech radar
 
 ---
 
 ## Measuring Contextual Awareness
 
-### Async/Sync Balance
-- **Meeting Hours**: Average hours/week in meetings
-- **Focus Time**: Uninterrupted blocks ≥2 hours per day
-- **Response SLA**: Time to async response (target: <24 hours)
-- **Sync Necessity**: What % of meetings couldn't be emails?
+### Discovery Metrics
+- **Time to Find Information**: How long to locate needed docs/code?
+- **Search Success Rate**: What % of searches find relevant results?
+- **Duplicate Work**: How often do teams rebuild existing solutions?
 
-### AoT/JiT Optimization
-- **Premature Work**: Features built but never used
-- **Technical Debt**: Work deferred then costs 10x more
-- **Prep Payoff**: How often does AoT investment pay off?
-- **JiT Delays**: How often does lack of preparation block?
+### World Model Metrics
+- **Onboarding Time**: How long until new engineer productive?
+- **Change Impact Accuracy**: Do engineers correctly predict effects?
+- **Incident Response Time**: How long to understand what broke?
 
-### Cognitive Artifact Health
+### Context Preservation Metrics
 - **Documentation Coverage**: What % of systems have current docs?
-- **Time to Onboard**: Days until new engineer productive
-- **Context Lookup Time**: Minutes to find needed information
-- **Incident MTTR**: How fast can team resolve incidents?
-- **Knowledge Loss**: Impact when someone leaves team
-
----
-
-## Contextual Decision-Making Framework
-
-### "It Depends" - The Core Principle
-
-Every engineering decision depends on context:
-
-**Should we use microservices?**
-- Depends on: team size, deployment frequency, domain boundaries, operational maturity
-
-**Should we write documentation?**
-- Depends on: audience size, change frequency, complexity, onboarding needs
-
-**Should we refactor this code?**
-- Depends on: change frequency, bug rate, team familiarity, business priority
-
-**Should we meet synchronously?**
-- Depends on: urgency, complexity, relationship building needs, timezone distribution
-
-### Context Gathering Process
-
-1. **Identify Decision**: What are we choosing?
-2. **List Constraints**: What must be true?
-3. **Gather Context**: Who, what, when, where, why?
-4. **Evaluate Options**: What are trade-offs in this context?
-5. **Decide & Document**: Choose and record reasoning
-6. **Review & Adapt**: Reassess as context changes
-
----
-
-## Audience Encapsulation
-
-Different audiences need different context depth:
-
-### Public (SLA - Service Level Agreement)
-- **Audience**: Customers, partners, executives
-- **Context Depth**: High-level commitments
-- **Example**: "99.9% uptime, <200ms P95 latency"
-
-### Internal (SLO - Service Level Objective)
-- **Audience**: Engineering leadership, product
-- **Context Depth**: Internal targets with margin
-- **Example**: "99.95% uptime, <150ms P95 latency"
-
-### Private (SLI - Service Level Indicator)
-- **Audience**: Engineers, operators
-- **Context Depth**: Detailed metrics and implementation
-- **Example**: "Monitor /health endpoint every 10s, alert if 3 consecutive failures"
+- **Documentation Age**: How old is the average doc?
+- **Knowledge Loss**: What happens when key person leaves?
 
 ---
 
 ## References
 
-- **Context Etymology**: Latin _contextus_, "to weave together"
-- **Tragedy of the Commons**: Hardin, G. (1968)
-- **Observability**: Logs, Metrics, Traces (three pillars) - IBM Cloud
-- **SLA/SLO/SLI**: Atlassian incident management guide
-- **Cognitive Artifacts**: Norman, D. A. (1991). "Cognitive artifacts"
-- **Async Communication**: GitLab's async manifesto, Basecamp's async culture
+- **Search Engines**: Crawling, indexing, ranking algorithms
+- **Robotics**: SLAM (Simultaneous Localization and Mapping), sensor fusion
+- **OODA Loop** (Boyd): Observe, Orient, Decide, Act cycle
+- **Cognitive Artifacts** (Donald Norman): "Things That Make Us Smart"
+- **Distributed Cognition** (Edwin Hutchins): "Cognition in the Wild"
+- **Tragedy of the Commons** (Garrett Hardin): Economic resource management
+- **Information Foraging Theory** (Pirolli & Card): How humans seek information
+- **Mental Models** (Johnson-Laird): Internal representations for reasoning

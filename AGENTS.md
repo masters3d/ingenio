@@ -25,26 +25,30 @@ The foundational framework organizing all content and development in this reposi
 **Etymology**: From Greek _strategia_ - "art of the general"
 **Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
 
-The execution pillar - transforming ambiguous directives into concrete, achievable outcomes.
+The execution pillar - transforming ambiguous directives into concrete, achievable outcomes. **Clear Strategy = ACTING in the environment** (Decide + Act in OODA loop).
 
 #### Three Sub-Pillars
-1. **Clear Goals & Definition of Done**: Establishing clear, time-boxed goals with explicit completion criteria
-   - Clear goals (milestones defined, scope clear, time boxed)
-   - Definition of done (acceptance criteria, quality standards, deployment ready)
-   - Alignment (team/org priorities, technical direction)
-   - Applied across IC levels 0-7+ with specific behaviors
+1. **Define Clear Waypoints**: Plot the path before you travel - establish specific intermediate goals
+   - SMART waypoints (Specific, Measurable, Achievable, Relevant, Time-Bound)
+   - Definition of done (acceptance criteria, quality gates, exit criteria, deployment ready)
+   - Scope boundaries (in scope, out of scope, waypoint sequence, obstacle avoidance)
+   - **Theoretical Roots**: Robotics path planning (waypoints, A*), Goal-Setting Theory (Locke & Latham), Agile sprint planning, motivational psychology
 
-2. **Coherent Action & Feedback Loops**: Systematic behaviors with established feedback mechanisms
-   - Action-feedback-adjustment cycles (high/medium/low frequency)
-   - Incremental delivery through feature flags and progressive rollout
-   - Visible progress via deployment frequency, lead time, velocity
-   - Establish and maintain feedback loops (Agile/Scrum methodology, OODA loop)
+2. **Execute in Feedback Loops**: Take action, measure results, adjust course - continuous execution with rapid iteration
+   - Implementation intentions (If-Then action triggers to reduce decision fatigue)
+   - Incremental delivery (daily commits, weekly deployables, monthly releases, leverage Zeigarnik Effect)
+   - Measure-act-adjust cycles (high/medium/low frequency feedback loops)
+   - Visible progress (burn down charts, deployment frequency, lead time, maintain open loops)
+   - **Theoretical Roots**: Implementation Intentions (Gollwitzer), Zeigarnik Effect, Agile iterative development, Robotics SLAM localization, OODA loop
 
-3. **Quest Engine Architecture & Exit Strategy**: Hierarchical planning from vision to daily execution
-   - Hierarchical planning (Vision → Design → Sprint → Daily)
-   - Exit strategy at every level (project, sprint, task completion criteria)
+3. **Decompose to Actionable Units**: Break complex challenges into tractable steps
+   - Hierarchical planning / Quest Engine (Vision → Design → Sprint → Daily)
+   - Exit strategy at every level (project, feature, sprint, task completion criteria)
    - Work breakdown structure (Epic → Story → Task → Sub-task)
-   - Definition of done for the whole project
+   - Applied across IC levels 0-7+ with specific behaviors
+   - **Theoretical Roots**: Robotics motion planning, Hierarchical Task Networks (HTN), Agile WBS, Cognitive Load Theory, motivational psychology
+
+**Theoretical Foundation**: Agile/Scrum methodology, motivational psychology (Goal-Setting Theory, Implementation Intentions, Zeigarnik Effect), computational robotics planning (path planning, motion planning, SLAM), OODA loop
 
 **See**: `/pillars/clear_strategy.md` for complete specification
 
@@ -81,28 +85,31 @@ The motivation pillar - harnessing internal desires for sustainable, high-qualit
 **Etymology**: Latin _contextus_ - "to weave together" (con- + texere)
 **Philosophy**: "It depends" - everything is relative and contextual
 
-The understanding pillar - recognizing that effective decisions require deep understanding of environment, constraints, timing, and audience.
+The understanding pillar - recognizing that effective decisions require deep understanding of environment, constraints, timing, and audience. **Contextual Awareness = KNOWING the environment** (Observe + Orient in OODA loop).
 
 #### Three Sub-Pillars
-1. **Async vs Sync Context Sharing**: Choosing appropriate temporal communication model
-   - Async context (ReadWrite: text/visual/interactive, ReadOnly: docs/videos)
-   - Synchronous context (real-time collaboration, meetings, pair programming)
-   - Communication mode selection (documentation default async, incidents default sync)
-   - Desired qualities: async medium preferred, sync as case-by-case enhancement
+1. **Discover and Index Knowledge**: Systematically find and organize information for retrieval
+   - Crawl your domain (code, docs, people, systems)
+   - Index for retrieval (search-friendly structure, metadata, cross-references)
+   - Multi-sensor fusion (combine code, logs, metrics, docs, people)
+   - Continuous refresh (fight information decay with maintenance cycles)
+   - **Theoretical Roots**: Search engine crawling/indexing, robotics sensor perception, OODA Observe, Information Foraging Theory
 
-2. **Observability via Telemetry & Push vs Pull Models**: Making systems observable through structured telemetry
-   - The three pillars of observability: Logs (events), Metrics (numbers), Traces (flows)
-   - Push model (agent pushes, scheduled, proactive alerts)
-   - Pull model (crawler pulls, on-demand, self-service)
-   - Audience encapsulation (SLA public, SLO internal, SLI private)
+2. **Build and Maintain World Models**: Create accurate mental models and continuously update them
+   - Create mental models (understand system architecture, data flow, business logic)
+   - Update models continuously (SLAM replanning - reality check vs expectations)
+   - Contextualize information (audience-aware: SLA/SLO/SLI hierarchy)
+   - Map dependencies (component, data, team dependencies and change impact)
+   - **Theoretical Roots**: Robotics SLAM mapping, OODA Orient, search ranking, mental models theory
 
-3. **Economics of Context & Tragedy of the Commons**: Managing context as shared resource
-   - Tragedy of the commons (shared resource degradation)
-   - Systemic solutions (make it easy, visible, required, integrated)
-   - Cognitive artifacts (documentation, observability, process, code)
-   - Context decay prevention through ownership and maintenance
+3. **Preserve and Share Context**: Externalize knowledge into durable cognitive artifacts
+   - Create cognitive artifacts (docs, ADRs, diagrams, runbooks, code comments)
+   - Maintain the commons (fight knowledge decay through ownership and review cycles)
+   - Systemic incentives (make it easy, visible, required, integrated, rewarded)
+   - Async-first context sharing (documentation default, meetings case-by-case)
+   - **Theoretical Roots**: Cognitive artifacts, distributed cognition, tragedy of the commons, organizational memory
 
-**Economics**: Tragedy of the commons in context sharing, context decay (half-life), push vs pull models
+**Theoretical Foundation**: Search engines (crawling, indexing, ranking), robotics (SLAM, sensor fusion), OODA loop (Observe, Orient), cognitive science (mental models, cognitive artifacts), economics (tragedy of the commons)
 
 **See**: `/pillars/contextual_awareness.md` for complete specification
 

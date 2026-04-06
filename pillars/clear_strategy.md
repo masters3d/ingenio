@@ -22,33 +22,44 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## The Three Sub-Pillars of Clear Strategy
 
-Based on the original presentation structure: "Clear" (goals and definition of done), "Strategy" (coherent action with feedback loops and exit strategies), and the Quest Engine Architecture.
+**Framework Foundation**: Clear Strategy answers "HOW to ACT effectively in the environment." It synthesizes Agile methodology, motivational psychology, and computational robotics planning.
 
-### 1. Clear Goals & Definition of Done
+**Core Insight**: Strategy is about ACTING - transforming understanding into deliberate, effective action through iterative execution, concrete action triggers, and hierarchical decomposition.
 
-**Definition**: Establishing clear, time-boxed goals with explicit completion criteria.
+**Critical Differentiation**:
+- **Contextual Awareness** = KNOWING the environment (Observe + Orient in OODA loop)
+- **Clear Strategy** = ACTING in the environment (Decide + Act in OODA loop)
 
-**Origin**: From the original "Clear" section - combining goal clarity with definition of done to ensure teams know both what to achieve and when they're finished.
+### 1. Define Clear Waypoints
+
+**Definition**: Plot the path before you travel - establish specific intermediate goals with measurable success criteria.
+
+**Theoretical Roots**:
+- **Robotics Path Planning**: Waypoints are intermediate goals between start and destination that make navigation tractable
+- **Goal-Setting Theory** (Locke & Latham): Specific, challenging goals with feedback increase performance
+- **Agile Sprint Planning**: Define what "done" looks like before starting work
+- **Motivational Psychology**: Clear targets create directed energy and reduce decision fatigue
 
 #### Components
 
-**Clear Goals** (Agile/Scrum Foundation)
-- **Milestones Defined**: Concrete checkpoints with observable outcomes
-- **Scope Clear**: Explicit boundaries - what's in and what's out
-- **Time Boxed**: Fixed duration with hard deadlines
-- **Measurable**: Quantifiable success criteria
+**SMART Waypoints** (Goal-Setting Theory)
+- **Specific**: "Reduce P95 latency from 800ms to 200ms" not "improve performance"
+- **Measurable**: Quantifiable success criteria with observable outcomes
+- **Achievable**: Within team's capability and resource constraints
+- **Relevant**: Directly contributes to organizational objectives
+- **Time-Bound**: Fixed deadlines create urgency and force prioritization
 
-**Definition of Done** (Quality Gates)
-- **Acceptance Criteria**: When is this work complete?
-- **Exit Criteria**: What must be true to move forward?
-- **Quality Standards**: Tests pass, code reviewed, docs updated
-- **Deployment Ready**: Can ship to production without additional work
+**Definition of Done** (Agile Exit Criteria)
+- **Acceptance Criteria**: Explicit conditions that must be met
+- **Quality Gates**: Tests pass, code reviewed, docs updated, deployed
+- **Exit Criteria**: "When can I mark this done and move on?"
+- **Deployment Ready**: Shippable without additional work
 
-**Alignment** (Organizational Context)
-- **Team Goals**: How does this serve sprint/quarter objectives?
-- **Organization Priorities**: Connection to broader company goals
-- **Technical Direction**: Alignment with architectural vision
-- **Stakeholder Agreement**: All parties understand and accept the definition
+**Scope Boundaries** (Preventing Drift)
+- **In Scope**: Explicit list of what this work includes
+- **Out of Scope**: Explicit list of what this work excludes
+- **Waypoint Sequence**: Order matters - what must come first?
+- **Obstacle Avoidance**: Known blockers and mitigation strategies
 
 #### Engineering Behaviors
 
@@ -88,35 +99,42 @@ Based on the original presentation structure: "Clear" (goals and definition of d
 
 ---
 
-### 2. Coherent Action & Feedback Loops
+### 2. Execute in Feedback Loops
 
-**Definition**: Systematic behaviors with established feedback mechanisms that maintain and adjust course.
+**Definition**: Take action, measure results, adjust course - continuous execution with rapid iteration and course correction.
 
-**Origin**: From the original "Strategy" section - combining coherent action (aligned behaviors) with feedback loops (establish and maintain mechanisms for course correction). Rooted in Agile/Scrum methodology and OODA loop (Observe-Orient-Decide-Act) from military strategy.
+**Theoretical Roots**:
+- **Implementation Intentions** (Gollwitzer): "If X happens, then I will do Y" - automatic action triggers reduce decision fatigue
+- **Zeigarnik Effect**: Incomplete tasks create psychological tension driving completion; leverage this for momentum
+- **Agile Iterative Development**: Sprint cycles with inspect-and-adapt rhythms
+- **Robotics SLAM (Localization aspect)**: Continuous repositioning and replanning as environment changes
+- **OODA Loop**: Boyd's Observe-Orient-Decide-Act cycle for rapid adaptation
 
 #### Components
 
-**Action-Feedback-Adjustment Cycles**
-- **Action**: Make engineering decisions and implement changes
-- **Feedback**: Measure system response and outcomes
-- **Adjustment**: Course-correct based on observations
+**Implementation Intentions** (If-Then Action Triggers)
+- **Automatic Execution**: "If PR approved, then deploy to staging within 2 hours"
+- **Reduce Decision Fatigue**: Pre-commit to actions, don't decide in the moment
+- **Context-Action Binding**: Link situational cues to specific behaviors
+- **Examples**: "If build passes, then I immediately write integration test" | "If stuck for 30 min, then I ask for help"
 
-**Feedback Loop Types**
-- **High-Frequency** (Daily/Real-Time): Unit tests, linting, local builds
-- **Medium-Frequency** (Weekly/Sprint): Integration tests, code reviews, sprint demos
-- **Low-Frequency** (Monthly/Quarterly): Production metrics, user feedback, performance reviews
+**Incremental Delivery** (Small Batch, Fast Feedback)
+- **Daily Commits**: Push code every day, even if incomplete (feature flags)
+- **Weekly Deployables**: Something demo-able every sprint
+- **Monthly Releases**: Regular cadence to production
+- **Use Zeigarnik Effect**: Start tasks to create completion drive; open loops motivate closure
 
-**Incremental Delivery**
-- **Ship Small**: Merge daily, deploy frequently
-- **Feature Flags**: Decouple deployment from release
-- **Progressive Rollout**: Canary → 10% → 50% → 100%
-- **Fail Fast**: Discover issues early when they're cheap to fix
+**Measure-Act-Adjust** (Agile Retrospectives)
+- **High-Frequency Loops** (Daily): Unit tests, linting, local builds give immediate feedback
+- **Medium-Frequency Loops** (Weekly): Code reviews, sprint demos, integration tests
+- **Low-Frequency Loops** (Monthly): Production metrics, user feedback, quarterly reviews
+- **Adaptive Planning**: When reality diverges from plan, update the plan (SLAM replanning)
 
-**Visible Progress**
-- **Burn Down Charts**: Track work remaining
-- **Deployment Frequency**: How often do we ship?
-- **Lead Time**: How long from code commit to production?
-- **Change Failure Rate**: How often do deployments cause incidents?
+**Visible Progress** (Transparency & Momentum)
+- **Burn Down Charts**: Track work remaining in sprint
+- **Deployment Frequency**: How often do we ship to production?
+- **Lead Time for Changes**: Commit to production duration
+- **Maintain Open Loops**: Keep work visible to leverage psychological completion drive
 
 #### Engineering Behaviors
 
@@ -160,11 +178,16 @@ Based on the original presentation structure: "Clear" (goals and definition of d
 
 ---
 
-### 3. Quest Engine Architecture & Exit Strategy
+### 3. Decompose to Actionable Units
 
-**Definition**: Hierarchical planning framework from vision to daily execution, with explicit exit strategies at every level.
+**Definition**: Break complex challenges into tractable steps - every journey is a sequence of single actions.
 
-**Origin**: From the original "Clear Strategy Architecture" (Vision Doc → Design Doc → Sprint Plan → Daily Plan) and "Exit Strategy" (definition of done for the whole project). This is the Quest Engine methodology - transforming vision into executable daily work with clear completion criteria.
+**Theoretical Roots**:
+- **Robotics Motion Planning**: Complex trajectories decomposed into discrete, executable motions
+- **Hierarchical Task Networks (HTN)**: Abstract goals decomposed into concrete actions through refinement
+- **Agile Work Breakdown Structure**: Epic → Story → Task → Subtask decomposition
+- **Cognitive Load Theory**: Working memory is limited (~7 items); chunk work to fit cognitive capacity
+- **Motivational Psychology**: Small, achievable steps build self-efficacy and momentum
 
 #### Components
 
