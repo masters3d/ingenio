@@ -33,49 +33,48 @@ _Oct, 2021_
 
 # Three Sub-Pillars of Clear Strategy
 
-1. **Direction** - Where we're going and why
-2. **Forward Progress** - Continuous visible advancement
-3. **Breaking Down** - Complex to executable tasks
+1. **Clear Goals & Definition of Done** - What to achieve and when done
+2. **Coherent Action & Feedback Loops** - How to execute with course correction
+3. **Quest Engine Architecture & Exit Strategy** - Vision to daily execution
 
 ---
 
-# Sub-Pillar 1: Direction
+# Sub-Pillar 1: Clear Goals & Definition of Done
 
-**Establishing where you're going and why it matters**
+**From original "Clear" section**
 
-- Vision Clarity (problem statement, success criteria)
-- Goal Definition (milestones, time boxes, dependencies)
-- Directive Alignment (org goals → team → individual)
-- Risk Assessment
+- Clear Goals (milestones defined, scope clear, time boxed)
+- Definition of Done (acceptance criteria, quality gates, deployment ready)
+- Alignment (team/org/technical priorities)
 
 Applied across IC levels 0-7+ with specific behaviors
 
 ---
 
-# Sub-Pillar 2: Forward Progress
+# Sub-Pillar 2: Coherent Action & Feedback Loops
 
-**Continuous movement toward goals**
+**From original "Strategy" section**
 
 - Action-Feedback-Adjustment Cycles
   - High-frequency (daily): tests, linting, builds
   - Medium-frequency (weekly): code reviews, sprint demos
   - Low-frequency (monthly): production metrics, retros
+- Establish and Maintain feedback loops (Agile/Scrum, OODA loop)
 - Incremental Delivery (feature flags, progressive rollout)
-- Visible Progress (burn down, deployment frequency)
 
 ---
 
-# Sub-Pillar 3: Breaking Down
+# Sub-Pillar 3: Quest Engine Architecture & Exit Strategy
 
-**Decomposing complexity into executable tasks**
+**From original "Clear Strategy Architecture" + "Exit Strategy"**
 
-- Hierarchical Planning
+- Hierarchical Planning (Quest Engine)
   - Vision → Design → Sprint → Daily
-- Task Characteristics
-  - Specific, Measurable, Achievable, Relevant, Time-boxed
-- Work Breakdown Structure
-  - Epic → Story → Task → Sub-task
 - Exit Strategy at every level
+  - Project: Definition of done for whole project
+  - Sprint: What's demo-ready?
+  - Task: When can I move on?
+- Work Breakdown: Epic → Story → Task → Sub-task
 
 ---
 

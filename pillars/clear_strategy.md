@@ -22,31 +22,33 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## The Three Sub-Pillars of Clear Strategy
 
-### 1. Direction
+Based on the original presentation structure: "Clear" (goals and definition of done), "Strategy" (coherent action with feedback loops and exit strategies), and the Quest Engine Architecture.
 
-**Definition**: Establishing where you're going and why it matters.
+### 1. Clear Goals & Definition of Done
 
-Direction answers the fundamental question: "What are we trying to achieve?" Without clear direction, teams build impressive solutions to the wrong problems.
+**Definition**: Establishing clear, time-boxed goals with explicit completion criteria.
+
+**Origin**: From the original "Clear" section - combining goal clarity with definition of done to ensure teams know both what to achieve and when they're finished.
 
 #### Components
 
-**Vision Clarity**
-- **Problem Statement**: What engineering challenge exists today?
-- **Success Criteria**: What does "done" look like?
-- **Scope Boundaries**: What's explicitly out of scope?
-- **Stakeholder Alignment**: Who needs what from this work?
+**Clear Goals** (Agile/Scrum Foundation)
+- **Milestones Defined**: Concrete checkpoints with observable outcomes
+- **Scope Clear**: Explicit boundaries - what's in and what's out
+- **Time Boxed**: Fixed duration with hard deadlines
+- **Measurable**: Quantifiable success criteria
 
-**Goal Definition**
-- **Milestones**: Concrete checkpoints on the journey
-- **Time Boxes**: When do we expect to reach each milestone?
-- **Dependencies**: What must happen first?
-- **Risk Assessment**: What could derail this direction?
+**Definition of Done** (Quality Gates)
+- **Acceptance Criteria**: When is this work complete?
+- **Exit Criteria**: What must be true to move forward?
+- **Quality Standards**: Tests pass, code reviewed, docs updated
+- **Deployment Ready**: Can ship to production without additional work
 
-**Directive Alignment**
-- **Organization Goals**: How does this serve broader objectives?
-- **Team Priorities**: Where does this rank among competing work?
-- **Individual Growth**: How does this advance careers?
-- **Technical Vision**: Does this move us toward our desired architecture?
+**Alignment** (Organizational Context)
+- **Team Goals**: How does this serve sprint/quarter objectives?
+- **Organization Priorities**: Connection to broader company goals
+- **Technical Direction**: Alignment with architectural vision
+- **Stakeholder Agreement**: All parties understand and accept the definition
 
 #### Engineering Behaviors
 
@@ -72,25 +74,25 @@ Direction answers the fundamental question: "What are we trying to achieve?" Wit
 
 #### Applied Examples
 
-**Bad Direction** (Vague)
+**Bad Clear Goals** (Vague)
 > "Improve the performance of the checkout service"
 
-**Good Direction** (Clear)
-> "Reduce P95 checkout latency from 800ms to 200ms by Q3, enabling conversion rate improvements. Out of scope: payment provider integrations."
+**Good Clear Goals** (Specific with DoD)
+> "Reduce P95 checkout latency from 800ms to 200ms by Q3. Done when: P95 < 200ms for 7 consecutive days in production. Out of scope: payment provider integrations."
 
-**Bad Direction** (Misaligned)
-> "Rewrite authentication service in Rust because it's faster"
+**Bad Definition of Done** (Unclear)
+> "Feature is done when it works"
 
-**Good Direction** (Aligned)
-> "Reduce authentication service operational costs by 40% to meet budget targets. Constraint: zero customer-facing downtime during migration."
+**Good Definition of Done** (Explicit)
+> "Feature is done when: (1) All acceptance criteria met, (2) Unit & integration tests >80% coverage, (3) Design doc updated, (4) Runbook written, (5) Deployed to production with monitoring."
 
 ---
 
-### 2. Forward Progress
+### 2. Coherent Action & Feedback Loops
 
-**Definition**: Continuous movement toward goals through visible, measurable advancement.
+**Definition**: Systematic behaviors with established feedback mechanisms that maintain and adjust course.
 
-Forward Progress is about momentum. Engineering work can consume infinite time without delivering value. This sub-pillar ensures steady advancement through feedback loops and incremental delivery.
+**Origin**: From the original "Strategy" section - combining coherent action (aligned behaviors) with feedback loops (establish and maintain mechanisms for course correction). Rooted in Agile/Scrum methodology and OODA loop (Observe-Orient-Decide-Act) from military strategy.
 
 #### Components
 
@@ -158,32 +160,46 @@ Forward Progress is about momentum. Engineering work can consume infinite time w
 
 ---
 
-### 3. Breaking Down into Actionable Steps
+### 3. Quest Engine Architecture & Exit Strategy
 
-**Definition**: Decomposing complex engineering challenges into concrete, executable tasks.
+**Definition**: Hierarchical planning framework from vision to daily execution, with explicit exit strategies at every level.
 
-The gap between vision and execution is bridged through decomposition. This sub-pillar is about transforming abstract goals into specific actions that individual engineers can complete.
+**Origin**: From the original "Clear Strategy Architecture" (Vision Doc → Design Doc → Sprint Plan → Daily Plan) and "Exit Strategy" (definition of done for the whole project). This is the Quest Engine methodology - transforming vision into executable daily work with clear completion criteria.
 
 #### Components
 
-**Hierarchical Planning**
-- **Vision Document**: The "why" and high-level "what" (Quarterly/Yearly)
-- **Design Document**: Technical approach and architecture (Monthly)
-- **Sprint Plan**: Specific features and tasks (Weekly)
-- **Daily Plan**: Today's concrete next steps (Daily)
+**Hierarchical Planning** (The Quest Engine)
+- **Vision Document**: The "why" and high-level "what" (Quarterly/Yearly scope)
+  - Problem statement, business case, success criteria
+  - Stakeholders, assumptions, constraints
+  - Exit strategy: When is the initiative complete?
 
-**Task Characteristics**
-- **Specific**: "Implement JWT token validation" not "work on auth"
-- **Measurable**: Clear completion criteria (tests pass, PR merged)
-- **Achievable**: Fits within available time and skill level
-- **Relevant**: Directly contributes to sprint/milestone goal
-- **Time-Boxed**: Has explicit deadline or time estimate
+- **Design Document**: Technical approach and architecture (Monthly scope)
+  - System design, API contracts, data models
+  - Technology choices with rationale (ADRs)
+  - Exit strategy: When can we start implementing?
 
-**Work Breakdown Structure**
-- **Epic**: Large feature spanning multiple sprints
-- **Story**: User-facing functionality deliverable in a sprint
-- **Task**: Technical work item completable in days
-- **Sub-task**: Implementation detail completable in hours
+- **Sprint Plan**: Specific features and tasks (Weekly/2-week scope)
+  - User stories, technical tasks, dependencies
+  - Sprint goal and demo scenarios
+  - Exit strategy: Definition of done for sprint
+
+- **Daily Plan**: Today's concrete next steps (Daily scope)
+  - Specific work items for today
+  - Blockers and dependencies
+  - Exit strategy: What makes today successful?
+
+**Exit Strategy at Every Level** (Scrum/Agile Foundation)
+- **Project Exit**: When can we sunset this initiative?
+- **Feature Exit**: When is this feature complete and shipped?
+- **Sprint Exit**: What must be demo-ready?
+- **Task Exit**: When can I mark this done and move on?
+
+**Work Breakdown Structure** (Agile Terminology)
+- **Epic**: Large initiative spanning multiple sprints (maps to Vision)
+- **Story**: User-facing functionality deliverable in a sprint (maps to Design)
+- **Task**: Technical work item completable in days (maps to Sprint Plan)
+- **Sub-task**: Implementation detail completable in hours (maps to Daily Plan)
 
 **Exit Strategy**
 - **Task-Level DoD**: When is this task complete?
@@ -214,27 +230,34 @@ The gap between vision and execution is bridged through decomposition. This sub-
 
 #### Applied Examples
 
-**Bad Breakdown** (Too Abstract)
+**Bad Hierarchy** (Too Abstract, No Exit Strategy)
 > Epic: "Modernize the platform"
 
-**Good Breakdown** (Concrete)
-> Vision: Reduce operational toil by 50% through automation
-> Design: Implement auto-scaling for all services
-> Sprint 1: Auto-scale web tier
->   - Task: Add CPU/memory metrics to dashboards
->   - Task: Configure horizontal pod autoscaling
->   - Task: Load test to validate scaling behavior
-> Daily: Today I'm implementing CPU metrics collection
+**Good Hierarchy** (Quest Engine with Exit Strategies)
+> **Vision**: Reduce operational toil by 50% through automation (Q4 target)
+> - Exit: 50% reduction in manual deploy steps, measured monthly
+>
+> **Design**: Implement auto-scaling for all services
+> - Exit: Auto-scaling design approved, ready for implementation
+>
+> **Sprint 1**: Auto-scale web tier (2-week sprint)
+> - User Story: As ops, I want auto-scaling so I don't manually adjust capacity
+> - Exit/DoD: Web tier scales 0-100 instances based on CPU, demo-able
+>   - Task 1: Add CPU/memory metrics to dashboards (2 days)
+>   - Task 2: Configure horizontal pod autoscaling (1 day)
+>   - Task 3: Load test to validate scaling behavior (2 days)
+>
+> **Daily**: Today I'm implementing CPU metrics collection
+> - Exit: CPU metrics visible in dashboard by end of day
 
-**Bad Breakdown** (Too Large)
-> Task: "Build the entire recommendation engine" (assigned 2 weeks)
+**Bad Exit Strategy** (Vague)
+> "We're done when it's ready"
 
-**Good Breakdown** (Right-Sized)
-> Week 1, Day 1-2: Collaborative filtering algorithm implementation
-> Week 1, Day 3-4: Offline evaluation framework
-> Week 1, Day 5: Integration with existing API
-> Week 2, Day 1-3: A/B testing framework
-> Week 2, Day 4-5: Production rollout with monitoring
+**Good Exit Strategy** (Explicit at Each Level)
+> - Project: Done when 50% toil reduction sustained for 3 months
+> - Feature: Done when in production handling 100% traffic with SLO met
+> - Sprint: Done when demo shows auto-scaling working
+> - Task: Done when PR merged and deployed to staging
 
 ---
 

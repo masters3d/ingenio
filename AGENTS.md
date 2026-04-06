@@ -28,23 +28,23 @@ The foundational framework organizing all content and development in this reposi
 The execution pillar - transforming ambiguous directives into concrete, achievable outcomes.
 
 #### Three Sub-Pillars
-1. **Direction**: Establishing where you're going and why it matters
-   - Vision clarity and problem statements
-   - Goal definition with milestones and time boxes
-   - Directive alignment from individual to organization
+1. **Clear Goals & Definition of Done**: Establishing clear, time-boxed goals with explicit completion criteria
+   - Clear goals (milestones defined, scope clear, time boxed)
+   - Definition of done (acceptance criteria, quality standards, deployment ready)
+   - Alignment (team/org priorities, technical direction)
    - Applied across IC levels 0-7+ with specific behaviors
 
-2. **Forward Progress**: Continuous movement toward goals through visible, measurable advancement
+2. **Coherent Action & Feedback Loops**: Systematic behaviors with established feedback mechanisms
    - Action-feedback-adjustment cycles (high/medium/low frequency)
    - Incremental delivery through feature flags and progressive rollout
    - Visible progress via deployment frequency, lead time, velocity
-   - Fail fast philosophy - discover issues early when cheap to fix
+   - Establish and maintain feedback loops (Agile/Scrum methodology, OODA loop)
 
-3. **Breaking Down into Actionable Steps**: Decomposing complex challenges into executable tasks
+3. **Quest Engine Architecture & Exit Strategy**: Hierarchical planning from vision to daily execution
    - Hierarchical planning (Vision → Design → Sprint → Daily)
-   - Task characteristics (Specific, Measurable, Achievable, Relevant, Time-boxed)
+   - Exit strategy at every level (project, sprint, task completion criteria)
    - Work breakdown structure (Epic → Story → Task → Sub-task)
-   - Exit strategy at every level (task, sprint, project)
+   - Definition of done for the whole project
 
 **See**: `/pillars/clear_strategy.md` for complete specification
 
@@ -84,23 +84,23 @@ The motivation pillar - harnessing internal desires for sustainable, high-qualit
 The understanding pillar - recognizing that effective decisions require deep understanding of environment, constraints, timing, and audience.
 
 #### Three Sub-Pillars
-1. **Async vs Sync**: Choosing the right temporal communication model
-   - Asynchronous communication (time-decoupled, persistent, searchable, scales)
-   - Synchronous communication (real-time, immediate feedback, relationship building)
+1. **Async vs Sync Context Sharing**: Choosing appropriate temporal communication model
+   - Async context (ReadWrite: text/visual/interactive, ReadOnly: docs/videos)
+   - Synchronous context (real-time collaboration, meetings, pair programming)
    - Communication mode selection (documentation default async, incidents default sync)
-   - Hybrid patterns (async-first, sync-then-async, time-boxed sync)
+   - Desired qualities: async medium preferred, sync as case-by-case enhancement
 
-2. **Ahead of Time vs Just in Time**: When to invest in preparation vs defer until needed
-   - Ahead of Time (proactive, prepared, optimized upfront)
-   - Just in Time (reactive, deferred, optimized when needed)
-   - Decision matrix (core architecture AoT, edge cases JiT)
-   - YAGNI principle vs Scout Rule ("leave it better than you found it")
+2. **Observability via Telemetry & Push vs Pull Models**: Making systems observable through structured telemetry
+   - The three pillars of observability: Logs (events), Metrics (numbers), Traces (flows)
+   - Push model (agent pushes, scheduled, proactive alerts)
+   - Pull model (crawler pulls, on-demand, self-service)
+   - Audience encapsulation (SLA public, SLO internal, SLI private)
 
-3. **Cognitive Artifacts**: External representations preserving context beyond individual memory
-   - Documentation artifacts (design docs, ADRs, runbooks, READMEs)
-   - Observability artifacts (logs, metrics, traces, dashboards, alerts)
-   - Process artifacts (issues, PRs, RFCs, post-mortems, sprint plans)
-   - Code as artifact (types, tests, API contracts, version control)
+3. **Economics of Context & Tragedy of the Commons**: Managing context as shared resource
+   - Tragedy of the commons (shared resource degradation)
+   - Systemic solutions (make it easy, visible, required, integrated)
+   - Cognitive artifacts (documentation, observability, process, code)
+   - Context decay prevention through ownership and maintenance
 
 **Economics**: Tragedy of the commons in context sharing, context decay (half-life), push vs pull models
 

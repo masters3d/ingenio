@@ -20,25 +20,45 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 
 ## The Three Sub-Pillars of Contextual Awareness
 
-### 1. Async vs Sync (Communication Timing)
+Based on the original presentation structure: async vs synchronous context sharing, the three pillars of observability (logs, metrics, traces), and the push vs pull communication models with audience encapsulation (SLA/SLO/SLI).
 
-**Definition**: Choosing the right temporal communication model based on context - immediate response vs eventual response.
+### 1. Async vs Sync Context Sharing
 
-The async vs sync decision fundamentally shapes how teams collaborate, how knowledge scales, and how engineers manage their focus.
+**Definition**: Choosing the appropriate temporal communication model based on scalability, urgency, and context preservation needs.
+
+**Origin**: From the original presentation "Folks Contributing: Async vs synchronous contribution" and "ReadWrite vs ReadOnly" mediums. Rooted in the philosophy that async documentation scales while sync communication doesn't, but both have appropriate uses.
 
 #### Components
 
-**Asynchronous Communication**
-- **Characteristics**: Time-decoupled, persistent, searchable, scales
-- **Mediums**: Documentation, email, pull request comments, design docs, wiki
-- **Benefits**: Deep work preservation, timezone flexibility, written record
-- **Costs**: Slower feedback, potential misunderstandings, requires writing skill
+**Async Context - ReadWrite Medium** (Scales, Persistent)
+- **Text**: Markdown, Wiki, Word documents
+- **Visual**: Graphics, drawings (paint app, whiteboard photos, vector apps), presentations (PowerPoint/Marp slides)
+- **Interactive**: PR collaboration, document comments, email threads
+- **Benefits**: Persistent record, searchable, timezone-flexible, enables deep work
+- **Use When**: Documentation, code review, design proposals, knowledge sharing
 
-**Synchronous Communication**
-- **Characteristics**: Real-time, ephemeral (unless recorded), immediate feedback
-- **Mediums**: Meetings, video calls, instant messaging, pair programming, in-person
-- **Benefits**: Rapid iteration, nuanced discussion, relationship building
-- **Costs**: Doesn't scale, interrupts focus, limited by schedule, context lost
+**Async Context - ReadOnly Medium** (Broadcast)
+- **Audio/Visual**: Recorded presentations, video demos
+- **Documentation Websites**: Guides, troubleshooting, tutorials (no contribution process)
+- **Benefits**: One-to-many distribution, consistent message
+- **Limitation**: No feedback loop, can become stale
+
+**Synchronous Context Medium** (Real-time)
+- **Real-time Collaboration**: Meetings, live chat, in-person conversation, pair programming
+- **Characteristics**: Single use, must repeat for every new person/group
+- **Benefits**: Immediate feedback, nuanced discussion, relationship building
+- **Limitation**: Doesn't scale, interrupts focus, context lost unless recorded
+- **Use When**: Incidents, complex alignment, relationship building, urgent decisions
+
+**Context Contribution Models**
+- **Short-term vs Long-term**: Fixing a bug (short-term) vs Maintainer (long-term)
+- **ReadWrite**: Can contribute updates and improvements
+- **ReadOnly**: Can only consume, cannot improve
+
+**Desired Qualities** (From Original Presentation)
+- Available in async medium, easy to consume and contribute updates
+- Subject matter experts available over async communication for clarification
+- Sync meetings arranged case-by-case as enhancement to async (not replacement)
 
 **Communication Mode Selection**
 
@@ -101,135 +121,241 @@ The async vs sync decision fundamentally shapes how teams collaborate, how knowl
 
 ---
 
-### 2. Ahead of Time vs Just in Time (Temporal Planning)
+### 2. Observability via Telemetry & Push vs Pull Models
 
-**Definition**: When to invest in preparation vs when to defer until needed.
+**Definition**: Making systems and careers observable through structured telemetry (logs, metrics, traces) and choosing appropriate information delivery models (push vs pull).
 
-The ahead-of-time vs just-in-time decision affects everything from architecture to documentation to career planning. It's about optimal timing of investment.
+**Origin**: From the original presentation "The three pillars of observability" (logs, metrics, traces) and "Model: Push vs Pull". Observability enables understanding of complex systems and career progression through data rather than guesswork. Based on IBM Cloud observability framework and monitoring best practices.
 
 #### Components
 
-**Ahead of Time (AoT)**
-- **Characteristics**: Proactive, prepared, optimized upfront
-- **When to Use**: Known future needs, high reuse, expensive to change later
-- **Benefits**: Ready when needed, optimized, reduces future risk
-- **Costs**: Upfront investment, might not be needed (YAGNI), can become stale
+**The Three Pillars of Observability** (Industry Standard)
 
-**Just in Time (JiT)**
-- **Characteristics**: Reactive, deferred, optimized when needed
-- **When to Use**: Uncertain needs, one-time work, cheap to change
-- **Benefits**: No waste on unused work, stays current, optimized for actual needs
-- **Costs**: Delays when needed urgently, suboptimal if done rushed
+1. **Logs: A record of what's happening within your software**
+   - Structured logging (JSON, key-value pairs)
+   - Contextual information (trace IDs, user IDs, timestamps)
+   - Severity levels (DEBUG, INFO, WARN, ERROR, FATAL)
+   - Use: Debugging specific issues, audit trails, compliance
 
-**Engineering Decision Matrix**
+2. **Metrics: A numerical assessment of application performance and resource utilization**
+   - Time series data (counters, gauges, histograms)
+   - Golden signals: Latency, Traffic, Errors, Saturation
+   - System metrics: CPU, memory, disk, network
+   - Business metrics: Conversion rates, revenue, user engagement
+   - Use: Dashboards, alerts, capacity planning, SLO monitoring
 
-| Decision Area | Ahead of Time | Just in Time |
-|---------------|---------------|--------------|
-| **Documentation** | Core architecture | Edge case troubleshooting |
-| **Testing** | Unit/integration tests | Exploratory testing |
-| **Optimization** | Known bottlenecks | Premature optimization |
-| **Infrastructure** | Production capacity | Dev environment setup |
-| **Learning** | Onboarding docs | Specialized tool usage |
-| **Refactoring** | Before new features | After pattern emerges 3x |
-| **Security** | Authentication/auth | Feature-specific concerns |
-| **Monitoring** | Golden signals (latency, errors, saturation, traffic) | Custom metrics |
+3. **Traces: How operations move throughout a system, from one node to another**
+   - Distributed tracing across microservices
+   - Request flow visualization
+   - Latency breakdown by service
+   - Dependency mapping
+   - Use: Performance optimization, understanding system interactions
 
-**Compilation Analogy**
-- **AoT Compilation**: C/C++/Rust - compile once, run fast everywhere
-- **JiT Compilation**: Java/JavaScript - compile when needed, adapt to runtime
-- **Interpreted**: Python - ultimate JiT, maximum flexibility, slowest execution
+**Push vs Pull Communication Models**
 
-**The YAGNI Principle**
-"You Aren't Gonna Need It" - Don't build ahead of time what you aren't certain you'll need.
+**Push Model** (Scheduled, Proactive)
+- **Agent that pushes**: Metrics agent sends data on schedule
+- **Characteristics**: Regular intervals, predictable load, immediate alerting
+- **Examples**: Prometheus push gateway, log shippers, alert notifications
+- **When to Use**: Real-time monitoring, critical alerts, SLO dashboards
+- **Benefits**: Proactive awareness, immediate notification
+- **Costs**: Can overwhelm, alert fatigue, noise
 
-**The Scout Rule**
-"Leave code better than you found it" - JiT improvement during each touch.
+**Pull Model** (On Demand, Reactive)
+- **Crawler is pull mode**: Scraper fetches data when needed
+- **Characteristics**: On-demand, scales with consumer needs
+- **Examples**: Prometheus scraping, documentation searches, API calls
+- **When to Use**: Reference information, self-service, exploration
+- **Benefits**: Consumer controls timing, reduces push noise
+- **Costs**: May miss time-sensitive information, requires knowing where to look
+
+**Observability is Contextual** (Audience-Dependent)
+- **It depends on the observer (Audience)**: Different stakeholders need different views
+- **Project Architecture Levels**:
+  - System (Software Service)
+    - Subsystem
+      - Component (Unit)
+        - SubComponent
+
+**Audience Encapsulation** (SLA/SLO/SLI Framework)
+
+From Atlassian's incident management framework, observability must be scoped to audience:
+
+- **High Level: Project Leadership** → **Service Level Agreement (SLA)** (Public)
+  - External commitments to customers
+  - Example: "99.9% uptime, <200ms P95 latency"
+  - Penalties if violated
+  - Push: Violation alerts
+
+- **Med Level: Engineering Leadership** → **Service Level Objectives (SLO)** (Internal)
+  - Internal targets with buffer below SLA
+  - Example: "99.95% uptime, <150ms P95 latency"
+  - Error budget tracking
+  - Push: SLO burn rate alerts
+
+- **Low Level: Engineers** → **Service Level Indicators (SLI)** (Private)
+  - Detailed implementation metrics
+  - Example: "/health endpoint every 10s, alert if 3 consecutive failures"
+  - Raw telemetry: all logs, metrics, traces
+  - Pull: Engineers query as needed for debugging
+
+**Career Observability** (Apply to People Systems)
+- **Logs**: Work history, project involvement, incident participation
+- **Metrics**: Delivery velocity, code review participation, uptime
+- **Traces**: How work flows through you and your collaborators
+- **Audience**: Performance reviews use SLA/SLO/SLI model for different audiences
 
 #### Engineering Behaviors
 
 **Level 0-1 (Apprentice/Component Creator)**
-- Writes tests before fixing bugs (AoT safety)
-- Defers optimization until profiling shows need (JiT)
-- Reads relevant docs before starting task (AoT)
-- Learns new tools as needed for specific tasks (JiT)
+- Adds structured logging to code they write
+- Reviews dashboards to understand system health
+- Uses traces to debug their own code
+- Understands team's SLIs
 
 **Level 2-3 (Designer/System Guide)**
-- Designs components for known requirements (AoT)
-- Adds extensibility only when pattern repeats 3x (JiT)
-- Documents critical paths ahead of on-call (AoT)
-- Troubleshoots issues as they occur (JiT)
+- Designs observability into components (logs, metrics, traces)
+- Creates dashboards for features they own
+- Sets up alerts based on SLOs
+- Documents what metrics mean
 
 **Level 4-5 (System Maintainer/Multi-System Designer)**
-- Plans capacity for known traffic patterns (AoT)
-- Scales reactively to unexpected spikes (JiT)
-- Builds monitoring before launching features (AoT)
-- Creates alerts based on actual incidents (JiT)
+- Establishes SLOs for systems they own
+- Builds comprehensive monitoring strategy
+- Implements push alerts for critical issues
+- Provides pull-based dashboards for exploration
 
 **Level 6-7+ (Coordinator/Architect)**
-- Sets technology direction for 2-3 years (AoT)
-- Adapts strategy to market changes (JiT)
-- Builds platforms for anticipated needs (AoT)
-- Pivots architecture based on actual usage (JiT)
+- Sets observability standards across organization
+- Defines SLA/SLO/SLI hierarchy for stakeholders
+- Builds observability platforms
+- Balances push (alerts) vs pull (dashboards) strategies
 
 #### Applied Examples
 
-**Good AoT Investment**
-> "We're launching in 3 months. Let's set up monitoring, alerting, and runbooks now so we're not scrambling during the first incident."
+**Bad Observability** (No Telemetry)
+> "The system is slow. I don't know why. Let me add print statements and redeploy."
 
-**Bad AoT Investment (YAGNI)**
-> "We might need to support 1000x scale someday. Let's build a distributed system with Kubernetes, service mesh, and multi-region replication for our MVP with 10 users."
+**Good Observability** (Three Pillars)
+> "P95 latency spiked to 2s at 14:30 (metrics). Trace shows database query taking 1.8s (traces). Query log shows full table scan on users table (logs). Adding index."
 
-**Good JiT Investment**
-> "We have 100 users and this monolith serves them fine. When we hit scaling issues, we'll profile, find bottlenecks, and optimize."
+**Bad Push/Pull Balance** (Alert Fatigue)
+> "Every metric change triggers a Slack message. Team ignores all alerts. Production is down and nobody noticed."
 
-**Bad JiT Investment (Procrastination)**
-> "We'll add authentication after we launch. What could go wrong?" (Narrator: Everything went wrong)
+**Good Push/Pull Balance** (Appropriate Channels)
+> "Push: SLO violations alert on-call immediately. Pull: Engineers check dashboards for deep dives. Weekly SLO review pulls trend data."
+
+**Bad Audience Encapsulation** (Wrong Level)
+> "CEO asks about uptime. Engineer responds with 'container restart count and heap memory graphs.'"
+
+**Good Audience Encapsulation** (SLA/SLO/SLI)
+> "CEO: Here's our SLA dashboard showing 99.95% uptime. Engineering Lead: Here's SLO burn rate, we're 80% into error budget. Engineers: Here are the specific SLI metrics and traces."
 
 ---
 
-### 3. Cognitive Artifacts (Context Preservation)
+### 3. Economics of Context & Tragedy of the Commons
 
-**Definition**: External representations of knowledge and context that extend human cognitive capabilities.
+**Definition**: Managing context as a shared resource, avoiding its degradation through economic incentives and systemic solutions.
 
-Cognitive artifacts are tools, documents, and systems that preserve context beyond individual memory. They enable collaboration across time and space.
+**Origin**: From the original presentation "Economics: Tragedy of the commons" (Wikipedia reference). Context is like a commons - everyone benefits from good documentation and knowledge sharing, but creating and maintaining it costs individual time. Without intervention, the commons degrades.
 
 #### Components
 
-**Documentation as Cognitive Artifacts**
+**Tragedy of the Commons** (Economic Problem)
+
+From Garrett Hardin's 1968 paper - a shared resource tends to be overused and under-maintained when individuals act in self-interest.
+
+**Context as Commons**:
+- **Shared Resource**: Documentation, tribal knowledge, code context
+- **Benefits**: Everyone gains from good context (faster onboarding, fewer interruptions, better decisions)
+- **Costs**: Individual time to create and maintain (writing docs, code comments, ADRs)
+- **Problem**: Everyone consumes (reads docs), few contribute (writes docs) → context degrades over time
+
+**Context Decay** (Half-Life of Knowledge)
+- **Code without comments**: 6 months until original intent is lost
+- **Documentation without ownership**: 1 year until significantly stale
+- **Tribal knowledge**: Lost immediately when person leaves company
+- **Undocumented decisions**: Rediscovered painfully through archeology
+
+**Systemic Solutions to the Commons Problem**
+
+1. **Make It Easy** (Reduce Individual Cost)
+   - Low-friction documentation tools (Markdown, wikis, docs-as-code)
+   - Templates and examples
+   - Auto-generated docs from code (Swagger, TSDoc, Javadoc)
+   - Bots that remind/prompt for documentation
+
+2. **Make It Visible** (Reward Contributors)
+   - Credit documentation authors
+   - Track documentation contributions in performance reviews
+   - Celebrate knowledge sharing (internal tech talks, blog posts)
+   - Make "improved documentation" visible in sprint demos
+
+3. **Make It Required** (Enforce via Process)
+   - Code review requires documentation updates
+   - Definition of Done includes docs
+   - No PR merge without updated README/ADR
+   - Documentation coverage metrics like test coverage
+
+4. **Make It Integrated** (Docs Live with Code)
+   - Code comments and docstrings
+   - README in every repo
+   - ADRs in `/docs` directory
+   - Tests as documentation of expected behavior
+
+**Cognitive Artifacts** (Preserving Context)
+
+**Documentation Artifacts** (Permanent Record)
 - **Design Docs**: Architectural decisions and reasoning
-- **ADRs (Architectural Decision Records)**: Why we chose X over Y
+- **ADRs (Architectural Decision Records)**: Why we chose X over Y, with date and status
 - **Runbooks**: Operational procedures for incidents
 - **READMEs**: How to get started with a codebase
-- **Code Comments**: Why this non-obvious code exists
-- **Commit Messages**: What changed and why
+- **Code Comments**: Why this non-obvious code exists (not what it does)
+- **Commit Messages**: What changed and why (semantic commits)
 
-**Observability as Cognitive Artifacts**
-- **Logs**: What happened (event stream)
-- **Metrics**: How much/how often (time series)
-- **Traces**: How requests flow (distributed execution)
+**Observability Artifacts** (Runtime Context)
+- **Logs**: What happened (event stream) - Already covered in Sub-Pillar 2
+- **Metrics**: How much/how often (time series) - Already covered in Sub-Pillar 2
+- **Traces**: How requests flow (distributed execution) - Already covered in Sub-Pillar 2
 - **Dashboards**: Visual representation of system state
 - **Alerts**: Automated attention direction
 
-**Process Artifacts**
-- **Issue Trackers**: What needs doing and why
+**Process Artifacts** (Work Context)
+- **Issue Trackers**: What needs doing and why (Jira, GitHub Issues)
 - **Pull Requests**: Code change context and discussion
-- **RFCs (Request for Comments)**: Proposal and feedback
-- **Post-Mortems**: What went wrong and how to prevent
+- **RFCs (Request for Comments)**: Proposal and feedback process
+- **Post-Mortems**: What went wrong, how to prevent recurrence
 - **Sprint Plans**: What we're doing and why now
+- **Meeting Notes**: Decisions and action items (async record of sync)
 
-**Organizational Artifacts**
-- **Team Charters**: Why this team exists
-- **Career Ladders**: What growth looks like
+**Organizational Artifacts** (Structure Context)
+- **Team Charters**: Why this team exists, mission, ownership
+- **Career Ladders**: What growth looks like at each IC level
 - **OKRs/Goals**: What success means this quarter
-- **Org Charts**: Who does what
+- **Org Charts**: Who does what, reporting structure
 - **On-call Rotations**: Who's responsible when
 
-**Code as Cognitive Artifact**
-- **Type Systems**: Compiler-enforced context
-- **Tests**: Expected behavior codified
-- **API Contracts**: Interface guarantees
-- **Version Control**: Historical context
-- **Code Structure**: Architectural intent
+**Code as Cognitive Artifact** (Living Documentation)
+- **Type Systems**: Compiler-enforced context (TypeScript, Rust, Go)
+- **Tests**: Expected behavior codified (unit, integration, E2E)
+- **API Contracts**: Interface guarantees (OpenAPI, Protocol Buffers)
+- **Version Control**: Historical context (git history, git blame)
+- **Code Structure**: Architectural intent (file organization, naming)
+
+**Context Sharing Economics**
+
+**Push Model Costs** (Creating Context):
+- Time to write documentation
+- Cognitive load to articulate tacit knowledge
+- Maintenance burden (keeping docs current)
+
+**Pull Model Benefits** (Consuming Context):
+- Faster onboarding (don't need to ask people)
+- Better decisions (historical context available)
+- Fewer interruptions (self-service instead of asking)
+- Organizational memory (survives people leaving)
+
+**Optimal Strategy**: Internalize benefits through systems that reduce individual costs and increase individual incentives
 
 #### Cognitive Artifact Quality
 

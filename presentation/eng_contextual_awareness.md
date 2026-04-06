@@ -42,53 +42,54 @@ _Oct, 2021_
 
 # Three Sub-Pillars of Contextual Awareness
 
-1. **Async vs Sync** - Temporal communication model
-2. **Ahead of Time vs Just in Time** - Temporal planning
-3. **Cognitive Artifacts** - Context preservation
+1. **Async vs Sync Context Sharing** - Temporal communication model
+2. **Observability & Push vs Pull** - Three pillars of telemetry
+3. **Economics of Context & Tragedy of Commons** - Shared resource management
 
 ---
 
-# Sub-Pillar 1: Async vs Sync
+# Sub-Pillar 1: Async vs Sync Context Sharing
 
-**Choosing the right temporal communication model**
+**From original "Folks Contributing: Async vs synchronous"**
 
-- Async (time-decoupled, persistent, searchable, scales)
-  - Documentation, PRs, email, design docs
-- Sync (real-time, immediate feedback, relationship building)
-  - Meetings, pair programming, incidents
-- Communication Mode Selection
-  - Documentation → Async default
-  - Incident Response → Sync default
-- Hybrid Patterns (async-first, sync-then-async)
-
----
-
-# Sub-Pillar 2: Ahead of Time vs Just in Time
-
-**When to invest in preparation vs defer until needed**
-
-- Ahead of Time (proactive, prepared)
-  - Core architecture, monitoring, known bottlenecks
-- Just in Time (reactive, deferred)
-  - Edge cases, one-time work, premature optimization
-- YAGNI vs Scout Rule
-  - "You Aren't Gonna Need It"
-  - "Leave it better than you found it"
+- Async Context - ReadWrite Medium
+  - Text, Visual, Interactive (scales, persistent)
+- Async Context - ReadOnly Medium
+  - Audio/visual, documentation websites
+- Synchronous Context Medium
+  - Meetings, pair programming (doesn't scale, useful)
+- Desired: Async medium default, sync case-by-case
 
 ---
 
-# Sub-Pillar 3: Cognitive Artifacts
+# Sub-Pillar 2: Observability & Push vs Pull Models
 
-**External representations preserving context**
+**From original "Three Pillars of Observability" + "Push vs Pull"**
 
-- Documentation Artifacts
-  - Design docs, ADRs, runbooks, READMEs
-- Observability Artifacts
-  - Logs, Metrics, Traces, Dashboards, Alerts
-- Process Artifacts
-  - Issues, PRs, RFCs, post-mortems, sprint plans
-- Code as Artifact
-  - Types, tests, API contracts, version control
+- The Three Pillars of Observability (IBM Cloud):
+  - Logs: Record of what's happening
+  - Metrics: Numerical assessment of performance
+  - Traces: How operations move through system
+- Push Model: Agent pushes (scheduled, proactive)
+- Pull Model: Crawler pulls (on demand, reactive)
+- Audience Encapsulation: SLA (public) / SLO (internal) / SLI (private)
+
+---
+
+# Sub-Pillar 3: Economics of Context & Tragedy of Commons
+
+**From original "Economics: Tragedy of the commons"**
+
+- Context as Shared Resource
+  - Benefits: Everyone gains from good docs
+  - Costs: Individual time to create/maintain
+  - Problem: Everyone consumes, few contribute
+- Systemic Solutions:
+  - Make it Easy (reduce cost)
+  - Make it Visible (reward contributors)
+  - Make it Required (enforce via process)
+  - Make it Integrated (docs live with code)
+- Context Decay: Half-life of knowledge without maintenance
 
 ---
 
