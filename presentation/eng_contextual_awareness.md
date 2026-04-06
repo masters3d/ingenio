@@ -40,9 +40,61 @@ _Oct, 2021_
 
 ---
 
+# Three Sub-Pillars of Contextual Awareness
+
+1. **Async vs Sync** - Temporal communication model
+2. **Ahead of Time vs Just in Time** - Temporal planning
+3. **Cognitive Artifacts** - Context preservation
+
+---
+
+# Sub-Pillar 1: Async vs Sync
+
+**Choosing the right temporal communication model**
+
+- Async (time-decoupled, persistent, searchable, scales)
+  - Documentation, PRs, email, design docs
+- Sync (real-time, immediate feedback, relationship building)
+  - Meetings, pair programming, incidents
+- Communication Mode Selection
+  - Documentation → Async default
+  - Incident Response → Sync default
+- Hybrid Patterns (async-first, sync-then-async)
+
+---
+
+# Sub-Pillar 2: Ahead of Time vs Just in Time
+
+**When to invest in preparation vs defer until needed**
+
+- Ahead of Time (proactive, prepared)
+  - Core architecture, monitoring, known bottlenecks
+- Just in Time (reactive, deferred)
+  - Edge cases, one-time work, premature optimization
+- YAGNI vs Scout Rule
+  - "You Aren't Gonna Need It"
+  - "Leave it better than you found it"
+
+---
+
+# Sub-Pillar 3: Cognitive Artifacts
+
+**External representations preserving context**
+
+- Documentation Artifacts
+  - Design docs, ADRs, runbooks, READMEs
+- Observability Artifacts
+  - Logs, Metrics, Traces, Dashboards, Alerts
+- Process Artifacts
+  - Issues, PRs, RFCs, post-mortems, sprint plans
+- Code as Artifact
+  - Types, tests, API contracts, version control
+
+---
+
 # Etymology of context
 
-- Root Latin `contextus`, from `con`- ‘together’ + `texere` ‘to weave’.
+- Root Latin `contextus`, from `con`- 'together' + `texere` 'to weave'.
 - Same root word as text.
 
 

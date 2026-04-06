@@ -26,6 +26,67 @@ _Oct, 2021_
 :::-->
 ---
 
+# Three Sub-Pillars of Intrinsic Drive
+
+1. **Mastery** - Urge to get better at things that matter
+2. **Autonomy** - Desire to direct your own work
+3. **Purpose** - Connection to meaningful work
+
+---
+
+# Sub-Pillar 1: Mastery
+
+**The urge to get better through deliberate practice**
+
+- Skill Development (depth building, breadth expansion)
+- Learning Mechanisms
+  - By Doing, Teaching, Failing, Reading
+- Expertise Levels
+  - Novice → Advanced Beginner → Competent → Proficient → Expert
+- Mastery Domains (Technical, Domain, Process, People)
+
+---
+
+# Sub-Pillar 2: Autonomy
+
+**Desire to direct your own work and own outcomes**
+
+- Decision-Making Authority
+  - Technical, Process, Priority, Quality decisions
+- Ownership Models
+  - Code, Feature, System, Problem ownership
+- Autonomy Enablers
+  - Clear boundaries, sufficient context, psychological safety
+- Constraints: Alignment, Visibility, Reversibility
+
+---
+
+# Sub-Pillar 3: Purpose
+
+**Connection to meaningful work beyond personal gain**
+
+- Meaning Sources
+  - User impact, technical challenge, team mission
+- Purpose Hierarchy
+  - Task → Feature → System → Organization → Society
+- Directive Alignment
+  - Clarity, Agreement, Contribution, Communication
+- Avoiding Purpose Erosion
+
+---
+
+# Psychology: Self-Determination Theory
+
+Three fundamental psychological needs:
+
+1. **Competence** (Mastery) - Feeling effective
+2. **Autonomy** - Experiencing choice and volition
+3. **Relatedness** (Purpose) - Connected to something meaningful
+
+When satisfied → Intrinsic Motivation
+
+---
+
 
 # Motivations
 

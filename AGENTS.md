@@ -17,27 +17,94 @@ This repository serves as a **knowledge mill** for engineering excellence, grind
 
 ## Three Pillars Quest Engine Framework
 
-The foundational framework organizing all content and development in this repository:
+The foundational framework organizing all content and development in this repository. Each pillar is supported by three sub-pillars that provide concrete, actionable guidance for engineering excellence.
+
+**Full Documentation**: See `/pillars/` directory for detailed specifications of each pillar and sub-pillar.
 
 ### 1. Clear Strategy
+**Etymology**: From Greek _strategia_ - "art of the general"
 **Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
-- **Clear Goals**: Mile stones defined, scope clear, time boxed
-- **Coherent Action**: Behaviors with feedback loops
-- **Exit Strategy**: Definition of done for entire projects
 
-### 2. Intrinsic Drive  
+The execution pillar - transforming ambiguous directives into concrete, achievable outcomes.
+
+#### Three Sub-Pillars
+1. **Direction**: Establishing where you're going and why it matters
+   - Vision clarity and problem statements
+   - Goal definition with milestones and time boxes
+   - Directive alignment from individual to organization
+   - Applied across IC levels 0-7+ with specific behaviors
+
+2. **Forward Progress**: Continuous movement toward goals through visible, measurable advancement
+   - Action-feedback-adjustment cycles (high/medium/low frequency)
+   - Incremental delivery through feature flags and progressive rollout
+   - Visible progress via deployment frequency, lead time, velocity
+   - Fail fast philosophy - discover issues early when cheap to fix
+
+3. **Breaking Down into Actionable Steps**: Decomposing complex challenges into executable tasks
+   - Hierarchical planning (Vision → Design → Sprint → Daily)
+   - Task characteristics (Specific, Measurable, Achievable, Relevant, Time-boxed)
+   - Work breakdown structure (Epic → Story → Task → Sub-task)
+   - Exit strategy at every level (task, sprint, project)
+
+**See**: `/pillars/clear_strategy.md` for complete specification
+
+### 2. Intrinsic Drive
+**Etymology**: Latin _intrinsecus_ (inward) + _drīfan_ (to propel)
 **Focus**: Internal motivation over external rewards
-- **Mastery**: Continuous skill development
-- **Autonomy**: Ownership and self-direction
-- **Purpose**: Alignment on meaningful directives
-- **vs Extrinsic**: Moving beyond carrot/stick motivation
+
+The motivation pillar - harnessing internal desires for sustainable, high-quality work.
+
+#### Three Sub-Pillars
+1. **Mastery**: The urge to get better at things that matter
+   - Skill development through deliberate practice and feedback integration
+   - Learning mechanisms (doing, teaching, failing, reading)
+   - Expertise levels (Novice → Advanced Beginner → Competent → Proficient → Expert)
+   - Mastery domains (Technical, Domain, Process, People)
+
+2. **Autonomy**: The desire to direct your own work and own outcomes
+   - Decision-making authority (technical, process, priority, quality)
+   - Ownership models (code, feature, system, problem ownership)
+   - Autonomy enablers (clear boundaries, sufficient context, psychological safety)
+   - Autonomy constraints (alignment, visibility, reversibility, consultation)
+
+3. **Purpose**: Connection to meaningful work beyond personal gain
+   - Meaning sources (user impact, technical challenge, team mission, organizational goals)
+   - Purpose hierarchy (task → feature → system → organization → society)
+   - Directive alignment (clarity, agreement, contribution, communication)
+   - Purpose erosion prevention (avoiding pointless work and misalignment)
+
+**Psychology Foundation**: Self-Determination Theory (Competence, Autonomy, Relatedness), Flow State, Intrinsic vs Extrinsic Motivation
+
+**See**: `/pillars/intrinsic_drive.md` for complete specification
 
 ### 3. Contextual Awareness
+**Etymology**: Latin _contextus_ - "to weave together" (con- + texere)
 **Philosophy**: "It depends" - everything is relative and contextual
-- **Documentation**: Async context sharing that scales
-- **Observability**: Logs, metrics, traces for systems and career
-- **Communication**: Push vs pull models for information sharing
-- **Economics**: Avoiding tragedy of the commons in knowledge sharing
+
+The understanding pillar - recognizing that effective decisions require deep understanding of environment, constraints, timing, and audience.
+
+#### Three Sub-Pillars
+1. **Async vs Sync**: Choosing the right temporal communication model
+   - Asynchronous communication (time-decoupled, persistent, searchable, scales)
+   - Synchronous communication (real-time, immediate feedback, relationship building)
+   - Communication mode selection (documentation default async, incidents default sync)
+   - Hybrid patterns (async-first, sync-then-async, time-boxed sync)
+
+2. **Ahead of Time vs Just in Time**: When to invest in preparation vs defer until needed
+   - Ahead of Time (proactive, prepared, optimized upfront)
+   - Just in Time (reactive, deferred, optimized when needed)
+   - Decision matrix (core architecture AoT, edge cases JiT)
+   - YAGNI principle vs Scout Rule ("leave it better than you found it")
+
+3. **Cognitive Artifacts**: External representations preserving context beyond individual memory
+   - Documentation artifacts (design docs, ADRs, runbooks, READMEs)
+   - Observability artifacts (logs, metrics, traces, dashboards, alerts)
+   - Process artifacts (issues, PRs, RFCs, post-mortems, sprint plans)
+   - Code as artifact (types, tests, API contracts, version control)
+
+**Economics**: Tragedy of the commons in context sharing, context decay (half-life), push vs pull models
+
+**See**: `/pillars/contextual_awareness.md` for complete specification
 
 ## People Systems Framework
 

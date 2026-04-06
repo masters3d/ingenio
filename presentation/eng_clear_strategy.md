@@ -17,7 +17,7 @@ _Oct, 2021_
  - Mile Stone Defined
 - Definition of Done
   - Scope Clear
-  - Time Boxed 
+  - Time Boxed
 ---
 
 # Strategy
@@ -28,6 +28,54 @@ _Oct, 2021_
   - Mantain
 - Exit Strategy
    - Definition of Done for the whole project
+
+---
+
+# Three Sub-Pillars of Clear Strategy
+
+1. **Direction** - Where we're going and why
+2. **Forward Progress** - Continuous visible advancement
+3. **Breaking Down** - Complex to executable tasks
+
+---
+
+# Sub-Pillar 1: Direction
+
+**Establishing where you're going and why it matters**
+
+- Vision Clarity (problem statement, success criteria)
+- Goal Definition (milestones, time boxes, dependencies)
+- Directive Alignment (org goals → team → individual)
+- Risk Assessment
+
+Applied across IC levels 0-7+ with specific behaviors
+
+---
+
+# Sub-Pillar 2: Forward Progress
+
+**Continuous movement toward goals**
+
+- Action-Feedback-Adjustment Cycles
+  - High-frequency (daily): tests, linting, builds
+  - Medium-frequency (weekly): code reviews, sprint demos
+  - Low-frequency (monthly): production metrics, retros
+- Incremental Delivery (feature flags, progressive rollout)
+- Visible Progress (burn down, deployment frequency)
+
+---
+
+# Sub-Pillar 3: Breaking Down
+
+**Decomposing complexity into executable tasks**
+
+- Hierarchical Planning
+  - Vision → Design → Sprint → Daily
+- Task Characteristics
+  - Specific, Measurable, Achievable, Relevant, Time-boxed
+- Work Breakdown Structure
+  - Epic → Story → Task → Sub-task
+- Exit Strategy at every level
 
 ---
 
