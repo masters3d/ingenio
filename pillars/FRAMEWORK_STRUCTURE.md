@@ -20,9 +20,9 @@ Three-Phase Operational Cycle:
 │   ├── Directed Intentionality
 │   └── Adaptive Control
 └── Reflective Calibration (Retrospective - LEARNING)
-    ├── Outcome Analysis
-    ├── Pattern Recognition
-    └── Model Update
+    ├── State Estimation
+    ├── Model Correction
+    └── Loop Optimization
 ```
 
 ## Quick Reference Matrix
@@ -31,8 +31,25 @@ Three-Phase Operational Cycle:
 |-----------|--------------|--------------|--------------|------|----------|------|
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
 | **Clear Strategy** (Actuation) | Difficulty Alignment | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
-| **Reflective Calibration** (Retrospective) | Outcome Analysis | Pattern Recognition | Model Update | LEARNING | State Estimation | Loop back |
+| **Reflective Calibration** (Retrospective) | State Estimation | Model Correction | Loop Optimization | LEARNING | State Estimation | Loop back |
 | **Intrinsic Motivation** (Objective Function) | Mastery | Autonomy | Purpose | WHY | Reward/Cost Function | Defines success |
+
+## Fractal Pattern: Sub-Pillars Mirror the Cycle
+
+**Every pillar's three sub-pillars internally mirror the Prospective → Actuation → Retrospective cycle:**
+
+| Main Pillar | Sub-Pillar 1 (Prospective) | Sub-Pillar 2 (Actuation) | Sub-Pillar 3 (Retrospective) |
+|-------------|----------------------------|--------------------------|------------------------------|
+| **Contextual Awareness** (Prospective/KNOWING) | **Proactive Curiosity** - Look forward, crawl, discover, sense the environment | **Cohesive Narrative** - Act on data, build mental models, synthesize information | **Shared Understanding** - Look back, externalize learnings, preserve for future |
+| **Clear Strategy** (Actuation/ACTING) | **Difficulty Alignment** - Look forward, assess capabilities vs demands before acting | **Directed Intentionality** - Execute, project consciousness toward objective | **Adaptive Control** - Look back at feedback, correct course in real-time |
+| **Reflective Calibration** (Retrospective/LEARNING) | **State Estimation** - Look forward at data, measure actual vs expected, gather signals | **Model Correction** - Act on findings, revise mental models, fix docs/processes | **Loop Optimization** - Look back at how you learn, improve feedback loops (meta-learning) |
+
+**Pattern Explanation**:
+- **Sub-pillar 1** = Prospective phase of that pillar (gathering, sensing, assessing)
+- **Sub-pillar 2** = Actuation phase of that pillar (building, executing, revising)
+- **Sub-pillar 3** = Retrospective phase of that pillar (preserving, adjusting, optimizing)
+
+This fractal structure means each pillar contains a miniature version of the full cycle within itself.
 
 ## Architecture Changes from Framework 3.0
 
@@ -106,9 +123,9 @@ Three-Phase Operational Cycle:
 **OODA**: Feedback arc from Act back to Observe
 
 **Three Sub-Pillars**:
-1. **Outcome Analysis**: Examine what actually happened
-2. **Pattern Recognition**: Identify recurring themes and signals
-3. **Model Update**: Revise mental models and strategies based on evidence
+1. **State Estimation**: Look forward at the data, measure actual vs expected, gather signals
+2. **Model Correction**: Act on findings, revise mental models, fix docs and processes
+3. **Loop Optimization**: Look back at how you learn, improve feedback loops themselves (meta-learning)
 
 **Purpose**: Close the improvement loop by extracting and applying learnings.
 
@@ -257,8 +274,8 @@ Three-Phase Operational Cycle:
 
 ---
 
-### Reflective Calibration: Outcome Analysis
-**Definition**: Examine what actually happened — compare predicted results against observed reality
+### Reflective Calibration: State Estimation
+**Definition**: Look forward at the data — measure actual vs expected, gather signals before interpreting
 
 **Key Components**:
 - Compare Prediction vs Reality (measurement gap)
@@ -270,8 +287,8 @@ Three-Phase Operational Cycle:
 
 ---
 
-### Reflective Calibration: Pattern Recognition
-**Definition**: Identify recurring themes and signals — extract generalizable insights
+### Reflective Calibration: Model Correction
+**Definition**: Act on what you found — revise mental models, fix docs, change processes
 
 **Key Components**:
 - Distinguish Signal from Noise (one-off vs systemic, special vs common cause)
@@ -279,12 +296,12 @@ Three-Phase Operational Cycle:
 - Identify Feedback Loops (reinforcing, balancing, delays)
 - Extract Generalizable Lessons (underlying principles, mental models, heuristics)
 
-**Theoretical Roots**: Machine Learning pattern extraction, Systems Thinking archetypes, Statistical Process Control
+**Theoretical Roots**: Machine Learning pattern extraction, Systems Thinking archetypes, Statistical Process Control, Double-Loop Learning
 
 ---
 
-### Reflective Calibration: Model Update
-**Definition**: Revise mental models and strategies based on evidence
+### Reflective Calibration: Loop Optimization
+**Definition**: Look back at how you learn — improve the feedback loops themselves, meta-learning
 
 **Key Components**:
 - Update Mental Models (adjust map to match territory, Bayesian updating)
@@ -292,7 +309,7 @@ Three-Phase Operational Cycle:
 - Adjust Processes (improve team practices, tools, workflows)
 - Close the Loop (feed learning back to Prospective phase, update cognitive artifacts)
 
-**Theoretical Roots**: Bayesian Updating, Double-Loop Learning (Argyris), SLAM Replanning, Adaptive Control
+**Theoretical Roots**: Bayesian Updating, Double-Loop Learning (Argyris), SLAM Replanning, Adaptive Control, Meta-Learning
 
 ---
 

@@ -48,9 +48,9 @@ Intrinsic Motivation (Objective Function - WHY)
 **Robotics**: State Estimation (Kalman filter, observers, feedback control)
 
 **Three Sub-Pillars:**
-1. **Outcome Analysis** - Compare prediction vs reality (measurement gap, root cause analysis)
-2. **Pattern Recognition** - Identify recurring themes (signal vs noise, system archetypes)
-3. **Model Update** - Revise mental models based on evidence (close the loop, Bayesian updating)
+1. **State Estimation** - Look forward at data, measure actual vs expected (gather signals before interpreting)
+2. **Model Correction** - Act on findings, revise mental models (fix docs and processes)
+3. **Loop Optimization** - Look back at how you learn (improve feedback loops, meta-learning)
 
 ### Intrinsic Motivation (Objective Function - WHY)
 **Position**: Above the operational cycle - defines success criteria

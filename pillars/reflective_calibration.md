@@ -30,6 +30,11 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 **Core Insight**: Learning is about REFLECTING - systematically examining outcomes, recognizing patterns, and updating models to improve future performance. This closes the Prospective → Actuation → Retrospective cycle.
 
+**Fractal Pattern**: The three sub-pillars of Reflective Calibration internally mirror the Prospective → Actuation → Retrospective cycle:
+1. **State Estimation** (Prospective of learning) - Look forward at the data before interpreting
+2. **Model Correction** (Actuation of learning) - Act on findings to revise understanding
+3. **Loop Optimization** (Retrospective of learning) - Look back at how you learn to improve the process itself
+
 **Critical Differentiation**:
 - **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
@@ -40,9 +45,9 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 **OODA Loop Mapping**: The feedback arc from Act back to Observe — closing the loop for continuous improvement.
 
-### 1. Outcome Analysis
+### 1. State Estimation
 
-**Definition**: Examine what actually happened — compare predicted results against observed reality without judgment.
+**Definition**: Look forward at the data — measure actual vs expected, gather signals before interpreting. This is the Prospective phase of learning.
 
 **Theoretical Roots**:
 - **State Estimation** (Robotics): Kalman filters estimate true system state by comparing predictions with sensor measurements
@@ -105,10 +110,10 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 #### Applied Examples
 
-**Bad Outcome Analysis** (Judgment-Based)
+**Bad State Estimation** (Judgment-Based)
 > "The outage happened because Sarah deployed on Friday afternoon. She should have known better. Let's add a policy: no Friday deploys."
 
-**Good Outcome Analysis** (System-Based)
+**Good State Estimation** (System-Based)
 > "We had an outage during Friday deploy. Our rollback took 45 minutes because automated rollback failed and manual process was undocumented. Root cause: missing health check caused bad deploy to pass CI. We didn't catch this because staging environment differs from prod. Actions: (1) Add health check to CI, (2) Document rollback procedure, (3) Align staging with prod."
 
 **Bad Impact Assessment** (Incomplete)
@@ -119,15 +124,16 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 ---
 
-### 2. Pattern Recognition
+### 2. Model Correction
 
-**Definition**: Identify recurring themes and signals — extract generalizable insights from specific observations.
+**Definition**: Act on what you found — revise mental models, fix docs, change processes. This is the Actuation phase of learning.
 
 **Theoretical Roots**:
 - **Machine Learning**: Pattern extraction from data for predictive modeling
 - **Systems Thinking** (Meadows): Understanding feedback loops, archetypes, leverage points
 - **Statistical Process Control**: Distinguishing signal from noise, special vs common cause variation
 - **Organizational Learning** (Senge): Recognizing system archetypes and mental models
+- **Double-Loop Learning** (Argyris): Question underlying assumptions, not just actions
 - **Cognitive Science**: Schema formation, abstraction, analogical reasoning
 
 #### Components
@@ -185,10 +191,10 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 #### Applied Examples
 
-**Bad Pattern Recognition** (Treating Symptoms)
+**Bad Model Correction** (Treating Symptoms)
 > "We had 3 incidents this month caused by config errors. Let's add more code review for config changes."
 
-**Good Pattern Recognition** (Root Pattern)
+**Good Model Correction** (Root Pattern)
 > "We've had 12 incidents in 6 months, 8 involved config. Pattern: Config changes bypass automated testing and deploy directly to prod. This is a 'Tragedy of the Commons' — config is shared infrastructure but no one owns config testing. Underlying issue: We treat config as 'not code' but it controls production behavior. Solution: Config-as-code in version control, automated validation, staged rollout."
 
 **Bad Signal/Noise** (Overreacting)
@@ -205,9 +211,9 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 ---
 
-### 3. Model Update
+### 3. Loop Optimization
 
-**Definition**: Revise mental models and strategies based on evidence — adjust the map to match the territory.
+**Definition**: Look back at how you learn — improve the feedback loops themselves, meta-learning. This is the Retrospective phase of learning.
 
 **Theoretical Roots**:
 - **Bayesian Updating**: Update beliefs based on new evidence, weighted by prior confidence
@@ -215,6 +221,7 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 - **Adaptive Control** (Control Theory): Update control parameters based on system performance
 - **Double-Loop Learning** (Argyris): Question underlying assumptions, not just actions
 - **SLAM Replanning** (Robotics): Update world map as robot explores and discovers mismatches
+- **Meta-Learning**: Learning how to learn better, optimizing the learning process itself
 
 #### Components
 
@@ -270,10 +277,10 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 #### Applied Examples
 
-**Bad Model Update** (No Change)
+**Bad Loop Optimization** (No Change)
 > "We had an incident, wrote a postmortem, and moved on. Same incident happened 2 months later."
 
-**Good Model Update** (Closed Loop)
+**Good Loop Optimization** (Closed Loop)
 > "Incident: Deploy caused outage. Root cause: Health check didn't catch issue. Model update: Our staging environment is not production-like enough. Strategy revision: (1) Added health check to CI (immediate), (2) Scheduled project to bring staging to prod parity (Q2), (3) Updated deploy checklist to verify health checks pass in staging (process). Documented in ADR-042 and updated runbook. Tracked: Zero outages from this failure mode in 6 months."
 
 **Bad Strategy Revision** (Vague)
@@ -293,19 +300,19 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 ## Integration with Other Pillars
 
 ### With Clear Strategy (Actuation)
-- **Outcome Analysis** feeds **Adaptive Control** (immediate feedback for real-time adjustment)
-- **Pattern Recognition** informs **Difficulty Alignment** (identify if challenges are too hard/easy)
-- **Model Update** refines **Directed Intentionality** (adjust goals based on what we learned)
+- **State Estimation** feeds **Adaptive Control** (immediate feedback for real-time adjustment)
+- **Model Correction** informs **Difficulty Alignment** (identify if challenges are too hard/easy)
+- **Loop Optimization** refines **Directed Intentionality** (adjust goals based on what we learned)
 
 ### With Contextual Awareness (Prospective)
-- **Outcome Analysis** enriches **Proactive Curiosity** (adds experiential data to crawled information)
-- **Pattern Recognition** improves **Cohesive Narrative** (patterns reveal system structure and failure modes)
-- **Model Update** maintains **Shared Understanding** (documented learnings become cognitive artifacts)
+- **State Estimation** enriches **Proactive Curiosity** (adds experiential data to crawled information)
+- **Model Correction** improves **Cohesive Narrative** (patterns reveal system structure and failure modes)
+- **Loop Optimization** maintains **Shared Understanding** (documented learnings become cognitive artifacts)
 
 ### With Intrinsic Motivation (Objective Function)
-- **Outcome Analysis** demonstrates progress toward **Mastery** (see improvement over time)
-- **Pattern Recognition** enhances **Autonomy** (understanding patterns enables independent decision-making)
-- **Model Update** clarifies **Purpose** (connect learnings to meaningful outcomes)
+- **State Estimation** demonstrates progress toward **Mastery** (see improvement over time)
+- **Model Correction** enhances **Autonomy** (understanding patterns enables independent decision-making)
+- **Loop Optimization** clarifies **Purpose** (connect learnings to meaningful outcomes)
 
 ---
 
@@ -353,19 +360,19 @@ All guided by **Intrinsic Motivation (Objective Function/WHY)**: The reward func
 
 ## Measuring Reflective Calibration
 
-### Outcome Analysis Metrics
+### State Estimation Metrics
 - **Postmortem Quality**: % of incidents with root cause analysis
 - **Time to Postmortem**: Days from incident to published postmortem
 - **Prediction Accuracy**: How often actual outcomes match predictions?
 - **Psychological Safety**: Team comfort admitting mistakes (survey)
 
-### Pattern Recognition Metrics
+### Model Correction Metrics
 - **Repeat Incidents**: What % of incidents are recurring patterns?
 - **Pattern Documentation**: Number of identified archetypes/anti-patterns
 - **Cross-Team Pattern Sharing**: How often patterns shared across teams?
 - **Proactive Prevention**: Issues caught before production based on patterns
 
-### Model Update Metrics
+### Loop Optimization Metrics
 - **Action Item Completion**: % of retrospective actions completed
 - **Documentation Updates**: Frequency of ADR, runbook, wiki updates
 - **Learning Velocity**: Rate of process/practice improvements over time

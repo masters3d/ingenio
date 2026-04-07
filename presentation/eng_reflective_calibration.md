@@ -74,15 +74,17 @@ Reflective Calibration is the **feedback arc**:
 
 **Framework**: State Estimation + Double-Loop Learning + Statistical Process Control
 
-1. **Outcome Analysis** - Examine what actually happened
-2. **Pattern Recognition** - Identify recurring themes and signals
-3. **Model Update** - Revise mental models and strategies
+**Fractal Pattern**: Each sub-pillar mirrors Prospective → Actuation → Retrospective
+
+1. **State Estimation** (Prospective of learning) - Look forward at data
+2. **Model Correction** (Actuation of learning) - Act on findings
+3. **Loop Optimization** (Retrospective of learning) - Look back at learning process
 
 ---
 
-# Sub-Pillar 1: Outcome Analysis
+# Sub-Pillar 1: State Estimation
 
-**Examine what actually happened**
+**Look forward at the data — measure actual vs expected, gather signals**
 
 - Compare Prediction vs Reality
   - Expected: "P95 < 200ms"
@@ -96,7 +98,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 1: Outcome Analysis (cont.)
+# Sub-Pillar 1: State Estimation (cont.)
 
 **Document Without Blame** (Blameless Postmortems)
 
@@ -111,7 +113,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Bad Outcome Analysis
+# Example: Bad State Estimation
 
 > "The outage happened because Sarah deployed on Friday afternoon. She should have known better. Let's add a policy: no Friday deploys."
 
@@ -119,7 +121,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Good Outcome Analysis
+# Example: Good State Estimation
 
 > "We had an outage during Friday deploy. Our rollback took 45 minutes because automated rollback failed and manual process was undocumented.
 >
@@ -131,9 +133,9 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 2: Pattern Recognition
+# Sub-Pillar 2: Model Correction
 
-**Identify recurring themes and signals**
+**Act on what you found — revise mental models, fix docs, change processes**
 
 - Distinguish Signal from Noise
   - One-off incident vs systemic issue
@@ -159,7 +161,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Bad Pattern Recognition
+# Example: Bad Model Correction
 
 > "We had 3 incidents this month caused by config errors. Let's add more code review for config changes."
 
@@ -167,7 +169,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Good Pattern Recognition
+# Example: Good Model Correction
 
 > "We've had 12 incidents in 6 months, 8 involved config. Pattern: Config changes bypass automated testing and deploy directly to prod.
 >
@@ -181,9 +183,9 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 3: Model Update
+# Sub-Pillar 3: Loop Optimization
 
-**Revise mental models and strategies based on evidence**
+**Look back at how you learn — improve the feedback loops themselves, meta-learning**
 
 - Update Mental Models (Map Revision)
   - What did we believe?
@@ -210,7 +212,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Bad Model Update
+# Example: Bad Loop Optimization
 
 > "We had an incident, wrote a postmortem, and moved on. Same incident happened 2 months later."
 
@@ -218,7 +220,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Good Model Update
+# Example: Good Loop Optimization
 
 > "Incident: Deploy caused outage. Root cause: Health check didn't catch issue.
 >
@@ -254,33 +256,33 @@ Reflective Calibration is the **feedback arc**:
 
 # Integration: Reflective Calibration ↔ Clear Strategy
 
-- **Outcome Analysis** feeds **Adaptive Control**
+- **State Estimation** feeds **Adaptive Control**
   - Immediate feedback for real-time adjustment
-- **Pattern Recognition** informs **Difficulty Alignment**
+- **Model Correction** informs **Difficulty Alignment**
   - Identify if challenges are too hard/easy
-- **Model Update** refines **Directed Intentionality**
+- **Loop Optimization** refines **Directed Intentionality**
   - Adjust goals based on what we learned
 
 ---
 
 # Integration: Reflective Calibration ↔ Contextual Awareness
 
-- **Outcome Analysis** enriches **Proactive Curiosity**
+- **State Estimation** enriches **Proactive Curiosity**
   - Adds experiential data to crawled information
-- **Pattern Recognition** improves **Cohesive Narrative**
+- **Model Correction** improves **Cohesive Narrative**
   - Patterns reveal system structure and failure modes
-- **Model Update** maintains **Shared Understanding**
+- **Loop Optimization** maintains **Shared Understanding**
   - Documented learnings become cognitive artifacts
 
 ---
 
 # Integration: Reflective Calibration ↔ Intrinsic Motivation
 
-- **Outcome Analysis** demonstrates **Mastery** progress
+- **State Estimation** demonstrates **Mastery** progress
   - See improvement over time, validate growth
-- **Pattern Recognition** enhances **Autonomy**
+- **Model Correction** enhances **Autonomy**
   - Understanding patterns enables independent decisions
-- **Model Update** clarifies **Purpose**
+- **Loop Optimization** clarifies **Purpose**
   - Connect learnings to meaningful outcomes
 
 ---
@@ -315,17 +317,17 @@ Reflective Calibration is the **feedback arc**:
 
 # Measuring Reflective Calibration
 
-**Outcome Analysis Metrics**
+**State Estimation Metrics**
 - % of incidents with root cause analysis
 - Time from incident to published postmortem
 - Prediction accuracy (actual vs expected outcomes)
 
-**Pattern Recognition Metrics**
+**Model Correction Metrics**
 - % of incidents that are recurring patterns
 - Number of documented archetypes/anti-patterns
 - Issues caught before production based on patterns
 
-**Model Update Metrics**
+**Loop Optimization Metrics**
 - % of retrospective actions completed
 - Frequency of ADR, runbook, wiki updates
 - Knowledge retention (new members benefit from docs)
@@ -364,9 +366,11 @@ Reflective Calibration is the **feedback arc**:
 
 **Cycle Role**: Retrospective — closes the improvement loop
 
+**Fractal Pattern**: Sub-pillars mirror Prospective → Actuation → Retrospective
+
 **Three Sub-Pillars**:
-1. Outcome Analysis (examine what happened)
-2. Pattern Recognition (identify recurring themes)
-3. Model Update (revise models and strategies)
+1. State Estimation (Prospective of learning) - Look forward at data
+2. Model Correction (Actuation of learning) - Act on findings
+3. Loop Optimization (Retrospective of learning) - Look back at learning process
 
 **Philosophy**: "Every result is data — the system that examines itself improves itself"

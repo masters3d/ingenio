@@ -129,26 +129,26 @@ The LEARNING phase - closing the improvement loop by examining outcomes, identif
 
 #### Three Sub-Pillars
 
-1. **Outcome Analysis**: Examine what actually happened
+1. **State Estimation**: Look forward at the data, measure actual vs expected, gather signals
    - Compare prediction vs reality (measurement gap)
    - Identify contributing factors (root cause analysis, Five Whys)
    - Assess impact (who affected, what cost, what learned)
    - Document without blame (blameless postmortems, psychological safety)
    - **Theoretical Roots**: Robotics State Estimation (Kalman filter), Control Theory error signals, After-Action Review
 
-2. **Pattern Recognition**: Identify recurring themes and signals
+2. **Model Correction**: Act on findings, revise mental models, fix docs and processes
    - Distinguish signal from noise (one-off vs systemic, special vs common cause)
    - Recognize system archetypes (Success to Successful, Tragedy of Commons, Fixes that Backfire)
    - Identify feedback loops (reinforcing, balancing, delays)
    - Extract generalizable lessons (underlying principles, mental models, heuristics)
    - **Theoretical Roots**: Machine Learning pattern extraction, Systems Thinking archetypes, Statistical Process Control
 
-3. **Model Update**: Revise mental models and strategies based on evidence
+3. **Loop Optimization**: Look back at how you learn, improve feedback loops themselves (meta-learning)
    - Update mental models (adjust map to match territory, Bayesian updating)
    - Revise strategies (change future behavior based on outcomes)
    - Adjust processes (improve team practices, tools, workflows)
    - Close the loop (feed learning back to Prospective phase, update cognitive artifacts)
-   - **Theoretical Roots**: Bayesian Updating, Double-Loop Learning (Argyris), SLAM Replanning, Adaptive Control
+   - **Theoretical Roots**: Bayesian Updating, Double-Loop Learning (Argyris), SLAM Replanning, Adaptive Control, Meta-Learning
 
 **Robotics Foundation**: State Estimation (Kalman filter, observers, feedback control)
 **OODA Mapping**: Feedback arc from Act back to Observe

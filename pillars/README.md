@@ -83,9 +83,9 @@ pillars/
 **Framework**: State Estimation, Control Theory, Double-Loop Learning
 
 **Three Sub-Pillars**:
-1. **Outcome Analysis** - Examine what actually happened (compare prediction vs reality)
-2. **Pattern Recognition** - Identify recurring themes and signals (signal vs noise)
-3. **Model Update** - Revise mental models and strategies (close the loop)
+1. **State Estimation** - Look forward at data, measure actual vs expected (gather signals before interpreting)
+2. **Model Correction** - Act on findings, revise mental models (fix docs and processes)
+3. **Loop Optimization** - Look back at how you learn (improve feedback loops, meta-learning)
 
 **Key Behaviors**: Blameless postmortems, pattern extraction, model updating, learning feedback
 
