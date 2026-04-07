@@ -15,50 +15,158 @@ This repository serves as a **knowledge mill** for engineering excellence, grind
 - Agentic engineering approaches
 - Human-centric technical systems development
 
-## Three Pillars Quest Engine Framework
+## Three Pillars Quest Engine Framework (Version 4.0)
 
-The foundational framework organizing all content and development in this repository. Each pillar is supported by three sub-pillars that provide concrete, actionable guidance for engineering excellence.
+The foundational framework organizing all content and development in this repository. Framework 4.0 introduces a three-phase operational cycle guided by an objective function.
 
-**Full Documentation**: See `/pillars/` directory for detailed specifications of each pillar and sub-pillar.
+**Full Documentation**: See `/pillars/` directory for detailed specifications.
 
-### 1. Clear Strategy
-**Etymology**: From Greek _strategia_ - "art of the general"
-**Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
+### Framework 4.0 Architecture
 
-The execution pillar - transforming ambiguous directives into concrete, achievable outcomes. **Clear Strategy = ACTING in the environment** (Decide + Act in OODA loop).
+```
+Intrinsic Motivation (Objective Function - WHY)
+         ↓ defines success criteria
+┌────────────────────────────────────┐
+│  Prospective → Actuation → Retrospective  │
+└────────────────────────────────────┘
+         ↑ feeds learning back
+```
+
+**Three-Phase Operational Cycle**:
+1. **Contextual Awareness** (Prospective - KNOWING)
+2. **Clear Strategy** (Actuation - ACTING)
+3. **Reflective Calibration** (Retrospective - LEARNING)
+
+**Above the Cycle**:
+- **Intrinsic Motivation** (Objective Function - WHY)
+
+---
+
+### Contextual Awareness (Prospective - KNOWING)
+
+**Etymology**: Latin _contextus_ - "to weave together" (con- + texere)
+**Cycle Phase**: Prospective (understand environment before acting)
+**Philosophy**: "It depends" - everything is relative and contextual
+
+The KNOWING phase - recognizing that effective decisions require deep understanding of environment, constraints, timing, and audience.
 
 #### Three Sub-Pillars
+
+1. **Proactive Curiosity**: Systematically find and organize information for retrieval
+   - Crawl your domain (code, docs, people, systems)
+   - Index for retrieval (search-friendly structure, metadata, cross-references)
+   - Multi-sensor fusion (combine code, logs, metrics, docs, people)
+   - Continuous refresh (fight information decay with maintenance cycles)
+   - **Theoretical Roots**: Search engine crawling/indexing, robotics sensor perception, OODA Observe, Scout Mindset
+
+2. **Cohesive Narrative**: Create accurate mental models and continuously update them
+   - Create mental models (understand system architecture, data flow, business logic)
+   - Update models continuously (SLAM replanning - reality check vs expectations)
+   - Contextualize information (audience-aware: SLA/SLO/SLI hierarchy)
+   - Map dependencies (component, data, team dependencies and change impact)
+   - Build cohesive narrative through cognitive artifacts (docs, ADRs, diagrams, runbooks)
+   - **Theoretical Roots**: Robotics SLAM mapping, OODA Orient, mental models theory, cognitive artifacts
+
+3. **Shared Understanding**: Externalize knowledge into durable cognitive artifacts
+   - Create cognitive artifacts (docs, ADRs, diagrams, runbooks, code comments)
+   - Maintain the commons (fight knowledge decay through ownership and review cycles)
+   - Systemic incentives (make it easy, visible, required, integrated, rewarded)
+   - Async-first context sharing (documentation default, meetings case-by-case)
+   - **Theoretical Roots**: Cognitive artifacts (Donald Norman), distributed cognition, tragedy of the commons
+
+**Robotics Foundation**: Perception (sensors, SLAM, environment mapping)
+**OODA Mapping**: Observe + Orient
+
+**See**: `/pillars/contextual_awareness.md` for complete specification
+
+---
+
+### Clear Strategy (Actuation - ACTING)
+
+**Etymology**: Greek _strategia_ - "art of the general"
+**Cycle Phase**: Actuation (execute based on knowledge)
+**Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
+
+The ACTING phase - transforming ambiguous directives into concrete, achievable outcomes through Flow state creation.
+
+#### Three Sub-Pillars
+
 1. **Difficulty Alignment**: The active synchronization of internal capabilities with external demands
    - Challenge-skill balance (prevents anxiety from "too hard" or boredom from "too easy")
    - Continuous task calibration (if challenge exceeds skill, simplify or upskill; if skill exceeds challenge, increase complexity)
    - Maintain position within the "Flow Channel" to prevent burnout or apathy
-   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Challenge-Skill Balance), eliminates psychic entropy
+   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Challenge-Skill Balance), Robotics Task-Capability Matching
 
-2. **Directed Intentionality**: The sharp, uncompromising projection of consciousness toward a specific objective
+2. **Directed Intentionality**: The sharp projection of consciousness toward a specific objective
    - Clear goals eliminate distraction and psychic entropy
    - Singular vector of intent (exactly what "success state" looks like in the immediate moment)
    - Minimize cognitive load and decision fatigue to allow total immersion
    - Action and awareness merge into unified experience
-   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Clear Goals), ensures directed energy at singular point
+   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Clear Goals), Robotics Path Planning
 
-3. **Adaptive Control**: A closed-loop behavioral system that utilizes real-time feedback to pivot execution
+3. **Adaptive Control**: A closed-loop behavioral system using real-time feedback
    - Immediate feedback provides closed-loop data for adjustment
    - Execute with sensitivity to sensorimotor feedback
    - Every result is a data point for immediate, fluid adjustment (not failure)
    - Seamless action-awareness loop where ego vanishes and performance becomes self-correcting
-   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Immediate Feedback), maintains deep-concentration state
+   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Immediate Feedback), Robotics PID Control
 
-**Theoretical Foundation**: Csikszentmihalyi's Flow Theory (Challenge-Skill Balance, Clear Goals, Immediate Feedback), replaces passive "waiting for Flow" with active engineering-based protocol
+**Robotics Foundation**: Actuation (kinematics, path planning, PID control)
+**OODA Mapping**: Decide + Act
+**Theoretical Foundation**: Flow Theory + Robotics Actuation - replaces passive "waiting for Flow" with active engineering-based protocol
 
 **See**: `/pillars/clear_strategy.md` for complete specification
 
-### 2. Intrinsic Motivation
-**Etymology**: Latin _intrinsecus_ (inward) + _drīfan_ (to propel)
-**Focus**: Internal motivation over external rewards
+---
 
-The motivation pillar - harnessing internal desires for sustainable, high-quality work.
+### Reflective Calibration (Retrospective - LEARNING)
+
+**Etymology**: Latin _reflectere_ (to bend back) + Arabic _qālib_ (mold/form)
+**Cycle Phase**: Retrospective (learn from what happened)
+**Philosophy**: "Every result is data" - the system that examines itself improves itself
+
+The LEARNING phase - closing the improvement loop by examining outcomes, identifying patterns, and updating models.
 
 #### Three Sub-Pillars
+
+1. **Outcome Analysis**: Examine what actually happened
+   - Compare prediction vs reality (measurement gap)
+   - Identify contributing factors (root cause analysis, Five Whys)
+   - Assess impact (who affected, what cost, what learned)
+   - Document without blame (blameless postmortems, psychological safety)
+   - **Theoretical Roots**: Robotics State Estimation (Kalman filter), Control Theory error signals, After-Action Review
+
+2. **Pattern Recognition**: Identify recurring themes and signals
+   - Distinguish signal from noise (one-off vs systemic, special vs common cause)
+   - Recognize system archetypes (Success to Successful, Tragedy of Commons, Fixes that Backfire)
+   - Identify feedback loops (reinforcing, balancing, delays)
+   - Extract generalizable lessons (underlying principles, mental models, heuristics)
+   - **Theoretical Roots**: Machine Learning pattern extraction, Systems Thinking archetypes, Statistical Process Control
+
+3. **Model Update**: Revise mental models and strategies based on evidence
+   - Update mental models (adjust map to match territory, Bayesian updating)
+   - Revise strategies (change future behavior based on outcomes)
+   - Adjust processes (improve team practices, tools, workflows)
+   - Close the loop (feed learning back to Prospective phase, update cognitive artifacts)
+   - **Theoretical Roots**: Bayesian Updating, Double-Loop Learning (Argyris), SLAM Replanning, Adaptive Control
+
+**Robotics Foundation**: State Estimation (Kalman filter, observers, feedback control)
+**OODA Mapping**: Feedback arc from Act back to Observe
+
+**See**: `/pillars/reflective_calibration.md` for complete specification
+
+---
+
+### Intrinsic Motivation (Objective Function - WHY)
+
+**Etymology**: Latin _intrinsecus_ (inward) + _drīfan_ (to propel)
+**Position**: Above the operational cycle - defines success criteria
+**Focus**: Internal motivation over external rewards
+
+The WHY - defining what success means, guiding all three phases of the operational cycle.
+
+#### Three Sub-Pillars
+
 1. **Mastery**: The urge to get better at things that matter
    - Skill development through deliberate practice and feedback integration
    - Learning mechanisms (doing, teaching, failing, reading)
@@ -77,42 +185,24 @@ The motivation pillar - harnessing internal desires for sustainable, high-qualit
    - Directive alignment (clarity, agreement, contribution, communication)
    - Purpose erosion prevention (avoiding pointless work and misalignment)
 
-**Psychology Foundation**: Self-Determination Theory (Competence, Autonomy, Relatedness), Flow State, Intrinsic vs Extrinsic Motivation
+**Robotics Foundation**: Reward/Cost Function (defines what to optimize for)
+**OODA Mapping**: The criteria by which Observe/Orient/Decide/Act are judged
+**Psychology Foundation**: Self-Determination Theory (Competence, Autonomy, Relatedness)
 
 **See**: `/pillars/intrinsic_drive.md` for complete specification
 
-### 3. Contextual Awareness
-**Etymology**: Latin _contextus_ - "to weave together" (con- + texere)
-**Philosophy**: "It depends" - everything is relative and contextual
+---
 
-The understanding pillar - recognizing that effective decisions require deep understanding of environment, constraints, timing, and audience. **Contextual Awareness = KNOWING the environment** (Observe + Orient in OODA loop).
+### The Complete Cycle
 
-#### Three Sub-Pillars
-1. **Proactive Curiosity**: Systematically find and organize information for retrieval
-   - Crawl your domain (code, docs, people, systems)
-   - Index for retrieval (search-friendly structure, metadata, cross-references)
-   - Multi-sensor fusion (combine code, logs, metrics, docs, people)
-   - Continuous refresh (fight information decay with maintenance cycles)
-   - **Theoretical Roots**: Search engine crawling/indexing, robotics sensor perception, OODA Observe, Information Foraging Theory, Scout Mindset
+**Prospective → Actuation → Retrospective** forms a continuous improvement loop:
 
-2. **Cohesive Narrative**: Create accurate mental models and continuously update them
-   - Create mental models (understand system architecture, data flow, business logic)
-   - Update models continuously (SLAM replanning - reality check vs expectations)
-   - Contextualize information (audience-aware: SLA/SLO/SLI hierarchy)
-   - Map dependencies (component, data, team dependencies and change impact)
-   - Build cohesive narrative through cognitive artifacts (docs, ADRs, diagrams, runbooks)
-   - **Theoretical Roots**: Robotics SLAM mapping, OODA Orient, search ranking, mental models theory, cognitive artifacts
+1. **Contextual Awareness (Prospective/KNOWING)**: Gather information, build mental models, understand environment
+2. **Clear Strategy (Actuation/ACTING)**: Set clear goals, align difficulty, execute with feedback
+3. **Reflective Calibration (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
+4. **Loop back to Prospective**: Enhanced understanding informs next cycle
 
-3. **Shared Understanding**: Externalize knowledge into durable cognitive artifacts for organizational memory
-   - Create cognitive artifacts (docs, ADRs, diagrams, runbooks, code comments)
-   - Maintain the commons (fight knowledge decay through ownership and review cycles)
-   - Systemic incentives (make it easy, visible, required, integrated, rewarded)
-   - Async-first context sharing (documentation default, meetings case-by-case)
-   - **Theoretical Roots**: Cognitive artifacts, distributed cognition, tragedy of the commons, organizational memory
-
-**Theoretical Foundation**: Search engines (crawling, indexing, ranking), robotics (SLAM, sensor fusion), OODA loop (Observe, Orient), cognitive science (mental models, cognitive artifacts), economics (tragedy of the commons)
-
-**See**: `/pillars/contextual_awareness.md` for complete specification
+All guided by **Intrinsic Motivation (Objective Function/WHY)**: The reward function that defines success.
 
 ## People Systems Framework
 

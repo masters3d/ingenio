@@ -6,7 +6,7 @@ marp: true
 # Clear Strategy
 
 Chéyo Jiménez, MSE
-_Oct, 2021_
+_Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 
 
 ---
@@ -33,11 +33,29 @@ _Oct, 2021_
 
 # Three Sub-Pillars of Clear Strategy
 
-**Framework**: Csikszentmihalyi's Flow Theory - Creating optimal performance states
+**Cycle Phase**: Actuation (ACTING in the environment)
+**Framework**: Csikszentmihalyi's Flow Theory + Robotics Actuation
+**Robotics Foundation**: Kinematics, Path Planning, PID Control
 
 1. **Difficulty Alignment** - Challenge-Skill Balance
 2. **Directed Intentionality** - Clear Goals
 3. **Adaptive Control** - Immediate Feedback
+
+---
+
+# Framework 4.0 Context
+
+**Clear Strategy** is the **Actuation** phase in the operational cycle:
+
+```
+Intrinsic Motivation (WHY - Objective Function)
+         ↓
+Prospective (KNOWING) → Actuation (ACTING) → Retrospective (LEARNING)
+                              ↑
+                         You are here
+```
+
+Creating optimal performance states through Flow Theory.
 
 ---
 
@@ -175,3 +193,22 @@ Reference:
 <!--::: notes
 Reference:
 :::-->
+
+---
+
+# Integration with Framework 4.0
+
+**Actuation (ACTING)** connects to:
+
+**← From Prospective (KNOWING)**:
+- Contextual Awareness provides the knowledge needed to act
+- Mental models inform goal-setting and difficulty calibration
+
+**→ To Retrospective (LEARNING)**:
+- Reflective Calibration examines outcomes
+- Pattern recognition identifies what worked
+- Model updates feed back to improve future actions
+
+**↑ Guided by Objective Function (WHY)**:
+- Intrinsic Motivation defines what success means
+

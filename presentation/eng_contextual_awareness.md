@@ -6,7 +6,7 @@ marp: true
 # Contextual Awareness
 
 Chéyo Jiménez, MSE
-_Oct, 2021_
+_Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 
 
 
@@ -42,11 +42,29 @@ _Oct, 2021_
 
 # Three Sub-Pillars of Contextual Awareness
 
-**Framework**: OODA loop (Observe + Orient = KNOWING the environment)
+**Cycle Phase**: Prospective (KNOWING the environment)
+**Framework**: OODA loop (Observe + Orient), Robotics Perception, Search Engines
+**Robotics Foundation**: Perception (sensors, SLAM, environment mapping)
 
 1. **Proactive Curiosity** - Systematically discover and index knowledge
 2. **Cohesive Narrative** - Build mental models through cognitive artifacts
 3. **Shared Understanding** - Externalize knowledge for organizational memory
+
+---
+
+# Framework 4.0 Context
+
+**Contextual Awareness** is the **Prospective** phase in the operational cycle:
+
+```
+Intrinsic Motivation (WHY - Objective Function)
+         ↓
+Prospective (KNOWING) → Actuation (ACTING) → Retrospective (LEARNING)
+     ↑
+You are here
+```
+
+Understanding the environment before acting.
 
 ---
 
@@ -245,3 +263,22 @@ Reference:
 https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
 
 :::-->
+
+---
+
+# Integration with Framework 4.0
+
+**Prospective (KNOWING)** connects to:
+
+**→ To Actuation (ACTING)**:
+- Clear Strategy uses the context we've built
+- Mental models inform goal-setting and execution
+- Cognitive artifacts enable informed decision-making
+
+**→ From Retrospective (LEARNING)**:
+- Reflective Calibration enriches our knowledge
+- Pattern recognition improves mental models
+- Model updates become shared understanding
+
+**↑ Guided by Objective Function (WHY)**:
+- Intrinsic Motivation drives curiosity and learning

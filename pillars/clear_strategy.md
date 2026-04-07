@@ -2,11 +2,13 @@
 
 **Etymology**: From Greek _strategia_ (στρατηγία) - "art of the general" from _stratos_ (army) + _agein_ (to lead). The skill of planning and directing operations to achieve specific objectives.
 
+**Cycle Name**: Actuation
+
 **Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
 
 ## Overview
 
-Clear Strategy is the execution pillar of engineering excellence. It transforms ambiguous directives into concrete, achievable outcomes through hierarchical planning and coherent action. Without clear strategy, teams waste effort on misaligned work, miss deadlines, and lack definition of done.
+Clear Strategy is the execution pillar of engineering excellence (the ACTING phase of the operational cycle). It transforms ambiguous directives into concrete, achievable outcomes through hierarchical planning and coherent action. Without clear strategy, teams waste effort on misaligned work, miss deadlines, and lack definition of done.
 
 ## Philosophy
 
@@ -22,13 +24,17 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## The Three Sub-Pillars of Clear Strategy
 
-**Framework Foundation**: Clear Strategy answers "HOW to ACT effectively in the environment." It is based on Csikszentmihalyi's Flow Theory - the psychology of optimal experience and high performance.
+**Framework Foundation**: Clear Strategy answers "HOW to ACT effectively in the environment." It is based on Csikszentmihalyi's Flow Theory and robotics actuation principles - the psychology of optimal experience and the mechanics of goal-directed action.
 
 **Core Insight**: Strategy is about creating the conditions for Flow - an optimal state of consciousness where action and awareness merge, the ego vanishes, and performance becomes self-correcting. This replaces passive "waiting for Flow" with an active, engineering-based protocol.
 
 **Critical Differentiation**:
-- **Contextual Awareness** = KNOWING the environment (Observe + Orient in OODA loop)
-- **Clear Strategy** = ACTING in the environment (Decide + Act in OODA loop)
+- **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
+- **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
+- **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
+- **Intrinsic Motivation** (Objective Function) = WHY we act (Defines success criteria)
+
+**Robotics Foundation**: Actuation (kinematics, path planning, PID control) - the science of converting goals into physical actions.
 
 **Flow State Requirements**: Three conditions must be met for Flow (Csikszentmihalyi):
 1. **Challenge-Skill Balance**: Task difficulty matches capability
@@ -41,6 +47,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 **Theoretical Roots**:
 - **Csikszentmihalyi's Flow Theory (Challenge-Skill Balance)**: Flow occurs in the narrow channel where challenge slightly exceeds skill, creating growth without anxiety or boredom
+- **Robotics Task-Capability Matching**: Actuators can only perform tasks within their physical capabilities (torque limits, speed limits, range of motion)
 - **Zone of Proximal Development** (Vygotsky): Learning happens in the zone between "can do alone" and "cannot do at all"
 - **Calibration Theory**: Continuous adjustment of difficulty to maintain optimal performance state
 - **Growth Mindset**: Belief that abilities can be developed through dedication and hard work
@@ -109,6 +116,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 **Theoretical Roots**:
 - **Csikszentmihalyi's Flow Theory (Clear Goals)**: Unambiguous goals eliminate psychic entropy and enable action-awareness merger
+- **Robotics Path Planning**: Actuators need explicit target states (position, velocity, orientation) to execute movements
 - **Goal-Setting Theory** (Locke & Latham): Specific, challenging goals increase performance
 - **Intentional Stance** (Dennett): Systems with clear intentions are predictable and effective
 - **Single-Tasking**: Focusing on one objective at a time maximizes cognitive resources
@@ -184,6 +192,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 **Theoretical Roots**:
 - **Csikszentmihalyi's Flow Theory (Immediate Feedback)**: Flow requires real-time data about performance to enable seamless adjustments
+- **Robotics PID Control**: Proportional-Integral-Derivative controllers use continuous error feedback to adjust actuator commands
 - **Cybernetic Control Theory**: Systems self-regulate through feedback loops (thermostat model)
 - **OODA Loop** (Boyd): Observe-Orient-Decide-Act cycle for rapid adaptation
 - **Agile Inspect and Adapt**: Regular retrospectives and course corrections
@@ -260,15 +269,20 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 ---
 ## Integration with Other Pillars
 
-### With Intrinsic Motivation
+### With Intrinsic Motivation (Objective Function)
 - **Difficulty Alignment** enables **Mastery** (right-sized challenges drive growth)
 - **Directed Intentionality** requires **Purpose** (clear goals aligned with meaningful work)
 - **Adaptive Control** supports **Autonomy** (self-correcting through feedback)
 
-### With Contextual Awareness
+### With Contextual Awareness (Prospective)
 - **Difficulty Alignment** needs **Proactive Curiosity** (understand your capabilities and demands)
 - **Directed Intentionality** requires **Cohesive Narrative** (shared understanding of goals)
 - **Adaptive Control** depends on **Shared Understanding** (observable systems, documented feedback loops)
+
+### With Reflective Calibration (Retrospective)
+- **Difficulty Alignment** outcomes feed **Outcome Analysis** (was difficulty right-sized?)
+- **Directed Intentionality** clarity enables **Pattern Recognition** (clear goals make patterns visible)
+- **Adaptive Control** real-time feedback informs **Model Update** (immediate data becomes learning)
 
 ---
 
@@ -318,6 +332,8 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 - **Flow Theory**: Csikszentmihalyi, M. (1990). "Flow: The Psychology of Optimal Experience"
 - **Challenge-Skill Balance**: Flow channel diagram, anxiety vs boredom zones
+- **Robotics Actuation**: Kinematics (motion geometry), Path Planning (trajectory generation), PID Control (feedback-driven actuation)
+- **Control Theory**: PID controllers, error feedback, closed-loop systems
 - **OODA Loop**: Boyd, J. (1995). Military strategy framework
 - **Cybernetic Control**: Wiener, N. (1948). "Cybernetics: Or Control and Communication in the Animal and the Machine"
 - **DORA Metrics**: DevOps Research and Assessment - deployment frequency, lead time

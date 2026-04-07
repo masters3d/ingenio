@@ -2,11 +2,13 @@
 
 **Etymology**: From Latin _contextus_ - "a joining together, coherent whole" from _con-_ (together) + _texere_ (to weave). The same root as "text" - weaving threads of information together.
 
+**Cycle Name**: Prospective
+
 **Philosophy**: "It depends" - everything is relative and contextual
 
 ## Overview
 
-Contextual Awareness is the understanding pillar of engineering excellence. It recognizes that effective engineering decisions require deep understanding of the environment, constraints, timing, and audience. What works in one context fails in another. This pillar emphasizes building, sharing, and maintaining context across time, people, and systems.
+Contextual Awareness is the understanding pillar of engineering excellence (the KNOWING phase of the operational cycle). It recognizes that effective engineering decisions require deep understanding of the environment, constraints, timing, and audience. What works in one context fails in another. This pillar emphasizes building, sharing, and maintaining context across time, people, and systems.
 
 ## Philosophy
 
@@ -25,8 +27,10 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 **Core Insight**: Awareness is about KNOWING - building and maintaining an accurate model of the operating environment through systematic discovery, continuous updating, and persistent preservation.
 
 **Critical Differentiation**:
-- **Contextual Awareness** = KNOWING the environment (Observe + Orient in OODA loop)
-- **Clear Strategy** = ACTING in the environment (Decide + Act in OODA loop)
+- **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
+- **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
+- **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
+- **Intrinsic Motivation** (Objective Function) = WHY we act (Defines success criteria)
 
 **You can only act effectively on what you accurately understand.**
 
@@ -316,15 +320,20 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 
 ## Integration with Other Pillars
 
-### With Clear Strategy
+### With Clear Strategy (Actuation)
 - **Proactive Curiosity** provides the knowledge needed for **Difficulty Alignment** (know capabilities and demands)
 - **Cohesive Narrative** enables **Directed Intentionality** (shared understanding of goals)
 - **Shared Understanding** supports **Adaptive Control** (documented feedback loops and observable systems)
 
-### With Intrinsic Motivation
+### With Intrinsic Motivation (Objective Function)
 - **Proactive Curiosity** reduces friction for **Autonomy** (find what you need yourself)
 - **Cohesive Narrative** accelerates **Mastery** (understand systems deeply)
 - **Shared Understanding** clarifies **Purpose** (see why work matters)
+
+### With Reflective Calibration (Retrospective)
+- **Proactive Curiosity** enriched by **Outcome Analysis** (experiential data added to knowledge base)
+- **Cohesive Narrative** improved by **Pattern Recognition** (patterns reveal system structure)
+- **Shared Understanding** maintained by **Model Update** (learnings become cognitive artifacts)
 
 ---
 

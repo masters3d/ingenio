@@ -7,38 +7,60 @@
 - Like chariots, careers are powered by engines (*ingenium*)
 - Movement requires both direction (strategy) and power (drive)
 
-This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine** framework: Clear Strategy, Intrinsic Motivation, and Contextual Awareness.
+This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine (Framework 4.0)**: A three-phase operational cycle (Prospective → Actuation → Retrospective) guided by an objective function (Intrinsic Motivation).
 
-## Three Pillars Quest Engine Framework
+## Three Pillars Quest Engine Framework (Version 4.0)
 
-The foundational framework for engineering career excellence:
+The foundational framework for engineering career excellence introduces a three-phase operational cycle:
 
-### 1. Clear Strategy
+```
+Intrinsic Motivation (Objective Function - WHY)
+         ↓ defines success criteria
+┌────────────────────────────────────┐
+│  Prospective → Actuation → Retrospective  │
+└────────────────────────────────────┘
+         ↑ feeds learning back
+```
+
+### Contextual Awareness (Prospective - KNOWING)
+**Cycle Phase**: Prospective - understand environment before acting
+**Philosophy**: "It depends" - everything is relative and contextual
+**Robotics**: Perception (sensors, SLAM, environment mapping)
+
+**Three Sub-Pillars:**
+1. **Proactive Curiosity** - Systematically discover and index knowledge (Scout Mindset)
+2. **Cohesive Narrative** - Build accurate mental models (SLAM replanning)
+3. **Shared Understanding** - Externalize knowledge for organizational memory (cognitive artifacts)
+
+### Clear Strategy (Actuation - ACTING)
+**Cycle Phase**: Actuation - execute based on knowledge
 **Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
-**Framework**: Flow Theory (Csikszentmihalyi) - Creating optimal performance states
+**Robotics**: Actuation (kinematics, path planning, PID control)
 
 **Three Sub-Pillars:**
 1. **Difficulty Alignment** - Challenge-Skill Balance (prevents anxiety/boredom, maintains Flow Channel)
 2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy, enables action-awareness merger)
-3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment without breaking flow)
+3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment, real-time data)
 
-### 2. Intrinsic Motivation
+### Reflective Calibration (Retrospective - LEARNING)
+**Cycle Phase**: Retrospective - learn from what happened
+**Philosophy**: "Every result is data" - the system that examines itself improves itself
+**Robotics**: State Estimation (Kalman filter, observers, feedback control)
+
+**Three Sub-Pillars:**
+1. **Outcome Analysis** - Compare prediction vs reality (measurement gap, root cause analysis)
+2. **Pattern Recognition** - Identify recurring themes (signal vs noise, system archetypes)
+3. **Model Update** - Revise mental models based on evidence (close the loop, Bayesian updating)
+
+### Intrinsic Motivation (Objective Function - WHY)
+**Position**: Above the operational cycle - defines success criteria
 **Focus**: Internal motivation over external rewards
-**Foundation**: Self-Determination Theory
+**Robotics**: Reward/Cost Function (defines what to optimize for)
 
 **Three Sub-Pillars:**
 - **Mastery**: Continuous skill development and growth
 - **Autonomy**: Ownership and self-direction in work
 - **Purpose**: Alignment on meaningful directives beyond personal gain
-
-### 3. Contextual Awareness
-**Philosophy**: "It depends" - everything is relative and contextual
-**Framework**: OODA loop (Observe + Orient = KNOWING the environment)
-
-**Three Sub-Pillars:**
-1. **Proactive Curiosity** - Systematically discover and index knowledge (Scout Mindset)
-2. **Cohesive Narrative** - Build mental models through cognitive artifacts
-3. **Shared Understanding** - Externalize knowledge for organizational memory
 
 ## People Systems Framework
 
