@@ -22,279 +22,253 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## The Three Sub-Pillars of Clear Strategy
 
-**Framework Foundation**: Clear Strategy answers "HOW to ACT effectively in the environment." It synthesizes Agile methodology, motivational psychology, and computational robotics planning.
+**Framework Foundation**: Clear Strategy answers "HOW to ACT effectively in the environment." It is based on Csikszentmihalyi's Flow Theory - the psychology of optimal experience and high performance.
 
-**Core Insight**: Strategy is about ACTING - transforming understanding into deliberate, effective action through iterative execution, concrete action triggers, and hierarchical decomposition.
+**Core Insight**: Strategy is about creating the conditions for Flow - an optimal state of consciousness where action and awareness merge, the ego vanishes, and performance becomes self-correcting. This replaces passive "waiting for Flow" with an active, engineering-based protocol.
 
 **Critical Differentiation**:
 - **Contextual Awareness** = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** = ACTING in the environment (Decide + Act in OODA loop)
 
-### 1. Define Clear Waypoints
+**Flow State Requirements**: Three conditions must be met for Flow (Csikszentmihalyi):
+1. **Challenge-Skill Balance**: Task difficulty matches capability
+2. **Clear Goals**: Know exactly what success looks like
+3. **Immediate Feedback**: Real-time data to adjust performance
 
-**Definition**: Plot the path before you travel - establish specific intermediate goals with measurable success criteria.
+### 1. Skill Alignment
+
+**Definition**: The active synchronization of internal capabilities with external demands - maintaining the delicate balance that enables Flow.
 
 **Theoretical Roots**:
-- **Robotics Path Planning**: Waypoints are intermediate goals between start and destination that make navigation tractable
-- **Goal-Setting Theory** (Locke & Latham): Specific, challenging goals with feedback increase performance
-- **Agile Sprint Planning**: Define what "done" looks like before starting work
-- **Motivational Psychology**: Clear targets create directed energy and reduce decision fatigue
+- **Csikszentmihalyi's Flow Theory (Challenge-Skill Balance)**: Flow occurs in the narrow channel where challenge slightly exceeds skill, creating growth without anxiety or boredom
+- **Zone of Proximal Development** (Vygotsky): Learning happens in the zone between "can do alone" and "cannot do at all"
+- **Calibration Theory**: Continuous adjustment of difficulty to maintain optimal performance state
+- **Growth Mindset**: Belief that abilities can be developed through dedication and hard work
 
 #### Components
 
-**SMART Waypoints** (Goal-Setting Theory)
-- **Specific**: "Reduce P95 latency from 800ms to 200ms" not "improve performance"
-- **Measurable**: Quantifiable success criteria with observable outcomes
-- **Achievable**: Within team's capability and resource constraints
-- **Relevant**: Directly contributes to organizational objectives
-- **Time-Bound**: Fixed deadlines create urgency and force prioritization
+**Challenge-Skill Balance** (The Flow Channel)
+- **Too Hard (Anxiety)**: Challenge far exceeds skill → stress, overwhelm, shutdown
+- **Too Easy (Boredom)**: Skill far exceeds challenge → apathy, disengagement, waste
+- **Just Right (Flow)**: Challenge slightly exceeds skill → growth, engagement, peak performance
+- **The Channel**: Narrow band where difficulty matches capability plus stretch
 
-**Definition of Done** (Agile Exit Criteria)
-- **Acceptance Criteria**: Explicit conditions that must be met
-- **Quality Gates**: Tests pass, code reviewed, docs updated, deployed
-- **Exit Criteria**: "When can I mark this done and move on?"
-- **Deployment Ready**: Shippable without additional work
+**Continuous Task Calibration** (Active Adjustment)
+- **If challenge exceeds skill**: Simplify the task OR upskill (training, pairing, research)
+- **If skill exceeds challenge**: Increase complexity OR take on harder problems
+- **Monitor indicators**: Feeling anxious? Simplify. Feeling bored? Add challenge.
+- **Team calibration**: Match tasks to engineer skill levels, provide growth opportunities
 
-**Scope Boundaries** (Preventing Drift)
-- **In Scope**: Explicit list of what this work includes
-- **Out of Scope**: Explicit list of what this work excludes
-- **Waypoint Sequence**: Order matters - what must come first?
-- **Obstacle Avoidance**: Known blockers and mitigation strategies
+**Prevent Burnout and Apathy** (Maintain Position)
+- **Burnout prevention**: Don't assign impossible tasks, provide support and training
+- **Apathy prevention**: Don't waste senior talent on trivial work, delegate appropriately
+- **Career progression**: Continuously increase challenge as skills grow
+- **Psychic entropy elimination**: Reduce distractions that fragment attention
 
 #### Engineering Behaviors
 
 **Level 0-1 (Apprentice/Component Creator)**
-- Understands the sprint goal and their assigned tasks
-- Asks clarifying questions about requirements
-- Identifies blockers that prevent progress toward goals
+- Recognizes when tasks feel too hard and asks for help or simplification
+- Seeks tasks that stretch current abilities without overwhelming
+- Provides feedback on task difficulty to manager
 
 **Level 2-3 (Designer/System Guide)**
-- Defines component-level direction from system requirements
-- Articulates why certain approaches align with team goals
-- Identifies when work diverges from intended direction
+- Calibrates component complexity to team skill levels
+- Breaks down complex work into achievable chunks
+- Identifies when team members need upskilling vs task simplification
 
 **Level 4-5 (System Maintainer/Multi-System Designer)**
-- Sets technical direction for entire systems
-- Aligns system goals with organization objectives
-- Negotiates direction across team boundaries
+- Designs systems with appropriate complexity for team capabilities
+- Creates growth opportunities through stretch assignments
+- Balances innovation (challenging) with maintenance (known)
 
 **Level 6-7+ (Coordinator/Architect)**
-- Establishes strategic direction for groups of systems
-- Balances competing organizational priorities
-- Shapes technical vision across sister teams
+- Calibrates organizational technical strategy to collective capabilities
+- Identifies skill gaps and creates development programs
+- Ensures technical challenges align with organizational growth goals
 
 #### Applied Examples
 
-**Bad Clear Goals** (Vague)
-> "Improve the performance of the checkout service"
+**Bad Calibration** (Anxiety Zone)
+> "We're rewriting the entire payment system in Rust. No one on the team knows Rust. Ship in 2 months."
 
-**Good Clear Goals** (Specific with DoD)
-> "Reduce P95 checkout latency from 800ms to 200ms by Q3. Done when: P95 < 200ms for 7 consecutive days in production. Out of scope: payment provider integrations."
+**Good Calibration** (Flow Channel)
+> "We're adding a new API endpoint. Senior engineer designs, mid-level implements with pairing, junior writes tests. Everyone learns, no one overwhelmed."
 
-**Bad Definition of Done** (Unclear)
-> "Feature is done when it works"
+**Bad Calibration** (Boredom Zone)
+> "Staff engineer spends 6 months updating dependency versions and fixing linter warnings."
 
-**Good Definition of Done** (Explicit)
-> "Feature is done when: (1) All acceptance criteria met, (2) Unit & integration tests >80% coverage, (3) Design doc updated, (4) Runbook written, (5) Deployed to production with monitoring."
+**Good Calibration** (Flow Channel with Growth)
+> "Staff engineer mentors while designing new architecture. Hands-on enough to stay engaged, abstract enough to leverage expertise."
 
 ---
 
-### 2. Execute in Feedback Loops
+### 2. Direct Intentionality
 
-**Definition**: Take action, measure results, adjust course - continuous execution with rapid iteration and course correction.
+**Definition**: The sharp, uncompromising projection of consciousness toward a specific objective - eliminating ambiguity to enable total immersion.
 
 **Theoretical Roots**:
-- **Implementation Intentions** (Gollwitzer): "If X happens, then I will do Y" - automatic action triggers reduce decision fatigue
-- **Zeigarnik Effect**: Incomplete tasks create psychological tension driving completion; leverage this for momentum
-- **Agile Iterative Development**: Sprint cycles with inspect-and-adapt rhythms
-- **Robotics SLAM (Localization aspect)**: Continuous repositioning and replanning as environment changes
-- **OODA Loop**: Boyd's Observe-Orient-Decide-Act cycle for rapid adaptation
+- **Csikszentmihalyi's Flow Theory (Clear Goals)**: Unambiguous goals eliminate psychic entropy and enable action-awareness merger
+- **Goal-Setting Theory** (Locke & Latham): Specific, challenging goals increase performance
+- **Intentional Stance** (Dennett): Systems with clear intentions are predictable and effective
+- **Single-Tasking**: Focusing on one objective at a time maximizes cognitive resources
 
 #### Components
 
-**Implementation Intentions** (If-Then Action Triggers)
-- **Automatic Execution**: "If PR approved, then deploy to staging within 2 hours"
-- **Reduce Decision Fatigue**: Pre-commit to actions, don't decide in the moment
-- **Context-Action Binding**: Link situational cues to specific behaviors
-- **Examples**: "If build passes, then I immediately write integration test" | "If stuck for 30 min, then I ask for help"
+**Clear Goals Eliminate Distraction** (Psychic Entropy Reduction)
+- **Psychic entropy**: Mental disorder from competing demands, unclear priorities, distractions
+- **Singular focus**: One primary objective at a time, everything else is secondary
+- **Decision fatigue elimination**: Pre-decide what matters, ignore the rest
+- **Total immersion enabled**: When goals are clear, mind can fully engage
 
-**Incremental Delivery** (Small Batch, Fast Feedback)
-- **Daily Commits**: Push code every day, even if incomplete (feature flags)
-- **Weekly Deployables**: Something demo-able every sprint
-- **Monthly Releases**: Regular cadence to production
-- **Use Zeigarnik Effect**: Start tasks to create completion drive; open loops motivate closure
+**Singular Vector of Intent** (Success State Definition)
+- **Exactly what success looks like**: Not "improve performance" but "P95 < 200ms"
+- **In the immediate moment**: What am I trying to accomplish RIGHT NOW?
+- **Binary success criteria**: Either done or not done, no ambiguity
+- **Exit criteria explicit**: Know when to stop and move on
 
-**Measure-Act-Adjust** (Agile Retrospectives)
-- **High-Frequency Loops** (Daily): Unit tests, linting, local builds give immediate feedback
-- **Medium-Frequency Loops** (Weekly): Code reviews, sprint demos, integration tests
-- **Low-Frequency Loops** (Monthly): Production metrics, user feedback, quarterly reviews
-- **Adaptive Planning**: When reality diverges from plan, update the plan (SLAM replanning)
+**Minimize Cognitive Load** (Immersion Prerequisites)
+- **Reduce decisions**: Fewer choices = more energy for execution
+- **Eliminate ambiguity**: "What should I do?" should never be the question
+- **Remove interruptions**: Protect focus time, batch async communication
+- **Simplify environment**: Fewer tools, clearer processes, less context switching
 
-**Visible Progress** (Transparency & Momentum)
-- **Burn Down Charts**: Track work remaining in sprint
-- **Deployment Frequency**: How often do we ship to production?
-- **Lead Time for Changes**: Commit to production duration
-- **Maintain Open Loops**: Keep work visible to leverage psychological completion drive
+**Action-Awareness Merger** (Flow State Characteristic)
+- **Doing = Being**: Activity becomes effortless, no separation between actor and action
+- **Ego dissolution**: Self-consciousness disappears, only the work remains
+- **Time distortion**: Hours feel like minutes when fully immersed
+- **Effortless attention**: Concentration requires no willpower when goals are clear
+
 
 #### Engineering Behaviors
 
 **Level 0-1 (Apprentice/Component Creator)**
-- Commits code daily with meaningful progress
-- Responds to CI/CD feedback within same day
-- Breaks work into small, reviewable chunks
+- Understands the sprint goal and their assigned tasks with clarity
+- Asks clarifying questions until objective is unambiguous
+- Focuses on one task at a time without multitasking
 
 **Level 2-3 (Designer/System Guide)**
-- Designs components for incremental delivery
-- Establishes feedback loops for component health
-- Unblocks others to maintain team velocity
+- Defines component goals with explicit success criteria
+- Communicates intent clearly to team members
+- Eliminates ambiguity in technical specifications
 
 **Level 4-5 (System Maintainer/Multi-System Designer)**
-- Instruments systems with observability (logs, metrics, traces)
-- Defines SLOs and monitors progress toward targets
-- Removes systemic blockers to team progress
+- Sets clear technical direction for entire systems
+- Aligns system goals with organizational objectives
+- Shields team from competing demands to protect focus
 
 **Level 6-7+ (Coordinator/Architect)**
-- Tracks cross-system delivery metrics
-- Identifies and resolves organizational bottlenecks
+- Establishes singular strategic direction for groups of systems
+- Eliminates organizational psychic entropy through clear priorities
+- Creates focus by saying "no" to misaligned initiatives
+
+#### Applied Examples
+
+**Bad Intentionality** (Vague, Psychic Entropy)
+> "Improve the performance of the checkout service. Also refactor the code. And update dependencies. And improve the tests."
+
+**Good Intentionality** (Singular, Clear)
+> "THIS SPRINT: Reduce P95 checkout latency from 800ms to 200ms. Everything else is out of scope."
+
+**Bad Intentionality** (Unclear Success)
+> "Feature is done when it works and looks good."
+
+**Good Intentionality** (Binary, Explicit)
+> "Feature is done when: (1) P95 < 200ms in production for 7 days, (2) Error rate < 0.1%, (3) Runbook written, (4) Oncall trained."
+
+---
+
+### 3. Adaptive Control
+
+**Definition**: A closed-loop behavioral system that utilizes real-time feedback to pivot execution - maintaining Flow through continuous adjustment.
+
+**Theoretical Roots**:
+- **Csikszentmihalyi's Flow Theory (Immediate Feedback)**: Flow requires real-time data about performance to enable seamless adjustments
+- **Cybernetic Control Theory**: Systems self-regulate through feedback loops (thermostat model)
+- **OODA Loop** (Boyd): Observe-Orient-Decide-Act cycle for rapid adaptation
+- **Agile Inspect and Adapt**: Regular retrospectives and course corrections
+- **Sensorimotor Integration**: Brain adjusts actions based on immediate sensory feedback
+
+#### Components
+
+**Immediate Feedback** (Closed-Loop Data)
+- **Real-time signals**: Know within seconds/minutes if action is working
+- **Adjust without breaking flow**: Feedback integrated into action, not separate
+- **Examples**: Unit tests (seconds), CI/CD (minutes), production metrics (hours)
+- **No delayed judgment**: Waiting weeks for feedback breaks the flow state
+
+**Execute with Sensorimotor Sensitivity** (Awareness During Action)
+- **Feel the system**: Like driving a car, you sense when something is off
+- **Instrument for feedback**: Logs, metrics, traces provide sensorimotor signals
+- **Pay attention**: Monitor system behavior, error rates, performance metrics
+- **Trust your instincts**: If something feels wrong, investigate immediately
+
+**Every Result is Data** (Not Failure)
+- **No judgment, only information**: "This approach resulted in X outcome"
+- **Immediate adjustment**: Don't wait, pivot as soon as data indicates
+- **Fluid response**: Treat results as steering signals, not success/failure verdicts
+- **Build-measure-learn**: Agile's core loop applied at all timescales
+
+**Seamless Action-Awareness Loop** (Ego Dissolution)
+- **Self-correcting performance**: System adjusts automatically based on feedback
+- **Ego vanishes**: No "I failed" or "I succeeded", only "the system behaved this way"
+- **Effortless concentration**: Feedback integration requires no willpower when loops are tight
+- **Time distortion**: Hours pass like minutes when fully engaged in feedback loop
+
+#### Engineering Behaviors
+
+**Level 0-1 (Apprentice/Component Creator)**
+- Runs unit tests before committing code
+- Responds to CI/CD failures within hours
+- Monitors logs when feature deployed to staging
+
+**Level 2-3 (Designer/System Guide)**
+- Designs components with built-in observability
+- Creates dashboards for component health metrics
+- Establishes alert thresholds for critical issues
+
+**Level 4-5 (System Maintainer/Multi-System Designer)**
+- Instruments systems with comprehensive telemetry
+- Defines SLOs and monitors error budgets
+- Builds automated feedback loops (auto-scaling, circuit breakers)
+
+**Level 6-7+ (Coordinator/Architect)**
+- Establishes organizational feedback culture
+- Designs systems-of-systems observability
 - Optimizes feedback loops across multiple teams
 
 #### Applied Examples
 
-**Bad Progress** (Big Bang)
-> Working on authentication rewrite for 6 months, no PRs merged, "almost done"
+**Bad Feedback** (Delayed, Breaks Flow)
+> "Deployed to production Friday evening. Will check metrics Monday morning to see if it worked."
 
-**Good Progress** (Incremental)
-> Week 1: New auth library (feature-flagged, 0% traffic)
-> Week 2: Migrate login endpoint (10% traffic)
-> Week 3: Migrate registration (10% traffic)
-> Week 4: Increase to 50% traffic, monitor error rates
-> Week 6: 100% traffic, remove old code
+**Good Feedback** (Immediate, Maintains Flow)
+> "Deployed with feature flag at 1% traffic. Watching dashboard in real-time. Error rate normal, latency improved. Increasing to 10%."
 
-**Bad Progress** (No Feedback)
-> "Deployed new caching layer. Not sure if it's helping, will check next quarter."
+**Bad Feedback** (No Data)
+> "I think the caching layer is helping performance. The site feels faster to me."
 
-**Good Progress** (Tight Feedback)
-> "Deployed new caching layer with metrics. P95 latency dropped from 800ms to 250ms within 2 hours. Cache hit rate at 92%."
+**Good Feedback** (Measurable, Actionable)
+> "Cache hit rate at 92%. P95 latency dropped from 800ms to 250ms. Proceeding to increase traffic."
 
----
+**Bad Feedback** (Judgmental)
+> "This approach failed. I wasted 2 weeks. I'm a terrible engineer."
 
-### 3. Decompose to Actionable Units
-
-**Definition**: Break complex challenges into tractable steps - every journey is a sequence of single actions.
-
-**Theoretical Roots**:
-- **Robotics Motion Planning**: Complex trajectories decomposed into discrete, executable motions
-- **Hierarchical Task Networks (HTN)**: Abstract goals decomposed into concrete actions through refinement
-- **Agile Work Breakdown Structure**: Epic → Story → Task → Subtask decomposition
-- **Cognitive Load Theory**: Working memory is limited (~7 items); chunk work to fit cognitive capacity
-- **Motivational Psychology**: Small, achievable steps build self-efficacy and momentum
-
-#### Components
-
-**Hierarchical Planning** (The Quest Engine)
-- **Vision Document**: The "why" and high-level "what" (Quarterly/Yearly scope)
-  - Problem statement, business case, success criteria
-  - Stakeholders, assumptions, constraints
-  - Exit strategy: When is the initiative complete?
-
-- **Design Document**: Technical approach and architecture (Monthly scope)
-  - System design, API contracts, data models
-  - Technology choices with rationale (ADRs)
-  - Exit strategy: When can we start implementing?
-
-- **Sprint Plan**: Specific features and tasks (Weekly/2-week scope)
-  - User stories, technical tasks, dependencies
-  - Sprint goal and demo scenarios
-  - Exit strategy: Definition of done for sprint
-
-- **Daily Plan**: Today's concrete next steps (Daily scope)
-  - Specific work items for today
-  - Blockers and dependencies
-  - Exit strategy: What makes today successful?
-
-**Exit Strategy at Every Level** (Scrum/Agile Foundation)
-- **Project Exit**: When can we sunset this initiative?
-- **Feature Exit**: When is this feature complete and shipped?
-- **Sprint Exit**: What must be demo-ready?
-- **Task Exit**: When can I mark this done and move on?
-
-**Work Breakdown Structure** (Agile Terminology)
-- **Epic**: Large initiative spanning multiple sprints (maps to Vision)
-- **Story**: User-facing functionality deliverable in a sprint (maps to Design)
-- **Task**: Technical work item completable in days (maps to Sprint Plan)
-- **Sub-task**: Implementation detail completable in hours (maps to Daily Plan)
-
-**Exit Strategy**
-- **Task-Level DoD**: When is this task complete?
-- **Sprint-Level DoD**: When can we ship this feature?
-- **Project-Level DoD**: When can we sunset this initiative?
-
-#### Engineering Behaviors
-
-**Level 0-1 (Apprentice/Component Creator)**
-- Completes well-defined tasks from design documents
-- Asks for task breakdown when work feels too large
-- Identifies when a task is blocked or needs splitting
-
-**Level 2-3 (Designer/System Guide)**
-- Breaks design documents into tasks for the team
-- Estimates complexity and identifies dependencies
-- Creates tasks that enable parallel work
-
-**Level 4-5 (System Maintainer/Multi-System Designer)**
-- Breaks system-level vision into design documents
-- Identifies critical path and optimizes for it
-- Delegates task execution to appropriate level
-
-**Level 6-7+ (Coordinator/Architect)**
-- Transforms organizational goals into system-level visions
-- Coordinates breakdown across multiple teams
-- Ensures work decomposition enables autonomous execution
-
-#### Applied Examples
-
-**Bad Hierarchy** (Too Abstract, No Exit Strategy)
-> Epic: "Modernize the platform"
-
-**Good Hierarchy** (Quest Engine with Exit Strategies)
-> **Vision**: Reduce operational toil by 50% through automation (Q4 target)
-> - Exit: 50% reduction in manual deploy steps, measured monthly
->
-> **Design**: Implement auto-scaling for all services
-> - Exit: Auto-scaling design approved, ready for implementation
->
-> **Sprint 1**: Auto-scale web tier (2-week sprint)
-> - User Story: As ops, I want auto-scaling so I don't manually adjust capacity
-> - Exit/DoD: Web tier scales 0-100 instances based on CPU, demo-able
->   - Task 1: Add CPU/memory metrics to dashboards (2 days)
->   - Task 2: Configure horizontal pod autoscaling (1 day)
->   - Task 3: Load test to validate scaling behavior (2 days)
->
-> **Daily**: Today I'm implementing CPU metrics collection
-> - Exit: CPU metrics visible in dashboard by end of day
-
-**Bad Exit Strategy** (Vague)
-> "We're done when it's ready"
-
-**Good Exit Strategy** (Explicit at Each Level)
-> - Project: Done when 50% toil reduction sustained for 3 months
-> - Feature: Done when in production handling 100% traffic with SLO met
-> - Sprint: Done when demo shows auto-scaling working
-> - Task: Done when PR merged and deployed to staging
+**Good Feedback** (Data-Driven, Adaptive)
+> "This approach produced X result. That data indicates Y. Adjusting strategy to Z."
 
 ---
-
 ## Integration with Other Pillars
 
-### With Intrinsic Drive
-- **Direction** must align with **Purpose** (meaningful work)
-- **Forward Progress** requires **Autonomy** (self-directed execution)
-- **Breaking Down** develops **Mastery** (skill through practice)
+### With Intrinsic Motivation
+- **Skill Alignment** enables **Mastery** (right-sized challenges drive growth)
+- **Direct Intentionality** requires **Purpose** (clear goals aligned with meaningful work)
+- **Adaptive Control** supports **Autonomy** (self-correcting through feedback)
 
 ### With Contextual Awareness
-- **Direction** requires **Documentation** (shared understanding)
-- **Forward Progress** needs **Observability** (visible metrics)
-- **Breaking Down** benefits from **Communication** (async context)
+- **Skill Alignment** needs **Proactive Curiosity** (understand your capabilities and demands)
+- **Direct Intentionality** requires **Cohesive Narrative** (shared understanding of goals)
+- **Adaptive Control** depends on **Shared Understanding** (observable systems, documented feedback loops)
 
 ---
 
@@ -320,26 +294,30 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## Measuring Clear Strategy
 
-### Direction Metrics
-- **Alignment Score**: What % of team can articulate the goal?
-- **Scope Clarity**: How often do we defer out-of-scope work?
-- **Goal Stability**: How often do goals change mid-sprint?
+### Skill Alignment Metrics
+- **Task-Skill Match**: What % of tasks match engineer skill levels?
+- **Burnout Indicators**: Overtime hours, turnover rate, stress surveys
+- **Boredom Indicators**: Engagement scores, voluntary task swapping
+- **Flow Reports**: Self-reported flow state frequency
 
-### Forward Progress Metrics
-- **Deployment Frequency**: How often do we ship to production?
-- **Lead Time**: Commit to production duration
-- **Velocity Trend**: Is sprint velocity stable or declining?
+### Direct Intentionality Metrics
+- **Goal Clarity**: What % of team can articulate current objectives?
+- **Scope Stability**: How often do goals change mid-sprint?
+- **Focus Time**: Average uninterrupted work blocks per day
+- **Multitasking Rate**: Number of concurrent tasks per engineer
 
-### Breakdown Metrics
-- **Task Completion Rate**: What % of planned tasks finish on time?
-- **Task Size Distribution**: Are tasks right-sized (1-3 days)?
-- **Blocker Rate**: What % of tasks get blocked?
+### Adaptive Control Metrics
+- **Feedback Loop Speed**: Time from code commit to production feedback
+- **Deployment Frequency**: How often code ships to production
+- **Mean Time to Recovery**: How fast can team fix production issues
+- **Experiment Velocity**: Rate of build-measure-learn cycles
 
 ---
 
 ## References
 
-- **Vision Documents**: Wikipedia definition and examples
-- **Design Reviews**: Google, Microsoft, Apple, Rust, Go patterns
-- **Agile Practices**: Sprint planning, daily standups, retrospectives
-- **DORA Metrics**: Deployment frequency, lead time, MTTR, change failure rate
+- **Flow Theory**: Csikszentmihalyi, M. (1990). "Flow: The Psychology of Optimal Experience"
+- **Challenge-Skill Balance**: Flow channel diagram, anxiety vs boredom zones
+- **OODA Loop**: Boyd, J. (1995). Military strategy framework
+- **Cybernetic Control**: Wiener, N. (1948). "Cybernetics: Or Control and Communication in the Animal and the Machine"
+- **DORA Metrics**: DevOps Research and Assessment - deployment frequency, lead time

@@ -30,7 +30,7 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 
 **You can only act effectively on what you accurately understand.**
 
-### 1. Discover and Index Knowledge
+### 1. Proactive Curiosity
 
 **Definition**: Systematically find and organize information for retrieval - you can only act on what you can find.
 
@@ -39,6 +39,7 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 - **Robotics Sensor Perception**: Multiple sensors (lidar, camera, IMU) gather environmental data
 - **OODA Observe Phase**: Raw data collection from all available sources without interpretation
 - **Information Foraging Theory** (Pirolli & Card): Humans seek information like animals forage for food - follow information scent
+- **Scout Mindset** (Julia Galef): Actively seeking truth rather than defending beliefs
 - **Military Intelligence**: Reconnaissance and surveillance for battlefield awareness
 
 #### Components
@@ -132,9 +133,9 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 
 ---
 
-### 2. Build and Maintain World Models
+### 2. Cohesive Narrative
 
-**Definition**: Create accurate mental models of the environment and continuously update them - the map is not the territory, but you need a map.
+**Definition**: Create accurate mental models of the environment and continuously update them - the map is not the territory, but you need a map. Build cohesive narrative through cognitive artifacts.
 
 **Theoretical Roots**:
 - **Robotics SLAM (Mapping aspect)**: Simultaneous Localization and Mapping - build internal representation of environment while navigating it
@@ -219,9 +220,9 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 
 ---
 
-### 3. Preserve and Share Context
+### 3. Shared Understanding
 
-**Definition**: Externalize knowledge into durable cognitive artifacts and incentivize their maintenance - shared context scales the organization.
+**Definition**: Externalize knowledge into durable cognitive artifacts for organizational memory - shared context scales the organization.
 
 **Theoretical Roots**:
 - **Cognitive Artifacts** (Donald Norman): External representations that extend cognitive capacity (notes, diagrams, documentation)
@@ -316,14 +317,14 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 ## Integration with Other Pillars
 
 ### With Clear Strategy
-- **Discover and Index** provides the knowledge needed for **Define Clear Waypoints**
-- **Build World Models** enables **Execute in Feedback Loops** through accurate understanding
-- **Preserve Context** supports **Decompose to Actionable Units** through documented patterns
+- **Proactive Curiosity** provides the knowledge needed for **Skill Alignment** (know capabilities and demands)
+- **Cohesive Narrative** enables **Direct Intentionality** (shared understanding of goals)
+- **Shared Understanding** supports **Adaptive Control** (documented feedback loops and observable systems)
 
-### With Intrinsic Drive
-- **Discover and Index** reduces friction for **Autonomy** (find what you need yourself)
-- **Build World Models** accelerates **Mastery** (understand systems deeply)
-- **Preserve Context** clarifies **Purpose** (see why work matters)
+### With Intrinsic Motivation
+- **Proactive Curiosity** reduces friction for **Autonomy** (find what you need yourself)
+- **Cohesive Narrative** accelerates **Mastery** (understand systems deeply)
+- **Shared Understanding** clarifies **Purpose** (see why work matters)
 
 ---
 
