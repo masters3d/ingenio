@@ -28,7 +28,7 @@ The foundational framework organizing all content and development in this reposi
 The execution pillar - transforming ambiguous directives into concrete, achievable outcomes. **Clear Strategy = ACTING in the environment** (Decide + Act in OODA loop).
 
 #### Three Sub-Pillars
-1. **Difficulty Adjustment**: The active synchronization of internal capabilities with external demands
+1. **Difficulty Alignment**: The active synchronization of internal capabilities with external demands
    - Challenge-skill balance (prevents anxiety from "too hard" or boredom from "too easy")
    - Continuous task calibration (if challenge exceeds skill, simplify or upskill; if skill exceeds challenge, increase complexity)
    - Maintain position within the "Flow Channel" to prevent burnout or apathy

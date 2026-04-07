@@ -35,7 +35,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 2. **Clear Goals**: Know exactly what success looks like
 3. **Immediate Feedback**: Real-time data to adjust performance
 
-### 1. Difficulty Adjustment
+### 1. Difficulty Alignment
 
 **Definition**: The active synchronization of internal capabilities with external demands - maintaining the delicate balance that enables Flow.
 
@@ -261,12 +261,12 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 ## Integration with Other Pillars
 
 ### With Intrinsic Motivation
-- **Difficulty Adjustment** enables **Mastery** (right-sized challenges drive growth)
+- **Difficulty Alignment** enables **Mastery** (right-sized challenges drive growth)
 - **Directed Intentionality** requires **Purpose** (clear goals aligned with meaningful work)
 - **Adaptive Control** supports **Autonomy** (self-correcting through feedback)
 
 ### With Contextual Awareness
-- **Difficulty Adjustment** needs **Proactive Curiosity** (understand your capabilities and demands)
+- **Difficulty Alignment** needs **Proactive Curiosity** (understand your capabilities and demands)
 - **Directed Intentionality** requires **Cohesive Narrative** (shared understanding of goals)
 - **Adaptive Control** depends on **Shared Understanding** (observable systems, documented feedback loops)
 
@@ -294,7 +294,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## Measuring Clear Strategy
 
-### Difficulty Adjustment Metrics
+### Difficulty Alignment Metrics
 - **Task-Skill Match**: What % of tasks match engineer skill levels?
 - **Burnout Indicators**: Overtime hours, turnover rate, stress surveys
 - **Boredom Indicators**: Engagement scores, voluntary task swapping

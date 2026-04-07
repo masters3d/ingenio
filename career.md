@@ -18,7 +18,7 @@ The foundational framework for engineering career excellence:
 **Framework**: Flow Theory (Csikszentmihalyi) - Creating optimal performance states
 
 **Three Sub-Pillars:**
-1. **Difficulty Adjustment** - Challenge-Skill Balance (prevents anxiety/boredom, maintains Flow Channel)
+1. **Difficulty Alignment** - Challenge-Skill Balance (prevents anxiety/boredom, maintains Flow Channel)
 2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy, enables action-awareness merger)
 3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment without breaking flow)
 
