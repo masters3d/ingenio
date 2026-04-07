@@ -3,7 +3,7 @@ marp: true
 
 ---
 
-# Intrinsic Drive
+# Intrinsic Motivation
 
 Chéyo Jiménez, MSE
 _Oct, 2021_
@@ -26,7 +26,9 @@ _Oct, 2021_
 :::-->
 ---
 
-# Three Sub-Pillars of Intrinsic Drive
+# Three Sub-Pillars of Intrinsic Motivation
+
+**Framework**: Self-Determination Theory
 
 1. **Mastery** - Urge to get better at things that matter
 2. **Autonomy** - Desire to direct your own work

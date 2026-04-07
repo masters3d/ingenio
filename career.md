@@ -7,7 +7,7 @@
 - Like chariots, careers are powered by engines (*ingenium*)
 - Movement requires both direction (strategy) and power (drive)
 
-This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine** framework: Clear Strategy, Intrinsic Drive, and Contextual Awareness.
+This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine** framework: Clear Strategy, Intrinsic Motivation, and Contextual Awareness.
 
 ## Three Pillars Quest Engine Framework
 
@@ -15,23 +15,30 @@ The foundational framework for engineering career excellence:
 
 ### 1. Clear Strategy
 **Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
-- **Clear Goals**: Milestones defined, scope clear, time boxed
-- **Coherent Action**: Behaviors with feedback loops
-- **Exit Strategy**: Definition of done for entire projects
+**Framework**: Flow Theory (Csikszentmihalyi) - Creating optimal performance states
 
-### 2. Intrinsic Drive  
+**Three Sub-Pillars:**
+1. **Skill Alignment** - Challenge-Skill Balance (prevents anxiety/boredom, maintains Flow Channel)
+2. **Direct Intentionality** - Clear Goals (eliminates psychic entropy, enables action-awareness merger)
+3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment without breaking flow)
+
+### 2. Intrinsic Motivation
 **Focus**: Internal motivation over external rewards
-- **Mastery**: Continuous skill development
-- **Autonomy**: Ownership and self-direction
-- **Purpose**: Alignment on meaningful directives
-- **vs Extrinsic**: Moving beyond carrot/stick motivation
+**Foundation**: Self-Determination Theory
+
+**Three Sub-Pillars:**
+- **Mastery**: Continuous skill development and growth
+- **Autonomy**: Ownership and self-direction in work
+- **Purpose**: Alignment on meaningful directives beyond personal gain
 
 ### 3. Contextual Awareness
 **Philosophy**: "It depends" - everything is relative and contextual
-- **Documentation**: Async context sharing that scales
-- **Observability**: Logs, metrics, traces for systems and career
-- **Communication**: Push vs pull models for information sharing
-- **Economics**: Avoiding tragedy of the commons in knowledge sharing
+**Framework**: OODA loop (Observe + Orient = KNOWING the environment)
+
+**Three Sub-Pillars:**
+1. **Proactive Curiosity** - Systematically discover and index knowledge (Scout Mindset)
+2. **Cohesive Narrative** - Build mental models through cognitive artifacts
+3. **Shared Understanding** - Externalize knowledge for organizational memory
 
 ## People Systems Framework
 

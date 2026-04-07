@@ -42,41 +42,52 @@ _Oct, 2021_
 
 # Three Sub-Pillars of Contextual Awareness
 
-1. **Async vs Sync Context Sharing** - Temporal communication model
-2. **Observability & Push vs Pull** - Three pillars of telemetry
-3. **Economics of Context & Tragedy of Commons** - Shared resource management
+**Framework**: OODA loop (Observe + Orient = KNOWING the environment)
+
+1. **Proactive Curiosity** - Systematically discover and index knowledge
+2. **Cohesive Narrative** - Build mental models through cognitive artifacts
+3. **Shared Understanding** - Externalize knowledge for organizational memory
 
 ---
 
-# Sub-Pillar 1: Async vs Sync Context Sharing
+# Sub-Pillar 1: Proactive Curiosity
 
-**From original "Folks Contributing: Async vs synchronous"**
+**Systematically find and organize information for retrieval**
 
-- Async Context - ReadWrite Medium
-  - Text, Visual, Interactive (scales, persistent)
-- Async Context - ReadOnly Medium
-  - Audio/visual, documentation websites
-- Synchronous Context Medium
-  - Meetings, pair programming (doesn't scale, useful)
-- Desired: Async medium default, sync case-by-case
+- Crawl Your Domain (code, docs, people, systems)
+- Index for Retrieval (search-friendly, metadata, cross-references)
+- Multi-Sensor Fusion (combine code, logs, metrics, docs, people)
+- Continuous Refresh (fight information decay)
+- Scout Mindset (actively seeking truth)
 
----
-
-# Sub-Pillar 2: Observability & Push vs Pull Models
-
-**From original "Three Pillars of Observability" + "Push vs Pull"**
-
-- The Three Pillars of Observability (IBM Cloud):
-  - Logs: Record of what's happening
-  - Metrics: Numerical assessment of performance
-  - Traces: How operations move through system
-- Push Model: Agent pushes (scheduled, proactive)
-- Pull Model: Crawler pulls (on demand, reactive)
-- Audience Encapsulation: SLA (public) / SLO (internal) / SLI (private)
+**Theoretical Roots**: Search engines, robotics sensors, OODA Observe, Information Foraging Theory
 
 ---
 
-# Sub-Pillar 3: Economics of Context & Tragedy of Commons
+# Sub-Pillar 2: Cohesive Narrative
+
+**Create accurate mental models and continuously update them**
+
+- Create Mental Models (architecture, data flow, business logic)
+- Update Models Continuously (SLAM replanning - reality check)
+- Contextualize Information (audience-aware: SLA/SLO/SLI)
+- Map Dependencies (component, data, team dependencies)
+- Build narrative through cognitive artifacts
+
+**Theoretical Roots**: Robotics SLAM, OODA Orient, mental models theory, cognitive artifacts
+
+---
+
+# Sub-Pillar 3: Shared Understanding
+
+**Externalize knowledge into durable cognitive artifacts**
+
+- Create Cognitive Artifacts (docs, ADRs, diagrams, runbooks)
+- Maintain the Commons (fight knowledge decay, ownership, review cycles)
+- Systemic Incentives (make it easy, visible, required, integrated, rewarded)
+- Async-First Context Sharing (documentation default, meetings case-by-case)
+
+**Theoretical Roots**: Cognitive artifacts (Donald Norman), distributed cognition, tragedy of the commons
 
 **From original "Economics: Tragedy of the commons"**
 

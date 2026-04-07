@@ -33,48 +33,61 @@ _Oct, 2021_
 
 # Three Sub-Pillars of Clear Strategy
 
-1. **Clear Goals & Definition of Done** - What to achieve and when done
-2. **Coherent Action & Feedback Loops** - How to execute with course correction
-3. **Quest Engine Architecture & Exit Strategy** - Vision to daily execution
+**Framework**: Csikszentmihalyi's Flow Theory - Creating optimal performance states
+
+1. **Skill Alignment** - Challenge-Skill Balance
+2. **Direct Intentionality** - Clear Goals
+3. **Adaptive Control** - Immediate Feedback
 
 ---
 
-# Sub-Pillar 1: Clear Goals & Definition of Done
+# Sub-Pillar 1: Skill Alignment
 
-**From original "Clear" section**
+**The active synchronization of internal capabilities with external demands**
 
-- Clear Goals (milestones defined, scope clear, time boxed)
-- Definition of Done (acceptance criteria, quality gates, deployment ready)
-- Alignment (team/org/technical priorities)
-
-Applied across IC levels 0-7+ with specific behaviors
-
----
-
-# Sub-Pillar 2: Coherent Action & Feedback Loops
-
-**From original "Strategy" section**
-
-- Action-Feedback-Adjustment Cycles
-  - High-frequency (daily): tests, linting, builds
-  - Medium-frequency (weekly): code reviews, sprint demos
-  - Low-frequency (monthly): production metrics, retros
-- Establish and Maintain feedback loops (Agile/Scrum, OODA loop)
-- Incremental Delivery (feature flags, progressive rollout)
+- Challenge-Skill Balance (The Flow Channel)
+  - Too Hard (Anxiety) → stress, overwhelm
+  - Too Easy (Boredom) → apathy, disengagement
+  - Just Right (Flow) → growth, engagement, peak performance
+- Continuous Task Calibration
+  - If challenge exceeds skill: simplify or upskill
+  - If skill exceeds challenge: increase complexity
+- Prevent Burnout and Apathy
 
 ---
 
-# Sub-Pillar 3: Quest Engine Architecture & Exit Strategy
+# Sub-Pillar 2: Direct Intentionality
 
-**From original "Clear Strategy Architecture" + "Exit Strategy"**
+**The sharp projection of consciousness toward a specific objective**
 
-- Hierarchical Planning (Quest Engine)
-  - Vision → Design → Sprint → Daily
-- Exit Strategy at every level
-  - Project: Definition of done for whole project
-  - Sprint: What's demo-ready?
-  - Task: When can I move on?
-- Work Breakdown: Epic → Story → Task → Sub-task
+- Clear Goals Eliminate Distraction
+  - Psychic entropy reduction
+  - Singular focus, one objective at a time
+- Singular Vector of Intent
+  - Exactly what success looks like RIGHT NOW
+  - Binary success criteria (done or not done)
+- Minimize Cognitive Load
+  - Reduce decisions, eliminate ambiguity
+  - Remove interruptions, simplify environment
+- Action-Awareness Merger
+  - Doing = Being, ego dissolution
+
+---
+
+# Sub-Pillar 3: Adaptive Control
+
+**A closed-loop behavioral system using real-time feedback**
+
+- Immediate Feedback (Closed-Loop Data)
+  - Know within seconds/minutes if action is working
+  - Unit tests (seconds), CI/CD (minutes), metrics (hours)
+- Execute with Sensorimotor Sensitivity
+  - Feel the system, instrument for feedback
+- Every Result is Data (Not Failure)
+  - No judgment, only information
+  - Immediate adjustment based on data
+- Seamless Action-Awareness Loop
+  - Self-correcting performance, ego vanishes
 
 ---
 
