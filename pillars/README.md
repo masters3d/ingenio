@@ -7,7 +7,7 @@ This directory contains detailed specifications for the Three Pillars Quest Engi
 **Major Change**: Framework 4.0 introduces a three-phase operational cycle guided by an objective function:
 
 ```
-Intrinsic Motivation (Objective Function - WHY)
+Objective Function (WHY)
          ↓ defines success criteria
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
@@ -21,7 +21,7 @@ Intrinsic Motivation (Objective Function - WHY)
 3. **Reflective Calibration** (Retrospective - LEARNING)
 
 **Above the Cycle**:
-- **Intrinsic Motivation** (Objective Function - WHY)
+- **Objective Function** (WHY)
 
 Each component is supported by three sub-pillars that provide concrete, actionable guidance.
 
@@ -33,7 +33,7 @@ pillars/
 ├── contextual_awareness.md         # Prospective/KNOWING specification
 ├── clear_strategy.md               # Actuation/ACTING specification
 ├── reflective_calibration.md       # Retrospective/LEARNING specification
-├── intrinsic_drive.md              # Objective Function/WHY specification
+├── objective_function.md           # Objective Function/WHY specification
 └── FRAMEWORK_STRUCTURE.md          # Complete Framework 4.0 structure
 ```
 
@@ -95,21 +95,24 @@ pillars/
 
 ---
 
-### Intrinsic Motivation (Objective Function - WHY)
+### Objective Function (WHY)
 
-**Position**: Above the operational cycle - defines success criteria
-**Framework**: Self-Determination Theory, Objective Function optimization
+**Position**: Above the operational cycle - defines success criteria for any agent (human or AI)
+**Framework**: Self-Determination Theory (human), Reinforcement Learning (agent), Objective Function optimization
 
-**Three Sub-Pillars**:
-1. **Mastery** - The urge to get better at things that matter
-2. **Autonomy** - The desire to direct your own work and own outcomes
-3. **Purpose** - Connection to meaningful work beyond personal gain
+**Three Sub-Pillars (Agent-Agnostic)**:
+1. **Reward Signal** (Prospective) - "What does *better* look like?"
+   - Human: Mastery | Agent: Reward Function
+2. **Degrees of Freedom** (Actuation) - "What can I control?"
+   - Human: Autonomy | Agent: Action Space
+3. **Alignment Function** (Retrospective) - "Am I optimizing for the right thing?"
+   - Human: Purpose | Agent: Value Alignment
 
-**Key Behaviors**: Deliberate practice, ownership, meaningful alignment
+**Key Behaviors**: Deliberate practice, ownership, meaningful alignment (human); reward shaping, tool access, RLHF (agent)
 
 **Robotics Foundation**: Reward/Cost Function (defines what to optimize for)
 **OODA Mapping**: The criteria by which Observe/Orient/Decide/Act are judged
-**Focus**: Internal motivation over external rewards
+**Focus**: The mathematical formalization of "what does better look like?"
 
 ---
 
@@ -117,8 +120,7 @@ pillars/
 
 ```
          ┌─────────────────────────────────┐
-         │  Intrinsic Motivation (WHY)     │
-         │  Objective Function              │
+         │  Objective Function (WHY)       │
          │  Defines: What is success?      │
          └─────────────────────────────────┘
                        ↓
@@ -148,7 +150,7 @@ pillars/
 3. **Retrospective (LEARNING)**: Analyze outcomes, recognize patterns, update models
 4. **Loop Closure**: Enhanced understanding feeds back to Prospective phase
 
-All guided by **Intrinsic Motivation (WHY)**: The objective function defining success.
+All guided by **Objective Function (WHY)**: The objective function defining success for any agent.
 
 ---
 
@@ -173,7 +175,7 @@ Each pillar specification includes IC-level-specific behaviors showing how to ap
 ### For Teams
 
 Use the four components to:
-- **Intrinsic Motivation (WHY)**: Define team mission, create mastery opportunities, grant autonomy, clarify purpose
+- **Objective Function (WHY)**: Define team mission, create mastery opportunities, grant autonomy, clarify purpose (human); design reward functions, scope action space, ensure value alignment (agent)
 - **Prospective (KNOWING)**: Build async-first culture, crawl domain, create cognitive artifacts
 - **Actuation (ACTING)**: Align on goals, establish feedback loops, create Flow conditions
 - **Retrospective (LEARNING)**: Conduct blameless postmortems, recognize patterns, close learning loops
@@ -191,7 +193,7 @@ The framework scales from individual → team → group → organization:
 When creating new content for ingenio:
 1. **Start with Etymology**: Understand word origins and meanings
 2. **Apply Full Cycle**: Ensure content addresses Prospective → Actuation → Retrospective
-3. **Consider Objective Function**: Connect to Intrinsic Motivation (WHY)
+3. **Consider Objective Function**: Connect to Objective Function (defines what "better" looks like for any agent)
 4. **Use Quest Engine**: Follow Vision → Design → Sprint → Daily hierarchy
 5. **Consider People Systems**: Address individual, team, group, organization levels
 6. **Maintain Context**: Create cognitive artifacts that scale
@@ -219,10 +221,10 @@ When creating new content for ingenio:
 
 ### Objective Function Integration
 
-**Intrinsic Motivation guides all three cycle phases**:
-- **Prospective**: Curiosity driven by desire for Mastery
-- **Actuation**: Goals aligned with Purpose, executed with Autonomy
-- **Retrospective**: Learning demonstrates Mastery progress, clarifies Purpose
+**Objective Function guides all three cycle phases**:
+- **Prospective**: Curiosity driven by desire for improvement (Reward Signal/Mastery or Reward Function)
+- **Actuation**: Goals aligned with what can be controlled (Degrees of Freedom/Autonomy or Action Space), executed toward purpose (Alignment Function/Purpose or Value Alignment)
+- **Retrospective**: Learning demonstrates progress (Reward Signal), clarifies correctness of goals (Alignment Function)
 
 ### With Other Frameworks
 
@@ -239,7 +241,7 @@ When creating new content for ingenio:
 
 **Behavior Alignment**:
 - Implements Actuation through guiding policies
-- Preserves Autonomy (Objective Function) while ensuring alignment
+- Preserves Degrees of Freedom/Autonomy while ensuring alignment
 - Requires Prospective for appropriate policy application
 
 ---
@@ -263,10 +265,10 @@ Each component specification includes detailed measurement sections. Key indicat
 - **Pattern Recognition**: % repeat incidents, documented patterns, proactive prevention rate
 - **Model Update**: Action item completion %, documentation update frequency, learning velocity
 
-### Objective Function (Intrinsic Motivation) Metrics
-- **Mastery**: Skill growth rate, learning time allocation, knowledge sharing frequency
-- **Autonomy**: Decision velocity, escalation rate, ownership distribution
-- **Purpose**: Mission understanding, work alignment %, engagement scores
+### Objective Function Metrics
+- **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
+- **Degrees of Freedom**: Decision velocity (human), action coverage (agent), escalation rate, ownership distribution
+- **Alignment Function**: Mission understanding (human), human agreement rate (agent), work alignment %, safety violations
 
 ---
 
@@ -294,11 +296,11 @@ Each component specification includes detailed anti-patterns. Common cross-compo
 
 ### Objective Function Anti-Patterns
 
-**Burnout** (Extrinsic motivation only, no purpose)
-- Solution: Reconnect to meaningful outcomes, align with purpose
+**Burnout / Goal Misalignment** (Wrong objective function, no purpose/value alignment)
+- Solution: Reconnect to meaningful outcomes (human), better goal specification (agent), RLHF
 
-**Learned Helplessness** (No autonomy)
-- Solution: Explicitly grant decision authority, create ownership opportunities
+**Learned Helplessness / Restricted Action Space** (No autonomy/degrees of freedom)
+- Solution: Explicitly grant decision authority (human), expand action space with safety constraints (agent)
 
 ---
 
@@ -308,11 +310,11 @@ Each component specification includes detailed anti-patterns. Common cross-compo
 
 **Framework 3.0** (Three Equal Pillars):
 - Clear Strategy
-- Intrinsic Motivation
+- Intrinsic Motivation (human-specific)
 - Contextual Awareness
 
 **Framework 4.0** (Objective Function + Three-Phase Cycle):
-- **Intrinsic Motivation** elevated to **Objective Function** (sits above cycle, defines WHY)
+- **Intrinsic Motivation** elevated and generalized to **Objective Function** (sits above cycle, works for any agent - human or AI)
 - **Three-phase operational cycle**: Prospective → Actuation → Retrospective
 - **New component**: Reflective Calibration (LEARNING/Retrospective phase)
 
@@ -327,7 +329,7 @@ Each component specification includes detailed anti-patterns. Common cross-compo
 **Retained from 3.0**:
 - Flow Theory (Clear Strategy/Actuation)
 - OODA Loop (now mapped across all three phases)
-- Self-Determination Theory (Intrinsic Motivation/Objective Function)
+- Self-Determination Theory (Objective Function - human instantiation)
 - Search engines, SLAM, cognitive artifacts (Contextual Awareness/Prospective)
 
 ---
@@ -366,7 +368,7 @@ When updating component documentation:
 2. **Keep Behavior-Focused**: Emphasize actionable behaviors over abstract concepts
 3. **Apply IC Levels**: Show how component applies at each career stage
 4. **Preserve Cycle Integration**: Maintain connections between Prospective → Actuation → Retrospective
-5. **Link to Objective Function**: Show how Intrinsic Motivation guides the component
+5. **Link to Objective Function**: Show how Objective Function guides the component (both human and agent perspectives)
 6. **Add Examples**: Include good vs bad examples
 7. **Update Metrics**: Keep measurement sections current
 
@@ -380,7 +382,7 @@ For deeper exploration:
 - **Contextual Awareness (Prospective)**: See presentation at `/presentation/eng_contextual_awareness.md`
 - **Clear Strategy (Actuation)**: See presentation at `/presentation/eng_clear_strategy.md`
 - **Reflective Calibration (Retrospective)**: See presentation at `/presentation/eng_reflective_calibration.md`
-- **Intrinsic Motivation (Objective Function)**: See presentation at `/presentation/eng_intrinsic_drive.md`
+- **Objective Function**: See presentation at `/presentation/eng_objective_function.md`
 - **Complete Framework Structure**: See `/pillars/FRAMEWORK_STRUCTURE.md`
 - **Career Application**: See `/career.md` for IC-level-specific guidance
 - **Repository Context**: See `/AGENTS.md` for overall framework

@@ -24,7 +24,7 @@ The foundational framework organizing all content and development in this reposi
 ### Framework 4.0 Architecture
 
 ```
-Intrinsic Motivation (Objective Function - WHY)
+Objective Function (WHY)
          ↓ defines success criteria
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
@@ -38,7 +38,7 @@ Intrinsic Motivation (Objective Function - WHY)
 3. **Reflective Calibration** (Retrospective - LEARNING)
 
 **Above the Cycle**:
-- **Intrinsic Motivation** (Objective Function - WHY)
+- **Objective Function** (WHY)
 
 ---
 
@@ -157,39 +157,42 @@ The LEARNING phase - closing the improvement loop by examining outcomes, identif
 
 ---
 
-### Intrinsic Motivation (Objective Function - WHY)
+### Objective Function (WHY)
 
-**Etymology**: Latin _intrinsecus_ (inward) + _drīfan_ (to propel)
-**Position**: Above the operational cycle - defines success criteria
-**Focus**: Internal motivation over external rewards
+**Etymology**: Medieval Latin _objectivus_ (pertaining to an object) + Latin _functio_ (performance, execution)
+**Position**: Above the operational cycle - defines success criteria for any agent (human or AI)
+**Focus**: The mathematical formalization of "what does better look like?"
 
-The WHY - defining what success means, guiding all three phases of the operational cycle.
+The WHY - defining what success means, guiding all three phases of the operational cycle. Works for both human agents (intrinsic motivation) and AI agents (reward functions).
 
-#### Three Sub-Pillars
+#### Three Sub-Pillars (Agent-Agnostic)
 
-1. **Mastery**: The urge to get better at things that matter
-   - Skill development through deliberate practice and feedback integration
-   - Learning mechanisms (doing, teaching, failing, reading)
-   - Expertise levels (Novice → Advanced Beginner → Competent → Proficient → Expert)
-   - Mastery domains (Technical, Domain, Process, People)
+**Fractal Pattern**: Following Prospective → Actuation → Retrospective
 
-2. **Autonomy**: The desire to direct your own work and own outcomes
-   - Decision-making authority (technical, process, priority, quality)
-   - Ownership models (code, feature, system, problem ownership)
-   - Autonomy enablers (clear boundaries, sufficient context, psychological safety)
-   - Autonomy constraints (alignment, visibility, reversibility, consultation)
+1. **Reward Signal** (Prospective) - "What does *better* look like?"
+   - **Human**: Mastery (skill development, deliberate practice, expertise growth)
+   - **Agent**: Reward Function (scalar/vector signals, loss minimization, accuracy maximization)
+   - Learning mechanisms, feedback integration, curriculum design
+   - Optimization targets and progress measurement
 
-3. **Purpose**: Connection to meaningful work beyond personal gain
-   - Meaning sources (user impact, technical challenge, team mission, organizational goals)
-   - Purpose hierarchy (task → feature → system → organization → society)
-   - Directive alignment (clarity, agreement, contribution, communication)
-   - Purpose erosion prevention (avoiding pointless work and misalignment)
+2. **Degrees of Freedom** (Actuation) - "What can I control?"
+   - **Human**: Autonomy (decision-making authority, ownership models, psychological safety)
+   - **Agent**: Action Space (available tools, permission boundaries, compositional actions)
+   - Enablers and constraints for effective control
+   - Balance between capability and safety
+
+3. **Alignment Function** (Retrospective) - "Am I optimizing for the right thing?"
+   - **Human**: Purpose (meaningful work, values alignment, mission connection)
+   - **Agent**: Value Alignment (RLHF, constitutional AI, goal specification, safety constraints)
+   - Prevention of goal misalignment and value drift
+   - Continuous verification of objective correctness
 
 **Robotics Foundation**: Reward/Cost Function (defines what to optimize for)
 **OODA Mapping**: The criteria by which Observe/Orient/Decide/Act are judged
 **Psychology Foundation**: Self-Determination Theory (Competence, Autonomy, Relatedness)
+**RL Foundation**: MDP (states, actions, rewards, policy, value function)
 
-**See**: `/pillars/intrinsic_drive.md` for complete specification
+**See**: `/pillars/objective_function.md` for complete specification
 
 ---
 
@@ -202,7 +205,7 @@ The WHY - defining what success means, guiding all three phases of the operation
 3. **Reflective Calibration (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
 4. **Loop back to Prospective**: Enhanced understanding informs next cycle
 
-All guided by **Intrinsic Motivation (Objective Function/WHY)**: The reward function that defines success.
+All guided by **Objective Function (WHY)**: The reward function that defines success for any agent.
 
 ## People Systems Framework
 
@@ -254,7 +257,7 @@ Based on 25 open GitHub issues, focus areas include:
 
 ### Content Development Approach
 1. **Start with Etymology**: Research word origins and meanings
-2. **Apply Three Pillars**: Ensure Clear Strategy, Intrinsic Drive, Contextual Awareness
+2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Calibration
 3. **Use Quest Engine**: Vision → Design → Sprint → Daily planning hierarchy
 4. **Consider People Systems**: Individual, team, group, organization levels
 5. **Maintain Context**: Async documentation that scales
@@ -268,10 +271,11 @@ Following the Clear Strategy pillar:
 Vision Document
 ├── Problem Statement (What engineering challenge are we addressing?)
 ├── Etymology & Context (Word origins and meaning)
-├── Three Pillars Application
-│   ├── Clear Strategy approach
-│   ├── Intrinsic Drive alignment  
-│   └── Contextual Awareness considerations
+├── Framework 4.0 Application
+│   ├── Objective Function (reward signal, degrees of freedom, alignment)
+│   ├── Contextual Awareness (prospective understanding)
+│   ├── Clear Strategy (actuation approach)
+│   └── Reflective Calibration (learning considerations)
 ├── People Systems Impact (Individual → Team → Group → Organization)
 ├── Implementation Design
 ├── Success Metrics
@@ -365,7 +369,7 @@ ingenio/
 
 ### Content Development Principles
 1. **Always Start with Context**: Read existing content before adding new material
-2. **Apply Three Pillars**: Ensure Clear Strategy, Intrinsic Drive, Contextual Awareness in all work
+2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Calibration in all work
 3. **Research Etymology**: Understand word origins when introducing concepts
 4. **Think Systems**: Consider individual, team, group, organization implications
 5. **Document Opinions**: Clearly mark subjective content as opinions
