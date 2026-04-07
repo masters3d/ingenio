@@ -6,9 +6,9 @@ This directory contains detailed specifications for the Three Pillars Quest Engi
 
 Each pillar represents a critical dimension of engineering excellence:
 
-1. **Clear Strategy** - The execution pillar
-2. **Intrinsic Drive** - The motivation pillar
-3. **Contextual Awareness** - The understanding pillar
+1. **Clear Strategy** - The execution pillar (ACTING)
+2. **Intrinsic Motivation** - The motivation pillar
+3. **Contextual Awareness** - The understanding pillar (KNOWING)
 
 Each main pillar is supported by three sub-pillars that provide concrete, actionable guidance.
 
@@ -24,20 +24,23 @@ pillars/
 
 ## Quick Reference
 
-### Clear Strategy (Execution)
+### Clear Strategy (Execution - ACTING)
 
 **Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
+**Framework**: Csikszentmihalyi's Flow Theory
 
 **Three Sub-Pillars**:
-1. **Direction** - Establishing where you're going and why
-2. **Forward Progress** - Continuous movement through visible advancement
-3. **Breaking Down into Actionable Steps** - Decomposing complexity into executable tasks
+1. **Difficulty Alignment** - Challenge-Skill Balance (Flow Channel)
+2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy)
+3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment)
 
-**Key Behaviors**: Goal clarity, feedback loops, incremental delivery, exit strategies
+**Key Behaviors**: Flow state creation, right-sized challenges, singular focus, real-time feedback
+
+**Theoretical Foundation**: Flow Theory (Challenge-Skill Balance, Clear Goals, Immediate Feedback)
 
 ---
 
-### Intrinsic Drive (Motivation)
+### Intrinsic Motivation (Motivation)
 
 **Focus**: Internal motivation over external rewards
 
@@ -52,18 +55,19 @@ pillars/
 
 ---
 
-### Contextual Awareness (Understanding)
+### Contextual Awareness (Understanding - KNOWING)
 
 **Philosophy**: "It depends" - everything is relative and contextual
+**Framework**: OODA loop (Observe + Orient = KNOWING)
 
 **Three Sub-Pillars**:
-1. **Async vs Sync** - Choosing the right temporal communication model
-2. **Ahead of Time vs Just in Time** - When to invest vs defer
-3. **Cognitive Artifacts** - External representations preserving context
+1. **Proactive Curiosity** - Systematically find and organize information (Scout Mindset)
+2. **Cohesive Narrative** - Create mental models through cognitive artifacts
+3. **Shared Understanding** - Externalize knowledge for organizational memory
 
-**Key Behaviors**: Async-first communication, YAGNI vs Scout Rule, documentation culture
+**Key Behaviors**: Async-first communication, crawl/index/rank, SLAM, cognitive artifacts
 
-**Economics**: Tragedy of the commons, context decay, push vs pull models
+**Theoretical Foundation**: Search engines, robotics (SLAM, sensor fusion), OODA loop, cognitive science
 
 ---
 
@@ -109,20 +113,20 @@ When creating new content for ingenio:
 
 The three pillars are interconnected:
 
-**Clear Strategy ↔ Intrinsic Drive**
-- Direction must align with Purpose (meaningful work)
-- Forward Progress requires Autonomy (self-directed execution)
-- Breaking Down develops Mastery (skill through practice)
+**Clear Strategy ↔ Intrinsic Motivation**
+- Difficulty Alignment ↔ Mastery: Right-sized challenges drive growth
+- Directed Intentionality ↔ Purpose: Clear goals aligned with meaningful work
+- Adaptive Control ↔ Autonomy: Self-correcting through feedback
 
 **Clear Strategy ↔ Contextual Awareness**
-- Direction requires Documentation (shared understanding)
-- Forward Progress needs Observability (visible metrics)
-- Breaking Down benefits from Communication (async context)
+- Difficulty Alignment ↔ Proactive Curiosity: Know capabilities and demands
+- Directed Intentionality ↔ Cohesive Narrative: Shared understanding of goals
+- Adaptive Control ↔ Shared Understanding: Observable systems, documented feedback loops
 
-**Intrinsic Drive ↔ Contextual Awareness**
-- Mastery builds through Documentation (learning from others)
-- Autonomy requires Observability (data for informed decisions)
-- Purpose scales through Communication (shared mission understanding)
+**Intrinsic Motivation ↔ Contextual Awareness**
+- Mastery ↔ Cohesive Narrative: Understand systems deeply
+- Autonomy ↔ Proactive Curiosity: Find what you need yourself
+- Purpose ↔ Shared Understanding: See why work matters
 
 ### With Other Frameworks
 
@@ -146,11 +150,11 @@ The three pillars are interconnected:
 Each pillar specification includes measurement sections. Key indicators:
 
 ### Clear Strategy Health
-- Alignment Score: Can team articulate goals?
-- Deployment Frequency: How often do we ship?
-- Task Completion Rate: Are we finishing what we plan?
+- Difficulty Alignment: Task-skill match %, flow state frequency
+- Directed Intentionality: Goal clarity %, scope stability
+- Adaptive Control: Feedback loop speed, deployment frequency
 
-### Intrinsic Drive Health
+### Intrinsic Motivation Health
 - Skill Growth: Are engineers advancing capabilities?
 - Decision Velocity: Can engineers decide without excessive approvals?
 - Mission Understanding: Can engineers articulate purpose?
@@ -168,7 +172,7 @@ Each pillar specification includes anti-patterns to avoid. Common cross-pillar a
 - Solution: Time-box planning, default to action with fast feedback
 
 **Burnout**: Extrinsic motivation only, no purpose
-- Solution: Reconnect to meaningful outcomes, invest in mastery
+- Solution: Reconnect to meaningful outcomes, align with purpose
 
 **Meeting Culture**: Over-reliance on sync communication
 - Solution: Async-first default, meetings only when necessary
@@ -201,7 +205,7 @@ This documentation represents personal opinions made public - consider it as eng
 
 For deeper exploration:
 - **Clear Strategy**: See presentation at `/presentation/eng_clear_strategy.md`
-- **Intrinsic Drive**: See presentation at `/presentation/eng_intrinsic_drive.md`
+- **Intrinsic Motivation**: See presentation at `/presentation/eng_intrinsic_drive.md`
 - **Contextual Awareness**: See presentation at `/presentation/eng_contextual_awareness.md`
 - **Career Application**: See `/career.md` for IC-level-specific guidance
 - **Repository Context**: See `/AGENTS.md` for overall framework

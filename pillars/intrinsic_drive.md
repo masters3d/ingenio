@@ -1,15 +1,14 @@
-# Intrinsic Drive
+# Intrinsic Motivation
 
 **Etymology**:
 - **Intrinsic**: From Latin _intrinsecus_ - "inward, on the inside" from _intra_ (within) + _secus_ (alongside)
-- **Drive**: From Old English _drīfan_ - "to propel forward, urge onward"
 - **Motivation**: From Latin _motivus_ - "moving, impelling" from _movere_ (to move)
 
 **Focus**: Internal motivation over external rewards
 
 ## Overview
 
-Intrinsic Drive is the motivation pillar of engineering excellence. It harnesses internal desires for growth, autonomy, and purpose rather than relying on external carrots and sticks. Engineers driven by intrinsic motivation sustain performance over years, not just until the next bonus cycle.
+Intrinsic Motivation is the motivation pillar of engineering excellence. It harnesses internal desires for growth, autonomy, and purpose rather than relying on external carrots and sticks. Engineers driven by intrinsic motivation sustain performance over years, not just until the next bonus cycle.
 
 ## Philosophy
 
@@ -21,7 +20,7 @@ Technical problems have technical solutions. Human motivation requires understan
 
 ---
 
-## The Three Sub-Pillars of Intrinsic Drive
+## The Three Sub-Pillars of Intrinsic Motivation
 
 ### 1. Mastery
 
@@ -336,7 +335,7 @@ Psychologist Mihaly Csikszentmihalyi's concept of "flow" - complete absorption i
 
 ---
 
-## Measuring Intrinsic Drive
+## Measuring Intrinsic Motivation
 
 ### Mastery Indicators
 - **Skill Growth**: Are engineers advancing their capabilities?
@@ -358,7 +357,7 @@ Psychologist Mihaly Csikszentmihalyi's concept of "flow" - complete absorption i
 
 ---
 
-## Organizational Practices That Enable Intrinsic Drive
+## Organizational Practices That Enable Intrinsic Motivation
 
 ### For Mastery
 - **20% Time**: Dedicated time for learning and experimentation

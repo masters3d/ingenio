@@ -86,7 +86,7 @@ SMART is an acronym that stands for Specific, Measurable, Achievable, Realistic,
 :::-->
 ---
 
-# Intrinsic Drive
+# Intrinsic Motivation
 
 - Motivation
   - Mastery
