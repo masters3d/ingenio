@@ -300,14 +300,14 @@ Psychologist Mihaly Csikszentmihalyi's concept of "flow" - complete absorption i
 ## Integration with Other Pillars
 
 ### With Clear Strategy
-- **Mastery** requires **Forward Progress** (visible improvement)
-- **Autonomy** needs **Direction** (clear goals to achieve independently)
-- **Purpose** aligns with **Breaking Down** (understanding how tasks serve goals)
+- **Mastery** requires **Adaptive Control** (feedback for skill improvement)
+- **Autonomy** needs **Directed Intentionality** (clear goals to achieve independently)
+- **Purpose** aligns with **Difficulty Alignment** (meaningful challenges drive engagement)
 
 ### With Contextual Awareness
-- **Mastery** builds through **Documentation** (learning from others)
-- **Autonomy** requires **Observability** (data to make informed decisions)
-- **Purpose** scales through **Communication** (shared understanding of mission)
+- **Mastery** builds through **Cohesive Narrative** (understand systems deeply)
+- **Autonomy** requires **Proactive Curiosity** (find what you need yourself)
+- **Purpose** scales through **Shared Understanding** (see why work matters)
 
 ---
 

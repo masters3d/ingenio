@@ -132,18 +132,18 @@ The three pillars are interconnected:
 
 **PIE Theory** (Performance, Image, Exposure)
 - Performance ↔ Clear Strategy (execution and delivery)
-- Image ↔ Intrinsic Drive (authentic representation)
+- Image ↔ Intrinsic Motivation (authentic representation)
 - Exposure ↔ Contextual Awareness (strategic visibility)
 
 **Action-Feedback-Adjustment**
-- Core mechanism within Clear Strategy's Forward Progress
-- Enables Mastery development in Intrinsic Drive
-- Requires Observability from Contextual Awareness
+- Core mechanism within Clear Strategy's Adaptive Control
+- Enables Mastery development in Intrinsic Motivation
+- Requires Shared Understanding from Contextual Awareness
 
 **Behavior Alignment**
 - Implements Clear Strategy through guiding policies
 - Preserves Autonomy while ensuring alignment
-- Requires Context for appropriate policy application
+- Requires Contextual Awareness for appropriate policy application
 
 ## Measuring Pillar Health
 
