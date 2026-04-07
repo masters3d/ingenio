@@ -57,7 +57,7 @@ _Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 **Contextual Awareness** is the **Prospective** phase in the operational cycle:
 
 ```
-Intrinsic Motivation (WHY - Objective Function)
+Objective Function (WHY)
          ↓
 Prospective (KNOWING) → Actuation (ACTING) → Retrospective (LEARNING)
      ↑
@@ -281,4 +281,6 @@ https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
 - Model updates become shared understanding
 
 **↑ Guided by Objective Function (WHY)**:
-- Intrinsic Motivation drives curiosity and learning
+- Defines what success means for any agent (human or AI)
+- Human: Intrinsic Motivation drives curiosity and learning
+- Agent: Reward function guides information gathering

@@ -39,7 +39,7 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 - **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
 - **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
-- **Intrinsic Motivation** (Objective Function) = WHY we act (Defines success criteria)
+- **Objective Function** = WHY we act (Defines success criteria for any agent - human or AI)
 
 **Robotics Foundation**: State Estimation (Kalman filtering, observers, feedback control theory)
 
@@ -309,10 +309,10 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 - **Model Correction** improves **Cohesive Narrative** (patterns reveal system structure and failure modes)
 - **Loop Optimization** maintains **Shared Understanding** (documented learnings become cognitive artifacts)
 
-### With Intrinsic Motivation (Objective Function)
-- **State Estimation** demonstrates progress toward **Mastery** (see improvement over time)
-- **Model Correction** enhances **Autonomy** (understanding patterns enables independent decision-making)
-- **Loop Optimization** clarifies **Purpose** (connect learnings to meaningful outcomes)
+### With Objective Function
+- **State Estimation** demonstrates progress toward **Reward Signal** (see improvement over time → Mastery/Reward Function)
+- **Model Correction** enhances **Degrees of Freedom** (understanding patterns enables decisions → Autonomy/Action Space)
+- **Loop Optimization** clarifies **Alignment Function** (connect learnings to meaningful outcomes → Purpose/Value Alignment)
 
 ---
 
@@ -325,7 +325,7 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 3. **Reflective Calibration (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
 4. **Loop back to Prospective**: Enhanced understanding informs next cycle
 
-All guided by **Intrinsic Motivation (Objective Function/WHY)**: The reward function that defines success.
+All guided by **Objective Function (WHY)**: The reward function that defines success for any agent.
 
 ---
 

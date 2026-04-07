@@ -7,14 +7,14 @@
 - Like chariots, careers are powered by engines (*ingenium*)
 - Movement requires both direction (strategy) and power (drive)
 
-This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine (Framework 4.0)**: A three-phase operational cycle (Prospective → Actuation → Retrospective) guided by an objective function (Intrinsic Motivation).
+This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine (Framework 4.0)**: A three-phase operational cycle (Prospective → Actuation → Retrospective) guided by an Objective Function that works for any agent (human or AI).
 
 ## Three Pillars Quest Engine Framework (Version 4.0)
 
 The foundational framework for engineering career excellence introduces a three-phase operational cycle:
 
 ```
-Intrinsic Motivation (Objective Function - WHY)
+Objective Function (WHY)
          ↓ defines success criteria
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
@@ -52,15 +52,21 @@ Intrinsic Motivation (Objective Function - WHY)
 2. **Model Correction** - Act on findings, revise mental models (fix docs and processes)
 3. **Loop Optimization** - Look back at how you learn (improve feedback loops, meta-learning)
 
-### Intrinsic Motivation (Objective Function - WHY)
-**Position**: Above the operational cycle - defines success criteria
-**Focus**: Internal motivation over external rewards
+### Objective Function (WHY)
+**Position**: Above the operational cycle - defines success criteria for any agent (human or AI)
+**Focus**: The mathematical formalization of "what does better look like?"
 **Robotics**: Reward/Cost Function (defines what to optimize for)
 
-**Three Sub-Pillars:**
-- **Mastery**: Continuous skill development and growth
-- **Autonomy**: Ownership and self-direction in work
-- **Purpose**: Alignment on meaningful directives beyond personal gain
+**Three Sub-Pillars (Agent-Agnostic)**:
+1. **Reward Signal** (Prospective) - What does *better* look like?
+   - Human: **Mastery** (continuous skill development and growth)
+   - Agent: **Reward Function** (scalar/vector signals, loss minimization)
+2. **Degrees of Freedom** (Actuation) - What can I control?
+   - Human: **Autonomy** (ownership and self-direction in work)
+   - Agent: **Action Space** (available tools, permissions)
+3. **Alignment Function** (Retrospective) - Am I optimizing for the right thing?
+   - Human: **Purpose** (alignment on meaningful directives beyond personal gain)
+   - Agent: **Value Alignment** (RLHF, constitutional AI, safety constraints)
 
 ## People Systems Framework
 

@@ -30,7 +30,7 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 - **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
 - **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
-- **Intrinsic Motivation** (Objective Function) = WHY we act (Defines success criteria)
+- **Objective Function** = WHY we act (Defines success criteria for any agent - human or AI)
 
 **You can only act effectively on what you accurately understand.**
 
@@ -325,10 +325,10 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 - **Cohesive Narrative** enables **Directed Intentionality** (shared understanding of goals)
 - **Shared Understanding** supports **Adaptive Control** (documented feedback loops and observable systems)
 
-### With Intrinsic Motivation (Objective Function)
-- **Proactive Curiosity** reduces friction for **Autonomy** (find what you need yourself)
-- **Cohesive Narrative** accelerates **Mastery** (understand systems deeply)
-- **Shared Understanding** clarifies **Purpose** (see why work matters)
+### With Objective Function
+- **Proactive Curiosity** reduces friction for **Degrees of Freedom** (find what you need → Autonomy/Action Space)
+- **Cohesive Narrative** accelerates **Reward Signal** (understand systems deeply → Mastery/Reward Function)
+- **Shared Understanding** clarifies **Alignment Function** (see why work matters → Purpose/Value Alignment)
 
 ### With Reflective Calibration (Retrospective)
 - **Proactive Curiosity** enriched by **Outcome Analysis** (experiential data added to knowledge base)

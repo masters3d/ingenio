@@ -48,7 +48,7 @@ _Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 **Clear Strategy** is the **Actuation** phase in the operational cycle:
 
 ```
-Intrinsic Motivation (WHY - Objective Function)
+Objective Function (WHY)
          ↓
 Prospective (KNOWING) → Actuation (ACTING) → Retrospective (LEARNING)
                               ↑
@@ -210,5 +210,7 @@ Reference:
 - Model updates feed back to improve future actions
 
 **↑ Guided by Objective Function (WHY)**:
-- Intrinsic Motivation defines what success means
+- Defines what success means for any agent (human or AI)
+- Human: Intrinsic Motivation (Mastery, Autonomy, Purpose)
+- Agent: Optimization Target (Reward Function, Action Space, Value Alignment)
 

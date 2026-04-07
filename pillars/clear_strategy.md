@@ -32,7 +32,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 - **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
 - **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
-- **Intrinsic Motivation** (Objective Function) = WHY we act (Defines success criteria)
+- **Objective Function** = WHY we act (Defines success criteria for any agent - human or AI)
 
 **Robotics Foundation**: Actuation (kinematics, path planning, PID control) - the science of converting goals into physical actions.
 
@@ -269,10 +269,10 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 ---
 ## Integration with Other Pillars
 
-### With Intrinsic Motivation (Objective Function)
-- **Difficulty Alignment** enables **Mastery** (right-sized challenges drive growth)
-- **Directed Intentionality** requires **Purpose** (clear goals aligned with meaningful work)
-- **Adaptive Control** supports **Autonomy** (self-correcting through feedback)
+### With Objective Function
+- **Difficulty Alignment** enables **Reward Signal** (right-sized challenges → Mastery/Reward Function)
+- **Directed Intentionality** requires **Alignment Function** (clear goals aligned with Purpose/Value Alignment)
+- **Adaptive Control** supports **Degrees of Freedom** (self-correcting through Autonomy/Action Space)
 
 ### With Contextual Awareness (Prospective)
 - **Difficulty Alignment** needs **Proactive Curiosity** (understand your capabilities and demands)
