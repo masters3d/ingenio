@@ -28,31 +28,31 @@ The foundational framework organizing all content and development in this reposi
 The execution pillar - transforming ambiguous directives into concrete, achievable outcomes. **Clear Strategy = ACTING in the environment** (Decide + Act in OODA loop).
 
 #### Three Sub-Pillars
-1. **Define Clear Waypoints**: Plot the path before you travel - establish specific intermediate goals
-   - SMART waypoints (Specific, Measurable, Achievable, Relevant, Time-Bound)
-   - Definition of done (acceptance criteria, quality gates, exit criteria, deployment ready)
-   - Scope boundaries (in scope, out of scope, waypoint sequence, obstacle avoidance)
-   - **Theoretical Roots**: Robotics path planning (waypoints, A*), Goal-Setting Theory (Locke & Latham), Agile sprint planning, motivational psychology
+1. **Skill Alignment**: The active synchronization of internal capabilities with external demands
+   - Challenge-skill balance (prevents anxiety from "too hard" or boredom from "too easy")
+   - Continuous task calibration (if challenge exceeds skill, simplify or upskill; if skill exceeds challenge, increase complexity)
+   - Maintain position within the "Flow Channel" to prevent burnout or apathy
+   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Challenge-Skill Balance), eliminates psychic entropy
 
-2. **Execute in Feedback Loops**: Take action, measure results, adjust course - continuous execution with rapid iteration
-   - Implementation intentions (If-Then action triggers to reduce decision fatigue)
-   - Incremental delivery (daily commits, weekly deployables, monthly releases, leverage Zeigarnik Effect)
-   - Measure-act-adjust cycles (high/medium/low frequency feedback loops)
-   - Visible progress (burn down charts, deployment frequency, lead time, maintain open loops)
-   - **Theoretical Roots**: Implementation Intentions (Gollwitzer), Zeigarnik Effect, Agile iterative development, Robotics SLAM localization, OODA loop
+2. **Direct Intentionality**: The sharp, uncompromising projection of consciousness toward a specific objective
+   - Clear goals eliminate distraction and psychic entropy
+   - Singular vector of intent (exactly what "success state" looks like in the immediate moment)
+   - Minimize cognitive load and decision fatigue to allow total immersion
+   - Action and awareness merge into unified experience
+   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Clear Goals), ensures directed energy at singular point
 
-3. **Decompose to Actionable Units**: Break complex challenges into tractable steps
-   - Hierarchical planning / Quest Engine (Vision → Design → Sprint → Daily)
-   - Exit strategy at every level (project, feature, sprint, task completion criteria)
-   - Work breakdown structure (Epic → Story → Task → Sub-task)
-   - Applied across IC levels 0-7+ with specific behaviors
-   - **Theoretical Roots**: Robotics motion planning, Hierarchical Task Networks (HTN), Agile WBS, Cognitive Load Theory, motivational psychology
+3. **Adaptive Control**: A closed-loop behavioral system that utilizes real-time feedback to pivot execution
+   - Immediate feedback provides closed-loop data for adjustment
+   - Execute with sensitivity to sensorimotor feedback
+   - Every result is a data point for immediate, fluid adjustment (not failure)
+   - Seamless action-awareness loop where ego vanishes and performance becomes self-correcting
+   - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Immediate Feedback), maintains deep-concentration state
 
-**Theoretical Foundation**: Agile/Scrum methodology, motivational psychology (Goal-Setting Theory, Implementation Intentions, Zeigarnik Effect), computational robotics planning (path planning, motion planning, SLAM), OODA loop
+**Theoretical Foundation**: Csikszentmihalyi's Flow Theory (Challenge-Skill Balance, Clear Goals, Immediate Feedback), replaces passive "waiting for Flow" with active engineering-based protocol
 
 **See**: `/pillars/clear_strategy.md` for complete specification
 
-### 2. Intrinsic Drive
+### 2. Intrinsic Motivation
 **Etymology**: Latin _intrinsecus_ (inward) + _drīfan_ (to propel)
 **Focus**: Internal motivation over external rewards
 
@@ -88,21 +88,22 @@ The motivation pillar - harnessing internal desires for sustainable, high-qualit
 The understanding pillar - recognizing that effective decisions require deep understanding of environment, constraints, timing, and audience. **Contextual Awareness = KNOWING the environment** (Observe + Orient in OODA loop).
 
 #### Three Sub-Pillars
-1. **Discover and Index Knowledge**: Systematically find and organize information for retrieval
+1. **Proactive Curiosity**: Systematically find and organize information for retrieval
    - Crawl your domain (code, docs, people, systems)
    - Index for retrieval (search-friendly structure, metadata, cross-references)
    - Multi-sensor fusion (combine code, logs, metrics, docs, people)
    - Continuous refresh (fight information decay with maintenance cycles)
-   - **Theoretical Roots**: Search engine crawling/indexing, robotics sensor perception, OODA Observe, Information Foraging Theory
+   - **Theoretical Roots**: Search engine crawling/indexing, robotics sensor perception, OODA Observe, Information Foraging Theory, Scout Mindset
 
-2. **Build and Maintain World Models**: Create accurate mental models and continuously update them
+2. **Cohesive Narrative**: Create accurate mental models and continuously update them
    - Create mental models (understand system architecture, data flow, business logic)
    - Update models continuously (SLAM replanning - reality check vs expectations)
    - Contextualize information (audience-aware: SLA/SLO/SLI hierarchy)
    - Map dependencies (component, data, team dependencies and change impact)
-   - **Theoretical Roots**: Robotics SLAM mapping, OODA Orient, search ranking, mental models theory
+   - Build cohesive narrative through cognitive artifacts (docs, ADRs, diagrams, runbooks)
+   - **Theoretical Roots**: Robotics SLAM mapping, OODA Orient, search ranking, mental models theory, cognitive artifacts
 
-3. **Preserve and Share Context**: Externalize knowledge into durable cognitive artifacts
+3. **Shared Understanding**: Externalize knowledge into durable cognitive artifacts for organizational memory
    - Create cognitive artifacts (docs, ADRs, diagrams, runbooks, code comments)
    - Maintain the commons (fight knowledge decay through ownership and review cycles)
    - Systemic incentives (make it easy, visible, required, integrated, rewarded)
