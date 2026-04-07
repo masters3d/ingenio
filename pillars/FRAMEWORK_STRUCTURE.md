@@ -3,7 +3,7 @@
 ## Framework Overview
 
 ```
-Intrinsic Motivation (Objective Function - WHY)
+Objective Function (WHY)
          ↓ defines success criteria
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
@@ -32,7 +32,7 @@ Three-Phase Operational Cycle:
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
 | **Clear Strategy** (Actuation) | Difficulty Alignment | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
 | **Reflective Calibration** (Retrospective) | State Estimation | Model Correction | Loop Optimization | LEARNING | State Estimation | Loop back |
-| **Intrinsic Motivation** (Objective Function) | Mastery | Autonomy | Purpose | WHY | Reward/Cost Function | Defines success |
+| **Objective Function** (WHY) | Reward Signal (Mastery/Reward Fn) | Degrees of Freedom (Autonomy/Action Space) | Alignment Function (Purpose/Value Alignment) | WHY | Reward/Cost Function | Defines success |
 
 ## Fractal Pattern: Sub-Pillars Mirror the Cycle
 
@@ -43,6 +43,7 @@ Three-Phase Operational Cycle:
 | **Contextual Awareness** (Prospective/KNOWING) | **Proactive Curiosity** - Look forward, crawl, discover, sense the environment | **Cohesive Narrative** - Act on data, build mental models, synthesize information | **Shared Understanding** - Look back, externalize learnings, preserve for future |
 | **Clear Strategy** (Actuation/ACTING) | **Difficulty Alignment** - Look forward, assess capabilities vs demands before acting | **Directed Intentionality** - Execute, project consciousness toward objective | **Adaptive Control** - Look back at feedback, correct course in real-time |
 | **Reflective Calibration** (Retrospective/LEARNING) | **State Estimation** - Look forward at data, measure actual vs expected, gather signals | **Model Correction** - Act on findings, revise mental models, fix docs/processes | **Loop Optimization** - Look back at how you learn, improve feedback loops (meta-learning) |
+| **Objective Function** (WHY) | **Reward Signal** - Look forward, define what "better" looks like (Mastery/Reward Fn) | **Degrees of Freedom** - Act, determine what can be controlled (Autonomy/Action Space) | **Alignment Function** - Look back, verify optimizing for right thing (Purpose/Value Alignment) |
 
 **Pattern Explanation**:
 - **Sub-pillar 1** = Prospective phase of that pillar (gathering, sensing, assessing)
@@ -57,11 +58,11 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 **Framework 3.0** (Three Equal Pillars):
 - Clear Strategy
-- Intrinsic Motivation
+- Intrinsic Motivation (human-specific)
 - Contextual Awareness
 
 **Framework 4.0** (Objective Function + Three-Phase Cycle):
-- **Intrinsic Motivation** elevated to **Objective Function** (sits above cycle, defines WHY)
+- **Intrinsic Motivation** elevated and generalized to **Objective Function** (sits above cycle, works for any agent - human or AI)
 - **Three-phase operational cycle**: Prospective → Actuation → Retrospective
 - **New pillar**: Reflective Calibration (LEARNING/Retrospective)
 
@@ -76,7 +77,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Retained from 3.0**:
 - Flow Theory (Clear Strategy)
 - OODA Loop (Contextual Awareness + Clear Strategy)
-- Self-Determination Theory (Intrinsic Motivation)
+- Self-Determination Theory (Objective Function - human instantiation)
 - Search engines, SLAM, cognitive artifacts
 
 ---
@@ -131,27 +132,35 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-## Above the Cycle: Intrinsic Motivation (Objective Function - WHY)
+## Above the Cycle: Objective Function (WHY)
 
-**Role**: Defines what success means, guides all phases of the cycle
+**Role**: Defines what success means for any agent (human or AI), guides all phases of the cycle
 **Robotics**: Reward/Cost Function (objective function optimization)
 **OODA**: The criteria by which Observe/Orient/Decide/Act are judged
+**Focus**: The mathematical formalization of "what does better look like?"
 
-**Three Sub-Pillars**:
-1. **Mastery**: The urge to get better at things that matter
-2. **Autonomy**: The desire to direct your own work and own outcomes
-3. **Purpose**: Connection to meaningful work beyond personal gain
+**Three Sub-Pillars (Agent-Agnostic)**:
+1. **Reward Signal** (Prospective): What does *better* look like?
+   - Human: Mastery (skill development, deliberate practice)
+   - Agent: Reward Function (scalar/vector signals, loss minimization)
+2. **Degrees of Freedom** (Actuation): What can I control?
+   - Human: Autonomy (decision authority, ownership)
+   - Agent: Action Space (available tools, permissions)
+3. **Alignment Function** (Retrospective): Am I optimizing for the right thing?
+   - Human: Purpose (meaningful work, values alignment)
+   - Agent: Value Alignment (RLHF, constitutional AI, safety)
 
 **Position in Framework**:
 - NOT part of the operational cycle
 - Sits above cycle as the defining objective function
 - Answers "WHY do we act?" while cycle answers "HOW do we act?"
 - Provides the success criteria for all three phases
+- Works for ANY agent: humans, AI systems, teams, organizations
 
 **Integration**:
-- **Prospective**: Curiosity driven by desire for Mastery
-- **Actuation**: Clear goals aligned with Purpose, executed with Autonomy
-- **Retrospective**: Learning demonstrates Mastery progress, clarifies Purpose
+- **Prospective**: Curiosity driven by Reward Signal (Mastery/Reward Function)
+- **Actuation**: Clear goals within Degrees of Freedom (Autonomy/Action Space), aligned with Purpose/Value Alignment
+- **Retrospective**: Learning validates Reward Signal, checks Alignment Function
 
 ---
 
@@ -159,7 +168,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ```
          ┌─────────────────────────────────┐
-         │  Intrinsic Motivation (WHY)     │
+         │  Objective Function (WHY)       │
          │  Defines: What is success?      │
          └─────────────────────────────────┘
                        ↓
@@ -313,42 +322,63 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Intrinsic Motivation: Mastery
-**Definition**: The urge to get better at things that matter
+### Objective Function: Reward Signal (Prospective)
+**General Definition**: The signal that defines improvement - how the agent knows when it's getting better
+**Question**: "What does *better* look like?"
 
-**Key Components**:
+**Human Instantiation - Mastery**:
 - Skill development (deliberate practice, feedback integration)
 - Learning mechanisms (doing, teaching, failing, reading)
 - Expertise levels (Novice → Expert progression)
 - Mastery domains (Technical, Domain, Process, People)
 
-**Theoretical Roots**: Self-Determination Theory (Competence), Deliberate Practice (Ericsson)
+**Agent Instantiation - Reward Function**:
+- Signal types (scalar, vector, sparse, dense rewards)
+- Reward sources (supervised, self-supervised, reinforcement, curiosity)
+- Reward shaping (immediate/delayed feedback, auxiliary rewards, curriculum)
+- Optimization targets (minimize loss, maximize accuracy, optimize efficiency)
+
+**Theoretical Roots**: Self-Determination Theory (Competence), Reinforcement Learning (Sutton & Barto), Deliberate Practice (Ericsson)
 
 ---
 
-### Intrinsic Motivation: Autonomy
-**Definition**: The desire to direct your own work and own outcomes
+### Objective Function: Degrees of Freedom (Actuation)
+**General Definition**: The set of possible actions available to the agent - what decisions and interventions are within scope
+**Question**: "What can I control?"
 
-**Key Components**:
+**Human Instantiation - Autonomy**:
 - Decision-making authority (technical, process, priority, quality)
 - Ownership models (code, feature, system, problem)
 - Autonomy enablers (clear boundaries, context, psychological safety)
 - Autonomy constraints (alignment, visibility, reversibility, consultation)
 
-**Theoretical Roots**: Self-Determination Theory (Autonomy), Agency theory
+**Agent Instantiation - Action Space**:
+- Action types (discrete, continuous, hierarchical, compositional)
+- Available tools (read, write, execute, communicate operations)
+- Permission boundaries (scope limits, rate limits, resource limits, safety constraints)
+- Action constraints (require approval, reversibility, observability, sandboxing)
+
+**Theoretical Roots**: Self-Determination Theory (Autonomy), Reinforcement Learning (action spaces), Configuration Space (LaValle)
 
 ---
 
-### Intrinsic Motivation: Purpose
-**Definition**: Connection to meaningful work beyond personal gain
+### Objective Function: Alignment Function (Retrospective)
+**General Definition**: Meta-level check asking "Am I optimizing for the RIGHT thing?" - preventing goal misalignment and value drift
+**Question**: "Am I optimizing for the right thing?"
 
-**Key Components**:
+**Human Instantiation - Purpose**:
 - Meaning sources (user impact, technical challenge, team mission, organizational goals)
 - Purpose hierarchy (task → feature → system → organization → society)
 - Directive alignment (clarity, agreement, contribution, communication)
-- Purpose erosion prevention
+- Purpose erosion prevention (pointless work, misalignment, disconnection)
 
-**Theoretical Roots**: Self-Determination Theory (Relatedness), Meaning-making theory
+**Agent Instantiation - Value Alignment**:
+- Alignment mechanisms (RLHF, Constitutional AI, Debate/Amplification, Interpretability)
+- Goal specification (explicit goals, implicit constraints, negative examples, edge cases)
+- Safety constraints (hard constraints, soft constraints, uncertainty handling)
+- Alignment verification (test batteries, red teaming, behavioral audits, feedback loops)
+
+**Theoretical Roots**: Self-Determination Theory (Relatedness), AI Safety (Amodei et al.), Human Compatible (Russell), Constitutional AI (Bai et al.)
 
 ---
 
@@ -371,10 +401,10 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ### Objective Function Integration
 
-**Intrinsic Motivation guides all three phases**:
-- **Prospective**: Curiosity driven by Mastery desire
-- **Actuation**: Goals aligned with Purpose, executed with Autonomy
-- **Retrospective**: Learning demonstrates Mastery, clarifies Purpose
+**Objective Function guides all three phases**:
+- **Prospective**: Curiosity driven by Reward Signal (Mastery/Reward Function desire)
+- **Actuation**: Goals aligned within Degrees of Freedom (Autonomy/Action Space), aimed toward Alignment Function (Purpose/Value Alignment)
+- **Retrospective**: Learning validates Reward Signal, checks Alignment Function correctness
 
 ---
 
@@ -421,10 +451,10 @@ This fractal structure means each pillar contains a miniature version of the ful
 - **Pattern Recognition**: % repeat incidents, documented patterns, proactive prevention rate
 - **Model Update**: Action item completion %, documentation update frequency, learning velocity
 
-### Intrinsic Motivation Metrics (Objective Function)
-- **Mastery**: Skill growth rate, learning time allocation, knowledge sharing frequency
-- **Autonomy**: Decision velocity, escalation rate, ownership distribution
-- **Purpose**: Mission understanding, work alignment %, engagement scores
+### Objective Function Metrics
+- **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
+- **Degrees of Freedom**: Decision velocity (human), action coverage (agent), escalation rate, ownership distribution
+- **Alignment Function**: Mission understanding (human), human agreement rate (agent), work alignment %, safety violations
 
 ---
 
@@ -442,7 +472,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 1. `pillars/contextual_awareness.md` (Prospective/KNOWING)
 2. `pillars/clear_strategy.md` (Actuation/ACTING)
 3. `pillars/reflective_calibration.md` (Retrospective/LEARNING)
-4. `pillars/intrinsic_drive.md` (Objective Function/WHY) — retained as reference, now positioned above cycle
+4. `pillars/objective_function.md` (Objective Function/WHY) — positioned above cycle, works for any agent (human or AI)
 
 ---
 
@@ -473,4 +503,4 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Last Updated**: 2026-04-07
 **Framework Version**: 4.0 (Objective Function + Prospective-Actuation-Retrospective Cycle)
 **Status**: Production-ready
-**Major Changes from 3.0**: Intrinsic Motivation elevated to Objective Function, added Reflective Calibration (Retrospective/LEARNING), integrated robotics foundations
+**Major Changes from 3.0**: Intrinsic Motivation elevated and generalized to Objective Function (agent-agnostic - works for humans and AI), added Reflective Calibration (Retrospective/LEARNING), integrated robotics foundations, added reinforcing loop concept
