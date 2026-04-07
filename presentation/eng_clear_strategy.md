@@ -35,13 +35,13 @@ _Oct, 2021_
 
 **Framework**: Csikszentmihalyi's Flow Theory - Creating optimal performance states
 
-1. **Skill Alignment** - Challenge-Skill Balance
-2. **Direct Intentionality** - Clear Goals
+1. **Difficulty Adjustment** - Challenge-Skill Balance
+2. **Directed Intentionality** - Clear Goals
 3. **Adaptive Control** - Immediate Feedback
 
 ---
 
-# Sub-Pillar 1: Skill Alignment
+# Sub-Pillar 1: Difficulty Adjustment
 
 **The active synchronization of internal capabilities with external demands**
 
@@ -56,7 +56,7 @@ _Oct, 2021_
 
 ---
 
-# Sub-Pillar 2: Direct Intentionality
+# Sub-Pillar 2: Directed Intentionality
 
 **The sharp projection of consciousness toward a specific objective**
 

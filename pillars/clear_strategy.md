@@ -35,7 +35,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 2. **Clear Goals**: Know exactly what success looks like
 3. **Immediate Feedback**: Real-time data to adjust performance
 
-### 1. Skill Alignment
+### 1. Difficulty Adjustment
 
 **Definition**: The active synchronization of internal capabilities with external demands - maintaining the delicate balance that enables Flow.
 
@@ -103,7 +103,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ---
 
-### 2. Direct Intentionality
+### 2. Directed Intentionality
 
 **Definition**: The sharp, uncompromising projection of consciousness toward a specific objective - eliminating ambiguity to enable total immersion.
 
@@ -261,13 +261,13 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 ## Integration with Other Pillars
 
 ### With Intrinsic Motivation
-- **Skill Alignment** enables **Mastery** (right-sized challenges drive growth)
-- **Direct Intentionality** requires **Purpose** (clear goals aligned with meaningful work)
+- **Difficulty Adjustment** enables **Mastery** (right-sized challenges drive growth)
+- **Directed Intentionality** requires **Purpose** (clear goals aligned with meaningful work)
 - **Adaptive Control** supports **Autonomy** (self-correcting through feedback)
 
 ### With Contextual Awareness
-- **Skill Alignment** needs **Proactive Curiosity** (understand your capabilities and demands)
-- **Direct Intentionality** requires **Cohesive Narrative** (shared understanding of goals)
+- **Difficulty Adjustment** needs **Proactive Curiosity** (understand your capabilities and demands)
+- **Directed Intentionality** requires **Cohesive Narrative** (shared understanding of goals)
 - **Adaptive Control** depends on **Shared Understanding** (observable systems, documented feedback loops)
 
 ---
@@ -294,13 +294,13 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## Measuring Clear Strategy
 
-### Skill Alignment Metrics
+### Difficulty Adjustment Metrics
 - **Task-Skill Match**: What % of tasks match engineer skill levels?
 - **Burnout Indicators**: Overtime hours, turnover rate, stress surveys
 - **Boredom Indicators**: Engagement scores, voluntary task swapping
 - **Flow Reports**: Self-reported flow state frequency
 
-### Direct Intentionality Metrics
+### Directed Intentionality Metrics
 - **Goal Clarity**: What % of team can articulate current objectives?
 - **Scope Stability**: How often do goals change mid-sprint?
 - **Focus Time**: Average uninterrupted work blocks per day

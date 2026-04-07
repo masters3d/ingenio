@@ -28,13 +28,13 @@ The foundational framework organizing all content and development in this reposi
 The execution pillar - transforming ambiguous directives into concrete, achievable outcomes. **Clear Strategy = ACTING in the environment** (Decide + Act in OODA loop).
 
 #### Three Sub-Pillars
-1. **Skill Alignment**: The active synchronization of internal capabilities with external demands
+1. **Difficulty Adjustment**: The active synchronization of internal capabilities with external demands
    - Challenge-skill balance (prevents anxiety from "too hard" or boredom from "too easy")
    - Continuous task calibration (if challenge exceeds skill, simplify or upskill; if skill exceeds challenge, increase complexity)
    - Maintain position within the "Flow Channel" to prevent burnout or apathy
    - **Theoretical Roots**: Csikszentmihalyi's Flow Theory (Challenge-Skill Balance), eliminates psychic entropy
 
-2. **Direct Intentionality**: The sharp, uncompromising projection of consciousness toward a specific objective
+2. **Directed Intentionality**: The sharp, uncompromising projection of consciousness toward a specific objective
    - Clear goals eliminate distraction and psychic entropy
    - Singular vector of intent (exactly what "success state" looks like in the immediate moment)
    - Minimize cognitive load and decision fatigue to allow total immersion

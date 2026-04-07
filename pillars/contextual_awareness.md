@@ -317,8 +317,8 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 ## Integration with Other Pillars
 
 ### With Clear Strategy
-- **Proactive Curiosity** provides the knowledge needed for **Skill Alignment** (know capabilities and demands)
-- **Cohesive Narrative** enables **Direct Intentionality** (shared understanding of goals)
+- **Proactive Curiosity** provides the knowledge needed for **Difficulty Adjustment** (know capabilities and demands)
+- **Cohesive Narrative** enables **Directed Intentionality** (shared understanding of goals)
 - **Shared Understanding** supports **Adaptive Control** (documented feedback loops and observable systems)
 
 ### With Intrinsic Motivation
