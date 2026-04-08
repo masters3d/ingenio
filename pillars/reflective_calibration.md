@@ -82,6 +82,13 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 - **Create psychological safety**: Honesty requires safety from punishment
 - **Capture full context**: Decisions made sense given information available at the time
 
+**Recognize Positive Outcomes** (What Went Right)
+- **What exceeded expectations?**: Identify successes worth understanding and repeating
+- **What prevented worse outcomes?**: Defense mechanisms, safety nets, quick responses that worked
+- **What should we preserve?**: Decisions, processes, or behaviors that contributed to success
+- **Balance the narrative**: Don't only analyze failures — also study and understand successes
+- **Learn from excellence**: High-performing systems teach as much as broken ones
+
 #### Engineering Behaviors
 
 **Level 0-1 (Apprentice/Component Creator)**
@@ -255,6 +262,13 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 - **Update cognitive artifacts**: Architecture diagrams, mental models, team knowledge
 - **Set new expectations**: SLOs, timelines, definitions of done
 - **Feed learning back to Prospective phase**: Improved context for next cycle
+
+**Amplify Effective Learning** (Meta-Success)
+- **What learning approaches worked well?**: Identify effective retrospective, analysis, or feedback methods
+- **How did we improve the learning process itself?**: Meta-improvements to how the team learns
+- **What made success repeatable?**: Practices, tools, or behaviors that enabled consistent learning
+- **Reinforce virtuous cycles**: Double down on learning mechanisms that accelerate growth
+- **Balance focus**: Optimize learning from both successes and failures
 
 #### Engineering Behaviors
 

@@ -210,14 +210,14 @@ When creating new content for ingenio:
 - Shared Understanding → Adaptive Control: Observable systems, documented feedback loops
 
 **Actuation → Retrospective**:
-- Challenge Matching → Outcome Analysis: Was difficulty right-sized?
-- Directed Intentionality → Pattern Recognition: Clear goals make patterns visible
-- Adaptive Control → Model Update: Real-time feedback becomes learning
+- Challenge Matching → State Estimation: Was challenge right-sized?
+- Directed Intentionality → Pattern Synthesis: Clear goals make patterns visible
+- Adaptive Control → Loop Optimization: Real-time feedback becomes learning
 
 **Retrospective → Prospective (Loop Closure)**:
-- Outcome Analysis → Proactive Curiosity: Experiential data enriches knowledge
-- Pattern Recognition → Cohesive Narrative: Patterns reveal system structure
-- Model Update → Shared Understanding: Learnings become cognitive artifacts
+- State Estimation → Proactive Curiosity: Experiential data enriches knowledge
+- Pattern Synthesis → Cohesive Narrative: Patterns reveal system structure
+- Loop Optimization → Shared Understanding: Learnings become cognitive artifacts
 
 ### Objective Function Integration
 
@@ -237,7 +237,7 @@ When creating new content for ingenio:
 - Core mechanism within Actuation's Adaptive Control
 - Enables Mastery development in Objective Function
 - Requires Shared Understanding from Prospective
-- Closed by Retrospective's Model Update
+- Closed by Retrospective's Loop Optimization
 
 **Behavior Alignment**:
 - Implements Actuation through guiding policies
@@ -261,9 +261,9 @@ Each component specification includes detailed measurement sections. Key indicat
 - **Adaptive Control**: Feedback loop speed, deployment frequency, MTTR
 
 ### Retrospective (Reflective Calibration) Metrics
-- **Outcome Analysis**: % incidents with root cause analysis, time to postmortem, prediction accuracy
-- **Pattern Recognition**: % repeat incidents, documented patterns, proactive prevention rate
-- **Model Update**: Action item completion %, documentation update frequency, learning velocity
+- **State Estimation**: % incidents with root cause analysis, time to postmortem, prediction accuracy
+- **Pattern Synthesis**: % repeat incidents, documented patterns, proactive prevention rate
+- **Loop Optimization**: Action item completion %, documentation update frequency, learning velocity
 
 ### Objective Function Metrics
 - **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
