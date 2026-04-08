@@ -32,7 +32,7 @@ Three-Phase Operational Cycle:
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
 | **Clear Strategy** (Actuation) | Challenge Matching | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
 | **Systematic Improvement** (Retrospective) | Continuous Integration | Deliberate Practice | Update Propagation | IMPROVING | Kaizen | Loop back |
-| **Objective Function** (WHY) | Reward Signal (Mastery/Reward Fn) | Degrees of Freedom (Autonomy/Action Space) | Alignment Function (Purpose/Value Alignment) | WHY | Reward/Cost Function | Defines success |
+| **Objective Function** (WHY) | Search (Mastery/Reward Signal) | Drive (Autonomy/Action Space) | Renew (Purpose/Value Alignment) | WHY | Reward/Cost Function | Defines success |
 
 ## Fractal Pattern: Sub-Pillars Mirror the Cycle
 
@@ -43,7 +43,7 @@ Three-Phase Operational Cycle:
 | **Contextual Awareness** (Prospective/KNOWING) | **Proactive Curiosity** - Look forward, crawl, discover, sense the environment | **Cohesive Narrative** - Act on data, build mental models, synthesize information | **Shared Understanding** - Look back, externalize learnings, preserve for future |
 | **Clear Strategy** (Actuation/ACTING) | **Challenge Matching** - Look forward, assess capabilities vs demands before acting | **Directed Intentionality** - Execute, project consciousness toward objective | **Adaptive Control** - Look back at feedback, correct course in real-time |
 | **Systematic Improvement** (Retrospective/IMPROVING) | **Continuous Integration** - Constantly test state against reality ("Is this still true?") | **Deliberate Practice** - Do less of / keep doing / do more of ("How do we make this better?") | **Update Propagation** - Eliminate, prevent, automate, propagate ("How do we make this permanent and spread it?") |
-| **Objective Function** (WHY) | **Reward Signal** - Look forward, define what "better" looks like (Mastery/Reward Fn) | **Degrees of Freedom** - Act, determine what can be controlled (Autonomy/Action Space) | **Alignment Function** - Look back, verify optimizing for right thing (Purpose/Value Alignment) |
+| **Objective Function** (WHY) | **Search** - Look forward, define what "better" looks like (Mastery/Reward Signal) | **Drive** - Act, determine what can be controlled (Autonomy/Action Space) | **Renew** - Look back, verify optimizing for right thing (Purpose/Value Alignment) |
 
 **Pattern Explanation**:
 - **Sub-pillar 1** = Prospective phase of that pillar (gathering, sensing, assessing)
@@ -140,13 +140,13 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Focus**: The mathematical formalization of "what does better look like?"
 
 **Three Sub-Pillars (Agent-Agnostic)**:
-1. **Reward Signal** (Prospective): What does *better* look like?
+1. **Search** (Prospective): What does *better* look like?
    - Human: Mastery (skill development, deliberate practice)
-   - Agent: Reward Function (scalar/vector signals, loss minimization)
-2. **Degrees of Freedom** (Actuation): What can I control?
+   - Agent: Reward Signal (scalar/vector signals, loss minimization)
+2. **Drive** (Actuation): What can I control?
    - Human: Autonomy (decision authority, ownership)
    - Agent: Action Space (available tools, permissions)
-3. **Alignment Function** (Retrospective): Am I optimizing for the right thing?
+3. **Renew** (Retrospective): Am I optimizing for the right thing?
    - Human: Purpose (meaningful work, values alignment)
    - Agent: Value Alignment (RLHF, constitutional AI, safety)
 
@@ -158,9 +158,9 @@ This fractal structure means each pillar contains a miniature version of the ful
 - Works for ANY agent: humans, AI systems, teams, organizations
 
 **Integration**:
-- **Prospective**: Curiosity driven by Reward Signal (Mastery/Reward Function)
-- **Actuation**: Clear goals within Degrees of Freedom (Autonomy/Action Space), aligned with Purpose/Value Alignment
-- **Retrospective**: Learning validates Reward Signal, checks Alignment Function
+- **Prospective**: Curiosity driven by Search (Mastery/Reward Signal)
+- **Actuation**: Clear goals within Drive (Autonomy/Action Space), aligned with Purpose/Value Alignment
+- **Retrospective**: Learning validates Search, checks Renew
 
 ---
 
@@ -329,7 +329,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Objective Function: Reward Signal (Prospective)
+### Objective Function: Search (Prospective)
 **General Definition**: The signal that defines improvement - how the agent knows when it's getting better
 **Question**: "What does *better* look like?"
 
@@ -339,7 +339,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 - Expertise levels (Novice → Expert progression)
 - Mastery domains (Technical, Domain, Process, People)
 
-**Agent Instantiation - Reward Function**:
+**Agent Instantiation - Reward Signal**:
 - Signal types (scalar, vector, sparse, dense rewards)
 - Reward sources (supervised, self-supervised, reinforcement, curiosity)
 - Reward shaping (immediate/delayed feedback, auxiliary rewards, curriculum)
@@ -349,7 +349,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Objective Function: Degrees of Freedom (Actuation)
+### Objective Function: Drive (Actuation)
 **General Definition**: The set of possible actions available to the agent - what decisions and interventions are within scope
 **Question**: "What can I control?"
 
@@ -369,7 +369,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Objective Function: Alignment Function (Retrospective)
+### Objective Function: Renew (Retrospective)
 **General Definition**: Meta-level check asking "Am I optimizing for the RIGHT thing?" - preventing goal misalignment and value drift
 **Question**: "Am I optimizing for the right thing?"
 
@@ -409,9 +409,9 @@ This fractal structure means each pillar contains a miniature version of the ful
 ### Objective Function Integration
 
 **Objective Function guides all three phases**:
-- **Prospective**: Curiosity driven by Reward Signal (Mastery/Reward Function desire)
-- **Actuation**: Goals aligned within Degrees of Freedom (Autonomy/Action Space), aimed toward Alignment Function (Purpose/Value Alignment)
-- **Retrospective**: Improvement validates Reward Signal, checks Alignment Function correctness
+- **Prospective**: Curiosity driven by Search (Mastery/Reward Signal desire)
+- **Actuation**: Goals aligned within Drive (Autonomy/Action Space), aimed toward Renew (Purpose/Value Alignment)
+- **Retrospective**: Improvement validates Search, checks Renew correctness
 
 ---
 
@@ -460,9 +460,9 @@ This fractal structure means each pillar contains a miniature version of the ful
 - **Update Propagation**: Recurrence rate (should trend to zero), propagation coverage %, improvement velocity
 
 ### Objective Function Metrics
-- **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
-- **Degrees of Freedom**: Decision velocity (human), action coverage (agent), escalation rate, ownership distribution
-- **Alignment Function**: Mission understanding (human), human agreement rate (agent), work alignment %, safety violations
+- **Search**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
+- **Drive**: Decision velocity (human), action coverage (agent), escalation rate, ownership distribution
+- **Renew**: Mission understanding (human), human agreement rate (agent), work alignment %, safety violations
 
 ---
 

@@ -58,13 +58,13 @@ Objective Function (WHY)
 **Robotics**: Reward/Cost Function (defines what to optimize for)
 
 **Three Sub-Pillars (Agent-Agnostic)**:
-1. **Reward Signal** (Prospective) - What does *better* look like?
+1. **Search** (Prospective) - What does *better* look like?
    - Human: **Mastery** (continuous skill development and growth)
-   - Agent: **Reward Function** (scalar/vector signals, loss minimization)
-2. **Degrees of Freedom** (Actuation) - What can I control?
+   - Agent: **Reward Signal** (scalar/vector signals, loss minimization)
+2. **Drive** (Actuation) - What can I control?
    - Human: **Autonomy** (ownership and self-direction in work)
    - Agent: **Action Space** (available tools, permissions)
-3. **Alignment Function** (Retrospective) - Am I optimizing for the right thing?
+3. **Renew** (Retrospective) - Am I optimizing for the right thing?
    - Human: **Purpose** (alignment on meaningful directives beyond personal gain)
    - Agent: **Value Alignment** (RLHF, constitutional AI, safety constraints)
 

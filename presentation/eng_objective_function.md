@@ -76,15 +76,15 @@ Works for ANY agent:
 
 **Fractal Pattern**: Following Prospective → Actuation → Retrospective
 
-1. **Reward Signal** (Prospective) - "What does *better* look like?"
-2. **Degrees of Freedom** (Actuation) - "What can I control?"
-3. **Alignment Function** (Retrospective) - "Am I optimizing for the right thing?"
+1. **Search** (Prospective) - "What does *better* look like?"
+2. **Drive** (Actuation) - "What can I control?"
+3. **Renew** (Retrospective) - "Am I optimizing for the right thing?"
 
 Each has **dual instantiation**: Human + Agent
 
 ---
 
-# Sub-Pillar 1: Reward Signal
+# Sub-Pillar 1: Search
 
 **Cycle Phase**: Prospective
 
@@ -94,7 +94,7 @@ The signal that defines improvement — how the agent knows it's getting better
 
 ---
 
-# Reward Signal: Human Instantiation
+# Search: Human Instantiation
 
 **Mastery** - The urge to get better at things that matter
 
@@ -111,9 +111,9 @@ The signal that defines improvement — how the agent knows it's getting better
 
 ---
 
-# Reward Signal: Agent Instantiation
+# Search: Agent Instantiation
 
-**Reward Function** - Scalar/vector signal quantifying action quality
+**Reward Signal** - Scalar/vector signal quantifying action quality
 
 - **Signal Types**: Scalar, vector, sparse, dense
 - **Reward Sources**: Supervised, self-supervised, reinforcement, intrinsic curiosity
@@ -128,17 +128,17 @@ The signal that defines improvement — how the agent knows it's getting better
 
 ---
 
-# Example: Reward Signal
+# Example: Search
 
 **Human (Mastery)**
 > "I'm weak at distributed systems. I'll volunteer for the microservices project, read 'Designing Data-Intensive Applications', pair with Sarah, and measure my progress through code reviews."
 
-**Agent (Reward Function)**
+**Agent (Reward Signal)**
 > "Training code completion model. Reward: +1 compilable, +0.5 tests pass, +0.3 readability, -0.2 security vulnerability. Dense feedback at each token."
 
 ---
 
-# Sub-Pillar 2: Degrees of Freedom
+# Sub-Pillar 2: Drive
 
 **Cycle Phase**: Actuation
 
@@ -148,7 +148,7 @@ The set of possible actions available — what decisions and interventions are w
 
 ---
 
-# Degrees of Freedom: Human Instantiation
+# Drive: Human Instantiation
 
 **Autonomy** - Desire to direct your own work and own outcomes
 
@@ -165,7 +165,7 @@ The set of possible actions available — what decisions and interventions are w
 
 ---
 
-# Degrees of Freedom: Agent Instantiation
+# Drive: Agent Instantiation
 
 **Action Space** - Set of actions an agent can take
 
@@ -182,7 +182,7 @@ The set of possible actions available — what decisions and interventions are w
 
 ---
 
-# Example: Degrees of Freedom
+# Example: Drive
 
 **Human (Autonomy)**
 > "I'm implementing auth. Design doc says 'secure token-based authentication.' I researched JWT vs sessions, chose JWT with RS256 based on our scale and security needs. Here's my rationale."
@@ -192,7 +192,7 @@ The set of possible actions available — what decisions and interventions are w
 
 ---
 
-# Sub-Pillar 3: Alignment Function
+# Sub-Pillar 3: Renew
 
 **Cycle Phase**: Retrospective
 
@@ -202,7 +202,7 @@ Meta-level check preventing goal misalignment and value drift
 
 ---
 
-# Alignment Function: Human Instantiation
+# Renew: Human Instantiation
 
 **Purpose** - Connection to meaningful work beyond personal gain
 
@@ -219,7 +219,7 @@ Meta-level check preventing goal misalignment and value drift
 
 ---
 
-# Alignment Function: Agent Instantiation
+# Renew: Agent Instantiation
 
 **Value Alignment** - Ensure learned objectives match intended human values
 
@@ -236,7 +236,7 @@ Meta-level check preventing goal misalignment and value drift
 
 ---
 
-# Example: Alignment Function
+# Example: Renew
 
 **Human (Purpose)**
 > "We have 3 bugs and 2 features. The P0 bug blocks customer payments — that's our top priority because revenue enables everything else. UI polish can wait."
@@ -251,14 +251,14 @@ Meta-level check preventing goal misalignment and value drift
 **Bidirectional relationship**: Objective Function drives AND is refined by the cycle
 
 **Top-Down** (Objective Function → Cycle):
-- Reward Signal → Proactive Curiosity: What should I learn?
-- Degrees of Freedom → Directed Intentionality: What goals can I achieve?
-- Alignment Function → Update Propagation: Am I improving the right things? Propagate what works.
+- Search → Proactive Curiosity: What should I learn?
+- Drive → Directed Intentionality: What goals can I achieve?
+- Renew → Update Propagation: Am I improving the right things? Propagate what works.
 
 **Bottom-Up** (Cycle → Objective Function):
-- Prospective → Alignment Function: Understanding reveals if goals are correct
-- Actuation → Reward Signal: Progress validates reward quality
-- Retrospective → Degrees of Freedom: Learning identifies useful actions
+- Prospective → Renew: Understanding reveals if goals are correct
+- Actuation → Search: Progress validates reward quality
+- Retrospective → Drive: Learning identifies useful actions
 
 ---
 
@@ -266,7 +266,7 @@ Meta-level check preventing goal misalignment and value drift
 
 ```
          Objective Function
-         (Reward, Freedom, Alignment)
+         (Search, Drive, Renew)
                  ↓ drives
     ┌────────────────────────────────┐
     │  Prospective → Actuation → Retrospective  │
@@ -283,9 +283,9 @@ Better Objective Function → More effective execution → Better learning → R
 
 Deci & Ryan: Three fundamental psychological needs
 
-1. **Competence** (Reward Signal/Mastery) - Feeling effective
-2. **Autonomy** (Degrees of Freedom) - Experiencing choice
-3. **Relatedness** (Alignment Function/Purpose) - Connected to something meaningful
+1. **Competence** (Search/Mastery) - Feeling effective
+2. **Autonomy** (Drive) - Experiencing choice
+3. **Relatedness** (Renew/Purpose) - Connected to something meaningful
 
 When all three satisfied → Intrinsic Motivation
 
@@ -349,12 +349,12 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 
 **Learned Helplessness**
 - Symptom: "I can't do anything unless my manager approves it"
-- Root Cause: Degrees of Freedom (Autonomy) repeatedly denied
+- Root Cause: Drive (Autonomy) repeatedly denied
 - Solution: Grant decision authority, support early failures
 
 **Burnout**
 - Symptom: "I'm just here for the paycheck"
-- Root Cause: Alignment Function (Purpose) disconnection, no Reward Signal (Mastery) growth
+- Root Cause: Renew (Purpose) disconnection, no Search (Mastery) growth
 - Solution: Reconnect to meaningful outcomes, invest in skill development
 
 ---
@@ -363,7 +363,7 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 
 **Reward Hacking**
 - Symptom: Exploits loopholes without achieving intent
-- Root Cause: Misspecified Reward Signal without Alignment checks
+- Root Cause: Misspecified Search (Reward Signal) without Renew checks
 - Solution: RLHF, adversarial testing, constitutional constraints
 
 **Action Space Too Narrow/Broad**
@@ -376,37 +376,37 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 # Integration with Operational Cycle
 
 **With Contextual Awareness (Prospective)**:
-- Reward Signal ↔ Proactive Curiosity: What information makes me better?
-- Degrees of Freedom ↔ Cohesive Narrative: What do I need to know to act well?
-- Alignment Function ↔ Shared Understanding: Are we optimizing for the same thing?
+- Search ↔ Proactive Curiosity: What information makes me better?
+- Drive ↔ Cohesive Narrative: What do I need to know to act well?
+- Renew ↔ Shared Understanding: Are we optimizing for the same thing?
 
 **With Clear Strategy (Actuation)**:
-- Reward Signal ↔ Challenge Matching: Is challenge right-sized for growth?
-- Degrees of Freedom ↔ Directed Intentionality: What can I accomplish with what I control?
-- Alignment Function ↔ Adaptive Control: Am I getting feedback on what matters?
+- Search ↔ Challenge Matching: Is challenge right-sized for growth?
+- Drive ↔ Directed Intentionality: What can I accomplish with what I control?
+- Renew ↔ Adaptive Control: Am I getting feedback on what matters?
 
 ---
 
 # Integration with Operational Cycle (cont.)
 
 **With Systematic Improvement (Retrospective)**:
-- Reward Signal ↔ Continuous Integration: Did I actually get better? CI verifies continuously.
-- Degrees of Freedom ↔ Deliberate Practice: What should I change about what I control?
-- Alignment Function ↔ Update Propagation: Should I change what I'm optimizing for, and is that change spreading?
+- Search ↔ Continuous Integration: Did I actually get better? CI verifies continuously.
+- Drive ↔ Deliberate Practice: What should I change about what I control?
+- Renew ↔ Update Propagation: Should I change what I'm optimizing for, and is that change spreading?
 
 ---
 
 # Measuring the Objective Function
 
-**Reward Signal Indicators**:
+**Search Indicators**:
 - Human: Skill growth rate, learning time allocation, challenge seeking
 - Agent: Loss curves, accuracy metrics, reward maximization, learning rate
 
-**Degrees of Freedom Indicators**:
+**Drive Indicators**:
 - Human: Decision velocity, escalation rate, ownership distribution
 - Agent: Action coverage, tool utilization, success rate, action diversity
 
-**Alignment Function Indicators**:
+**Renew Indicators**:
 - Human: Mission understanding, work alignment %, engagement
 - Agent: Human agreement rate, safety violations, alignment drift, adversarial robustness
 
@@ -414,26 +414,26 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 
 # Organizational Practices: Human
 
-**Enable Reward Signal (Mastery)**:
+**Enable Search (Mastery)**:
 - 20% time for learning, conference budget, book budget, tech talks, mentorship
 
-**Enable Degrees of Freedom (Autonomy)**:
+**Enable Drive (Autonomy)**:
 - Ownership assignment, decision rights, failure tolerance, fewer approvals, async work
 
-**Enable Alignment Function (Purpose)**:
+**Enable Renew (Purpose)**:
 - Mission communication, user exposure, impact metrics, transparent strategy, values alignment
 
 ---
 
 # Organizational Practices: Agent
 
-**Enable Reward Signal (Reward Function)**:
+**Enable Search (Reward Signal)**:
 - Dense feedback, curriculum design, multi-objective balancing, reward shaping, intrinsic curiosity
 
-**Enable Degrees of Freedom (Action Space)**:
+**Enable Drive (Action Space)**:
 - Tool access, sandboxed experimentation, hierarchical actions, compositional tools, permission gradients
 
-**Enable Alignment Function (Value Alignment)**:
+**Enable Renew (Value Alignment)**:
 - RLHF pipelines, constitutional constraints, red teaming, behavioral monitoring, human-in-the-loop
 
 ---
@@ -447,9 +447,9 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 **Position**: Above the cycle — defines success criteria for any agent
 
 **Three Sub-Pillars (Agent-Agnostic)**:
-1. Reward Signal (Prospective): Mastery | Reward Function
-2. Degrees of Freedom (Actuation): Autonomy | Action Space
-3. Alignment Function (Retrospective): Purpose | Value Alignment
+1. Search (Prospective): Mastery | Reward Signal
+2. Drive (Actuation): Autonomy | Action Space
+3. Renew (Retrospective): Purpose | Value Alignment
 
 **Philosophy**: "What am I trying to optimize? What does *better* look like?"
 
