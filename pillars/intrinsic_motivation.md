@@ -3,8 +3,8 @@
 _A Companion to the [Objective Function](./objective_function.md)_
 
 **Etymology**:
-- **Intrinsic**: From Latin _intrinsecus_ — "inwardly, on the inside" (intra- + secus, "alongside"). What comes from within rather than being imposed from without.
-- **Motivation**: From Latin _motivus_ — "causing motion" (movere, "to move"). The force that sets an agent in motion.
+- **Intrinsic**: From Latin _intrinsecus_ - "inwardly, on the inside" (intra- + secus, "alongside"). What comes from within rather than being imposed from without.
+- **Motivation**: From Latin _motivus_ - "causing motion" (movere, "to move"). The force that sets an agent in motion.
 
 **Focus**: The human instantiation of the Objective Function — the internal compass that defines what "better" means for human engineers.
 

@@ -1,8 +1,8 @@
 # Objective Function
 
 **Etymology**:
-- **Objective**: From Medieval Latin _objectivus_ — "pertaining to an object as it is" from _objectum_ (thing presented to the mind)
-- **Function**: From Latin _functio_ — "a performance, execution" from _fungi_ (to perform, execute)
+- **Objective**: From Medieval Latin _objectivus_ - "pertaining to an object as it is" from _objectum_ (thing presented to the mind)
+- **Function**: From Latin _functio_ - "a performance, execution" from _fungi_ (to perform, execute)
 
 **Focus**: The interface between human intent and agent capability — what success means, who defines it, and how it stays aligned.
 
