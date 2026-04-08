@@ -19,7 +19,7 @@ Objective Function (WHY)
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
 └────────────────────────────────────┘
-         ↑ feeds learning back
+         ↑ feeds improvement back
 ```
 
 ### Contextual Awareness (Prospective - KNOWING)
@@ -42,15 +42,15 @@ Objective Function (WHY)
 2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy, enables action-awareness merger)
 3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment, real-time data)
 
-### Reflective Convergence (Retrospective - LEARNING)
-**Cycle Phase**: Retrospective - learn from what happened
-**Philosophy**: "Every result is data" - the system that examines itself improves itself
-**Robotics**: State Estimation (Kalman filter, observers, feedback control)
+### Systematic Improvement (Retrospective - IMPROVING)
+**Cycle Phase**: Retrospective - improve from what happened
+**Philosophy**: "The system that improves itself outlasts every other" — never automate inefficiency
+**Kaizen Foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA
 
 **Three Sub-Pillars:**
-1. **State Estimation** - Look forward at data, measure actual vs expected (gather signals before interpreting)
-2. **Pattern Synthesis** - Act on findings, revise mental models (fix docs and processes)
-3. **Learning Calibration** - Look back at how you learn (improve feedback loops, meta-learning)
+1. **Continuous Integration** - Constantly test state against expected state ("Is this still true?")
+2. **Deliberate Practice** - Practiced routine of improvement: do less of / keep doing / do more of ("How do we make this better?")
+3. **Update Propagation** - Eliminate waste permanently, mistake-proof, automate, propagate horizontally ("How do we make this permanent and spread it?")
 
 ### Objective Function (WHY)
 **Position**: Above the operational cycle - defines success criteria for any agent (human or AI)

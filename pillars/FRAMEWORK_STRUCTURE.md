@@ -8,7 +8,7 @@ Objective Function (WHY)
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
 └────────────────────────────────────┘
-         ↑ feeds learning back
+         ↑ feeds improvement back
 
 Three-Phase Operational Cycle:
 ├── Contextual Awareness (Prospective - KNOWING)
@@ -19,10 +19,10 @@ Three-Phase Operational Cycle:
 │   ├── Challenge Matching
 │   ├── Directed Intentionality
 │   └── Adaptive Control
-└── Reflective Convergence (Retrospective - LEARNING)
-    ├── State Estimation
-    ├── Pattern Synthesis
-    └── Learning Calibration
+└── Systematic Improvement (Retrospective - IMPROVING)
+    ├── Continuous Integration
+    ├── Deliberate Practice
+    └── Update Propagation
 ```
 
 ## Quick Reference Matrix
@@ -31,7 +31,7 @@ Three-Phase Operational Cycle:
 |-----------|--------------|--------------|--------------|------|----------|------|
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
 | **Clear Strategy** (Actuation) | Challenge Matching | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
-| **Reflective Convergence** (Retrospective) | State Estimation | Pattern Synthesis | Learning Calibration | LEARNING | State Estimation | Loop back |
+| **Systematic Improvement** (Retrospective) | Continuous Integration | Deliberate Practice | Update Propagation | IMPROVING | Kaizen | Loop back |
 | **Objective Function** (WHY) | Reward Signal (Mastery/Reward Fn) | Degrees of Freedom (Autonomy/Action Space) | Alignment Function (Purpose/Value Alignment) | WHY | Reward/Cost Function | Defines success |
 
 ## Fractal Pattern: Sub-Pillars Mirror the Cycle
@@ -42,7 +42,7 @@ Three-Phase Operational Cycle:
 |-------------|----------------------------|--------------------------|------------------------------|
 | **Contextual Awareness** (Prospective/KNOWING) | **Proactive Curiosity** - Look forward, crawl, discover, sense the environment | **Cohesive Narrative** - Act on data, build mental models, synthesize information | **Shared Understanding** - Look back, externalize learnings, preserve for future |
 | **Clear Strategy** (Actuation/ACTING) | **Challenge Matching** - Look forward, assess capabilities vs demands before acting | **Directed Intentionality** - Execute, project consciousness toward objective | **Adaptive Control** - Look back at feedback, correct course in real-time |
-| **Reflective Convergence** (Retrospective/LEARNING) | **State Estimation** - Look forward at data, measure actual vs expected, gather signals | **Pattern Synthesis** - Act on findings, revise mental models, fix docs/processes | **Learning Calibration** - Look back at how you learn, improve feedback loops (meta-learning) |
+| **Systematic Improvement** (Retrospective/IMPROVING) | **Continuous Integration** - Constantly test state against reality ("Is this still true?") | **Deliberate Practice** - Do less of / keep doing / do more of ("How do we make this better?") | **Update Propagation** - Eliminate, prevent, automate, propagate ("How do we make this permanent and spread it?") |
 | **Objective Function** (WHY) | **Reward Signal** - Look forward, define what "better" looks like (Mastery/Reward Fn) | **Degrees of Freedom** - Act, determine what can be controlled (Autonomy/Action Space) | **Alignment Function** - Look back, verify optimizing for right thing (Purpose/Value Alignment) |
 
 **Pattern Explanation**:
@@ -64,12 +64,12 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Framework 4.0** (Objective Function + Three-Phase Cycle):
 - **Intrinsic Motivation** elevated and generalized to **Objective Function** (sits above cycle, works for any agent - human or AI)
 - **Three-phase operational cycle**: Prospective → Actuation → Retrospective
-- **New pillar**: Reflective Convergence (LEARNING/Retrospective)
+- **New pillar**: Systematic Improvement (IMPROVING/Retrospective)
 
 ### Theoretical Foundations
 
 **Added in 4.0**:
-- **Robotics frameworks**: Perception, Actuation, State Estimation
+- **Robotics/Kaizen frameworks**: Perception, Actuation, Kaizen + Feedback Control
 - **Control Theory**: Feedback loops, Kalman filtering, PID control
 - **Objective Function**: Mathematical reward/cost function (defines success)
 - **Closed-loop learning**: Retrospective feeds back to Prospective
@@ -116,19 +116,19 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Phase 3: Reflective Convergence (Retrospective - LEARNING)
+### Phase 3: Systematic Improvement (Retrospective - IMPROVING)
 
 **Cycle Name**: Retrospective
-**Role**: LEARNING from what happened
-**Robotics**: State Estimation (Kalman filter, observers, feedback control)
+**Role**: IMPROVING from what happened
+**Kaizen Foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA
 **OODA**: Feedback arc from Act back to Observe
 
 **Three Sub-Pillars**:
-1. **State Estimation**: Look forward at the data, measure actual vs expected, gather signals
-2. **Pattern Synthesis**: Act on findings, revise mental models, fix docs and processes
-3. **Learning Calibration**: Look back at how you learn, improve feedback loops themselves (meta-learning)
+1. **Continuous Integration**: Constantly test the state of the system against expected state. "Is this still true?"
+2. **Deliberate Practice**: The practiced routine of improvement — do less of / keep doing / do more of. "How do we make this better?"
+3. **Update Propagation**: Eliminate waste permanently, prevent errors structurally, automate, propagate horizontally. "How do we make this permanent and spread it everywhere?"
 
-**Purpose**: Close the improvement loop by extracting and applying learnings.
+**Purpose**: Close the improvement loop by testing state continuously, practicing improvement routines, and propagating gains permanently.
 
 ---
 
@@ -190,11 +190,11 @@ This fractal structure means each pillar contains a miniature version of the ful
     │                                          │
     ├──────────────────────────────────────────┤
     │                                          │
-    │  3. REFLECTIVE CONVERGENCE (Retrospective)│
-    │     - State Estimation                   │
-    │     - Pattern Synthesis                  │
-    │     - Learning Calibration                  │
-    │     LEARNING: Extract and apply lessons  │
+    │  3. SYSTEMATIC IMPROVEMENT (Retrospective)│
+    │     - Continuous Integration             │
+    │     - Deliberate Practice                │
+    │     - Update Propagation                 │
+    │     IMPROVING: Test state, practice, propagate │
     │                                          │
     └──────────────────────────────────────────┘
                        ↓
@@ -283,42 +283,49 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Reflective Convergence: State Estimation
-**Definition**: Look forward at the data — measure actual vs expected, gather signals before interpreting
+### Systematic Improvement: Continuous Integration
+**Definition**: Constantly test the state of the system against expected state. Lock in the truth. Know immediately when reality drifts from intention.
 
 **Key Components**:
 - Compare Prediction vs Reality (measurement gap)
 - Identify Contributing Factors (root cause analysis, Five Whys)
-- Assess Impact (who affected, what cost, what learned)
 - Document Without Blame (blameless postmortems, psychological safety)
+- Recognize Positive Outcomes (what went right, not just what broke)
 
-**Theoretical Roots**: Robotics State Estimation (Kalman filter prediction-measurement), Control Theory error signals, After-Action Review
+**The question**: "Is this still true?"
+
+**Kaizen Roots**: Genchi Genbutsu (go and see for yourself), Hansei (honest self-reflection), Toyota Kata first question ("What is the current condition?"), PDCA: Check
 
 ---
 
-### Reflective Convergence: Pattern Synthesis
-**Definition**: Act on findings — identify patterns (both what failed and what succeeded), synthesize observations into understanding, and revise mental models, docs, and processes
+### Systematic Improvement: Deliberate Practice
+**Definition**: The practiced routine of improvement. For each process, behavior, or component: do less of, keep doing, do more of. Simplify through disciplined repetition.
 
 **Key Components**:
+- Sort Every Process (do less of / keep doing / do more of)
 - Distinguish Signal from Noise (one-off vs systemic, special vs common cause)
 - Recognize System Archetypes (Success to Successful, Tragedy of Commons, Fixes that Backfire)
-- Identify Feedback Loops (reinforcing, balancing, delays)
-- Extract Generalizable Lessons (underlying principles, mental models, heuristics)
+- Extract Generalizable Lessons (underlying principles, not just specific fixes)
 
-**Theoretical Roots**: Machine Learning pattern extraction, Systems Thinking archetypes, Statistical Process Control, Double-Loop Learning
+**The question**: "How do we make this better?"
+
+**Kaizen Roots**: Kata (practiced improvement routine), Muda awareness (see the seven wastes), Musk Steps 2-3 (Delete then Simplify), Ericsson's Deliberate Practice, Double-Loop Learning, PDCA: Plan-Do
 
 ---
 
-### Reflective Convergence: Learning Calibration
-**Definition**: Look back at how you learn — improve the feedback loops themselves, meta-learning
+### Systematic Improvement: Update Propagation
+**Definition**: Improvements don't stay local. Eliminate waste permanently, prevent errors structurally, automate what's proven, and propagate across every place it applies. Each cycle makes the next cycle faster.
 
 **Key Components**:
-- Update Mental Models (adjust map to match territory, Bayesian updating)
-- Revise Strategies (change future behavior based on outcomes)
-- Adjust Processes (improve team practices, tools, workflows)
-- Close the Loop (feed learning back to Prospective phase, update cognitive artifacts)
+- Eliminate Waste Permanently (Muda elimination — don't defer, delete)
+- Mistake-Proof the System (Poka-yoke — make regression structurally impossible)
+- Automate with Intelligence (Jidoka — human judgment stays in the loop)
+- Standardize Before Propagating (SDCA — lock in gains, then spread)
+- Propagate Horizontally (Yokoten — spread improvements to every place they apply)
 
-**Theoretical Roots**: Bayesian Updating, Double-Loop Learning (Argyris), SLAM Replanning, Adaptive Control, Meta-Learning
+**The question**: "How do we make this permanent and spread it everywhere?"
+
+**Kaizen Roots**: Yokoten (horizontal deployment), Muda Elimination, Poka-yoke (mistake-proofing), Jidoka (automation with intelligence), SDCA (standardize before next PDCA), Musk Steps 4-5 (Accelerate then Automate), Recursive Self-Improvement
 
 ---
 
@@ -390,21 +397,21 @@ This fractal structure means each pillar contains a miniature version of the ful
 - **Shared Understanding** supports **Adaptive Control** (observable systems, documented feedback loops)
 
 ### Actuation → Retrospective
-- **Challenge Matching** outcomes feed **State Estimation** (was difficulty right-sized?)
-- **Directed Intentionality** clarity enables **Pattern Synthesis** (goals make patterns visible)
-- **Adaptive Control** data informs **Learning Calibration** (real-time feedback becomes learning)
+- **Challenge Matching** outcomes feed **Continuous Integration** (was difficulty right-sized?)
+- **Directed Intentionality** clarity enables **Deliberate Practice** (goals make improvement routines visible)
+- **Adaptive Control** data informs **Update Propagation** (real-time feedback becomes permanent improvement)
 
 ### Retrospective → Prospective (Loop Closure)
-- **State Estimation** enriches **Proactive Curiosity** (experiential data added to knowledge base)
-- **Pattern Synthesis** improves **Cohesive Narrative** (patterns reveal system structure)
-- **Learning Calibration** maintains **Shared Understanding** (learnings become cognitive artifacts)
+- **Continuous Integration** enriches **Proactive Curiosity** (experiential data added to knowledge base)
+- **Deliberate Practice** improves **Cohesive Narrative** (practiced routines reveal system structure)
+- **Update Propagation** maintains **Shared Understanding** (propagated improvements become cognitive artifacts)
 
 ### Objective Function Integration
 
 **Objective Function guides all three phases**:
 - **Prospective**: Curiosity driven by Reward Signal (Mastery/Reward Function desire)
 - **Actuation**: Goals aligned within Degrees of Freedom (Autonomy/Action Space), aimed toward Alignment Function (Purpose/Value Alignment)
-- **Retrospective**: Learning validates Reward Signal, checks Alignment Function correctness
+- **Retrospective**: Improvement validates Reward Signal, checks Alignment Function correctness
 
 ---
 
@@ -412,10 +419,10 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 | IC Level | Prospective Focus | Actuation Focus | Retrospective Focus | Objective Function |
 |----------|-------------------|-----------------|---------------------|---------------------|
-| 0-1 | Crawl domain, ask questions | Match task difficulty to skill | Review feedback, participate in retrospectives | Learn fundamentals, build skills |
-| 2-3 | Index knowledge, build mental models | Calibrate challenges, set clear goals | Conduct postmortems, analyze metrics | Mentor others, make decisions |
-| 4-5 | Multi-sensor fusion, cognitive artifacts | System-level alignment, feedback loops | Track patterns, identify systemic issues | Deep expertise, own systems |
-| 6-7+ | Organizational memory systems | Organizational Flow state | Analyze multi-system patterns | Shape culture, mentor seniors |
+| 0-1 | Crawl domain, ask questions | Match task difficulty to skill | Test state continuously, participate in improvement cycles | Learn fundamentals, build skills |
+| 2-3 | Index knowledge, build mental models | Calibrate challenges, set clear goals | Conduct postmortems, practice improvement routines | Mentor others, make decisions |
+| 4-5 | Multi-sensor fusion, cognitive artifacts | System-level alignment, feedback loops | Track improvement velocity, propagate fixes structurally | Deep expertise, own systems |
+| 6-7+ | Organizational memory systems | Organizational Flow state | Establish Yokoten practice, build recursive improvement systems | Shape culture, mentor seniors |
 
 ---
 
@@ -427,8 +434,9 @@ This fractal structure means each pillar contains a miniature version of the ful
 | Prospective | Stale Documentation | Assign owners, quarterly reviews, DoD includes docs |
 | Actuation | Analysis Paralysis | Time-box planning, default to action |
 | Actuation | Scope Creep | Ruthless exit strategy enforcement |
-| Retrospective | No Retrospectives | Make retrospectives required in sprint cycle |
-| Retrospective | Blame Culture | Blameless postmortems, psychological safety |
+| Retrospective | No Continuous Integration | Make CI required; treat broken CI as stop-the-line event |
+| Retrospective | Blame Culture | Blameless postmortems grounded in Hansei, psychological safety |
+| Retrospective | Automating Inefficiency | Question → Delete → Simplify before Automate (never automate waste) |
 | Objective Function | Learned Helplessness | Explicitly grant decision authority |
 | Objective Function | Burnout (Extrinsic-Only) | Reconnect to meaningful outcomes |
 
@@ -446,10 +454,10 @@ This fractal structure means each pillar contains a miniature version of the ful
 - **Directed Intentionality**: Goal clarity %, scope stability, focus time blocks
 - **Adaptive Control**: Feedback loop speed, deployment frequency, MTTR
 
-### Reflective Convergence Metrics (Retrospective)
-- **State Estimation**: % of incidents with root cause analysis, time to postmortem, prediction accuracy
-- **Pattern Synthesis**: % repeat incidents, documented patterns, proactive prevention rate
-- **Learning Calibration**: Action item completion %, documentation update frequency, learning velocity
+### Systematic Improvement Metrics (Retrospective)
+- **Continuous Integration**: % of system state continuously tested, time to detect drift, blameless postmortem rate
+- **Deliberate Practice**: Improvement cycle time, signal vs noise accuracy, waste identification rate
+- **Update Propagation**: Recurrence rate (should trend to zero), propagation coverage %, improvement velocity
 
 ### Objective Function Metrics
 - **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
@@ -471,7 +479,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Four Pillar Specification Files**:
 1. `pillars/contextual_awareness.md` (Prospective/KNOWING)
 2. `pillars/clear_strategy.md` (Actuation/ACTING)
-3. `pillars/reflective_convergence.md` (Retrospective/LEARNING)
+3. `pillars/reflective_convergence.md` (Retrospective/IMPROVING)
 4. `pillars/objective_function.md` (Objective Function/WHY) — positioned above cycle, works for any agent (human or AI)
 
 ---
@@ -481,12 +489,19 @@ This fractal structure means each pillar contains a miniature version of the ful
 ### Robotics & Control Theory
 - **Perception**: Sensor fusion, SLAM, environment mapping
 - **Actuation**: Kinematics, path planning, PID control
-- **State Estimation**: Kalman filtering, observers, feedback control
+- **Feedback Control**: Closed-loop systems, error signals, adaptive control
 
 ### Psychology & Management
 - **Flow Theory** (Csikszentmihalyi): Challenge-Skill Balance, Clear Goals, Immediate Feedback
 - **Self-Determination Theory** (Deci & Ryan): Competence, Autonomy, Relatedness
 - **Double-Loop Learning** (Argyris): Question underlying assumptions
+- **Deliberate Practice** (Ericsson): Structured practice at the edge of current ability
+
+### Kaizen & Manufacturing
+- **Kaizen** (Imai): Ongoing improvement involving everybody
+- **Toyota Production System** (Ohno): Muda, Poka-yoke, Jidoka, Yokoten
+- **Toyota Kata** (Rother): The Improvement Kata — practiced routine of improvement
+- **Five-Step Algorithm** (Musk): Question → Delete → Simplify → Accelerate → Automate
 
 ### Systems & Strategy
 - **OODA Loop** (Boyd): Observe, Orient, Decide, Act cycle
@@ -503,4 +518,4 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Last Updated**: 2026-04-07
 **Framework Version**: 4.0 (Objective Function + Prospective-Actuation-Retrospective Cycle)
 **Status**: Production-ready
-**Major Changes from 3.0**: Intrinsic Motivation elevated and generalized to Objective Function (agent-agnostic - works for humans and AI), added Reflective Convergence (Retrospective/LEARNING), integrated robotics foundations, added reinforcing loop concept
+**Major Changes from 3.0**: Intrinsic Motivation elevated and generalized to Objective Function (agent-agnostic - works for humans and AI), added Systematic Improvement (Retrospective/IMPROVING) with Kaizen foundations, integrated robotics foundations, added reinforcing loop concept

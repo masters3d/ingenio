@@ -544,10 +544,10 @@ The Objective Function sits above and guides all three cycle phases:
 - **Degrees of Freedom** → **Directed Intentionality**: What goals can I achieve with my available actions?
 - **Alignment Function** → **Adaptive Control**: Am I getting feedback on the right metrics?
 
-**Drives Retrospective (Reflective Convergence)**:
-- **Reward Signal** → **State Estimation**: Did I actually get better? How do I measure improvement?
-- **Degrees of Freedom** → **Pattern Synthesis**: What actions worked? What didn't?
-- **Alignment Function** → **Learning Calibration**: Am I learning the right lessons? Should I change my goals?
+**Drives Retrospective (Systematic Improvement)**:
+- **Reward Signal** → **Continuous Integration**: Did I actually get better? CI continuously verifies improvement.
+- **Degrees of Freedom** → **Deliberate Practice**: What actions worked? What didn't? Practice better ones.
+- **Alignment Function** → **Update Propagation**: Am I improving the right things? Propagate what works, eliminate what doesn't.
 
 ### Bottom-Up: Cycle Reinforces the Objective Function
 
@@ -717,22 +717,22 @@ How to define what agents can do:
 - Value alignment checks if optimization targets are correct
 - Both ask: "Am I getting feedback on what matters?"
 
-### With Reflective Convergence (Retrospective)
+### With Systematic Improvement (Retrospective)
 
-**Reward Signal ↔ State Estimation**
-- Mastery progress measured by comparing actual vs expected growth
-- Reward function accuracy validated by outcome analysis
-- Both ask: "Did I actually get better? How do I know?"
+**Reward Signal ↔ Continuous Integration**
+- Mastery progress measured by continuously testing actual vs expected growth
+- Reward function accuracy validated by continuous state verification
+- Both ask: "Did I actually get better? Is this still true?"
 
-**Degrees of Freedom ↔ Pattern Synthesis**
-- Autonomy refined by learning which decisions worked
-- Action space adjusted based on which actions were effective
+**Degrees of Freedom ↔ Deliberate Practice**
+- Autonomy refined by practicing and improving which decisions work
+- Action space adjusted based on disciplined improvement routines
 - Both ask: "What should I change about what I control?"
 
-**Alignment Function ↔ Learning Calibration**
-- Purpose clarified by reflecting on whether work was meaningful
-- Value alignment improved by meta-learning about goal quality
-- Both ask: "Should I change what I'm optimizing for?"
+**Alignment Function ↔ Update Propagation**
+- Purpose clarified by verifying that improvements are permanent and propagated
+- Value alignment improved by ensuring the right things are being improved and spread
+- Both ask: "Should I change what I'm optimizing for, and is that change spreading?"
 
 ---
 
