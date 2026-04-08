@@ -35,7 +35,7 @@ Objective Function (WHY)
 **Three-Phase Operational Cycle**:
 1. **Contextual Awareness** (Prospective - KNOWING)
 2. **Clear Strategy** (Actuation - ACTING)
-3. **Reflective Calibration** (Retrospective - LEARNING)
+3. **Reflective Convergence** (Retrospective - LEARNING)
 
 **Above the Cycle**:
 - **Objective Function** (WHY)
@@ -119,9 +119,9 @@ The ACTING phase - transforming ambiguous directives into concrete, achievable o
 
 ---
 
-### Reflective Calibration (Retrospective - LEARNING)
+### Reflective Convergence (Retrospective - LEARNING)
 
-**Etymology**: Latin _reflectere_ (to bend back) + Arabic _qālib_ (mold/form)
+**Etymology**: Latin _reflectere_ (to bend back) + Latin _convergere_ (to incline together)
 **Cycle Phase**: Retrospective (learn from what happened)
 **Philosophy**: "Every result is data" - the system that examines itself improves itself
 
@@ -143,7 +143,7 @@ The LEARNING phase - closing the improvement loop by examining outcomes, identif
    - Extract generalizable lessons (underlying principles, mental models, heuristics)
    - **Theoretical Roots**: Machine Learning pattern extraction, Systems Thinking archetypes, Statistical Process Control
 
-3. **Loop Optimization**: Look back at how you learn, improve feedback loops themselves (meta-learning)
+3. **Learning Calibration**: Look back at how you learn, improve feedback loops themselves (meta-learning)
    - Update mental models (adjust map to match territory, Bayesian updating)
    - Revise strategies (change future behavior based on outcomes)
    - Adjust processes (improve team practices, tools, workflows)
@@ -153,7 +153,7 @@ The LEARNING phase - closing the improvement loop by examining outcomes, identif
 **Robotics Foundation**: State Estimation (Kalman filter, observers, feedback control)
 **OODA Mapping**: Feedback arc from Act back to Observe
 
-**See**: `/pillars/reflective_calibration.md` for complete specification
+**See**: `/pillars/reflective_convergence.md` for complete specification
 
 ---
 
@@ -202,7 +202,7 @@ The WHY - defining what success means, guiding all three phases of the operation
 
 1. **Contextual Awareness (Prospective/KNOWING)**: Gather information, build mental models, understand environment
 2. **Clear Strategy (Actuation/ACTING)**: Set clear goals, align difficulty, execute with feedback
-3. **Reflective Calibration (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
+3. **Reflective Convergence (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
 4. **Loop back to Prospective**: Enhanced understanding informs next cycle
 
 All guided by **Objective Function (WHY)**: The reward function that defines success for any agent.
@@ -257,7 +257,7 @@ Based on 25 open GitHub issues, focus areas include:
 
 ### Content Development Approach
 1. **Start with Etymology**: Research word origins and meanings
-2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Calibration
+2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Convergence
 3. **Use Quest Engine**: Vision → Design → Sprint → Daily planning hierarchy
 4. **Consider People Systems**: Individual, team, group, organization levels
 5. **Maintain Context**: Async documentation that scales
@@ -275,7 +275,7 @@ Vision Document
 │   ├── Objective Function (reward signal, degrees of freedom, alignment)
 │   ├── Contextual Awareness (prospective understanding)
 │   ├── Clear Strategy (actuation approach)
-│   └── Reflective Calibration (learning considerations)
+│   └── Reflective Convergence (learning considerations)
 ├── People Systems Impact (Individual → Team → Group → Organization)
 ├── Implementation Design
 ├── Success Metrics
@@ -369,7 +369,7 @@ ingenio/
 
 ### Content Development Principles
 1. **Always Start with Context**: Read existing content before adding new material
-2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Calibration in all work
+2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Convergence in all work
 3. **Research Etymology**: Understand word origins when introducing concepts
 4. **Think Systems**: Consider individual, team, group, organization implications
 5. **Document Opinions**: Clearly mark subjective content as opinions

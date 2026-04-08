@@ -253,7 +253,7 @@ Meta-level check preventing goal misalignment and value drift
 **Top-Down** (Objective Function → Cycle):
 - Reward Signal → Proactive Curiosity: What should I learn?
 - Degrees of Freedom → Directed Intentionality: What goals can I achieve?
-- Alignment Function → Loop Optimization: Am I learning the right lessons?
+- Alignment Function → Learning Calibration: Am I learning the right lessons?
 
 **Bottom-Up** (Cycle → Objective Function):
 - Prospective → Alignment Function: Understanding reveals if goals are correct
@@ -389,10 +389,10 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 
 # Integration with Operational Cycle (cont.)
 
-**With Reflective Calibration (Retrospective)**:
+**With Reflective Convergence (Retrospective)**:
 - Reward Signal ↔ State Estimation: Did I actually get better? How do I know?
 - Degrees of Freedom ↔ Pattern Synthesis: What should I change about what I control?
-- Alignment Function ↔ Loop Optimization: Should I change what I'm optimizing for?
+- Alignment Function ↔ Learning Calibration: Should I change what I'm optimizing for?
 
 ---
 

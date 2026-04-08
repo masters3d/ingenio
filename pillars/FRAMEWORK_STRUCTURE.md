@@ -19,10 +19,10 @@ Three-Phase Operational Cycle:
 │   ├── Challenge Matching
 │   ├── Directed Intentionality
 │   └── Adaptive Control
-└── Reflective Calibration (Retrospective - LEARNING)
+└── Reflective Convergence (Retrospective - LEARNING)
     ├── State Estimation
     ├── Pattern Synthesis
-    └── Loop Optimization
+    └── Learning Calibration
 ```
 
 ## Quick Reference Matrix
@@ -31,7 +31,7 @@ Three-Phase Operational Cycle:
 |-----------|--------------|--------------|--------------|------|----------|------|
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
 | **Clear Strategy** (Actuation) | Challenge Matching | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
-| **Reflective Calibration** (Retrospective) | State Estimation | Pattern Synthesis | Loop Optimization | LEARNING | State Estimation | Loop back |
+| **Reflective Convergence** (Retrospective) | State Estimation | Pattern Synthesis | Learning Calibration | LEARNING | State Estimation | Loop back |
 | **Objective Function** (WHY) | Reward Signal (Mastery/Reward Fn) | Degrees of Freedom (Autonomy/Action Space) | Alignment Function (Purpose/Value Alignment) | WHY | Reward/Cost Function | Defines success |
 
 ## Fractal Pattern: Sub-Pillars Mirror the Cycle
@@ -42,7 +42,7 @@ Three-Phase Operational Cycle:
 |-------------|----------------------------|--------------------------|------------------------------|
 | **Contextual Awareness** (Prospective/KNOWING) | **Proactive Curiosity** - Look forward, crawl, discover, sense the environment | **Cohesive Narrative** - Act on data, build mental models, synthesize information | **Shared Understanding** - Look back, externalize learnings, preserve for future |
 | **Clear Strategy** (Actuation/ACTING) | **Challenge Matching** - Look forward, assess capabilities vs demands before acting | **Directed Intentionality** - Execute, project consciousness toward objective | **Adaptive Control** - Look back at feedback, correct course in real-time |
-| **Reflective Calibration** (Retrospective/LEARNING) | **State Estimation** - Look forward at data, measure actual vs expected, gather signals | **Pattern Synthesis** - Act on findings, revise mental models, fix docs/processes | **Loop Optimization** - Look back at how you learn, improve feedback loops (meta-learning) |
+| **Reflective Convergence** (Retrospective/LEARNING) | **State Estimation** - Look forward at data, measure actual vs expected, gather signals | **Pattern Synthesis** - Act on findings, revise mental models, fix docs/processes | **Learning Calibration** - Look back at how you learn, improve feedback loops (meta-learning) |
 | **Objective Function** (WHY) | **Reward Signal** - Look forward, define what "better" looks like (Mastery/Reward Fn) | **Degrees of Freedom** - Act, determine what can be controlled (Autonomy/Action Space) | **Alignment Function** - Look back, verify optimizing for right thing (Purpose/Value Alignment) |
 
 **Pattern Explanation**:
@@ -64,7 +64,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Framework 4.0** (Objective Function + Three-Phase Cycle):
 - **Intrinsic Motivation** elevated and generalized to **Objective Function** (sits above cycle, works for any agent - human or AI)
 - **Three-phase operational cycle**: Prospective → Actuation → Retrospective
-- **New pillar**: Reflective Calibration (LEARNING/Retrospective)
+- **New pillar**: Reflective Convergence (LEARNING/Retrospective)
 
 ### Theoretical Foundations
 
@@ -116,7 +116,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Phase 3: Reflective Calibration (Retrospective - LEARNING)
+### Phase 3: Reflective Convergence (Retrospective - LEARNING)
 
 **Cycle Name**: Retrospective
 **Role**: LEARNING from what happened
@@ -126,7 +126,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Three Sub-Pillars**:
 1. **State Estimation**: Look forward at the data, measure actual vs expected, gather signals
 2. **Pattern Synthesis**: Act on findings, revise mental models, fix docs and processes
-3. **Loop Optimization**: Look back at how you learn, improve feedback loops themselves (meta-learning)
+3. **Learning Calibration**: Look back at how you learn, improve feedback loops themselves (meta-learning)
 
 **Purpose**: Close the improvement loop by extracting and applying learnings.
 
@@ -193,7 +193,7 @@ This fractal structure means each pillar contains a miniature version of the ful
     │  3. REFLECTIVE CALIBRATION (Retrospective)│
     │     - State Estimation                   │
     │     - Pattern Synthesis                  │
-    │     - Loop Optimization                  │
+    │     - Learning Calibration                  │
     │     LEARNING: Extract and apply lessons  │
     │                                          │
     └──────────────────────────────────────────┘
@@ -283,7 +283,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Reflective Calibration: State Estimation
+### Reflective Convergence: State Estimation
 **Definition**: Look forward at the data — measure actual vs expected, gather signals before interpreting
 
 **Key Components**:
@@ -296,7 +296,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Reflective Calibration: Pattern Synthesis
+### Reflective Convergence: Pattern Synthesis
 **Definition**: Act on findings — identify patterns (both what failed and what succeeded), synthesize observations into understanding, and revise mental models, docs, and processes
 
 **Key Components**:
@@ -309,7 +309,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Reflective Calibration: Loop Optimization
+### Reflective Convergence: Learning Calibration
 **Definition**: Look back at how you learn — improve the feedback loops themselves, meta-learning
 
 **Key Components**:
@@ -392,12 +392,12 @@ This fractal structure means each pillar contains a miniature version of the ful
 ### Actuation → Retrospective
 - **Challenge Matching** outcomes feed **State Estimation** (was difficulty right-sized?)
 - **Directed Intentionality** clarity enables **Pattern Synthesis** (goals make patterns visible)
-- **Adaptive Control** data informs **Loop Optimization** (real-time feedback becomes learning)
+- **Adaptive Control** data informs **Learning Calibration** (real-time feedback becomes learning)
 
 ### Retrospective → Prospective (Loop Closure)
 - **State Estimation** enriches **Proactive Curiosity** (experiential data added to knowledge base)
 - **Pattern Synthesis** improves **Cohesive Narrative** (patterns reveal system structure)
-- **Loop Optimization** maintains **Shared Understanding** (learnings become cognitive artifacts)
+- **Learning Calibration** maintains **Shared Understanding** (learnings become cognitive artifacts)
 
 ### Objective Function Integration
 
@@ -446,10 +446,10 @@ This fractal structure means each pillar contains a miniature version of the ful
 - **Directed Intentionality**: Goal clarity %, scope stability, focus time blocks
 - **Adaptive Control**: Feedback loop speed, deployment frequency, MTTR
 
-### Reflective Calibration Metrics (Retrospective)
+### Reflective Convergence Metrics (Retrospective)
 - **State Estimation**: % of incidents with root cause analysis, time to postmortem, prediction accuracy
 - **Pattern Synthesis**: % repeat incidents, documented patterns, proactive prevention rate
-- **Loop Optimization**: Action item completion %, documentation update frequency, learning velocity
+- **Learning Calibration**: Action item completion %, documentation update frequency, learning velocity
 
 ### Objective Function Metrics
 - **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
@@ -471,7 +471,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Four Pillar Specification Files**:
 1. `pillars/contextual_awareness.md` (Prospective/KNOWING)
 2. `pillars/clear_strategy.md` (Actuation/ACTING)
-3. `pillars/reflective_calibration.md` (Retrospective/LEARNING)
+3. `pillars/reflective_convergence.md` (Retrospective/LEARNING)
 4. `pillars/objective_function.md` (Objective Function/WHY) — positioned above cycle, works for any agent (human or AI)
 
 ---
@@ -503,4 +503,4 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Last Updated**: 2026-04-07
 **Framework Version**: 4.0 (Objective Function + Prospective-Actuation-Retrospective Cycle)
 **Status**: Production-ready
-**Major Changes from 3.0**: Intrinsic Motivation elevated and generalized to Objective Function (agent-agnostic - works for humans and AI), added Reflective Calibration (Retrospective/LEARNING), integrated robotics foundations, added reinforcing loop concept
+**Major Changes from 3.0**: Intrinsic Motivation elevated and generalized to Objective Function (agent-agnostic - works for humans and AI), added Reflective Convergence (Retrospective/LEARNING), integrated robotics foundations, added reinforcing loop concept

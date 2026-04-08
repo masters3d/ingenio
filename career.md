@@ -42,7 +42,7 @@ Objective Function (WHY)
 2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy, enables action-awareness merger)
 3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment, real-time data)
 
-### Reflective Calibration (Retrospective - LEARNING)
+### Reflective Convergence (Retrospective - LEARNING)
 **Cycle Phase**: Retrospective - learn from what happened
 **Philosophy**: "Every result is data" - the system that examines itself improves itself
 **Robotics**: State Estimation (Kalman filter, observers, feedback control)
@@ -50,7 +50,7 @@ Objective Function (WHY)
 **Three Sub-Pillars:**
 1. **State Estimation** - Look forward at data, measure actual vs expected (gather signals before interpreting)
 2. **Pattern Synthesis** - Act on findings, revise mental models (fix docs and processes)
-3. **Loop Optimization** - Look back at how you learn (improve feedback loops, meta-learning)
+3. **Learning Calibration** - Look back at how you learn (improve feedback loops, meta-learning)
 
 ### Objective Function (WHY)
 **Position**: Above the operational cycle - defines success criteria for any agent (human or AI)

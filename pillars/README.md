@@ -18,7 +18,7 @@ Objective Function (WHY)
 **Three-Phase Operational Cycle**:
 1. **Contextual Awareness** (Prospective - KNOWING)
 2. **Clear Strategy** (Actuation - ACTING)
-3. **Reflective Calibration** (Retrospective - LEARNING)
+3. **Reflective Convergence** (Retrospective - LEARNING)
 
 **Above the Cycle**:
 - **Objective Function** (WHY)
@@ -32,7 +32,7 @@ pillars/
 ├── README.md                       # This file
 ├── contextual_awareness.md         # Prospective/KNOWING specification
 ├── clear_strategy.md               # Actuation/ACTING specification
-├── reflective_calibration.md       # Retrospective/LEARNING specification
+├── reflective_convergence.md       # Retrospective/LEARNING specification
 ├── objective_function.md           # Objective Function/WHY specification
 └── FRAMEWORK_STRUCTURE.md          # Complete Framework 4.0 structure
 ```
@@ -77,7 +77,7 @@ pillars/
 
 ---
 
-### Reflective Calibration (Retrospective - LEARNING)
+### Reflective Convergence (Retrospective - LEARNING)
 
 **Cycle Phase**: Retrospective (learn from what happened)
 **Framework**: State Estimation, Control Theory, Double-Loop Learning
@@ -85,7 +85,7 @@ pillars/
 **Three Sub-Pillars**:
 1. **State Estimation** - Look forward at data, measure actual vs expected (gather signals before interpreting)
 2. **Pattern Synthesis** - Act on findings, revise mental models (fix docs and processes)
-3. **Loop Optimization** - Look back at how you learn (improve feedback loops, meta-learning)
+3. **Learning Calibration** - Look back at how you learn (improve feedback loops, meta-learning)
 
 **Key Behaviors**: Blameless postmortems, pattern extraction, model updating, learning feedback
 
@@ -212,12 +212,12 @@ When creating new content for ingenio:
 **Actuation → Retrospective**:
 - Challenge Matching → State Estimation: Was challenge right-sized?
 - Directed Intentionality → Pattern Synthesis: Clear goals make patterns visible
-- Adaptive Control → Loop Optimization: Real-time feedback becomes learning
+- Adaptive Control → Learning Calibration: Real-time feedback becomes learning
 
 **Retrospective → Prospective (Loop Closure)**:
 - State Estimation → Proactive Curiosity: Experiential data enriches knowledge
 - Pattern Synthesis → Cohesive Narrative: Patterns reveal system structure
-- Loop Optimization → Shared Understanding: Learnings become cognitive artifacts
+- Learning Calibration → Shared Understanding: Learnings become cognitive artifacts
 
 ### Objective Function Integration
 
@@ -237,7 +237,7 @@ When creating new content for ingenio:
 - Core mechanism within Actuation's Adaptive Control
 - Enables Mastery development in Objective Function
 - Requires Shared Understanding from Prospective
-- Closed by Retrospective's Loop Optimization
+- Closed by Retrospective's Learning Calibration
 
 **Behavior Alignment**:
 - Implements Actuation through guiding policies
@@ -260,10 +260,10 @@ Each component specification includes detailed measurement sections. Key indicat
 - **Directed Intentionality**: Goal clarity %, scope stability, focus time blocks
 - **Adaptive Control**: Feedback loop speed, deployment frequency, MTTR
 
-### Retrospective (Reflective Calibration) Metrics
+### Retrospective (Reflective Convergence) Metrics
 - **State Estimation**: % incidents with root cause analysis, time to postmortem, prediction accuracy
 - **Pattern Synthesis**: % repeat incidents, documented patterns, proactive prevention rate
-- **Loop Optimization**: Action item completion %, documentation update frequency, learning velocity
+- **Learning Calibration**: Action item completion %, documentation update frequency, learning velocity
 
 ### Objective Function Metrics
 - **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
@@ -316,7 +316,7 @@ Each component specification includes detailed anti-patterns. Common cross-compo
 **Framework 4.0** (Objective Function + Three-Phase Cycle):
 - **Intrinsic Motivation** elevated and generalized to **Objective Function** (sits above cycle, works for any agent - human or AI)
 - **Three-phase operational cycle**: Prospective → Actuation → Retrospective
-- **New component**: Reflective Calibration (LEARNING/Retrospective phase)
+- **New component**: Reflective Convergence (LEARNING/Retrospective phase)
 
 ### Theoretical Foundations Added
 
@@ -381,7 +381,7 @@ This documentation represents personal opinions made public - consider it as eng
 For deeper exploration:
 - **Contextual Awareness (Prospective)**: See presentation at `/presentation/eng_contextual_awareness.md`
 - **Clear Strategy (Actuation)**: See presentation at `/presentation/eng_clear_strategy.md`
-- **Reflective Calibration (Retrospective)**: See presentation at `/presentation/eng_reflective_calibration.md`
+- **Reflective Convergence (Retrospective)**: See presentation at `/presentation/eng_reflective_convergence.md`
 - **Objective Function**: See presentation at `/presentation/eng_objective_function.md`
 - **Complete Framework Structure**: See `/pillars/FRAMEWORK_STRUCTURE.md`
 - **Career Application**: See `/career.md` for IC-level-specific guidance

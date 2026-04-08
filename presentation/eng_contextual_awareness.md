@@ -276,7 +276,7 @@ https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
 - Cognitive artifacts enable informed decision-making
 
 **→ From Retrospective (LEARNING)**:
-- Reflective Calibration enriches our knowledge
+- Reflective Convergence enriches our knowledge
 - Pattern recognition improves mental models
 - Model updates become shared understanding
 

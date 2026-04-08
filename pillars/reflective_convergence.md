@@ -1,6 +1,6 @@
-# Reflective Calibration
+# Reflective Convergence
 
-**Etymology**: From Latin _reflectere_ — _re-_ (back) + _flectere_ (to bend) — "to bend back upon itself." Combined with _calibration_ from Arabic _qālib_ (mold/form) — the act of bending perception back to reality and adjusting the mold of understanding.
+**Etymology**: From Latin _reflectere_ — _re-_ (back) + _flectere_ (to bend) — "to bend back upon itself." Combined with _convergere_ — _con-_ (together) + _vergere_ (to incline) — "to incline together toward a point." The act of bending perception back on itself and, through iteration, converging on truth.
 
 **Cycle Name**: Retrospective
 
@@ -8,7 +8,7 @@
 
 ## Overview
 
-Reflective Calibration is the learning pillar of engineering excellence. It closes the operational cycle by examining outcomes, identifying patterns, and updating mental models based on evidence. Without Reflective Calibration, teams repeat mistakes, miss opportunities for improvement, and fail to learn from experience.
+Reflective Convergence is the learning pillar of engineering excellence. It closes the operational cycle by examining outcomes, identifying patterns, and updating mental models based on evidence. Without Reflective Convergence, teams repeat mistakes, miss opportunities for improvement, and fail to learn from experience.
 
 ## Philosophy
 
@@ -16,7 +16,7 @@ Reflective Calibration is the learning pillar of engineering excellence. It clos
 >
 > — John Dewey
 
-The value of action lies not just in the outcome, but in what we learn from it. Reflective Calibration transforms raw experience into refined understanding through systematic retrospection. It provides:
+The value of action lies not just in the outcome, but in what we learn from it. Reflective Convergence transforms raw experience into refined understanding through systematic retrospection. It provides:
 - **Learning**: Convert results into knowledge
 - **Adaptation**: Update strategies based on evidence
 - **Improvement**: Compound gains through iteration
@@ -24,21 +24,21 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 ---
 
-## The Three Sub-Pillars of Reflective Calibration
+## The Three Sub-Pillars of Reflective Convergence
 
-**Framework Foundation**: Reflective Calibration answers "HOW to LEARN from what happened." It is based on robotics state estimation, control theory feedback loops, and organizational learning systems.
+**Framework Foundation**: Reflective Convergence answers "HOW to LEARN from what happened." It is based on robotics state estimation, control theory feedback loops, and organizational learning systems.
 
 **Core Insight**: Learning is about REFLECTING - systematically examining outcomes, recognizing patterns, and updating models to improve future performance. This closes the Prospective → Actuation → Retrospective cycle.
 
-**Fractal Pattern**: The three sub-pillars of Reflective Calibration internally mirror the Prospective → Actuation → Retrospective cycle:
+**Fractal Pattern**: The three sub-pillars of Reflective Convergence internally mirror the Prospective → Actuation → Retrospective cycle:
 1. **State Estimation** (Prospective of learning) - Look forward at the data before interpreting
 2. **Pattern Synthesis** (Actuation of learning) - Act on findings to revise understanding
-3. **Loop Optimization** (Retrospective of learning) - Look back at how you learn to improve the process itself
+3. **Learning Calibration** (Retrospective of learning) - Look back at how you learn to calibrate understanding against reality
 
 **Critical Differentiation**:
 - **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
-- **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
+- **Reflective Convergence** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
 - **Objective Function** = WHY we act (Defines success criteria for any agent - human or AI)
 
 **Robotics Foundation**: State Estimation (Kalman filtering, observers, feedback control theory)
@@ -225,11 +225,12 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 ---
 
-### 3. Loop Optimization
+### 3. Learning Calibration
 
-**Definition**: Look back at how you learn — improve the feedback loops themselves, meta-learning. This is the Retrospective phase of learning.
+**Definition**: Look back at how you learn — calibrate what you learned against reality. Adjust your understanding, your processes, your models against what's actually true. This is the Retrospective phase of learning.
 
 **Theoretical Roots**:
+- **Calibration Theory**: Adjust instrument readings to match known standards, correct systematic bias
 - **Bayesian Updating**: Update beliefs based on new evidence, weighted by prior confidence
 - **Scientific Method**: Theory revision based on experimental results
 - **Adaptive Control** (Control Theory): Update control parameters based on system performance
@@ -298,10 +299,10 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 #### Applied Examples
 
-**Bad Loop Optimization** (No Change)
+**Bad Learning Calibration** (No Change)
 > "We had an incident, wrote a postmortem, and moved on. Same incident happened 2 months later."
 
-**Good Loop Optimization** (Closed Loop)
+**Good Learning Calibration** (Closed Loop)
 > "Incident: Deploy caused outage. Root cause: Health check didn't catch issue. Model update: Our staging environment is not production-like enough. Strategy revision: (1) Added health check to CI (immediate), (2) Scheduled project to bring staging to prod parity (Q2), (3) Updated deploy checklist to verify health checks pass in staging (process). Documented in ADR-042 and updated runbook. Tracked: Zero outages from this failure mode in 6 months."
 
 **Bad Strategy Revision** (Vague)
@@ -323,17 +324,17 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 ### With Clear Strategy (Actuation)
 - **State Estimation** feeds **Adaptive Control** (immediate feedback for real-time adjustment)
 - **Pattern Synthesis** informs **Challenge Matching** (identify if challenges are too hard/easy)
-- **Loop Optimization** refines **Directed Intentionality** (adjust goals based on what we learned)
+- **Learning Calibration** refines **Directed Intentionality** (adjust goals based on what we learned)
 
 ### With Contextual Awareness (Prospective)
 - **State Estimation** enriches **Proactive Curiosity** (adds experiential data to crawled information)
 - **Pattern Synthesis** improves **Cohesive Narrative** (patterns reveal system structure and failure modes)
-- **Loop Optimization** maintains **Shared Understanding** (documented learnings become cognitive artifacts)
+- **Learning Calibration** maintains **Shared Understanding** (documented learnings become cognitive artifacts)
 
 ### With Objective Function
 - **State Estimation** demonstrates progress toward **Reward Signal** (see improvement over time → Mastery/Reward Function)
 - **Pattern Synthesis** enhances **Degrees of Freedom** (understanding patterns enables decisions → Autonomy/Action Space)
-- **Loop Optimization** clarifies **Alignment Function** (connect learnings to meaningful outcomes → Purpose/Value Alignment)
+- **Learning Calibration** clarifies **Alignment Function** (connect learnings to meaningful outcomes → Purpose/Value Alignment)
 
 ---
 
@@ -343,7 +344,7 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 1. **Contextual Awareness (Prospective/KNOWING)**: Gather information, build mental models, understand environment
 2. **Clear Strategy (Actuation/ACTING)**: Set clear goals, align difficulty, execute with feedback
-3. **Reflective Calibration (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
+3. **Reflective Convergence (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
 4. **Loop back to Prospective**: Enhanced understanding informs next cycle
 
 All guided by **Objective Function (WHY)**: The reward function that defines success for any agent.
@@ -379,7 +380,7 @@ All guided by **Objective Function (WHY)**: The reward function that defines suc
 
 ---
 
-## Measuring Reflective Calibration
+## Measuring Reflective Convergence
 
 ### State Estimation Metrics
 - **Postmortem Quality**: % of incidents with root cause analysis
@@ -393,7 +394,7 @@ All guided by **Objective Function (WHY)**: The reward function that defines suc
 - **Cross-Team Pattern Sharing**: How often patterns shared across teams?
 - **Proactive Prevention**: Issues caught before production based on patterns
 
-### Loop Optimization Metrics
+### Learning Calibration Metrics
 - **Action Item Completion**: % of retrospective actions completed
 - **Documentation Updates**: Frequency of ADR, runbook, wiki updates
 - **Learning Velocity**: Rate of process/practice improvements over time

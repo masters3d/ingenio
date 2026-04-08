@@ -3,7 +3,7 @@ marp: true
 
 ---
 
-# Reflective Calibration
+# Reflective Convergence
 
 Chéyo Jiménez, MSE
 _Apr, 2026_
@@ -20,15 +20,17 @@ _Apr, 2026_
 
 ---
 
-# Calibration
+# Convergence
 
-- From Arabic _qālib_ (mold/form)
-- The act of adjusting to reality
-- Correcting the measurement against truth
+- From Latin _convergere_
+  - _con-_ (together) + _vergere_ (to incline)
+  - "To incline together toward a point"
+- Iterative improvement toward truth
+- Each cycle gets closer to accurate understanding
 
 ---
 
-# Reflective Calibration
+# Reflective Convergence
 
 **The LEARNING Pillar**
 
@@ -42,7 +44,7 @@ _Apr, 2026_
 
 1. Contextual Awareness (Prospective/KNOWING)
 2. Clear Strategy (Actuation/ACTING)
-3. **Reflective Calibration (Retrospective/LEARNING)** ← We are here
+3. **Reflective Convergence (Retrospective/LEARNING)** ← We are here
 
 Closes the loop: Feeds learning back to Prospective phase
 
@@ -63,14 +65,14 @@ Closes the loop: Feeds learning back to Prospective phase
 
 **Boyd's OODA Loop**: Observe → Orient → Decide → Act
 
-Reflective Calibration is the **feedback arc**:
+Reflective Convergence is the **feedback arc**:
 - From Act back to Observe
 - Closes the continuous improvement loop
 - "The team that learns fastest wins"
 
 ---
 
-# Three Sub-Pillars of Reflective Calibration
+# Three Sub-Pillars of Reflective Convergence
 
 **Framework**: State Estimation + Double-Loop Learning + Statistical Process Control
 
@@ -78,7 +80,7 @@ Reflective Calibration is the **feedback arc**:
 
 1. **State Estimation** (Prospective of learning) - Look forward at data
 2. **Pattern Synthesis** (Actuation of learning) - Act on findings
-3. **Loop Optimization** (Retrospective of learning) - Look back at learning process
+3. **Learning Calibration** (Retrospective of learning) - Calibrate understanding against reality
 
 ---
 
@@ -183,9 +185,9 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 3: Loop Optimization
+# Sub-Pillar 3: Learning Calibration
 
-**Look back at how you learn — improve the feedback loops themselves, meta-learning**
+**Look back at how you learn — calibrate what you learned against reality, adjust understanding**
 
 - Update Mental Models (Map Revision)
   - What did we believe?
@@ -198,7 +200,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 3: Model Update (cont.)
+# Sub-Pillar 3: Learning Calibration (cont.)
 
 - Adjust Processes (System Improvement)
   - Where did process fail?
@@ -212,7 +214,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Bad Loop Optimization
+# Example: Bad Learning Calibration
 
 > "We had an incident, wrote a postmortem, and moved on. Same incident happened 2 months later."
 
@@ -220,7 +222,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Good Loop Optimization
+# Example: Good Learning Calibration
 
 > "Incident: Deploy caused outage. Root cause: Health check didn't catch issue.
 >
@@ -247,42 +249,42 @@ Reflective Calibration is the **feedback arc**:
 2. **Clear Strategy** (Actuation/ACTING)
    - Set goals, align difficulty, execute with feedback
 
-3. **Reflective Calibration** (Retrospective/LEARNING)
+3. **Reflective Convergence** (Retrospective/LEARNING)
    - Analyze outcomes, recognize patterns, update models
 
 4. **Loop back to Prospective** (Improved understanding for next cycle)
 
 ---
 
-# Integration: Reflective Calibration ↔ Clear Strategy
+# Integration: Reflective Convergence ↔ Clear Strategy
 
 - **State Estimation** feeds **Adaptive Control**
   - Immediate feedback for real-time adjustment
 - **Pattern Synthesis** informs **Challenge Matching**
   - Identify if challenges are too hard/easy
-- **Loop Optimization** refines **Directed Intentionality**
+- **Learning Calibration** refines **Directed Intentionality**
   - Adjust goals based on what we learned
 
 ---
 
-# Integration: Reflective Calibration ↔ Contextual Awareness
+# Integration: Reflective Convergence ↔ Contextual Awareness
 
 - **State Estimation** enriches **Proactive Curiosity**
   - Adds experiential data to crawled information
 - **Pattern Synthesis** improves **Cohesive Narrative**
   - Patterns reveal system structure and failure modes
-- **Loop Optimization** maintains **Shared Understanding**
+- **Learning Calibration** maintains **Shared Understanding**
   - Documented learnings become cognitive artifacts
 
 ---
 
-# Integration: Reflective Calibration ↔ Intrinsic Motivation
+# Integration: Reflective Convergence ↔ Objective Function
 
 - **State Estimation** demonstrates **Mastery** progress
   - See improvement over time, validate growth
 - **Pattern Synthesis** enhances **Autonomy**
   - Understanding patterns enables independent decisions
-- **Loop Optimization** clarifies **Purpose**
+- **Learning Calibration** clarifies **Purpose**
   - Connect learnings to meaningful outcomes
 
 ---
@@ -315,7 +317,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Measuring Reflective Calibration
+# Measuring Reflective Convergence
 
 **State Estimation Metrics**
 - % of incidents with root cause analysis
@@ -327,7 +329,7 @@ Reflective Calibration is the **feedback arc**:
 - Number of documented archetypes/anti-patterns
 - Issues caught before production based on patterns
 
-**Loop Optimization Metrics**
+**Learning Calibration Metrics**
 - % of retrospective actions completed
 - Frequency of ADR, runbook, wiki updates
 - Knowledge retention (new members benefit from docs)
@@ -360,9 +362,9 @@ Reflective Calibration is the **feedback arc**:
 
 # Summary
 
-**Reflective Calibration: The LEARNING Pillar**
+**Reflective Convergence: The LEARNING Pillar**
 
-**Etymology**: _Reflectere_ (bend back) + _Qālib_ (mold/form)
+**Etymology**: _Reflectere_ (bend back) + _Convergere_ (incline together toward a point)
 
 **Cycle Role**: Retrospective — closes the improvement loop
 
@@ -371,6 +373,6 @@ Reflective Calibration is the **feedback arc**:
 **Three Sub-Pillars**:
 1. State Estimation (Prospective of learning) - Look forward at data
 2. Pattern Synthesis (Actuation of learning) - Act on findings
-3. Loop Optimization (Retrospective of learning) - Look back at learning process
+3. Learning Calibration (Retrospective of learning) - Calibrate understanding against reality
 
 **Philosophy**: "Every result is data — the system that examines itself improves itself"

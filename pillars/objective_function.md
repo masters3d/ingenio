@@ -544,10 +544,10 @@ The Objective Function sits above and guides all three cycle phases:
 - **Degrees of Freedom** → **Directed Intentionality**: What goals can I achieve with my available actions?
 - **Alignment Function** → **Adaptive Control**: Am I getting feedback on the right metrics?
 
-**Drives Retrospective (Reflective Calibration)**:
+**Drives Retrospective (Reflective Convergence)**:
 - **Reward Signal** → **State Estimation**: Did I actually get better? How do I measure improvement?
 - **Degrees of Freedom** → **Pattern Synthesis**: What actions worked? What didn't?
-- **Alignment Function** → **Loop Optimization**: Am I learning the right lessons? Should I change my goals?
+- **Alignment Function** → **Learning Calibration**: Am I learning the right lessons? Should I change my goals?
 
 ### Bottom-Up: Cycle Reinforces the Objective Function
 
@@ -717,7 +717,7 @@ How to define what agents can do:
 - Value alignment checks if optimization targets are correct
 - Both ask: "Am I getting feedback on what matters?"
 
-### With Reflective Calibration (Retrospective)
+### With Reflective Convergence (Retrospective)
 
 **Reward Signal ↔ State Estimation**
 - Mastery progress measured by comparing actual vs expected growth
@@ -729,7 +729,7 @@ How to define what agents can do:
 - Action space adjusted based on which actions were effective
 - Both ask: "What should I change about what I control?"
 
-**Alignment Function ↔ Loop Optimization**
+**Alignment Function ↔ Learning Calibration**
 - Purpose clarified by reflecting on whether work was meaningful
 - Value alignment improved by meta-learning about goal quality
 - Both ask: "Should I change what I'm optimizing for?"

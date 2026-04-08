@@ -29,7 +29,7 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 **Critical Differentiation**:
 - **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
-- **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
+- **Reflective Convergence** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
 - **Objective Function** = WHY we act (Defines success criteria for any agent - human or AI)
 
 **You can only act effectively on what you accurately understand.**
@@ -330,7 +330,7 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 - **Cohesive Narrative** accelerates **Reward Signal** (understand systems deeply → Mastery/Reward Function)
 - **Shared Understanding** clarifies **Alignment Function** (see why work matters → Purpose/Value Alignment)
 
-### With Reflective Calibration (Retrospective)
+### With Reflective Convergence (Retrospective)
 - **Proactive Curiosity** enriched by **Outcome Analysis** (experiential data added to knowledge base)
 - **Cohesive Narrative** improved by **Pattern Recognition** (patterns reveal system structure)
 - **Shared Understanding** maintained by **Model Update** (learnings become cognitive artifacts)

@@ -205,7 +205,7 @@ Reference:
 - Mental models inform goal-setting and difficulty calibration
 
 **→ To Retrospective (LEARNING)**:
-- Reflective Calibration examines outcomes
+- Reflective Convergence examines outcomes
 - Pattern recognition identifies what worked
 - Model updates feed back to improve future actions
 

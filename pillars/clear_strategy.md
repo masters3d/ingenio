@@ -31,7 +31,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 **Critical Differentiation**:
 - **Contextual Awareness** (Prospective) = KNOWING the environment (Observe + Orient in OODA loop)
 - **Clear Strategy** (Actuation) = ACTING in the environment (Decide + Act in OODA loop)
-- **Reflective Calibration** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
+- **Reflective Convergence** (Retrospective) = LEARNING from the environment (Loop back to Observe in OODA)
 - **Objective Function** = WHY we act (Defines success criteria for any agent - human or AI)
 
 **Robotics Foundation**: Actuation (kinematics, path planning, PID control) - the science of converting goals into physical actions.
@@ -279,10 +279,10 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 - **Directed Intentionality** requires **Cohesive Narrative** (shared understanding of goals)
 - **Adaptive Control** depends on **Shared Understanding** (observable systems, documented feedback loops)
 
-### With Reflective Calibration (Retrospective)
+### With Reflective Convergence (Retrospective)
 - **Challenge Matching** outcomes feed **State Estimation** (was difficulty right-sized?)
 - **Directed Intentionality** clarity enables **Pattern Synthesis** (clear goals make patterns visible)
-- **Adaptive Control** real-time feedback informs **Loop Optimization** (immediate data becomes learning)
+- **Adaptive Control** real-time feedback informs **Learning Calibration** (immediate data becomes learning)
 
 ---
 
