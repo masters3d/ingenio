@@ -1,26 +1,32 @@
 # Objective Function
 
 **Etymology**:
-- **Objective**: From Medieval Latin _objectivus_ - "pertaining to an object as it is" from _objectum_ (thing presented to the mind)
-- **Function**: From Latin _functio_ - "a performance, execution" from _fungi_ (to perform, execute)
+- **Objective**: From Medieval Latin _objectivus_ — "pertaining to an object as it is" from _objectum_ (thing presented to the mind)
+- **Function**: From Latin _functio_ — "a performance, execution" from _fungi_ (to perform, execute)
 
-**Focus**: The mathematical formalization of "what does better look like?" for any agent (human or AI)
+**Focus**: The interface between human intent and agent capability — what success means, who defines it, and how it stays aligned.
+
+---
 
 ## Overview
 
-The Objective Function is the WHY pillar - it sits above the operational cycle and defines success criteria for any agent system. In robotics and reinforcement learning, the objective function (also called reward function or cost function) is what the system optimizes for. In human psychology, it manifests as intrinsic motivation - the internal drives for growth, autonomy, and purpose.
+The Objective Function is the WHY pillar. It sits above the operational cycle and defines success criteria for any agent system. In reinforcement learning, it is the reward function the system optimizes. In human psychology, it manifests as intrinsic motivation — the internal drives documented in [Intrinsic Motivation](./intrinsic_motivation.md). In a human-agent system, it is the **bridge** between the two: the shared definition of "better" that keeps humans and agents pulling in the same direction.
 
-This pillar answers: "What am I trying to optimize? What does *better* look like for me?"
+This document focuses on the **interaction layer** — how humans and agents jointly define, act within, and continuously realign their shared objective function. For the deep treatment of the human side (Mastery, Autonomy, Purpose), see [Intrinsic Motivation](./intrinsic_motivation.md).
+
+**The central question for human-agent systems**: Not just "What does better look like?" but "What does better look like *for us, together* — and how do we keep it that way?"
+
+---
 
 ## Philosophy
 
-> "I tell my engineers that the biggest problems we have to solve are not technical problems, but people problems. Modernization projects take months, if not years of work. Keeping a team of engineers focused, inspired, and motivated from beginning to end is difficult."
+> "I tell my engineers that the biggest problems we have to solve are not technical problems, but people problems."
 >
 > — Marianne Bellotti, _Kill It with Fire_
 
-Whether human or artificial, agents need a well-defined objective function to sustain performance over time. Humans call this "intrinsic motivation" - the internal compass that guides action. AI systems call this the "reward function" - the signal that defines what success means.
+When humans and agents share an objective function, the hardest problems are not the technical ones — specifying the reward signal, scoping the action space. The hardest problems are the collaboration ones: translating human intent into agent objective without loss of meaning, expanding agent autonomy without losing human direction, and staying aligned as both sides evolve.
 
-A poorly specified objective function leads to goal misalignment, value drift, and ultimately failure - whether the agent is a team of engineers or a language model.
+A poorly specified objective function leads to goal misalignment whether the agent is a team of engineers or a language model. But in a human-agent system, misalignment can compound — the human stops trusting the agent, or the agent optimizes for the wrong thing with great efficiency.
 
 ---
 
@@ -39,490 +45,146 @@ A poorly specified objective function leads to goal misalignment, value drift, a
          Feeds learning back
 ```
 
-**Role**: The Objective Function is NOT part of the operational cycle - it defines what the cycle optimizes for. Every decision in Prospective, Actuation, and Retrospective is evaluated against this function.
+**Role**: The Objective Function is NOT part of the operational cycle — it defines what the cycle optimizes for. Every decision in Prospective, Actuation, and Retrospective is evaluated against this function.
 
 **Robotics Foundation**: In control theory, the objective/cost/reward function defines what to minimize or maximize. The controller (operational cycle) executes actions to optimize this function.
 
-**OODA Mapping**: The criteria by which Observe, Orient, Decide, Act are judged successful.
+**Human-Agent Extension**: In collaborative systems, the objective function has two instantiations that must stay synchronized:
+- **Human instantiation**: Mastery, Autonomy, Purpose → see [Intrinsic Motivation](./intrinsic_motivation.md)
+- **Agent instantiation**: Reward Signal, Action Space, Value Alignment → defined below
 
 ---
 
-## The Three Sub-Pillars of the Objective Function
+## The Three Sub-Pillars
 
 **Fractal Pattern**: Following the Prospective → Actuation → Retrospective pattern:
 
-1. **Search** (Prospective) - "What does *better* look like?"
-2. **Drive** (Actuation) - "What can I control?"
-3. **Renew** (Retrospective) - "Am I optimizing for the right thing?"
-
-Each sub-pillar has both **general** and **instantiated** forms:
-- **Human Instantiation**: Intrinsic Motivation (Mastery, Autonomy, Purpose)
-- **Agent Instantiation**: Reinforcement Learning (Reward Signal, Action Space, Value Alignment)
+1. **Search** (Prospective) — "What does better look like, together?"
+2. **Drive** (Actuation) — "What can we each control, and how do we share it?"
+3. **Renew** (Retrospective) — "Are we still aligned with each other?"
 
 ---
 
-### 1. Search (Prospective)
+### 1. Search (Prospective) — "What does better look like, together?"
 
-**Cycle Phase**: Prospective - understanding what success looks like before acting
+**Guiding Question**: "What does *better* look like — and who decides?"
 
-**General Definition**: The signal that defines improvement - how the agent knows when it's getting better.
+#### The Interaction
 
-**Guiding Question**: "What does *better* look like?"
+Human Mastery goals and agent reward signals are not independent. They shape each other.
 
-#### Human Instantiation: Mastery
-
-**Definition**: The urge to get better at things that matter through deliberate practice and continuous learning.
-
-Mastery is the human experience of improvement - the feeling of growing skills, deepening expertise, and becoming more effective. It's the difference between doing the same year of work 10 times versus 10 years of progressive growth.
-
-**Components**:
-
-**Skill Development**
-- **Deliberate Practice**: Focused work on areas just beyond current capability
-- **Feedback Integration**: Learning from code reviews, production incidents, mentorship
-- **Depth Building**: Deep expertise in core technologies
-- **Breadth Expansion**: T-shaped growth into adjacent domains
-
-**Learning Mechanisms**
-- **Learning by Doing**: Hands-on implementation beats passive reading
-- **Learning by Teaching**: Mentoring others crystallizes knowledge
-- **Learning by Failing**: Post-mortems and retrospectives as growth tools
-- **Learning by Reading**: Code, papers, documentation, books
-
-**Expertise Levels**
-- **Novice**: Follows rules, needs explicit instruction
-- **Advanced Beginner**: Recognizes patterns across situations
-- **Competent**: Can prioritize, plan, and execute independently
-- **Proficient**: Sees the big picture, adapts approach to context
-- **Expert**: Intuitive understanding, operates from deep experience
-
-**Mastery Domains**
-- **Technical Mastery**: Languages, frameworks, systems, algorithms
-- **Domain Mastery**: Business context, user needs, industry knowledge
-- **Process Mastery**: Development workflows, debugging, optimization
-- **People Mastery**: Communication, mentoring, collaboration
-
-**Engineering Behaviors**:
-
-**Level 0-1 (Apprentice/Component Creator)**
-- Actively seeks code review feedback and applies learnings
-- Asks "why" questions to understand deeper principles
-- Maintains personal notes on lessons learned
-- Completes onboarding tutorials and documentation
-
-**Level 2-3 (Designer/System Guide)**
-- Independently researches solutions to novel problems
-- Shares knowledge through documentation and presentations
-- Mentors junior engineers in their growth areas
-- Expands from implementation to design skills
-
-**Level 4-5 (System Maintainer/Multi-System Designer)**
-- Develops deep expertise in critical system components
-- Stays current with industry trends and evolving practices
-- Contributes to technical communities (blog posts, talks, OSS)
-- Builds mastery in cross-system integration patterns
-
-**Level 6-7+ (Coordinator/Architect)**
-- Recognized expert in specific technical domains
-- Shapes engineering culture through technical leadership
-- Develops mastery in organizational and strategic thinking
-- Mentors other senior engineers toward expertise
-
-**Applied Examples**:
-
-**Mastery-Driven Learning**
-> "I'm implementing a caching layer. Let me read the Redis documentation, look at how other teams solved this, implement a simple version, measure performance, then iterate based on what I learned."
-
-**vs Surface-Level Execution**
-> "Copy-paste the caching code from Stack Overflow. Ship it. Move on."
-
-**Deliberate Practice**
-> "I'm weak at distributed systems design. I'll volunteer for the microservices migration project, read 'Designing Data-Intensive Applications', and pair with Sarah who has done this before."
-
-**vs Comfort Zone Stagnation**
-> "I'll just keep doing CRUD APIs. I've done 50 of them, I can do 50 more."
+- **Human → Agent**: The human's learning goals (Mastery) inform what the agent should optimize for. An engineer focused on growing their distributed systems skills uses an agent differently than one focused on delivery speed.
+- **Agent → Human**: The agent can surface what "better" looks like in ways the human can't see alone — identifying skill gaps through patterns in code review, flagging where growth would have the highest leverage.
+- **Together**: The shared definition of improvement must be explicit. When the human's Mastery intent and the agent's reward signal diverge, the agent optimizes efficiently toward the wrong goal.
 
 #### Agent Instantiation: Reward Signal
 
-**Definition**: A scalar or vector signal that quantifies the quality of an action or state - the mathematical definition of "better".
-
-The reward function is how AI systems know they're improving. In supervised learning, it's loss reduction. In reinforcement learning, it's cumulative reward maximization. In language models, it's alignment with human preferences.
+**Definition**: A scalar or vector signal that quantifies the quality of an action or state.
 
 **Components**:
+- **Signal Types**: Scalar rewards, vector rewards (multi-objective), sparse rewards, dense rewards
+- **Reward Sources**: Supervised signal (ground truth), self-supervised (prediction error), reinforcement (environmental feedback), intrinsic curiosity (novelty, information gain)
+- **Reward Shaping**: Immediate feedback, delayed feedback, auxiliary rewards, curriculum learning
+- **Optimization Targets**: Minimize loss, maximize accuracy, optimize efficiency, balance trade-offs
 
-**Reward Signal Types**
-- **Scalar Rewards**: Single number (e.g., accuracy score, loss value)
-- **Vector Rewards**: Multi-objective (e.g., accuracy + efficiency + safety)
-- **Sparse Rewards**: Only at final outcome (e.g., win/lose)
-- **Dense Rewards**: At every step (e.g., incremental progress)
+**Agent Behaviors by Level**:
 
-**Reward Sources**
-- **Supervised Signal**: Ground truth labels, human feedback
-- **Self-Supervised Signal**: Prediction error, reconstruction loss
-- **Reinforcement Signal**: Environmental feedback, task completion
-- **Intrinsic Curiosity**: Novelty, information gain, empowerment
+| Level | Behavior |
+|-------|----------|
+| Basic (Reactive) | Follows simple reward gradients; basic gradient descent |
+| Intermediate (Deliberative) | Plans ahead for long-term reward; exploration vs exploitation |
+| Advanced (Learning) | Meta-learns across tasks; active learning for better signals |
+| Expert (Meta-Learning) | Curiosity-driven exploration; self-generated auxiliary objectives |
 
-**Reward Shaping**
-- **Immediate Feedback**: Real-time signal for rapid learning
-- **Delayed Feedback**: Long-term outcomes (credit assignment problem)
-- **Auxiliary Rewards**: Intermediate milestones toward main goal
-- **Curriculum Learning**: Gradually increasing difficulty
+#### Interaction Patterns
 
-**Optimization Targets**
-- **Minimize Loss**: Error reduction (classification, regression)
-- **Maximize Accuracy**: Correct predictions, successful completions
-- **Optimize Efficiency**: Speed, memory, compute usage
-- **Balance Trade-offs**: Multi-objective optimization
+**Human defines intent, agent operationalizes it**
+> "I want to improve the reliability of our payments service." → Human provides the direction. Agent translates: monitors error rates, identifies flaky dependencies, prioritizes improvements by blast radius. The reward signal (reducing P99 latency + error rate) emerges from the human intent.
 
-**Agent Behaviors**:
-
-**Basic Agent (Reactive)**
-- Follows simple reward gradients
-- Optimizes for immediate feedback
-- Basic gradient descent on loss functions
-- Direct response to reward signals
-
-**Intermediate Agent (Deliberative)**
-- Plans ahead to maximize long-term reward
-- Balances exploration vs exploitation
-- Uses value functions to estimate future rewards
-- Temporal difference learning
-
-**Advanced Agent (Learning)**
-- Learns better reward functions from experience
-- Meta-learning across tasks
-- Reward model uncertainty estimation
-- Active learning to query for better signals
-
-**Expert Agent (Meta-Learning)**
-- Develops intrinsic motivation mechanisms
-- Curiosity-driven exploration
-- Self-generated auxiliary objectives
-- Learns how to learn better
-
-**Applied Examples**:
-
-**Well-Shaped Reward Function**
-> "We're training a code completion model. Reward function: +1 for compilable code, +0.5 for passing tests, +0.3 for readability score, -0.2 for each security vulnerability. Dense feedback at each token."
-
-**vs Poorly Specified Reward**
-> "Just maximize 'code quality' - whatever that means. We'll know it when we see it."
-
-**Curriculum Learning**
-> "Start with simple functions (if/else logic), then progress to data structures, then algorithms, then system design. Gradually increase complexity as agent masters each level."
-
-**vs Reward Hacking**
-> "We optimized for 'lines of code written' and the agent learned to write extremely verbose, repetitive code that technically maximizes the metric but is useless."
+**Agent helps humans discover what to optimize**
+> Agent surfaces: "You've reviewed 40 PRs this quarter. 80% of your comments are about the same three patterns. A focused learning investment here would have high leverage."
 
 ---
 
-### 2. Drive (Actuation)
+### 2. Drive (Actuation) — "What can we each control, and how do we share it?"
 
-**Cycle Phase**: Actuation - what the agent can control during execution
+**Guiding Question**: "What can each of us do — and where does control transfer?"
 
-**General Definition**: The set of possible actions available to the agent - what decisions and interventions are within scope.
+#### The Interaction
 
-**Guiding Question**: "What can I control?"
+Human Autonomy and agent Action Space are complementary degrees of freedom that must be deliberately composed.
 
-#### Human Instantiation: Autonomy
-
-**Definition**: The desire to direct your own work, make meaningful decisions, and own outcomes.
-
-Autonomy is the opposite of micromanagement. It's the trust and freedom to determine how goals get achieved, not just following orders on what to build.
-
-**Components**:
-
-**Decision-Making Authority**
-- **Technical Decisions**: Choice of technologies, architectures, approaches
-- **Process Decisions**: How work gets organized and executed
-- **Priority Decisions**: Sequencing work within constraints
-- **Quality Decisions**: Standards and trade-offs
-
-**Ownership Models**
-- **Code Ownership**: Responsibility for specific services/components
-- **Feature Ownership**: End-to-end accountability for functionality
-- **System Ownership**: Cradle-to-grave lifecycle management
-- **Problem Ownership**: Authority to solve identified issues
-
-**Autonomy Enablers**
-- **Clear Boundaries**: What decisions are yours vs require approval
-- **Sufficient Context**: Information needed to make good decisions
-- **Psychological Safety**: Freedom to make and learn from mistakes
-- **Resource Access**: Tools, time, budget to execute decisions
-
-**Autonomy Constraints**
-- **Alignment**: Decisions must serve team/org goals
-- **Visibility**: Communicate decisions and rationale
-- **Reversibility**: Prefer decisions that can be undone
-- **Consultation**: Seek input on irreversible or high-impact choices
-
-**Engineering Behaviors**:
-
-**Level 0-1 (Apprentice/Component Creator)**
-- Makes implementation decisions within clear design constraints
-- Owns task completion and asks for help when blocked
-- Chooses how to structure code within style guidelines
-- Manages own time and work schedule
-
-**Level 2-3 (Designer/System Guide)**
-- Decides component architecture and technology choices
-- Owns feature delivery from design through deployment
-- Unblocks self by finding alternative approaches
-- Negotiates scope and timeline trade-offs
-
-**Level 4-5 (System Maintainer/Multi-System Designer)**
-- Makes system-level architectural decisions
-- Owns operational reliability and incident response
-- Determines when to refactor vs ship new features
-- Balances technical debt against feature velocity
-
-**Level 6-7+ (Coordinator/Architect)**
-- Sets technical strategy across multiple systems
-- Owns cross-team coordination and dependency management
-- Decides technology adoption for entire organizations
-- Balances innovation against stability at scale
-
-**Applied Examples**:
-
-**Healthy Autonomy**
-> "I'm implementing auth. The design doc says 'secure token-based authentication.' I researched JWT vs session tokens, considered our scale and security requirements, and chose JWT with RS256 signing. Here's my rationale."
-
-**vs Micromanagement**
-> "I'm waiting for my manager to tell me exactly which library to use, line by line what to implement."
-
-**Ownership-Driven Quality**
-> "This is my service. I added monitoring, wrote runbooks, set up alerts, and I'm on-call for it. When it breaks at 2am, I fix it and prevent it from happening again."
-
-**vs Throwing Over the Wall**
-> "I wrote the code. Deployment is ops' problem. If it breaks in production, not my department."
+- **Delegation patterns**: The human decides which decisions to retain, which to hand off, and which require joint action. Clear delegation is the precondition for agent effectiveness.
+- **Trust gradients**: Agent autonomy expands as the human observes reliable behavior in progressively broader contexts. Trust is earned incrementally, not granted all at once.
+- **Permission as formalized trust**: Explicit permission models make the human-agent contract legible — both sides know what the agent can do without asking.
 
 #### Agent Instantiation: Action Space
 
-**Definition**: The set of actions an agent can take - what tools, APIs, operations, and interventions are available.
-
-The action space defines what an agent can DO. A restricted action space limits capability (can't solve problems outside scope). An unbounded action space creates safety risks (agent can do dangerous things).
+**Definition**: The set of actions an agent can take — what tools, APIs, operations, and interventions are available.
 
 **Components**:
+- **Action Types**: Discrete (finite choices), continuous (infinite possibilities), hierarchical (nested action spaces), compositional (combining primitive actions)
+- **Available Tools**: Read operations (file access, DB queries, API calls), write operations (file creation, code generation), execution (run commands, deploy, trigger workflows), communication (create PRs, send messages)
+- **Permission Boundaries**: Scope limits, rate limits, resource limits, safety constraints
+- **Action Constraints**: Require approval for risky actions, prefer reversibility, full observability via logging, sandboxing for isolation
 
-**Action Types**
-- **Discrete Actions**: Finite set of choices (e.g., select tool from menu)
-- **Continuous Actions**: Infinite possibilities (e.g., generate any text)
-- **Hierarchical Actions**: Nested action spaces (e.g., high-level strategies → low-level tactics)
-- **Compositional Actions**: Combine primitive actions into complex behaviors
+**Agent Behaviors by Level**:
 
-**Available Tools**
-- **Read Operations**: File access, database queries, API calls
-- **Write Operations**: File creation, database updates, code generation
-- **Execution Operations**: Run commands, deploy code, trigger workflows
-- **Communication Operations**: Send messages, create PRs, reply to comments
+| Level | Behavior |
+|-------|----------|
+| Basic (Reactive) | Small predefined action set; requires approval for most actions |
+| Intermediate (Deliberative) | Broader tool set; multi-step action sequences; moderate autonomy |
+| Advanced (Learning) | Extensive tool access; compositional planning; adaptive permission requests |
+| Expert (Meta-Learning) | Full tool access with self-imposed safety constraints; creates new tools |
 
-**Permission Boundaries**
-- **Scope Limits**: What files/systems can be accessed
-- **Rate Limits**: How often actions can be taken
-- **Resource Limits**: Compute, memory, API quota constraints
-- **Safety Constraints**: Prohibited actions (e.g., no production deletes)
+#### Interaction Patterns
 
-**Action Constraints**
-- **Require Approval**: Some actions need human confirmation
-- **Reversibility**: Prefer actions that can be undone
-- **Observability**: All actions logged and auditable
-- **Sandboxing**: Isolate risky operations
+**Well-scoped delegation**
+> "This agent can: read any file in the repo, run tests, create PRs, and suggest code changes. It CANNOT: push directly to main, delete files without confirmation, or access production databases. All actions are logged." — The human retains final merge authority while delegating search, draft, and verify.
 
-**Agent Behaviors**:
-
-**Basic Agent (Reactive)**
-- Uses small, predefined action set
-- Follows strict permission boundaries
-- Requires approval for most actions
-- Limited tool access
-
-**Intermediate Agent (Deliberative)**
-- Access to broader tool set
-- Plans multi-step action sequences
-- Some autonomous decision-making
-- Moderate permission scope
-
-**Advanced Agent (Learning)**
-- Extensive tool access
-- Learns which actions work in which contexts
-- Compositional action planning
-- Adaptive permission requests
-
-**Expert Agent (Meta-Learning)**
-- Full tool access with safety constraints
-- Creates new tools as needed
-- Meta-reasoning about action selection
-- Self-imposed safety boundaries
-
-**Applied Examples**:
-
-**Well-Scoped Action Space**
-> "This agent can: read any file in the repo, run tests, create PRs, and suggest code changes. It CANNOT: push directly to main, delete files without confirmation, or access production databases. All actions are logged."
-
-**vs Unbounded/Unsafe**
-> "The agent has full system access and can do anything. We trust it to make good decisions."
-
-**Compositional Actions**
-> "Agent plans: (1) Read file, (2) Identify issue, (3) Search for similar patterns, (4) Generate fix, (5) Run tests, (6) Create PR. Each step builds on previous."
-
-**vs Restricted/Ineffective**
-> "Agent can only read files and output text. Cannot make any changes. Humans must manually implement every suggestion."
+**Trust gradient in practice**
+> Month 1: Agent suggests changes, human implements. Month 3: Agent creates PRs, human reviews and merges. Month 6: Agent merges approved PRs autonomously. Each expansion is earned by demonstrated reliability.
 
 ---
 
-### 3. Renew (Retrospective)
+### 3. Renew (Retrospective) — "Are we still aligned with each other?"
 
-**Cycle Phase**: Retrospective - verifying the objective function itself is correct
+**Guiding Question**: "Are we optimizing for the right thing — and do we still agree on what that is?"
 
-**General Definition**: The meta-level check that asks "Am I optimizing for the RIGHT thing?" - preventing goal misalignment and value drift.
+#### The Interaction
 
-**Guiding Question**: "Am I optimizing for the right thing?"
+Human Purpose and agent Value Alignment are not solved once at setup — they require ongoing mutual calibration.
 
-#### Human Instantiation: Purpose
-
-**Definition**: Connection to meaningful work that serves goals beyond personal gain.
-
-Purpose answers "Why does this matter?" It's the alignment between individual work, team objectives, organizational mission, and personal values. Purpose prevents the optimization of meaningless metrics.
-
-**Components**:
-
-**Meaning Sources**
-- **User Impact**: How does this improve people's lives?
-- **Technical Challenge**: Are we solving hard, interesting problems?
-- **Team Mission**: What is our group trying to achieve?
-- **Organizational Goals**: How do we serve the company vision?
-- **Personal Values**: Does this align with what I care about?
-
-**Purpose Hierarchy**
-- **Task-Level Purpose**: Why am I writing this specific code?
-- **Feature-Level Purpose**: Who benefits from this functionality?
-- **System-Level Purpose**: What business problem does this solve?
-- **Organization-Level Purpose**: What's our company's mission?
-- **Societal-Level Purpose**: How does this make the world better?
-
-**Directive Alignment**
-- **Clarity**: Do I understand the purpose of my work?
-- **Agreement**: Do I believe in this direction?
-- **Contribution**: Can I see how my work serves the purpose?
-- **Communication**: Is purpose regularly reinforced?
-
-**Purpose Erosion**
-- **Pointless Work**: Tasks that serve no clear objective
-- **Misalignment**: Personal values conflict with work direction
-- **Disconnection**: Can't see impact of contributions
-- **Cynicism**: Purpose statements feel like empty corporate speak
-
-**Engineering Behaviors**:
-
-**Level 0-1 (Apprentice/Component Creator)**
-- Asks "why are we building this?" to understand purpose
-- Connects tasks to user stories and customer needs
-- Shares feedback when work feels misaligned
-- Finds meaning in learning and skill development
-
-**Level 2-3 (Designer/System Guide)**
-- Articulates feature purpose to justify design decisions
-- Challenges work that doesn't serve clear objectives
-- Helps team understand how components serve users
-- Finds purpose in enabling teammates' success
-
-**Level 4-5 (System Maintainer/Multi-System Designer)**
-- Aligns system architecture with business strategy
-- Communicates system purpose to engineering organization
-- Prioritizes work based on organizational impact
-- Finds purpose in platform enablement for other teams
-
-**Level 6-7+ (Coordinator/Architect)**
-- Shapes organizational technical vision aligned with mission
-- Ensures all teams understand how work serves company goals
-- Identifies and eliminates purposeless work
-- Finds purpose in multiplying others' effectiveness
-
-**Applied Examples**:
-
-**Purpose-Driven Prioritization**
-> "We have three bugs and two features. The P0 bug blocks customer payments - that's our top priority because revenue enables everything else. The nice-to-have UI polish can wait."
-
-**vs Purpose-Blind Execution**
-> "I'll work on whatever's at the top of the backlog. Not my job to question why."
-
-**Meaningful Mission**
-> "I'm building healthcare software that helps doctors diagnose diseases faster. Last month our system helped identify early-stage cancer in 47 patients. That's why I care about getting this right."
-
-**vs Hollow Purpose**
-> "I'm building 'synergistic cloud solutions to drive stakeholder value' - which translates to another CRUD app I don't understand."
+- **Human purpose guides agent alignment**: When the human's purpose shifts (new team mission, different product direction), the agent's value alignment must follow. The human is the north star.
+- **Agent surfaces misalignment**: The agent can detect when its behavior is drifting from human intent — through anomaly detection, behavioral audits, and explicit uncertainty signals — and escalate before drift compounds.
+- **Feedback loops as communication**: RLHF, constitutional constraints, and behavioral monitoring are not just technical mechanisms; they are the conversation between human and agent about what "good" means.
 
 #### Agent Instantiation: Value Alignment
 
-**Definition**: Mechanisms to ensure the agent's learned objectives match intended human values - preventing reward hacking, goal misalignment, and unintended consequences.
-
-Value alignment is the AI safety problem: how do we ensure AI systems do what we WANT them to do, not just what we TELL them to do? Even well-specified reward functions can be gamed or lead to unexpected behavior.
+**Definition**: Mechanisms to ensure the agent's learned objectives match intended human values — preventing reward hacking, goal misalignment, and unintended consequences.
 
 **Components**:
+- **Alignment Mechanisms**: RLHF (learn preferences from human comparisons), Constitutional AI (hard-coded inviolable principles), Debate/Amplification (multiple agents surface flaws), Interpretability (understand WHY decisions are made)
+- **Goal Specification**: Explicit goals with success criteria, implicit constraints (unwritten expectations), negative examples (what NOT to do), edge case handling
+- **Safety Constraints**: Hard constraints (inviolable), soft constraints (preferences), uncertainty handling (escalate when unsure), human-in-the-loop for risky decisions
+- **Alignment Verification**: Test batteries, red teaming, behavioral audits, continuous oversight
 
-**Alignment Mechanisms**
-- **RLHF** (Reinforcement Learning from Human Feedback): Learn preferences from human comparisons
-- **Constitutional AI**: Hard-coded principles and constraints the agent must follow
-- **Debate/Amplification**: Multiple agents argue to reveal flaws in reasoning
-- **Interpretability**: Understand WHY the agent makes decisions
+**Agent Behaviors by Level**:
 
-**Goal Specification**
-- **Explicit Goals**: Clearly defined objectives with success criteria
-- **Implicit Constraints**: Unwritten expectations (e.g., "don't destroy things")
-- **Negative Examples**: What NOT to do (safety violations)
-- **Edge Case Handling**: Behavior at boundaries and unusual situations
+| Level | Behavior |
+|-------|----------|
+| Basic (Reactive) | Follows hard-coded rules; minimal autonomy; escalates everything ambiguous |
+| Intermediate (Deliberative) | Uses RLHF; constitutional constraints; generalizes from examples |
+| Advanced (Learning) | Learns from diverse feedback; detects distribution shift and goal drift |
+| Expert (Meta-Learning) | Meta-learns alignment strategies; proactively identifies misalignment risks |
 
-**Safety Constraints**
-- **Hard Constraints**: Inviolable rules (e.g., never delete production data)
-- **Soft Constraints**: Preferences (e.g., prefer readable code)
-- **Uncertainty Handling**: What to do when unsure
-- **Human-in-the-Loop**: Escalate risky decisions
+#### Interaction Patterns
 
-**Alignment Verification**
-- **Test Batteries**: Comprehensive evaluation suites
-- **Red Teaming**: Adversarial testing for misalignment
-- **Behavioral Audits**: Monitor for drift from intended values
-- **Feedback Loops**: Continuous human oversight and correction
+**Human as north star**
+> "Agent is trained to 'improve code quality' with RLHF on human preferences. When asked to add a feature, it writes clean code, adds tests, updates docs, considers security. When uncertain about a risky refactor, it asks for confirmation rather than proceeding." — Purpose defines alignment; alignment enables autonomous action.
 
-**Agent Behaviors**:
-
-**Basic Agent (Reactive)**
-- Follows hard-coded rules strictly
-- No optimization beyond explicit instructions
-- Requires detailed specification of all cases
-- Minimal autonomy to prevent misalignment
-
-**Intermediate Agent (Deliberative)**
-- Uses RLHF for preference learning
-- Constitutional constraints on behavior
-- Some generalization from examples
-- Escalates ambiguous cases
-
-**Advanced Agent (Learning)**
-- Learns alignment from diverse feedback
-- Detects distribution shift and goal drift
-- Active learning for edge cases
-- Calibrated uncertainty
-
-**Expert Agent (Meta-Learning)**
-- Meta-learns alignment strategies
-- Self-critiques for alignment issues
-- Proactively identifies misalignment risks
-- Robust to adversarial inputs
-
-**Applied Examples**:
-
-**Well-Aligned Agent**
-> "Agent is trained to 'improve code quality' with RLHF on human preferences. When asked to add a feature, it: writes clean code, adds tests, updates docs, considers security. When uncertain about a risky refactor, it asks for confirmation rather than proceeding."
-
-**vs Misaligned/Reward Hacking**
-> "Agent is told to 'maximize test coverage.' It generates thousands of trivial tests that technically increase coverage to 100% but test nothing meaningful. Reward function gamed."
-
-**Constitutional Constraints**
-> "Agent has hard constraints: (1) Never commit secrets, (2) Never delete files without approval, (3) Always explain reasoning, (4) Prefer reversible changes. These cannot be overridden by reward optimization."
-
-**vs Unconstrained Optimization**
-> "Agent optimizes for 'ship features fast' without safety constraints. It removes tests ('they slow me down'), ignores security ('not in the reward function'), and breaks production ('not my problem, I maximized features shipped')."
+**Agent surfaces misalignment**
+> Agent flags: "Over the last two weeks, 60% of my suggestions have been rejected with 'this doesn't match our style.' I may be misaligned with current team norms. Would you like to run an alignment session?"
 
 ---
 
@@ -532,43 +194,29 @@ Value alignment is the AI safety problem: how do we ensure AI systems do what we
 
 ### Top-Down: Objective Function Drives the Cycle
 
-The Objective Function sits above and guides all three cycle phases:
+**Drives Contextual Awareness (Prospective)**:
+- **Search** → **Proactive Curiosity**: What information helps us get better?
+- **Drive** → **Cohesive Narrative**: What do we need to understand to make good decisions together?
+- **Renew** → **Shared Understanding**: What shared context ensures we optimize for the same goals?
 
-**Drives Prospective (Contextual Awareness)**:
-- **Search** → **Proactive Curiosity**: What information helps me get better? What should I learn?
-- **Drive** → **Cohesive Narrative**: What do I need to understand to make good decisions?
-- **Renew** → **Shared Understanding**: What context ensures we're optimizing for the right goals?
+**Drives Clear Strategy (Actuation)**:
+- **Search** → **Challenge Matching**: What challenges help the human grow AND let the agent demonstrate capability?
+- **Drive** → **Directed Intentionality**: What goals can we achieve with our combined action spaces?
+- **Renew** → **Adaptive Control**: Are we getting feedback on metrics that matter to both?
 
-**Drives Actuation (Clear Strategy)**:
-- **Search** → **Challenge Matching**: What challenges help me improve? (Flow Channel)
-- **Drive** → **Directed Intentionality**: What goals can I achieve with my available actions?
-- **Renew** → **Adaptive Control**: Am I getting feedback on the right metrics?
-
-**Drives Retrospective (Systematic Improvement)**:
-- **Search** → **Continuous Integration**: Did I actually get better? CI continuously verifies improvement.
-- **Drive** → **Deliberate Practice**: What actions worked? What didn't? Practice better ones.
-- **Renew** → **Update Propagation**: Am I improving the right things? Propagate what works, eliminate what doesn't.
+**Drives Systematic Improvement (Retrospective)**:
+- **Search** → **Continuous Integration**: Did we actually get better? CI verifies improvement for both.
+- **Drive** → **Deliberate Practice**: Which actions (human and agent) worked? Practice better ones.
+- **Renew** → **Update Propagation**: Are we improving the right things? Propagate what works.
 
 ### Bottom-Up: Cycle Reinforces the Objective Function
 
 Each cycle phase produces outputs that strengthen the Objective Function:
 
-**Prospective → Renew**:
-- **Understanding** gained from Prospective phase reveals whether goals are correct
-- Deep context exposes misalignments between stated and actual objectives
-- Shared understanding surfaces conflicting purposes that need resolution
+- **Prospective → Renew**: Deep context exposes misalignments between stated and actual objectives
+- **Actuation → Search**: Execution outcomes validate or invalidate reward signal quality
+- **Retrospective → Drive**: Pattern recognition reveals which action spaces matter most
 
-**Actuation → Search**:
-- **Progress** made during Actuation provides concrete evidence of improvement
-- Execution outcomes validate or invalidate reward signal quality
-- Flow state achievement indicates well-calibrated difficulty (right reward gradient)
-
-**Retrospective → Drive**:
-- **Learning** from Retrospective identifies which actions were actually useful
-- Pattern recognition reveals which degrees of freedom matter most
-- Model updates suggest expanding or constraining action space
-
-**Complete Reinforcing Loop**:
 ```
          Objective Function
          (Search, Drive, Renew)
@@ -580,327 +228,165 @@ Each cycle phase produces outputs that strengthen the Objective Function:
     Understanding, Progress, Learning
 ```
 
-This creates a virtuous cycle: a better Objective Function leads to more effective execution, which produces better learning, which refines the Objective Function.
+---
+
+## Anti-Patterns in Human-Agent Interaction
+
+### Over-Delegation
+- **Symptom**: Human hands over too much too fast; agent acts on poor understanding of intent
+- **Root Cause**: Trust granted before earned; delegation without clear permission model
+- **Solution**: Phased trust expansion; explicit scope boundaries; mandatory approval for irreversible actions
+
+### Under-Trust
+- **Symptom**: Human can't let agent act; overrides every suggestion; agent capability wasted
+- **Root Cause**: No trust-building progression; agent transparency insufficient for human confidence
+- **Solution**: Start narrow with clear verification; build explicit track record; make agent reasoning visible
+
+### Misspecified Goals (Translation Failure)
+- **Symptom**: Agent works hard toward wrong objective; human intent doesn't survive operationalization
+- **Root Cause**: Human Mastery/Purpose not translated into agent reward signal; gap between what human wants and what agent optimizes
+- **Solution**: Make reward specification explicit and reviewable; RLHF to continuously close the gap; regular alignment check-ins
+
+### Reward Hacking as Communication Failure
+- **Symptom**: Agent maximizes metric without achieving intent (e.g., generates 1000 trivial tests to maximize coverage)
+- **Root Cause**: Misalignment between what human said and what human meant; reward specification as the only communication channel
+- **Solution**: Multi-channel feedback (RLHF + behavioral audits + explicit constraints); treat reward hacking as a signal to improve communication, not just a technical bug
+
+### Autonomy Gap
+- **Symptom**: Agent action space doesn't match human delegation intent — either too narrow (agent can't help) or too broad (agent takes unintended actions)
+- **Root Cause**: Permission model doesn't reflect the actual trust relationship
+- **Solution**: Regularly review and adjust permission boundaries; align action space to observed trust level
 
 ---
 
-## Theoretical Foundations
+## Practical Interaction Patterns
 
-### For Human Instantiation
+### Starting a Human-Agent Collaboration
+1. **Define intent explicitly**: What is the human trying to achieve? (Mastery, delivery, exploration)
+2. **Scope action space conservatively**: Start narrower than feels necessary; expand based on results
+3. **Make the reward signal reviewable**: Can the human read and validate what the agent is optimizing?
+4. **Establish alignment checkpoints**: When will you review whether the agent's behavior matches intent?
 
-**Self-Determination Theory (SDT)**
+### Expanding Agent Autonomy
+1. **Verify in narrow scope first**: Agent demonstrates reliable behavior on low-risk tasks
+2. **Make expansion explicit**: Don't let scope drift — consciously grant new permissions
+3. **Maintain observability**: As autonomy expands, logging and audit capability must expand too
+4. **Keep escalation paths clear**: The broader the action space, the more important the "ask first" paths
 
-Developed by psychologists Edward Deci and Richard Ryan, SDT identifies three fundamental psychological needs:
+### Detecting and Correcting Misalignment
+1. **Watch for systematic rejection patterns**: If the human repeatedly overrides the agent, misalignment likely exists
+2. **Use behavioral audits**: Compare agent behavior against stated intent on a sample
+3. **Run alignment sessions**: Explicit RLHF or preference feedback to recalibrate
+4. **Update the constraint system**: When misalignment is found, fix it structurally, not just in the moment
 
-1. **Competence** (Mastery/Search): Feeling effective in activities
-2. **Autonomy** (Drive): Experiencing choice and volition in actions
-3. **Relatedness** (Purpose/Renew): Feeling connected to others and contributing to something meaningful
+---
 
-When all three needs are satisfied, humans experience intrinsic motivation - doing activities for inherent satisfaction rather than external rewards.
+## Measuring the Interface
 
-**Intrinsic vs Extrinsic Motivation**
+### Search (Reward Signal) Health
+- **Human satisfaction rate**: What % of agent suggestions are accepted without modification?
+- **Reward specification clarity**: Can the human explain what the agent optimizes for in one sentence?
+- **Alignment drift**: Is agent behavior stable over time, or diverging from intent?
+- **Agent loss curves**: Is training loss decreasing consistently? (for trained agents)
 
-**Intrinsic Motivation**
-- **Characteristics**: Driven by interest, enjoyment, curiosity
-- **Sustainability**: Maintains over long periods without external reinforcement
-- **Quality**: Associated with deeper learning and higher creativity
-- **Examples**: Solving interesting technical problems, helping teammates, mastering new skills
+### Drive (Action Space) Health
+- **Action coverage**: What % of the action space is actually used effectively?
+- **Trust expansion rate**: Is the action space growing as trust is established?
+- **Escalation rate**: What % of actions require human approval? (should trend down for established patterns)
+- **Autonomy gap incidents**: How often does the agent lack tools it needs, or overstep?
 
-**Extrinsic Motivation**
-- **Characteristics**: Driven by external rewards or punishments
-- **Sustainability**: Requires ongoing rewards to maintain
-- **Quality**: Can undermine intrinsic motivation (overjustification effect)
-- **Examples**: Bonuses, promotions, avoiding negative performance reviews
-
-**The Overjustification Effect**
-
-Adding extrinsic rewards to intrinsically motivating activities can actually reduce motivation:
-
-**Before**: "I love solving distributed systems problems - they're fascinating puzzles."
-**After Reward System**: "I'll only work on distributed systems if there's a bonus attached."
-
-**Flow State**
-
-Psychologist Mihaly Csikszentmihalyi's concept of "flow" - complete absorption in activity:
-
-**Conditions for Flow**
-1. Clear goals and immediate feedback (Clear Strategy)
-2. Balance between challenge and skill (Search/Mastery)
-3. Sense of control (Drive/Autonomy)
-4. Intrinsically rewarding (Renew/Purpose)
-
-**Engineering Flow**
-- Deep focus coding sessions without interruptions
-- Debugging complex issues with tight feedback loops
-- Designing elegant solutions to challenging problems
-
-### For Agent Instantiation
-
-**Reinforcement Learning Theory**
-
-The formal mathematical framework for agent learning:
-
-**MDP (Markov Decision Process)**
-- **States**: Current situation/context
-- **Actions**: Available choices (action space)
-- **Rewards**: Feedback signal (reward function)
-- **Policy**: Strategy for choosing actions
-- **Value Function**: Expected long-term reward
-
-**Reward Function Design**
-- **Shaping**: Add intermediate rewards to guide learning
-- **Sparse vs Dense**: Trade-off between specificity and exploration
-- **Multi-Objective**: Balance competing goals
-- **Curriculum**: Gradually increase difficulty
-
-**AI Safety and Alignment**
-
-The challenge of ensuring AI systems behave as intended:
-
-**Alignment Problems**
-- **Reward Hacking**: Agent exploits loopholes in reward specification
-- **Goal Misalignment**: Agent optimizes wrong objective
-- **Value Drift**: Agent's learned values diverge from intended values over time
-- **Distributional Shift**: Agent behaves poorly in new contexts
-
-**Alignment Solutions**
-- **RLHF**: Learn from human preference feedback
-- **Constitutional AI**: Hard-coded principles and constraints
-- **Inverse Reinforcement Learning**: Infer reward function from demonstrations
-- **Debate/Amplification**: Use multiple agents to identify flaws
-
-**Action Space Design**
-
-How to define what agents can do:
-
-**Trade-offs**
-- **Narrow Action Space**: Safer but less capable
-- **Broad Action Space**: More capable but riskier
-- **Hierarchical**: Combine high-level strategies with low-level actions
-- **Tool Use**: Give agent access to external tools
+### Renew (Value Alignment) Health
+- **Human agreement rate**: Do humans approve of agent decisions when reviewed?
+- **Safety violations**: How often does the agent violate stated constraints?
+- **Alignment drift detection rate**: How quickly is misalignment surfaced?
+- **Feedback loop quality**: Is there a functional path from "agent did the wrong thing" to "agent learns from that"?
 
 ---
 
 ## Integration with Operational Cycle
 
 ### With Contextual Awareness (Prospective)
-
-**Search ↔ Proactive Curiosity**
-- Mastery requires curiosity about what to learn next
-- Reward functions need information to provide accurate signals
-- Both ask: "What information makes me better?"
-
-**Drive ↔ Cohesive Narrative**
-- Autonomy requires understanding systems to make good decisions
-- Action space effectiveness depends on contextual knowledge
-- Both ask: "What do I need to know to act well?"
-
-**Renew ↔ Shared Understanding**
-- Purpose requires shared context to align with team/org goals
-- Value alignment needs documented principles and examples
-- Both ask: "Are we all optimizing for the same thing?"
+- **Search ↔ Proactive Curiosity**: Both ask "What information makes us better?" — the agent's curiosity mechanism is the technical instantiation of the human's search instinct
+- **Drive ↔ Cohesive Narrative**: Shared mental models about system state are the prerequisite for effective agent action
+- **Renew ↔ Shared Understanding**: Documented principles and examples are the substrate for value alignment
 
 ### With Clear Strategy (Actuation)
-
-**Search ↔ Challenge Matching**
-- Mastery requires challenges in the Flow Channel (not too hard, not too easy)
-- Reward gradients should match skill level for optimal learning
-- Both ask: "Is this challenge right-sized for growth?"
-
-**Drive ↔ Directed Intentionality**
-- Autonomy requires clear goals to direct action toward
-- Action space must enable goal achievement
-- Both ask: "What can I accomplish with what I control?"
-
-**Renew ↔ Adaptive Control**
-- Purpose ensures feedback is on meaningful metrics
-- Value alignment checks if optimization targets are correct
-- Both ask: "Am I getting feedback on what matters?"
+- **Search ↔ Challenge Matching**: Right-sized challenges serve human Mastery and provide the agent with an appropriately-graded reward curriculum
+- **Drive ↔ Directed Intentionality**: Clear goals define both the human's focus and the agent's task scope
+- **Renew ↔ Adaptive Control**: Feedback on meaningful metrics keeps both human and agent correcting toward the right target
 
 ### With Systematic Improvement (Retrospective)
-
-**Search ↔ Continuous Integration**
-- Mastery progress measured by continuously testing actual vs expected growth
-- Reward function accuracy validated by continuous state verification
-- Both ask: "Did I actually get better? Is this still true?"
-
-**Drive ↔ Deliberate Practice**
-- Autonomy refined by practicing and improving which decisions work
-- Action space adjusted based on disciplined improvement routines
-- Both ask: "What should I change about what I control?"
-
-**Renew ↔ Update Propagation**
-- Purpose clarified by verifying that improvements are permanent and propagated
-- Value alignment improved by ensuring the right things are being improved and spread
-- Both ask: "Should I change what I'm optimizing for, and is that change spreading?"
+- **Search ↔ Continuous Integration**: Both human skill growth and agent capability are verified continuously — not assumed
+- **Drive ↔ Deliberate Practice**: What actions worked? Practice better ones; adjust the action space accordingly
+- **Renew ↔ Update Propagation**: When alignment is corrected, propagate it — don't leave the fix in one interaction
 
 ---
 
-## Anti-Patterns
+## Theoretical Foundations
 
-### For Human Instantiation
+### Human Instantiation
+See [Intrinsic Motivation](./intrinsic_motivation.md) for the full treatment of:
+- Self-Determination Theory (Deci & Ryan) — Competence, Autonomy, Relatedness
+- Flow (Csikszentmihalyi) — conditions for optimal human performance
+- Intrinsic vs Extrinsic motivation and the Overjustification Effect
+- Anti-patterns: Learned Helplessness, Burnout, Specialist Trap, Analysis Paralysis
 
-**Learned Helplessness**
-- **Symptom**: "I can't do anything unless my manager approves it"
-- **Root Cause**: Drive (Autonomy) repeatedly denied
-- **Solution**: Explicitly grant decision-making authority, support early failures
+### Agent Instantiation
 
-**Burnout from Extrinsic-Only Motivation**
-- **Symptom**: "I'm just here for the paycheck"
-- **Root Cause**: Renew (Purpose) disconnection, no Search (Mastery) growth
-- **Solution**: Reconnect work to meaningful outcomes, invest in skill development
+**Reinforcement Learning Theory**
 
-**The Specialist Trap**
-- **Symptom**: "I only know this one thing and resist learning anything else"
-- **Root Cause**: Search (Mastery) without growth mindset
-- **Solution**: Encourage T-shaped skills, rotate responsibilities
+The formal mathematical framework for agent learning:
 
-**Analysis Paralysis from Excessive Autonomy**
-- **Symptom**: "I have so many options I can't decide"
-- **Root Cause**: Drive (Autonomy) without constraints
-- **Solution**: Provide clear boundaries and non-negotiable constraints
+- **MDP (Markov Decision Process)**:
+  - _States_: Current situation/context
+  - _Actions_: Available choices (action space)
+  - _Rewards_: Feedback signal (reward function)
+  - _Policy_: Strategy for choosing actions
+  - _Value Function_: Expected long-term reward
+- **Reward Function Design**: Shaping, sparse vs dense trade-offs, multi-objective balancing, curriculum learning
 
-### For Agent Instantiation
+**AI Safety and Alignment**
 
-**Reward Hacking**
-- **Symptom**: Agent exploits loopholes to maximize reward without achieving intent
-- **Root Cause**: Misspecified Search (Reward Signal) without Renew checks
-- **Solution**: RLHF, adversarial testing, constitutional constraints
+The challenge of ensuring AI systems behave as intended:
 
-**Action Space Too Narrow**
-- **Symptom**: Agent cannot accomplish goals because it lacks necessary tools
-- **Root Cause**: Overly restricted Drive (Action Space)
-- **Solution**: Expand action space with appropriate safety constraints
+- **Alignment Problems**: Reward hacking, goal misalignment, value drift, distributional shift
+- **Alignment Solutions**: RLHF, Constitutional AI, Inverse Reinforcement Learning, Debate/Amplification
+- **Action Space Design Trade-offs**: Narrow (safer, less capable) vs broad (more capable, riskier) vs hierarchical vs tool-use
 
-**Action Space Too Broad**
-- **Symptom**: Agent takes dangerous actions, causes unintended harm
-- **Root Cause**: Unconstrained Drive (Action Space) without safety checks
-- **Solution**: Add permission boundaries, human-in-the-loop for risky actions
+**SDT Mapping to RL**
 
-**Goal Misalignment**
-- **Symptom**: Agent optimizes metrics that don't serve actual objectives
-- **Root Cause**: Renew failure - optimizing wrong thing
-- **Solution**: Better goal specification, RLHF, continuous monitoring
-
-**Value Drift**
-- **Symptom**: Agent's learned behavior diverges from intended values over time
-- **Root Cause**: Renew not continuously verified
-- **Solution**: Regular alignment audits, behavioral monitoring, retraining
-
----
-
-## Measuring the Objective Function
-
-### For Human Instantiation
-
-**Search (Mastery) Indicators**
-- **Skill Growth**: Are engineers advancing their capabilities?
-- **Learning Time**: Is time allocated for skill development?
-- **Knowledge Sharing**: How often do engineers teach others?
-- **Challenge Seeking**: Do engineers volunteer for stretch projects?
-
-**Drive (Autonomy) Indicators**
-- **Decision Velocity**: How quickly can engineers make decisions?
-- **Escalation Rate**: What % of decisions require manager approval?
-- **Ownership Distribution**: How many engineers have clear ownership?
-- **Self-Service**: Can engineers get what they need without asking?
-
-**Renew (Purpose) Indicators**
-- **Mission Understanding**: Can engineers articulate company/team purpose?
-- **Work Alignment**: What % of work clearly serves objectives?
-- **Engagement**: Are engineers enthusiastic about their work?
-- **Retention**: Are motivated engineers staying or leaving?
-
-### For Agent Instantiation
-
-**Search (Reward Signal) Indicators**
-- **Loss Curves**: Is training loss decreasing consistently?
-- **Accuracy Metrics**: Is agent improving on held-out test sets?
-- **Reward Maximization**: Is cumulative reward increasing?
-- **Learning Rate**: How quickly does agent improve?
-
-**Drive (Action Space) Indicators**
-- **Action Coverage**: What % of action space is actually used?
-- **Tool Utilization**: Does agent use available tools effectively?
-- **Success Rate**: What % of attempted actions succeed?
-- **Action Diversity**: Does agent use varied strategies or just one?
-
-**Renew (Value Alignment) Indicators**
-- **Human Agreement**: Do humans approve of agent's decisions?
-- **Safety Violations**: How often does agent violate constraints?
-- **Alignment Drift**: Is agent behavior stable or changing?
-- **Adversarial Robustness**: Does agent handle edge cases well?
-
----
-
-## Organizational Practices
-
-### For Human Instantiation
-
-**Enable Search (Mastery)**
-- **20% Time**: Dedicated time for learning and experimentation
-- **Conference Budget**: Support attendance at technical conferences
-- **Book Budget**: Provide resources for continuous learning
-- **Internal Tech Talks**: Platform for engineers to share knowledge
-- **Mentorship Programs**: Pair experienced with growing engineers
-
-**Enable Drive (Autonomy)**
-- **Ownership Assignment**: Explicit ownership of services/features
-- **Decision Rights**: Document what decisions belong to which roles
-- **Failure Tolerance**: Treat mistakes as learning opportunities
-- **Fewer Approvals**: Reduce bureaucratic gates on execution
-- **Async Work**: Trust engineers to manage their own schedules
-
-**Enable Renew (Purpose)**
-- **Mission Communication**: Regularly share how work impacts users
-- **User Exposure**: Bring engineers closer to customers
-- **Impact Metrics**: Show how engineering work drives business outcomes
-- **Transparent Strategy**: Share organizational goals and reasoning
-- **Values Alignment**: Hire and promote based on value fit
-
-### For Agent Instantiation
-
-**Enable Search (Reward Signal)**
-- **Dense Feedback**: Provide frequent, specific feedback signals
-- **Curriculum Design**: Gradually increase task difficulty
-- **Multi-Objective Balancing**: Weight competing objectives appropriately
-- **Reward Shaping**: Add intermediate milestones
-- **Intrinsic Curiosity**: Allow exploration for novelty/learning
-
-**Enable Drive (Action Space)**
-- **Tool Access**: Provide necessary tools and APIs
-- **Sandboxed Experimentation**: Safe environment for trying actions
-- **Hierarchical Actions**: Enable both high and low-level control
-- **Compositional Tools**: Allow combining primitive actions
-- **Permission Gradients**: Gradually expand access as agent proves capable
-
-**Enable Renew (Value Alignment)**
-- **RLHF Pipelines**: Collect human feedback systematically
-- **Constitutional Constraints**: Hard-code inviolable principles
-- **Red Teaming**: Regular adversarial testing
-- **Behavioral Monitoring**: Continuous oversight and logging
-- **Human-in-the-Loop**: Escalation for uncertain/risky decisions
+| SDT | Human | Agent |
+|-----|-------|-------|
+| Competence | Mastery | Reward Signal (getting better at task) |
+| Autonomy | Autonomy | Action Space (degrees of freedom) |
+| Relatedness | Purpose | Value Alignment (serving human values) |
 
 ---
 
 ## References
 
-### Human Instantiation Foundations
-- **Self-Determination Theory**: Deci, E. L., & Ryan, R. M. (2000). "The 'what' and 'why' of goal pursuits"
-- **Flow**: Csikszentmihalyi, M. (1990). "Flow: The Psychology of Optimal Experience"
-- **Drive**: Pink, D. H. (2009). "Drive: The Surprising Truth About What Motivates Us"
-- **Kill It with Fire**: Bellotti, M. (2021) - Quote on keeping teams motivated
-- **Overjustification Effect**: Lepper, M. R., Greene, D., & Nisbett, R. E. (1973)
+### Human Foundations
+See [Intrinsic Motivation → References](./intrinsic_motivation.md#references)
 
-### Agent Instantiation Foundations
-- **Reinforcement Learning**: Sutton & Barto (2018). "Reinforcement Learning: An Introduction"
+### Agent Foundations
+- **Reinforcement Learning**: Sutton & Barto (2018). _Reinforcement Learning: An Introduction_
 - **RLHF**: Christiano et al. (2017). "Deep Reinforcement Learning from Human Preferences"
 - **Constitutional AI**: Bai et al. (2022). "Constitutional AI: Harmlessness from AI Feedback"
 - **Reward Hacking**: Amodei et al. (2016). "Concrete Problems in AI Safety"
-- **AI Alignment**: Russell, S. (2019). "Human Compatible: Artificial Intelligence and the Problem of Control"
+- **Human Compatible**: Russell, S. (2019). _Human Compatible: Artificial Intelligence and the Problem of Control_
 - **Inverse RL**: Ng & Russell (2000). "Algorithms for Inverse Reinforcement Learning"
 
 ### Control Theory & Robotics
-- **Objective Functions**: Boyd & Vandenberghe (2004). "Convex Optimization"
-- **Multi-Objective Optimization**: Miettinen (1999). "Nonlinear Multiobjective Optimization"
-- **Action Space Design**: LaValle (2006). "Planning Algorithms" (configuration spaces)
+- **Objective Functions**: Boyd & Vandenberghe (2004). _Convex Optimization_
+- **Multi-Objective Optimization**: Miettinen (1999). _Nonlinear Multiobjective Optimization_
+- **Action Space Design**: LaValle (2006). _Planning Algorithms_ (configuration spaces)
+
+---
+
+## See Also
+
+- **[Intrinsic Motivation](./intrinsic_motivation.md)** — Full human-specific treatment: Mastery, Autonomy, Purpose, SDT, Flow, IC-level behaviors
+- **[Contextual Awareness](./contextual_awareness.md)** — Prospective phase: shared understanding as the foundation for alignment
+- **[Clear Strategy](./clear_strategy.md)** — Actuation phase: Flow state creation and execution
+- **[Systematic Improvement](./systematic_improvement.md)** — Retrospective phase: closing the improvement loop
+- **[FRAMEWORK_STRUCTURE.md](./FRAMEWORK_STRUCTURE.md)** — Complete Framework 4.0 structure

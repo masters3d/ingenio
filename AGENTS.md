@@ -162,38 +162,38 @@ The IMPROVING phase - closing the improvement loop by continuously testing state
 
 **Etymology**: Medieval Latin _objectivus_ (pertaining to an object) + Latin _functio_ (performance, execution)
 **Position**: Above the operational cycle - defines success criteria for any agent (human or AI)
-**Focus**: The mathematical formalization of "what does better look like?"
+**Focus**: The interface between human intent and agent capability — how humans and agents jointly define, act within, and continuously realign their shared objective function.
 
 The WHY - defining what success means, guiding all three phases of the operational cycle. Works for both human agents (intrinsic motivation) and AI agents (reward functions).
+
+**Human Motivation Detail**: Full treatment of Mastery, Autonomy, Purpose, SDT, Flow, and IC-level behaviors → `/pillars/intrinsic_motivation.md`
 
 #### Three Sub-Pillars (Agent-Agnostic)
 
 **Fractal Pattern**: Following Prospective → Actuation → Retrospective
 
-1. **Search** (Prospective) - "What does *better* look like?"
-   - **Human**: Mastery (skill development, deliberate practice, expertise growth)
+1. **Search** (Prospective) - "What does *better* look like, together?"
+   - **Human**: Mastery (skill development, deliberate practice, expertise growth) — see `/pillars/intrinsic_motivation.md`
    - **Agent**: Reward Signal (scalar/vector signals, loss minimization, accuracy maximization)
-   - Learning mechanisms, feedback integration, curriculum design
-   - Optimization targets and progress measurement
+   - **Interaction**: Human Mastery goals inform agent reward signals; agents surface growth opportunities
 
-2. **Drive** (Actuation) - "What can I control?"
-   - **Human**: Autonomy (decision-making authority, ownership models, psychological safety)
+2. **Drive** (Actuation) - "What can we each control, and how do we share it?"
+   - **Human**: Autonomy (decision-making authority, ownership models, psychological safety) — see `/pillars/intrinsic_motivation.md`
    - **Agent**: Action Space (available tools, permission boundaries, compositional actions)
-   - Enablers and constraints for effective control
-   - Balance between capability and safety
+   - **Interaction**: Delegation patterns, trust gradients, permission as formalized trust
 
-3. **Renew** (Retrospective) - "Am I optimizing for the right thing?"
-   - **Human**: Purpose (meaningful work, values alignment, mission connection)
+3. **Renew** (Retrospective) - "Are we still aligned with each other?"
+   - **Human**: Purpose (meaningful work, values alignment, mission connection) — see `/pillars/intrinsic_motivation.md`
    - **Agent**: Value Alignment (RLHF, constitutional AI, goal specification, safety constraints)
-   - Prevention of goal misalignment and value drift
-   - Continuous verification of objective correctness
+   - **Interaction**: Human purpose guides agent alignment; agents surface misalignment to humans
 
 **Robotics Foundation**: Reward/Cost Function (defines what to optimize for)
 **OODA Mapping**: The criteria by which Observe/Orient/Decide/Act are judged
 **Psychology Foundation**: Self-Determination Theory (Competence, Autonomy, Relatedness)
 **RL Foundation**: MDP (states, actions, rewards, policy, value function)
 
-**See**: `/pillars/objective_function.md` for complete specification
+**See**: `/pillars/objective_function.md` for human-agent interaction specification
+**See**: `/pillars/intrinsic_motivation.md` for human motivation (Mastery/Autonomy/Purpose) specification
 
 ---
 
