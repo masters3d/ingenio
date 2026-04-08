@@ -381,7 +381,7 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 - Alignment Function ↔ Shared Understanding: Are we optimizing for the same thing?
 
 **With Clear Strategy (Actuation)**:
-- Reward Signal ↔ Difficulty Alignment: Is challenge right-sized for growth?
+- Reward Signal ↔ Challenge Matching: Is challenge right-sized for growth?
 - Degrees of Freedom ↔ Directed Intentionality: What can I accomplish with what I control?
 - Alignment Function ↔ Adaptive Control: Am I getting feedback on what matters?
 
@@ -391,7 +391,7 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 
 **With Reflective Calibration (Retrospective)**:
 - Reward Signal ↔ State Estimation: Did I actually get better? How do I know?
-- Degrees of Freedom ↔ Model Correction: What should I change about what I control?
+- Degrees of Freedom ↔ Pattern Synthesis: What should I change about what I control?
 - Alignment Function ↔ Loop Optimization: Should I change what I'm optimizing for?
 
 ---

@@ -32,7 +32,7 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 **Fractal Pattern**: The three sub-pillars of Reflective Calibration internally mirror the Prospective → Actuation → Retrospective cycle:
 1. **State Estimation** (Prospective of learning) - Look forward at the data before interpreting
-2. **Model Correction** (Actuation of learning) - Act on findings to revise understanding
+2. **Pattern Synthesis** (Actuation of learning) - Act on findings to revise understanding
 3. **Loop Optimization** (Retrospective of learning) - Look back at how you learn to improve the process itself
 
 **Critical Differentiation**:
@@ -124,9 +124,9 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 ---
 
-### 2. Model Correction
+### 2. Pattern Synthesis
 
-**Definition**: Act on what you found — revise mental models, fix docs, change processes. This is the Actuation phase of learning.
+**Definition**: Act on findings — identify patterns (both what failed and what succeeded), synthesize observations into understanding, and revise mental models, docs, and processes. This is the Actuation phase of learning.
 
 **Theoretical Roots**:
 - **Machine Learning**: Pattern extraction from data for predictive modeling
@@ -163,6 +163,13 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 - **What's the mental model?**: How should we think about this type of problem?
 - **What's the heuristic?**: Rule of thumb for future decision-making
 
+**Recognize Reinforcing Patterns** (What Worked)
+- **What succeeded and why?**: Identify virtuous cycles worth amplifying
+- **What enabled success?**: Conditions, decisions, behaviors that led to positive outcomes
+- **How can we replicate this?**: Make success repeatable, not accidental
+- **What should we do more of?**: Reinforcing feedback loops to accelerate growth
+- **Balance focus**: Don't only fix failures — also study and amplify successes
+
 #### Engineering Behaviors
 
 **Level 0-1 (Apprentice/Component Creator)**
@@ -191,10 +198,10 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 #### Applied Examples
 
-**Bad Model Correction** (Treating Symptoms)
+**Bad Pattern Synthesis** (Treating Symptoms)
 > "We had 3 incidents this month caused by config errors. Let's add more code review for config changes."
 
-**Good Model Correction** (Root Pattern)
+**Good Pattern Synthesis** (Root Pattern)
 > "We've had 12 incidents in 6 months, 8 involved config. Pattern: Config changes bypass automated testing and deploy directly to prod. This is a 'Tragedy of the Commons' — config is shared infrastructure but no one owns config testing. Underlying issue: We treat config as 'not code' but it controls production behavior. Solution: Config-as-code in version control, automated validation, staged rollout."
 
 **Bad Signal/Noise** (Overreacting)
@@ -301,17 +308,17 @@ The value of action lies not just in the outcome, but in what we learn from it. 
 
 ### With Clear Strategy (Actuation)
 - **State Estimation** feeds **Adaptive Control** (immediate feedback for real-time adjustment)
-- **Model Correction** informs **Difficulty Alignment** (identify if challenges are too hard/easy)
+- **Pattern Synthesis** informs **Challenge Matching** (identify if challenges are too hard/easy)
 - **Loop Optimization** refines **Directed Intentionality** (adjust goals based on what we learned)
 
 ### With Contextual Awareness (Prospective)
 - **State Estimation** enriches **Proactive Curiosity** (adds experiential data to crawled information)
-- **Model Correction** improves **Cohesive Narrative** (patterns reveal system structure and failure modes)
+- **Pattern Synthesis** improves **Cohesive Narrative** (patterns reveal system structure and failure modes)
 - **Loop Optimization** maintains **Shared Understanding** (documented learnings become cognitive artifacts)
 
 ### With Objective Function
 - **State Estimation** demonstrates progress toward **Reward Signal** (see improvement over time → Mastery/Reward Function)
-- **Model Correction** enhances **Degrees of Freedom** (understanding patterns enables decisions → Autonomy/Action Space)
+- **Pattern Synthesis** enhances **Degrees of Freedom** (understanding patterns enables decisions → Autonomy/Action Space)
 - **Loop Optimization** clarifies **Alignment Function** (connect learnings to meaningful outcomes → Purpose/Value Alignment)
 
 ---
@@ -366,7 +373,7 @@ All guided by **Objective Function (WHY)**: The reward function that defines suc
 - **Prediction Accuracy**: How often actual outcomes match predictions?
 - **Psychological Safety**: Team comfort admitting mistakes (survey)
 
-### Model Correction Metrics
+### Pattern Synthesis Metrics
 - **Repeat Incidents**: What % of incidents are recurring patterns?
 - **Pattern Documentation**: Number of identified archetypes/anti-patterns
 - **Cross-Team Pattern Sharing**: How often patterns shared across teams?

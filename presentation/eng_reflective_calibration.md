@@ -77,7 +77,7 @@ Reflective Calibration is the **feedback arc**:
 **Fractal Pattern**: Each sub-pillar mirrors Prospective → Actuation → Retrospective
 
 1. **State Estimation** (Prospective of learning) - Look forward at data
-2. **Model Correction** (Actuation of learning) - Act on findings
+2. **Pattern Synthesis** (Actuation of learning) - Act on findings
 3. **Loop Optimization** (Retrospective of learning) - Look back at learning process
 
 ---
@@ -133,9 +133,9 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 2: Model Correction
+# Sub-Pillar 2: Pattern Synthesis
 
-**Act on what you found — revise mental models, fix docs, change processes**
+**Act on findings — identify patterns (both what failed and what succeeded), synthesize observations into understanding, and revise mental models, docs, and processes**
 
 - Distinguish Signal from Noise
   - One-off incident vs systemic issue
@@ -161,7 +161,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Bad Model Correction
+# Example: Bad Pattern Synthesis
 
 > "We had 3 incidents this month caused by config errors. Let's add more code review for config changes."
 
@@ -169,7 +169,7 @@ Reflective Calibration is the **feedback arc**:
 
 ---
 
-# Example: Good Model Correction
+# Example: Good Pattern Synthesis
 
 > "We've had 12 incidents in 6 months, 8 involved config. Pattern: Config changes bypass automated testing and deploy directly to prod.
 >
@@ -258,7 +258,7 @@ Reflective Calibration is the **feedback arc**:
 
 - **State Estimation** feeds **Adaptive Control**
   - Immediate feedback for real-time adjustment
-- **Model Correction** informs **Difficulty Alignment**
+- **Pattern Synthesis** informs **Challenge Matching**
   - Identify if challenges are too hard/easy
 - **Loop Optimization** refines **Directed Intentionality**
   - Adjust goals based on what we learned
@@ -269,7 +269,7 @@ Reflective Calibration is the **feedback arc**:
 
 - **State Estimation** enriches **Proactive Curiosity**
   - Adds experiential data to crawled information
-- **Model Correction** improves **Cohesive Narrative**
+- **Pattern Synthesis** improves **Cohesive Narrative**
   - Patterns reveal system structure and failure modes
 - **Loop Optimization** maintains **Shared Understanding**
   - Documented learnings become cognitive artifacts
@@ -280,7 +280,7 @@ Reflective Calibration is the **feedback arc**:
 
 - **State Estimation** demonstrates **Mastery** progress
   - See improvement over time, validate growth
-- **Model Correction** enhances **Autonomy**
+- **Pattern Synthesis** enhances **Autonomy**
   - Understanding patterns enables independent decisions
 - **Loop Optimization** clarifies **Purpose**
   - Connect learnings to meaningful outcomes
@@ -322,7 +322,7 @@ Reflective Calibration is the **feedback arc**:
 - Time from incident to published postmortem
 - Prediction accuracy (actual vs expected outcomes)
 
-**Model Correction Metrics**
+**Pattern Synthesis Metrics**
 - % of incidents that are recurring patterns
 - Number of documented archetypes/anti-patterns
 - Issues caught before production based on patterns
@@ -370,7 +370,7 @@ Reflective Calibration is the **feedback arc**:
 
 **Three Sub-Pillars**:
 1. State Estimation (Prospective of learning) - Look forward at data
-2. Model Correction (Actuation of learning) - Act on findings
+2. Pattern Synthesis (Actuation of learning) - Act on findings
 3. Loop Optimization (Retrospective of learning) - Look back at learning process
 
 **Philosophy**: "Every result is data — the system that examines itself improves itself"

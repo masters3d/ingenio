@@ -41,7 +41,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 2. **Clear Goals**: Know exactly what success looks like
 3. **Immediate Feedback**: Real-time data to adjust performance
 
-### 1. Difficulty Alignment
+### 1. Challenge Matching
 
 **Definition**: The active synchronization of internal capabilities with external demands - maintaining the delicate balance that enables Flow.
 
@@ -270,19 +270,19 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 ## Integration with Other Pillars
 
 ### With Objective Function
-- **Difficulty Alignment** enables **Reward Signal** (right-sized challenges → Mastery/Reward Function)
+- **Challenge Matching** enables **Reward Signal** (right-sized challenges → Mastery/Reward Function)
 - **Directed Intentionality** requires **Alignment Function** (clear goals aligned with Purpose/Value Alignment)
 - **Adaptive Control** supports **Degrees of Freedom** (self-correcting through Autonomy/Action Space)
 
 ### With Contextual Awareness (Prospective)
-- **Difficulty Alignment** needs **Proactive Curiosity** (understand your capabilities and demands)
+- **Challenge Matching** needs **Proactive Curiosity** (understand your capabilities and demands)
 - **Directed Intentionality** requires **Cohesive Narrative** (shared understanding of goals)
 - **Adaptive Control** depends on **Shared Understanding** (observable systems, documented feedback loops)
 
 ### With Reflective Calibration (Retrospective)
-- **Difficulty Alignment** outcomes feed **Outcome Analysis** (was difficulty right-sized?)
-- **Directed Intentionality** clarity enables **Pattern Recognition** (clear goals make patterns visible)
-- **Adaptive Control** real-time feedback informs **Model Update** (immediate data becomes learning)
+- **Challenge Matching** outcomes feed **State Estimation** (was difficulty right-sized?)
+- **Directed Intentionality** clarity enables **Pattern Synthesis** (clear goals make patterns visible)
+- **Adaptive Control** real-time feedback informs **Loop Optimization** (immediate data becomes learning)
 
 ---
 
@@ -308,7 +308,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 
 ## Measuring Clear Strategy
 
-### Difficulty Alignment Metrics
+### Challenge Matching Metrics
 - **Task-Skill Match**: What % of tasks match engineer skill levels?
 - **Burnout Indicators**: Overtime hours, turnover rate, stress surveys
 - **Boredom Indicators**: Engagement scores, voluntary task swapping

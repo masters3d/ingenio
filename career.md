@@ -38,7 +38,7 @@ Objective Function (WHY)
 **Robotics**: Actuation (kinematics, path planning, PID control)
 
 **Three Sub-Pillars:**
-1. **Difficulty Alignment** - Challenge-Skill Balance (prevents anxiety/boredom, maintains Flow Channel)
+1. **Challenge Matching** - Challenge-Skill Balance (prevents anxiety/boredom, maintains Flow Channel)
 2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy, enables action-awareness merger)
 3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment, real-time data)
 
@@ -49,7 +49,7 @@ Objective Function (WHY)
 
 **Three Sub-Pillars:**
 1. **State Estimation** - Look forward at data, measure actual vs expected (gather signals before interpreting)
-2. **Model Correction** - Act on findings, revise mental models (fix docs and processes)
+2. **Pattern Synthesis** - Act on findings, revise mental models (fix docs and processes)
 3. **Loop Optimization** - Look back at how you learn (improve feedback loops, meta-learning)
 
 ### Objective Function (WHY)

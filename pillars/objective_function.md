@@ -540,13 +540,13 @@ The Objective Function sits above and guides all three cycle phases:
 - **Alignment Function** → **Shared Understanding**: What context ensures we're optimizing for the right goals?
 
 **Drives Actuation (Clear Strategy)**:
-- **Reward Signal** → **Difficulty Alignment**: What challenges help me improve? (Flow Channel)
+- **Reward Signal** → **Challenge Matching**: What challenges help me improve? (Flow Channel)
 - **Degrees of Freedom** → **Directed Intentionality**: What goals can I achieve with my available actions?
 - **Alignment Function** → **Adaptive Control**: Am I getting feedback on the right metrics?
 
 **Drives Retrospective (Reflective Calibration)**:
 - **Reward Signal** → **State Estimation**: Did I actually get better? How do I measure improvement?
-- **Degrees of Freedom** → **Model Correction**: What actions worked? What didn't?
+- **Degrees of Freedom** → **Pattern Synthesis**: What actions worked? What didn't?
 - **Alignment Function** → **Loop Optimization**: Am I learning the right lessons? Should I change my goals?
 
 ### Bottom-Up: Cycle Reinforces the Objective Function
@@ -702,7 +702,7 @@ How to define what agents can do:
 
 ### With Clear Strategy (Actuation)
 
-**Reward Signal ↔ Difficulty Alignment**
+**Reward Signal ↔ Challenge Matching**
 - Mastery requires challenges in the Flow Channel (not too hard, not too easy)
 - Reward gradients should match skill level for optimal learning
 - Both ask: "Is this challenge right-sized for growth?"
@@ -724,7 +724,7 @@ How to define what agents can do:
 - Reward function accuracy validated by outcome analysis
 - Both ask: "Did I actually get better? How do I know?"
 
-**Degrees of Freedom ↔ Model Correction**
+**Degrees of Freedom ↔ Pattern Synthesis**
 - Autonomy refined by learning which decisions worked
 - Action space adjusted based on which actions were effective
 - Both ask: "What should I change about what I control?"

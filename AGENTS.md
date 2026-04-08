@@ -91,7 +91,7 @@ The ACTING phase - transforming ambiguous directives into concrete, achievable o
 
 #### Three Sub-Pillars
 
-1. **Difficulty Alignment**: The active synchronization of internal capabilities with external demands
+1. **Challenge Matching**: The active synchronization of internal capabilities with external demands
    - Challenge-skill balance (prevents anxiety from "too hard" or boredom from "too easy")
    - Continuous task calibration (if challenge exceeds skill, simplify or upskill; if skill exceeds challenge, increase complexity)
    - Maintain position within the "Flow Channel" to prevent burnout or apathy
@@ -136,7 +136,7 @@ The LEARNING phase - closing the improvement loop by examining outcomes, identif
    - Document without blame (blameless postmortems, psychological safety)
    - **Theoretical Roots**: Robotics State Estimation (Kalman filter), Control Theory error signals, After-Action Review
 
-2. **Model Correction**: Act on findings, revise mental models, fix docs and processes
+2. **Pattern Synthesis**: Act on findings, revise mental models, fix docs and processes
    - Distinguish signal from noise (one-off vs systemic, special vs common cause)
    - Recognize system archetypes (Success to Successful, Tragedy of Commons, Fixes that Backfire)
    - Identify feedback loops (reinforcing, balancing, delays)

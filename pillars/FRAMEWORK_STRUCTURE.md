@@ -16,12 +16,12 @@ Three-Phase Operational Cycle:
 │   ├── Cohesive Narrative
 │   └── Shared Understanding
 ├── Clear Strategy (Actuation - ACTING)
-│   ├── Difficulty Alignment
+│   ├── Challenge Matching
 │   ├── Directed Intentionality
 │   └── Adaptive Control
 └── Reflective Calibration (Retrospective - LEARNING)
     ├── State Estimation
-    ├── Model Correction
+    ├── Pattern Synthesis
     └── Loop Optimization
 ```
 
@@ -30,8 +30,8 @@ Three-Phase Operational Cycle:
 | Component | Sub-Pillar 1 | Sub-Pillar 2 | Sub-Pillar 3 | Role | Robotics | OODA |
 |-----------|--------------|--------------|--------------|------|----------|------|
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
-| **Clear Strategy** (Actuation) | Difficulty Alignment | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
-| **Reflective Calibration** (Retrospective) | State Estimation | Model Correction | Loop Optimization | LEARNING | State Estimation | Loop back |
+| **Clear Strategy** (Actuation) | Challenge Matching | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
+| **Reflective Calibration** (Retrospective) | State Estimation | Pattern Synthesis | Loop Optimization | LEARNING | State Estimation | Loop back |
 | **Objective Function** (WHY) | Reward Signal (Mastery/Reward Fn) | Degrees of Freedom (Autonomy/Action Space) | Alignment Function (Purpose/Value Alignment) | WHY | Reward/Cost Function | Defines success |
 
 ## Fractal Pattern: Sub-Pillars Mirror the Cycle
@@ -41,8 +41,8 @@ Three-Phase Operational Cycle:
 | Main Pillar | Sub-Pillar 1 (Prospective) | Sub-Pillar 2 (Actuation) | Sub-Pillar 3 (Retrospective) |
 |-------------|----------------------------|--------------------------|------------------------------|
 | **Contextual Awareness** (Prospective/KNOWING) | **Proactive Curiosity** - Look forward, crawl, discover, sense the environment | **Cohesive Narrative** - Act on data, build mental models, synthesize information | **Shared Understanding** - Look back, externalize learnings, preserve for future |
-| **Clear Strategy** (Actuation/ACTING) | **Difficulty Alignment** - Look forward, assess capabilities vs demands before acting | **Directed Intentionality** - Execute, project consciousness toward objective | **Adaptive Control** - Look back at feedback, correct course in real-time |
-| **Reflective Calibration** (Retrospective/LEARNING) | **State Estimation** - Look forward at data, measure actual vs expected, gather signals | **Model Correction** - Act on findings, revise mental models, fix docs/processes | **Loop Optimization** - Look back at how you learn, improve feedback loops (meta-learning) |
+| **Clear Strategy** (Actuation/ACTING) | **Challenge Matching** - Look forward, assess capabilities vs demands before acting | **Directed Intentionality** - Execute, project consciousness toward objective | **Adaptive Control** - Look back at feedback, correct course in real-time |
+| **Reflective Calibration** (Retrospective/LEARNING) | **State Estimation** - Look forward at data, measure actual vs expected, gather signals | **Pattern Synthesis** - Act on findings, revise mental models, fix docs/processes | **Loop Optimization** - Look back at how you learn, improve feedback loops (meta-learning) |
 | **Objective Function** (WHY) | **Reward Signal** - Look forward, define what "better" looks like (Mastery/Reward Fn) | **Degrees of Freedom** - Act, determine what can be controlled (Autonomy/Action Space) | **Alignment Function** - Look back, verify optimizing for right thing (Purpose/Value Alignment) |
 
 **Pattern Explanation**:
@@ -108,7 +108,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 **OODA**: Decide + Act
 
 **Three Sub-Pillars**:
-1. **Difficulty Alignment**: Challenge-Skill Balance (Flow Channel)
+1. **Challenge Matching**: Challenge-Skill Balance (Flow Channel)
 2. **Directed Intentionality**: Clear Goals (eliminates psychic entropy)
 3. **Adaptive Control**: Immediate Feedback (closed-loop adjustment)
 
@@ -125,7 +125,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 **Three Sub-Pillars**:
 1. **State Estimation**: Look forward at the data, measure actual vs expected, gather signals
-2. **Model Correction**: Act on findings, revise mental models, fix docs and processes
+2. **Pattern Synthesis**: Act on findings, revise mental models, fix docs and processes
 3. **Loop Optimization**: Look back at how you learn, improve feedback loops themselves (meta-learning)
 
 **Purpose**: Close the improvement loop by extracting and applying learnings.
@@ -183,7 +183,7 @@ This fractal structure means each pillar contains a miniature version of the ful
     ├──────────────────────────────────────────┤
     │                                          │
     │  2. CLEAR STRATEGY (Actuation)           │
-    │     - Difficulty Alignment               │
+    │     - Challenge Matching                 │
     │     - Directed Intentionality            │
     │     - Adaptive Control                   │
     │     ACTING: Execute in environment       │
@@ -191,9 +191,9 @@ This fractal structure means each pillar contains a miniature version of the ful
     ├──────────────────────────────────────────┤
     │                                          │
     │  3. REFLECTIVE CALIBRATION (Retrospective)│
-    │     - Outcome Analysis                   │
-    │     - Pattern Recognition                │
-    │     - Model Update                       │
+    │     - State Estimation                   │
+    │     - Pattern Synthesis                  │
+    │     - Loop Optimization                  │
     │     LEARNING: Extract and apply lessons  │
     │                                          │
     └──────────────────────────────────────────┘
@@ -245,7 +245,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Clear Strategy: Difficulty Alignment
+### Clear Strategy: Challenge Matching
 **Definition**: The active synchronization of internal capabilities with external demands
 
 **Key Components**:
@@ -296,8 +296,8 @@ This fractal structure means each pillar contains a miniature version of the ful
 
 ---
 
-### Reflective Calibration: Model Correction
-**Definition**: Act on what you found — revise mental models, fix docs, change processes
+### Reflective Calibration: Pattern Synthesis
+**Definition**: Act on findings — identify patterns (both what failed and what succeeded), synthesize observations into understanding, and revise mental models, docs, and processes
 
 **Key Components**:
 - Distinguish Signal from Noise (one-off vs systemic, special vs common cause)
@@ -385,19 +385,19 @@ This fractal structure means each pillar contains a miniature version of the ful
 ## Cycle Integration Patterns
 
 ### Prospective → Actuation
-- **Proactive Curiosity** provides context for **Difficulty Alignment** (know capabilities and demands)
+- **Proactive Curiosity** provides context for **Challenge Matching** (know capabilities and demands)
 - **Cohesive Narrative** enables **Directed Intentionality** (shared understanding of goals)
 - **Shared Understanding** supports **Adaptive Control** (observable systems, documented feedback loops)
 
 ### Actuation → Retrospective
-- **Difficulty Alignment** outcomes feed **Outcome Analysis** (was difficulty right-sized?)
-- **Directed Intentionality** clarity enables **Pattern Recognition** (goals make patterns visible)
-- **Adaptive Control** data informs **Model Update** (real-time feedback becomes learning)
+- **Challenge Matching** outcomes feed **State Estimation** (was difficulty right-sized?)
+- **Directed Intentionality** clarity enables **Pattern Synthesis** (goals make patterns visible)
+- **Adaptive Control** data informs **Loop Optimization** (real-time feedback becomes learning)
 
 ### Retrospective → Prospective (Loop Closure)
-- **Outcome Analysis** enriches **Proactive Curiosity** (experiential data added to knowledge base)
-- **Pattern Recognition** improves **Cohesive Narrative** (patterns reveal system structure)
-- **Model Update** maintains **Shared Understanding** (learnings become cognitive artifacts)
+- **State Estimation** enriches **Proactive Curiosity** (experiential data added to knowledge base)
+- **Pattern Synthesis** improves **Cohesive Narrative** (patterns reveal system structure)
+- **Loop Optimization** maintains **Shared Understanding** (learnings become cognitive artifacts)
 
 ### Objective Function Integration
 
@@ -442,14 +442,14 @@ This fractal structure means each pillar contains a miniature version of the ful
 - **Shared Understanding**: Documentation coverage, doc age, knowledge loss on turnover
 
 ### Clear Strategy Metrics (Actuation)
-- **Difficulty Alignment**: Task-skill match %, burnout/boredom indicators, flow state frequency
+- **Challenge Matching**: Task-skill match %, burnout/boredom indicators, flow state frequency
 - **Directed Intentionality**: Goal clarity %, scope stability, focus time blocks
 - **Adaptive Control**: Feedback loop speed, deployment frequency, MTTR
 
 ### Reflective Calibration Metrics (Retrospective)
-- **Outcome Analysis**: % of incidents with root cause analysis, time to postmortem, prediction accuracy
-- **Pattern Recognition**: % repeat incidents, documented patterns, proactive prevention rate
-- **Model Update**: Action item completion %, documentation update frequency, learning velocity
+- **State Estimation**: % of incidents with root cause analysis, time to postmortem, prediction accuracy
+- **Pattern Synthesis**: % repeat incidents, documented patterns, proactive prevention rate
+- **Loop Optimization**: Action item completion %, documentation update frequency, learning velocity
 
 ### Objective Function Metrics
 - **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking

@@ -37,7 +37,7 @@ _Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 **Framework**: Csikszentmihalyi's Flow Theory + Robotics Actuation
 **Robotics Foundation**: Kinematics, Path Planning, PID Control
 
-1. **Difficulty Alignment** - Challenge-Skill Balance
+1. **Challenge Matching** - Challenge-Skill Balance
 2. **Directed Intentionality** - Clear Goals
 3. **Adaptive Control** - Immediate Feedback
 
@@ -59,7 +59,7 @@ Creating optimal performance states through Flow Theory.
 
 ---
 
-# Sub-Pillar 1: Difficulty Alignment
+# Sub-Pillar 1: Challenge Matching
 
 **The active synchronization of internal capabilities with external demands**
 

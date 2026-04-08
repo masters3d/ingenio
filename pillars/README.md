@@ -65,7 +65,7 @@ pillars/
 **Framework**: Csikszentmihalyi's Flow Theory, Robotics Actuation
 
 **Three Sub-Pillars**:
-1. **Difficulty Alignment** - Challenge-Skill Balance (Flow Channel)
+1. **Challenge Matching** - Challenge-Skill Balance (Flow Channel)
 2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy)
 3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment)
 
@@ -84,7 +84,7 @@ pillars/
 
 **Three Sub-Pillars**:
 1. **State Estimation** - Look forward at data, measure actual vs expected (gather signals before interpreting)
-2. **Model Correction** - Act on findings, revise mental models (fix docs and processes)
+2. **Pattern Synthesis** - Act on findings, revise mental models (fix docs and processes)
 3. **Loop Optimization** - Look back at how you learn (improve feedback loops, meta-learning)
 
 **Key Behaviors**: Blameless postmortems, pattern extraction, model updating, learning feedback
@@ -205,12 +205,12 @@ When creating new content for ingenio:
 ### Cycle Phase Transitions
 
 **Prospective → Actuation**:
-- Proactive Curiosity → Difficulty Alignment: Know capabilities and demands
+- Proactive Curiosity → Challenge Matching: Know capabilities and demands
 - Cohesive Narrative → Directed Intentionality: Shared understanding of goals
 - Shared Understanding → Adaptive Control: Observable systems, documented feedback loops
 
 **Actuation → Retrospective**:
-- Difficulty Alignment → Outcome Analysis: Was difficulty right-sized?
+- Challenge Matching → Outcome Analysis: Was difficulty right-sized?
 - Directed Intentionality → Pattern Recognition: Clear goals make patterns visible
 - Adaptive Control → Model Update: Real-time feedback becomes learning
 
@@ -256,7 +256,7 @@ Each component specification includes detailed measurement sections. Key indicat
 - **Shared Understanding**: Documentation coverage, doc age, knowledge loss on turnover
 
 ### Actuation (Clear Strategy) Metrics
-- **Difficulty Alignment**: Task-skill match %, flow state frequency, burnout/boredom indicators
+- **Challenge Matching**: Task-skill match %, flow state frequency, burnout/boredom indicators
 - **Directed Intentionality**: Goal clarity %, scope stability, focus time blocks
 - **Adaptive Control**: Feedback loop speed, deployment frequency, MTTR
 
