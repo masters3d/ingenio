@@ -154,7 +154,7 @@ The IMPROVING phase - closing the improvement loop by continuously testing state
 **Kaizen Foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA
 **OODA Mapping**: Feedback arc from Act back to Observe
 
-**See**: `/pillars/reflective_convergence.md` for complete specification
+**See**: `/pillars/systematic_improvement.md` for complete specification
 
 ---
 
