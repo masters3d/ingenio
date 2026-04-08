@@ -150,7 +150,7 @@ Reflective Convergence is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 2: Pattern Recognition (cont.)
+# Sub-Pillar 2: Pattern Synthesis (cont.)
 
 - Identify Feedback Loops
   - Reinforcing loops (amplify changes)
@@ -280,12 +280,15 @@ Reflective Convergence is the **feedback arc**:
 
 # Integration: Reflective Convergence ↔ Objective Function
 
-- **State Estimation** demonstrates **Mastery** progress
-  - See improvement over time, validate growth
-- **Pattern Synthesis** enhances **Autonomy**
-  - Understanding patterns enables independent decisions
-- **Learning Calibration** clarifies **Purpose**
-  - Connect learnings to meaningful outcomes
+- **State Estimation** demonstrates **Reward Signal** progress
+  - Human: See improvement over time (Mastery)
+  - Agent: Validate loss decrease (Reward Function)
+- **Pattern Synthesis** enhances **Degrees of Freedom**
+  - Human: Understanding enables decisions (Autonomy)
+  - Agent: Patterns expand action coverage (Action Space)
+- **Learning Calibration** clarifies **Alignment Function**
+  - Human: Connect learnings to meaning (Purpose)
+  - Agent: Verify optimization target (Value Alignment)
 
 ---
 

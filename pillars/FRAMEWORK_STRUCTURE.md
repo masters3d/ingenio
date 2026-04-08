@@ -190,7 +190,7 @@ This fractal structure means each pillar contains a miniature version of the ful
     │                                          │
     ├──────────────────────────────────────────┤
     │                                          │
-    │  3. REFLECTIVE CALIBRATION (Retrospective)│
+    │  3. REFLECTIVE CONVERGENCE (Retrospective)│
     │     - State Estimation                   │
     │     - Pattern Synthesis                  │
     │     - Learning Calibration                  │

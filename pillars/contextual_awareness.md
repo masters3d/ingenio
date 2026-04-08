@@ -331,9 +331,9 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 - **Shared Understanding** clarifies **Alignment Function** (see why work matters → Purpose/Value Alignment)
 
 ### With Reflective Convergence (Retrospective)
-- **Proactive Curiosity** enriched by **Outcome Analysis** (experiential data added to knowledge base)
-- **Cohesive Narrative** improved by **Pattern Recognition** (patterns reveal system structure)
-- **Shared Understanding** maintained by **Model Update** (learnings become cognitive artifacts)
+- **Proactive Curiosity** enriched by **State Estimation** (experiential data added to knowledge base)
+- **Cohesive Narrative** improved by **Pattern Synthesis** (patterns reveal system structure)
+- **Shared Understanding** maintained by **Learning Calibration** (learnings become cognitive artifacts)
 
 ---
 
