@@ -386,7 +386,7 @@ This documentation represents personal opinions made public - consider it as eng
 For deeper exploration:
 - **Contextual Awareness (Prospective)**: See presentation at `/presentation/eng_contextual_awareness.md`
 - **Clear Strategy (Actuation)**: See presentation at `/presentation/eng_clear_strategy.md`
-- **Systematic Improvement (Retrospective)**: See presentation at `/presentation/eng_reflective_convergence.md`
+- **Systematic Improvement (Retrospective)**: See presentation at `/presentation/eng_systematic_improvement.md`
 - **Objective Function**: See presentation at `/presentation/eng_objective_function.md`
 - **Complete Framework Structure**: See `/pillars/FRAMEWORK_STRUCTURE.md`
 - **Career Application**: See `/career.md` for IC-level-specific guidance
