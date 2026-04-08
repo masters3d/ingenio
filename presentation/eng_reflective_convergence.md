@@ -285,13 +285,13 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 # Integration: Systematic Improvement ↔ Objective Function
 
-- **Continuous Integration** demonstrates **Reward Signal** progress
+- **Continuous Integration** demonstrates **Search** progress
   - Human: See improvement over time (Mastery)
-  - Agent: Validate loss decrease (Reward Function)
-- **Deliberate Practice** enhances **Degrees of Freedom**
+  - Agent: Validate loss decrease (Reward Signal)
+- **Deliberate Practice** enhances **Drive**
   - Human: Understanding enables decisions (Autonomy)
   - Agent: Patterns expand action coverage (Action Space)
-- **Update Propagation** clarifies **Alignment Function**
+- **Update Propagation** clarifies **Renew**
   - Human: Permanent improvements connect to meaning (Purpose)
   - Agent: Propagated improvements verify optimization target (Value Alignment)
 

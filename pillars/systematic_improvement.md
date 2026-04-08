@@ -369,9 +369,9 @@ Systematic Improvement Internal Cycle:
 - **Update Propagation** maintains **Shared Understanding** (propagated improvements become permanent cognitive artifacts)
 
 ### With Objective Function
-- **Continuous Integration** demonstrates progress toward **Reward Signal** (continuous state testing shows improvement over time → Mastery/Reward Function)
-- **Deliberate Practice** enhances **Degrees of Freedom** (practiced improvement routines expand decision confidence → Autonomy/Action Space)
-- **Update Propagation** clarifies **Alignment Function** (permanent, propagated improvements verify we're optimizing for the right thing → Purpose/Value Alignment)
+- **Continuous Integration** demonstrates progress toward **Search** (continuous state testing shows improvement over time → Mastery/Reward Signal)
+- **Deliberate Practice** enhances **Drive** (practiced improvement routines expand decision confidence → Autonomy/Action Space)
+- **Update Propagation** clarifies **Renew** (permanent, propagated improvements verify we're optimizing for the right thing → Purpose/Value Alignment)
 
 ---
 

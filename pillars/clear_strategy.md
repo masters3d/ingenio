@@ -270,9 +270,9 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 ## Integration with Other Pillars
 
 ### With Objective Function
-- **Challenge Matching** enables **Reward Signal** (right-sized challenges → Mastery/Reward Function)
-- **Directed Intentionality** requires **Alignment Function** (clear goals aligned with Purpose/Value Alignment)
-- **Adaptive Control** supports **Degrees of Freedom** (self-correcting through Autonomy/Action Space)
+- **Challenge Matching** enables **Search** (right-sized challenges → Mastery/Reward Signal)
+- **Directed Intentionality** requires **Renew** (clear goals aligned with Purpose/Value Alignment)
+- **Adaptive Control** supports **Drive** (self-correcting through Autonomy/Action Space)
 
 ### With Contextual Awareness (Prospective)
 - **Challenge Matching** needs **Proactive Curiosity** (understand your capabilities and demands)

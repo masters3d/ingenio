@@ -326,9 +326,9 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 - **Shared Understanding** supports **Adaptive Control** (documented feedback loops and observable systems)
 
 ### With Objective Function
-- **Proactive Curiosity** reduces friction for **Degrees of Freedom** (find what you need → Autonomy/Action Space)
-- **Cohesive Narrative** accelerates **Reward Signal** (understand systems deeply → Mastery/Reward Function)
-- **Shared Understanding** clarifies **Alignment Function** (see why work matters → Purpose/Value Alignment)
+- **Proactive Curiosity** reduces friction for **Drive** (find what you need → Autonomy/Action Space)
+- **Cohesive Narrative** accelerates **Search** (understand systems deeply → Mastery/Reward Signal)
+- **Shared Understanding** clarifies **Renew** (see why work matters → Purpose/Value Alignment)
 
 ### With Systematic Improvement (Retrospective)
 - **Proactive Curiosity** enriched by **Continuous Integration** (continuous state testing adds experiential data to knowledge base)

@@ -101,11 +101,11 @@ pillars/
 **Framework**: Self-Determination Theory (human), Reinforcement Learning (agent), Objective Function optimization
 
 **Three Sub-Pillars (Agent-Agnostic)**:
-1. **Reward Signal** (Prospective) - "What does *better* look like?"
-   - Human: Mastery | Agent: Reward Function
-2. **Degrees of Freedom** (Actuation) - "What can I control?"
+1. **Search** (Prospective) - "What does *better* look like?"
+   - Human: Mastery | Agent: Reward Signal
+2. **Drive** (Actuation) - "What can I control?"
    - Human: Autonomy | Agent: Action Space
-3. **Alignment Function** (Retrospective) - "Am I optimizing for the right thing?"
+3. **Renew** (Retrospective) - "Am I optimizing for the right thing?"
    - Human: Purpose | Agent: Value Alignment
 
 **Key Behaviors**: Deliberate practice, ownership, meaningful alignment (human); reward shaping, tool access, RLHF (agent)
@@ -222,9 +222,9 @@ When creating new content for ingenio:
 ### Objective Function Integration
 
 **Objective Function guides all three cycle phases**:
-- **Prospective**: Curiosity driven by desire for improvement (Reward Signal/Mastery or Reward Function)
-- **Actuation**: Goals aligned with what can be controlled (Degrees of Freedom/Autonomy or Action Space), executed toward purpose (Alignment Function/Purpose or Value Alignment)
-- **Retrospective**: Improvement validates progress (Reward Signal), clarifies correctness of goals (Alignment Function)
+- **Prospective**: Curiosity driven by desire for improvement (Search/Mastery or Reward Signal)
+- **Actuation**: Goals aligned with what can be controlled (Drive/Autonomy or Action Space), executed toward purpose (Renew/Purpose or Value Alignment)
+- **Retrospective**: Improvement validates progress (Search), clarifies correctness of goals (Renew)
 
 ### With Other Frameworks
 
@@ -241,7 +241,7 @@ When creating new content for ingenio:
 
 **Behavior Alignment**:
 - Implements Actuation through guiding policies
-- Preserves Degrees of Freedom/Autonomy while ensuring alignment
+- Preserves Drive/Autonomy while ensuring alignment
 - Requires Prospective for appropriate policy application
 
 ---
@@ -266,9 +266,9 @@ Each component specification includes detailed measurement sections. Key indicat
 - **Update Propagation**: Recurrence rate (should trend to zero), propagation coverage %, improvement velocity
 
 ### Objective Function Metrics
-- **Reward Signal**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
-- **Degrees of Freedom**: Decision velocity (human), action coverage (agent), escalation rate, ownership distribution
-- **Alignment Function**: Mission understanding (human), human agreement rate (agent), work alignment %, safety violations
+- **Search**: Skill growth rate (human), loss curves (agent), learning time allocation, challenge seeking
+- **Drive**: Decision velocity (human), action coverage (agent), escalation rate, ownership distribution
+- **Renew**: Mission understanding (human), human agreement rate (agent), work alignment %, safety violations
 
 ---
 

@@ -89,12 +89,12 @@ SMART is an acronym that stands for Specific, Measurable, Achievable, Realistic,
 # Objective Function
 
 **Human: Intrinsic Motivation**
-- Mastery (Reward Signal)
-- Autonomy (Degrees of Freedom)
-- Purpose (Alignment Function)
+- Mastery (Search)
+- Autonomy (Drive)
+- Purpose (Renew)
 
 **Agent: Optimization Target**
-- Reward Function
+- Reward Signal
 - Action Space
 - Value Alignment
 

@@ -212,5 +212,5 @@ Reference:
 **↑ Guided by Objective Function (WHY)**:
 - Defines what success means for any agent (human or AI)
 - Human: Intrinsic Motivation (Mastery, Autonomy, Purpose)
-- Agent: Optimization Target (Reward Function, Action Space, Value Alignment)
+- Agent: Optimization Target (Reward Signal, Action Space, Value Alignment)
 

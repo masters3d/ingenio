@@ -170,19 +170,19 @@ The WHY - defining what success means, guiding all three phases of the operation
 
 **Fractal Pattern**: Following Prospective → Actuation → Retrospective
 
-1. **Reward Signal** (Prospective) - "What does *better* look like?"
+1. **Search** (Prospective) - "What does *better* look like?"
    - **Human**: Mastery (skill development, deliberate practice, expertise growth)
-   - **Agent**: Reward Function (scalar/vector signals, loss minimization, accuracy maximization)
+   - **Agent**: Reward Signal (scalar/vector signals, loss minimization, accuracy maximization)
    - Learning mechanisms, feedback integration, curriculum design
    - Optimization targets and progress measurement
 
-2. **Degrees of Freedom** (Actuation) - "What can I control?"
+2. **Drive** (Actuation) - "What can I control?"
    - **Human**: Autonomy (decision-making authority, ownership models, psychological safety)
    - **Agent**: Action Space (available tools, permission boundaries, compositional actions)
    - Enablers and constraints for effective control
    - Balance between capability and safety
 
-3. **Alignment Function** (Retrospective) - "Am I optimizing for the right thing?"
+3. **Renew** (Retrospective) - "Am I optimizing for the right thing?"
    - **Human**: Purpose (meaningful work, values alignment, mission connection)
    - **Agent**: Value Alignment (RLHF, constitutional AI, goal specification, safety constraints)
    - Prevention of goal misalignment and value drift

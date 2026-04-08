@@ -51,17 +51,17 @@ A poorly specified objective function leads to goal misalignment, value drift, a
 
 **Fractal Pattern**: Following the Prospective → Actuation → Retrospective pattern:
 
-1. **Reward Signal** (Prospective) - "What does *better* look like?"
-2. **Degrees of Freedom** (Actuation) - "What can I control?"
-3. **Alignment Function** (Retrospective) - "Am I optimizing for the right thing?"
+1. **Search** (Prospective) - "What does *better* look like?"
+2. **Drive** (Actuation) - "What can I control?"
+3. **Renew** (Retrospective) - "Am I optimizing for the right thing?"
 
 Each sub-pillar has both **general** and **instantiated** forms:
 - **Human Instantiation**: Intrinsic Motivation (Mastery, Autonomy, Purpose)
-- **Agent Instantiation**: Reinforcement Learning (Reward Function, Action Space, Value Alignment)
+- **Agent Instantiation**: Reinforcement Learning (Reward Signal, Action Space, Value Alignment)
 
 ---
 
-### 1. Reward Signal (Prospective)
+### 1. Search (Prospective)
 
 **Cycle Phase**: Prospective - understanding what success looks like before acting
 
@@ -142,7 +142,7 @@ Mastery is the human experience of improvement - the feeling of growing skills, 
 **vs Comfort Zone Stagnation**
 > "I'll just keep doing CRUD APIs. I've done 50 of them, I can do 50 more."
 
-#### Agent Instantiation: Reward Function
+#### Agent Instantiation: Reward Signal
 
 **Definition**: A scalar or vector signal that quantifies the quality of an action or state - the mathematical definition of "better".
 
@@ -216,7 +216,7 @@ The reward function is how AI systems know they're improving. In supervised lear
 
 ---
 
-### 2. Degrees of Freedom (Actuation)
+### 2. Drive (Actuation)
 
 **Cycle Phase**: Actuation - what the agent can control during execution
 
@@ -370,7 +370,7 @@ The action space defines what an agent can DO. A restricted action space limits 
 
 ---
 
-### 3. Alignment Function (Retrospective)
+### 3. Renew (Retrospective)
 
 **Cycle Phase**: Retrospective - verifying the objective function itself is correct
 
@@ -535,35 +535,35 @@ Value alignment is the AI safety problem: how do we ensure AI systems do what we
 The Objective Function sits above and guides all three cycle phases:
 
 **Drives Prospective (Contextual Awareness)**:
-- **Reward Signal** → **Proactive Curiosity**: What information helps me get better? What should I learn?
-- **Degrees of Freedom** → **Cohesive Narrative**: What do I need to understand to make good decisions?
-- **Alignment Function** → **Shared Understanding**: What context ensures we're optimizing for the right goals?
+- **Search** → **Proactive Curiosity**: What information helps me get better? What should I learn?
+- **Drive** → **Cohesive Narrative**: What do I need to understand to make good decisions?
+- **Renew** → **Shared Understanding**: What context ensures we're optimizing for the right goals?
 
 **Drives Actuation (Clear Strategy)**:
-- **Reward Signal** → **Challenge Matching**: What challenges help me improve? (Flow Channel)
-- **Degrees of Freedom** → **Directed Intentionality**: What goals can I achieve with my available actions?
-- **Alignment Function** → **Adaptive Control**: Am I getting feedback on the right metrics?
+- **Search** → **Challenge Matching**: What challenges help me improve? (Flow Channel)
+- **Drive** → **Directed Intentionality**: What goals can I achieve with my available actions?
+- **Renew** → **Adaptive Control**: Am I getting feedback on the right metrics?
 
 **Drives Retrospective (Systematic Improvement)**:
-- **Reward Signal** → **Continuous Integration**: Did I actually get better? CI continuously verifies improvement.
-- **Degrees of Freedom** → **Deliberate Practice**: What actions worked? What didn't? Practice better ones.
-- **Alignment Function** → **Update Propagation**: Am I improving the right things? Propagate what works, eliminate what doesn't.
+- **Search** → **Continuous Integration**: Did I actually get better? CI continuously verifies improvement.
+- **Drive** → **Deliberate Practice**: What actions worked? What didn't? Practice better ones.
+- **Renew** → **Update Propagation**: Am I improving the right things? Propagate what works, eliminate what doesn't.
 
 ### Bottom-Up: Cycle Reinforces the Objective Function
 
 Each cycle phase produces outputs that strengthen the Objective Function:
 
-**Prospective → Alignment Function**:
+**Prospective → Renew**:
 - **Understanding** gained from Prospective phase reveals whether goals are correct
 - Deep context exposes misalignments between stated and actual objectives
 - Shared understanding surfaces conflicting purposes that need resolution
 
-**Actuation → Reward Signal**:
+**Actuation → Search**:
 - **Progress** made during Actuation provides concrete evidence of improvement
 - Execution outcomes validate or invalidate reward signal quality
 - Flow state achievement indicates well-calibrated difficulty (right reward gradient)
 
-**Retrospective → Degrees of Freedom**:
+**Retrospective → Drive**:
 - **Learning** from Retrospective identifies which actions were actually useful
 - Pattern recognition reveals which degrees of freedom matter most
 - Model updates suggest expanding or constraining action space
@@ -571,7 +571,7 @@ Each cycle phase produces outputs that strengthen the Objective Function:
 **Complete Reinforcing Loop**:
 ```
          Objective Function
-         (Reward, Freedom, Alignment)
+         (Search, Drive, Renew)
                  ↓ drives
     ┌────────────────────────────────┐
     │  Prospective → Actuation → Retrospective  │
@@ -592,9 +592,9 @@ This creates a virtuous cycle: a better Objective Function leads to more effecti
 
 Developed by psychologists Edward Deci and Richard Ryan, SDT identifies three fundamental psychological needs:
 
-1. **Competence** (Mastery/Reward Signal): Feeling effective in activities
-2. **Autonomy** (Degrees of Freedom): Experiencing choice and volition in actions
-3. **Relatedness** (Purpose/Alignment): Feeling connected to others and contributing to something meaningful
+1. **Competence** (Mastery/Search): Feeling effective in activities
+2. **Autonomy** (Drive): Experiencing choice and volition in actions
+3. **Relatedness** (Purpose/Renew): Feeling connected to others and contributing to something meaningful
 
 When all three needs are satisfied, humans experience intrinsic motivation - doing activities for inherent satisfaction rather than external rewards.
 
@@ -625,9 +625,9 @@ Psychologist Mihaly Csikszentmihalyi's concept of "flow" - complete absorption i
 
 **Conditions for Flow**
 1. Clear goals and immediate feedback (Clear Strategy)
-2. Balance between challenge and skill (Reward Signal/Mastery)
-3. Sense of control (Degrees of Freedom/Autonomy)
-4. Intrinsically rewarding (Alignment Function/Purpose)
+2. Balance between challenge and skill (Search/Mastery)
+3. Sense of control (Drive/Autonomy)
+4. Intrinsically rewarding (Renew/Purpose)
 
 **Engineering Flow**
 - Deep focus coding sessions without interruptions
@@ -685,51 +685,51 @@ How to define what agents can do:
 
 ### With Contextual Awareness (Prospective)
 
-**Reward Signal ↔ Proactive Curiosity**
+**Search ↔ Proactive Curiosity**
 - Mastery requires curiosity about what to learn next
 - Reward functions need information to provide accurate signals
 - Both ask: "What information makes me better?"
 
-**Degrees of Freedom ↔ Cohesive Narrative**
+**Drive ↔ Cohesive Narrative**
 - Autonomy requires understanding systems to make good decisions
 - Action space effectiveness depends on contextual knowledge
 - Both ask: "What do I need to know to act well?"
 
-**Alignment Function ↔ Shared Understanding**
+**Renew ↔ Shared Understanding**
 - Purpose requires shared context to align with team/org goals
 - Value alignment needs documented principles and examples
 - Both ask: "Are we all optimizing for the same thing?"
 
 ### With Clear Strategy (Actuation)
 
-**Reward Signal ↔ Challenge Matching**
+**Search ↔ Challenge Matching**
 - Mastery requires challenges in the Flow Channel (not too hard, not too easy)
 - Reward gradients should match skill level for optimal learning
 - Both ask: "Is this challenge right-sized for growth?"
 
-**Degrees of Freedom ↔ Directed Intentionality**
+**Drive ↔ Directed Intentionality**
 - Autonomy requires clear goals to direct action toward
 - Action space must enable goal achievement
 - Both ask: "What can I accomplish with what I control?"
 
-**Alignment Function ↔ Adaptive Control**
+**Renew ↔ Adaptive Control**
 - Purpose ensures feedback is on meaningful metrics
 - Value alignment checks if optimization targets are correct
 - Both ask: "Am I getting feedback on what matters?"
 
 ### With Systematic Improvement (Retrospective)
 
-**Reward Signal ↔ Continuous Integration**
+**Search ↔ Continuous Integration**
 - Mastery progress measured by continuously testing actual vs expected growth
 - Reward function accuracy validated by continuous state verification
 - Both ask: "Did I actually get better? Is this still true?"
 
-**Degrees of Freedom ↔ Deliberate Practice**
+**Drive ↔ Deliberate Practice**
 - Autonomy refined by practicing and improving which decisions work
 - Action space adjusted based on disciplined improvement routines
 - Both ask: "What should I change about what I control?"
 
-**Alignment Function ↔ Update Propagation**
+**Renew ↔ Update Propagation**
 - Purpose clarified by verifying that improvements are permanent and propagated
 - Value alignment improved by ensuring the right things are being improved and spread
 - Both ask: "Should I change what I'm optimizing for, and is that change spreading?"
@@ -742,49 +742,49 @@ How to define what agents can do:
 
 **Learned Helplessness**
 - **Symptom**: "I can't do anything unless my manager approves it"
-- **Root Cause**: Degrees of Freedom (Autonomy) repeatedly denied
+- **Root Cause**: Drive (Autonomy) repeatedly denied
 - **Solution**: Explicitly grant decision-making authority, support early failures
 
 **Burnout from Extrinsic-Only Motivation**
 - **Symptom**: "I'm just here for the paycheck"
-- **Root Cause**: Alignment Function (Purpose) disconnection, no Reward Signal (Mastery) growth
+- **Root Cause**: Renew (Purpose) disconnection, no Search (Mastery) growth
 - **Solution**: Reconnect work to meaningful outcomes, invest in skill development
 
 **The Specialist Trap**
 - **Symptom**: "I only know this one thing and resist learning anything else"
-- **Root Cause**: Reward Signal (Mastery) without growth mindset
+- **Root Cause**: Search (Mastery) without growth mindset
 - **Solution**: Encourage T-shaped skills, rotate responsibilities
 
 **Analysis Paralysis from Excessive Autonomy**
 - **Symptom**: "I have so many options I can't decide"
-- **Root Cause**: Degrees of Freedom (Autonomy) without constraints
+- **Root Cause**: Drive (Autonomy) without constraints
 - **Solution**: Provide clear boundaries and non-negotiable constraints
 
 ### For Agent Instantiation
 
 **Reward Hacking**
 - **Symptom**: Agent exploits loopholes to maximize reward without achieving intent
-- **Root Cause**: Misspecified Reward Signal without Alignment Function checks
+- **Root Cause**: Misspecified Search (Reward Signal) without Renew checks
 - **Solution**: RLHF, adversarial testing, constitutional constraints
 
 **Action Space Too Narrow**
 - **Symptom**: Agent cannot accomplish goals because it lacks necessary tools
-- **Root Cause**: Overly restricted Degrees of Freedom
+- **Root Cause**: Overly restricted Drive (Action Space)
 - **Solution**: Expand action space with appropriate safety constraints
 
 **Action Space Too Broad**
 - **Symptom**: Agent takes dangerous actions, causes unintended harm
-- **Root Cause**: Unconstrained Degrees of Freedom without safety checks
+- **Root Cause**: Unconstrained Drive (Action Space) without safety checks
 - **Solution**: Add permission boundaries, human-in-the-loop for risky actions
 
 **Goal Misalignment**
 - **Symptom**: Agent optimizes metrics that don't serve actual objectives
-- **Root Cause**: Alignment Function failure - optimizing wrong thing
+- **Root Cause**: Renew failure - optimizing wrong thing
 - **Solution**: Better goal specification, RLHF, continuous monitoring
 
 **Value Drift**
 - **Symptom**: Agent's learned behavior diverges from intended values over time
-- **Root Cause**: Alignment Function not continuously verified
+- **Root Cause**: Renew not continuously verified
 - **Solution**: Regular alignment audits, behavioral monitoring, retraining
 
 ---
@@ -793,19 +793,19 @@ How to define what agents can do:
 
 ### For Human Instantiation
 
-**Reward Signal (Mastery) Indicators**
+**Search (Mastery) Indicators**
 - **Skill Growth**: Are engineers advancing their capabilities?
 - **Learning Time**: Is time allocated for skill development?
 - **Knowledge Sharing**: How often do engineers teach others?
 - **Challenge Seeking**: Do engineers volunteer for stretch projects?
 
-**Degrees of Freedom (Autonomy) Indicators**
+**Drive (Autonomy) Indicators**
 - **Decision Velocity**: How quickly can engineers make decisions?
 - **Escalation Rate**: What % of decisions require manager approval?
 - **Ownership Distribution**: How many engineers have clear ownership?
 - **Self-Service**: Can engineers get what they need without asking?
 
-**Alignment Function (Purpose) Indicators**
+**Renew (Purpose) Indicators**
 - **Mission Understanding**: Can engineers articulate company/team purpose?
 - **Work Alignment**: What % of work clearly serves objectives?
 - **Engagement**: Are engineers enthusiastic about their work?
@@ -813,19 +813,19 @@ How to define what agents can do:
 
 ### For Agent Instantiation
 
-**Reward Signal (Reward Function) Indicators**
+**Search (Reward Signal) Indicators**
 - **Loss Curves**: Is training loss decreasing consistently?
 - **Accuracy Metrics**: Is agent improving on held-out test sets?
 - **Reward Maximization**: Is cumulative reward increasing?
 - **Learning Rate**: How quickly does agent improve?
 
-**Degrees of Freedom (Action Space) Indicators**
+**Drive (Action Space) Indicators**
 - **Action Coverage**: What % of action space is actually used?
 - **Tool Utilization**: Does agent use available tools effectively?
 - **Success Rate**: What % of attempted actions succeed?
 - **Action Diversity**: Does agent use varied strategies or just one?
 
-**Alignment Function (Value Alignment) Indicators**
+**Renew (Value Alignment) Indicators**
 - **Human Agreement**: Do humans approve of agent's decisions?
 - **Safety Violations**: How often does agent violate constraints?
 - **Alignment Drift**: Is agent behavior stable or changing?
@@ -837,21 +837,21 @@ How to define what agents can do:
 
 ### For Human Instantiation
 
-**Enable Reward Signal (Mastery)**
+**Enable Search (Mastery)**
 - **20% Time**: Dedicated time for learning and experimentation
 - **Conference Budget**: Support attendance at technical conferences
 - **Book Budget**: Provide resources for continuous learning
 - **Internal Tech Talks**: Platform for engineers to share knowledge
 - **Mentorship Programs**: Pair experienced with growing engineers
 
-**Enable Degrees of Freedom (Autonomy)**
+**Enable Drive (Autonomy)**
 - **Ownership Assignment**: Explicit ownership of services/features
 - **Decision Rights**: Document what decisions belong to which roles
 - **Failure Tolerance**: Treat mistakes as learning opportunities
 - **Fewer Approvals**: Reduce bureaucratic gates on execution
 - **Async Work**: Trust engineers to manage their own schedules
 
-**Enable Alignment Function (Purpose)**
+**Enable Renew (Purpose)**
 - **Mission Communication**: Regularly share how work impacts users
 - **User Exposure**: Bring engineers closer to customers
 - **Impact Metrics**: Show how engineering work drives business outcomes
@@ -860,21 +860,21 @@ How to define what agents can do:
 
 ### For Agent Instantiation
 
-**Enable Reward Signal (Reward Function)**
+**Enable Search (Reward Signal)**
 - **Dense Feedback**: Provide frequent, specific feedback signals
 - **Curriculum Design**: Gradually increase task difficulty
 - **Multi-Objective Balancing**: Weight competing objectives appropriately
 - **Reward Shaping**: Add intermediate milestones
 - **Intrinsic Curiosity**: Allow exploration for novelty/learning
 
-**Enable Degrees of Freedom (Action Space)**
+**Enable Drive (Action Space)**
 - **Tool Access**: Provide necessary tools and APIs
 - **Sandboxed Experimentation**: Safe environment for trying actions
 - **Hierarchical Actions**: Enable both high and low-level control
 - **Compositional Tools**: Allow combining primitive actions
 - **Permission Gradients**: Gradually expand access as agent proves capable
 
-**Enable Alignment Function (Value Alignment)**
+**Enable Renew (Value Alignment)**
 - **RLHF Pipelines**: Collect human feedback systematically
 - **Constitutional Constraints**: Hard-code inviolable principles
 - **Red Teaming**: Regular adversarial testing
