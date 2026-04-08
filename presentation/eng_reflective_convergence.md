@@ -91,14 +91,16 @@ Systematic Improvement is the **feedback arc**:
 ```
 ┌──→ Continuous Integration (Is this still true?)
 │           ↓
-│    Deliberate Practice (do less / keep / do more)
+│    Deliberate Practice (do less of / keep doing / do more of)
 │           │
-│     converged? ──NO──┘
+│  ready to standardize? ──NO──┘
 │           │
 │          YES
 │           ↓
 └── Update Propagation (eliminate → prevent → automate → propagate)
 ```
+
+Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only when it's ready to standardize (PDCA → SDCA boundary) does it exit to Update Propagation.
 
 ---
 

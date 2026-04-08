@@ -19,7 +19,7 @@ Objective Function (WHY)
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
 └────────────────────────────────────┘
-         ↑ feeds learning back
+         ↑ feeds improvement back
 ```
 
 ### Contextual Awareness (Prospective - KNOWING)

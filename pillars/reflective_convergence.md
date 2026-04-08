@@ -37,16 +37,16 @@ The value of action lies not just in the outcome, but in what the system does wi
 2. **Deliberate Practice** (Actuation of improving) - The practiced routine of improvement: do less of / keep doing / do more of. "How do we make this better?"
 3. **Update Propagation** (Retrospective of improving) - Eliminate waste permanently, prevent errors structurally, automate what's proven, propagate horizontally. "How do we make this permanent and spread it everywhere?"
 
-**Inner Loop**: Sub-Pillars 1 and 2 form a tight inner loop before exiting through Sub-Pillar 3:
+**Inner Loop**: Sub-Pillars 1 and 2 form a tight inner loop that repeats until the improvement is ready to standardize. Continuous Integration (test) and Deliberate Practice (improve) cycle rapidly together — you verify the current condition, run an improvement experiment, verify again. Only when the improvement is stable (PDCA → SDCA boundary: "ready to standardize?") does the cycle exit to Sub-Pillar 3, which locks in the gain and propagates it everywhere it applies:
 
 ```
 Systematic Improvement Internal Cycle:
 
     ┌──→ Continuous Integration (Is this still true?)
     │           ↓
-    │    Deliberate Practice (do less / keep / do more)
+    │    Deliberate Practice (do less of / keep doing / do more of)
     │           │
-    │     converged? ──NO──┘
+    │  ready to standardize? ──NO──┘
     │           │
     │          YES
     │           ↓

@@ -12,7 +12,7 @@ Objective Function (WHY)
 ┌────────────────────────────────────┐
 │  Prospective → Actuation → Retrospective  │
 └────────────────────────────────────┘
-         ↑ feeds learning back
+         ↑ feeds improvement back
 ```
 
 **Three-Phase Operational Cycle**:
