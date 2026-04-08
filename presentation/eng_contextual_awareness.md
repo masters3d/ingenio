@@ -59,7 +59,7 @@ _Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 ```
 Objective Function (WHY)
          ↓
-Prospective (KNOWING) → Actuation (ACTING) → Retrospective (LEARNING)
+Prospective (KNOWING) → Actuation (ACTING) → Retrospective (IMPROVING)
      ↑
 You are here
 ```
@@ -275,8 +275,8 @@ https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
 - Mental models inform goal-setting and execution
 - Cognitive artifacts enable informed decision-making
 
-**→ From Retrospective (LEARNING)**:
-- Reflective Convergence enriches our knowledge
+**→ From Retrospective (IMPROVING)**:
+- Systematic Improvement propagates gains into our knowledge base
 - Pattern recognition improves mental models
 - Model updates become shared understanding
 

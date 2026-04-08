@@ -35,7 +35,7 @@ Objective Function (WHY)
 **Three-Phase Operational Cycle**:
 1. **Contextual Awareness** (Prospective - KNOWING)
 2. **Clear Strategy** (Actuation - ACTING)
-3. **Reflective Convergence** (Retrospective - LEARNING)
+3. **Systematic Improvement** (Retrospective - IMPROVING)
 
 **Above the Cycle**:
 - **Objective Function** (WHY)
@@ -119,38 +119,39 @@ The ACTING phase - transforming ambiguous directives into concrete, achievable o
 
 ---
 
-### Reflective Convergence (Retrospective - LEARNING)
+### Systematic Improvement (Retrospective - IMPROVING)
 
-**Etymology**: Latin _reflectere_ (to bend back) + Latin _convergere_ (to incline together)
-**Cycle Phase**: Retrospective (learn from what happened)
-**Philosophy**: "Every result is data" - the system that examines itself improves itself
+**Etymology**: Japanese _Kaizen_ (改善) — _kai_ (change) + _zen_ (good/better) — "change for the better." Combined with Musk's Five-Step Algorithm (Question → Delete → Simplify → Accelerate → Automate) as ordering discipline.
+**Cycle Phase**: Retrospective (improve from what happened)
+**Philosophy**: "The system that improves itself outlasts every other" — never automate inefficiency
 
-The LEARNING phase - closing the improvement loop by examining outcomes, identifying patterns, and updating models.
+The IMPROVING phase - closing the improvement loop by continuously testing state, practicing improvement routines, and permanently propagating gains.
 
 #### Three Sub-Pillars
 
-1. **State Estimation**: Look forward at the data, measure actual vs expected, gather signals
+1. **Continuous Integration**: Constantly test the state of the system against expected state. "Is this still true?"
    - Compare prediction vs reality (measurement gap)
    - Identify contributing factors (root cause analysis, Five Whys)
-   - Assess impact (who affected, what cost, what learned)
    - Document without blame (blameless postmortems, psychological safety)
-   - **Theoretical Roots**: Robotics State Estimation (Kalman filter), Control Theory error signals, After-Action Review
+   - The system constantly examines itself — continuous, not periodic
+   - **Kaizen Roots**: Genchi Genbutsu (go and see), Hansei (honest self-reflection), PDCA: Check
 
-2. **Pattern Synthesis**: Act on findings, revise mental models, fix docs and processes
+2. **Deliberate Practice**: The practiced routine of improvement — do less of / keep doing / do more of. "How do we make this better?"
+   - Sort every process: do less of / keep doing / do more of
    - Distinguish signal from noise (one-off vs systemic, special vs common cause)
    - Recognize system archetypes (Success to Successful, Tragedy of Commons, Fixes that Backfire)
-   - Identify feedback loops (reinforcing, balancing, delays)
-   - Extract generalizable lessons (underlying principles, mental models, heuristics)
-   - **Theoretical Roots**: Machine Learning pattern extraction, Systems Thinking archetypes, Statistical Process Control
+   - Extract generalizable lessons (underlying principles, not just specific fixes)
+   - **Kaizen Roots**: Kata (practiced routine), Muda awareness, Ericsson's Deliberate Practice, Double-Loop Learning
 
-3. **Learning Calibration**: Look back at how you learn, improve feedback loops themselves (meta-learning)
-   - Update mental models (adjust map to match territory, Bayesian updating)
-   - Revise strategies (change future behavior based on outcomes)
-   - Adjust processes (improve team practices, tools, workflows)
-   - Close the loop (feed learning back to Prospective phase, update cognitive artifacts)
-   - **Theoretical Roots**: Bayesian Updating, Double-Loop Learning (Argyris), SLAM Replanning, Adaptive Control, Meta-Learning
+3. **Update Propagation**: Eliminate waste permanently, prevent errors structurally, automate what's proven, propagate horizontally. "How do we make this permanent and spread it everywhere?"
+   - Eliminate waste permanently (Muda elimination — don't defer, delete)
+   - Mistake-proof the system (Poka-yoke — make regression structurally impossible)
+   - Automate with intelligence (Jidoka — human judgment stays in the loop)
+   - Standardize before propagating (SDCA — lock in gains, then spread)
+   - Propagate horizontally (Yokoten — spread to every place it applies)
+   - **Kaizen Roots**: Yokoten, Poka-yoke, Jidoka, SDCA, Musk Steps 4-5, Recursive Self-Improvement
 
-**Robotics Foundation**: State Estimation (Kalman filter, observers, feedback control)
+**Kaizen Foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA
 **OODA Mapping**: Feedback arc from Act back to Observe
 
 **See**: `/pillars/reflective_convergence.md` for complete specification
@@ -202,7 +203,7 @@ The WHY - defining what success means, guiding all three phases of the operation
 
 1. **Contextual Awareness (Prospective/KNOWING)**: Gather information, build mental models, understand environment
 2. **Clear Strategy (Actuation/ACTING)**: Set clear goals, align difficulty, execute with feedback
-3. **Reflective Convergence (Retrospective/LEARNING)**: Analyze outcomes, recognize patterns, update models
+3. **Systematic Improvement (Retrospective/IMPROVING)**: Continuously test state, practice improvement routines, propagate gains permanently
 4. **Loop back to Prospective**: Enhanced understanding informs next cycle
 
 All guided by **Objective Function (WHY)**: The reward function that defines success for any agent.
@@ -257,7 +258,7 @@ Based on 25 open GitHub issues, focus areas include:
 
 ### Content Development Approach
 1. **Start with Etymology**: Research word origins and meanings
-2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Convergence
+2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Systematic Improvement
 3. **Use Quest Engine**: Vision → Design → Sprint → Daily planning hierarchy
 4. **Consider People Systems**: Individual, team, group, organization levels
 5. **Maintain Context**: Async documentation that scales
@@ -275,7 +276,7 @@ Vision Document
 │   ├── Objective Function (reward signal, degrees of freedom, alignment)
 │   ├── Contextual Awareness (prospective understanding)
 │   ├── Clear Strategy (actuation approach)
-│   └── Reflective Convergence (learning considerations)
+│   └── Systematic Improvement (improvement considerations)
 ├── People Systems Impact (Individual → Team → Group → Organization)
 ├── Implementation Design
 ├── Success Metrics
@@ -369,7 +370,7 @@ ingenio/
 
 ### Content Development Principles
 1. **Always Start with Context**: Read existing content before adding new material
-2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Reflective Convergence in all work
+2. **Apply Framework 4.0**: Ensure Objective Function, Contextual Awareness, Clear Strategy, Systematic Improvement in all work
 3. **Research Etymology**: Understand word origins when introducing concepts
 4. **Think Systems**: Consider individual, team, group, organization implications
 5. **Document Opinions**: Clearly mark subjective content as opinions

@@ -50,7 +50,7 @@ _Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 ```
 Objective Function (WHY)
          ↓
-Prospective (KNOWING) → Actuation (ACTING) → Retrospective (LEARNING)
+Prospective (KNOWING) → Actuation (ACTING) → Retrospective (IMPROVING)
                               ↑
                          You are here
 ```
@@ -204,8 +204,8 @@ Reference:
 - Contextual Awareness provides the knowledge needed to act
 - Mental models inform goal-setting and difficulty calibration
 
-**→ To Retrospective (LEARNING)**:
-- Reflective Convergence examines outcomes
+**→ To Retrospective (IMPROVING)**:
+- Systematic Improvement tests outcomes and propagates gains
 - Pattern recognition identifies what worked
 - Model updates feed back to improve future actions
 

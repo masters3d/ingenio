@@ -3,7 +3,7 @@ marp: true
 
 ---
 
-# Reflective Convergence
+# Systematic Improvement
 
 Chéyo Jiménez, MSE
 _Apr, 2026_
@@ -11,30 +11,29 @@ _Apr, 2026_
 
 ---
 
-# Reflective
+# Kaizen (改善)
 
-- From Latin _reflectere_
-  - _re-_ (back) + _flectere_ (to bend)
-  - "To bend back upon itself"
-- The act of examining one's own thoughts and actions
-
----
-
-# Convergence
-
-- From Latin _convergere_
-  - _con-_ (together) + _vergere_ (to incline)
-  - "To incline together toward a point"
-- Iterative improvement toward truth
-- Each cycle gets closer to accurate understanding
+- From Japanese _kai_ (change) + _zen_ (good/better)
+  - "Change for the better"
+  - The ongoing improvement of all functions involving everybody
+- Combined with Musk's Five-Step Algorithm as ordering discipline
+  - Question → Delete → Simplify → Accelerate → Automate
 
 ---
 
-# Reflective Convergence
+# Core Principle
 
-**The LEARNING Pillar**
+"Never automate inefficiency."
 
-"Every result is data — the system that examines itself improves itself"
+The order matters: **question → simplify → accelerate → automate**
+
+---
+
+# Systematic Improvement
+
+**The IMPROVING Pillar**
+
+"The system that improves itself outlasts every other"
 
 ---
 
@@ -44,20 +43,23 @@ _Apr, 2026_
 
 1. Contextual Awareness (Prospective/KNOWING)
 2. Clear Strategy (Actuation/ACTING)
-3. **Reflective Convergence (Retrospective/LEARNING)** ← We are here
+3. **Systematic Improvement (Retrospective/IMPROVING)** ← We are here
 
-Closes the loop: Feeds learning back to Prospective phase
+Closes the loop: Feeds permanently improved system back to Prospective phase
 
 ---
 
-# Robotics Foundation
+# Kaizen Foundation
 
-**State Estimation** (Kalman filter, observers, feedback control)
+**Genchi Genbutsu (現地現物)** — "Go and see for yourself"
 
-- **Prediction**: Where do we think we are?
-- **Measurement**: Where does the sensor say we are?
-- **Update**: Correct prediction based on measurement
-- **Iterate**: Next cycle uses updated state
+- Don't trust reports — verify at the source
+- The automated Gemba walk
+
+**Hansei (反省)** — "Honest self-reflection"
+
+- The system honestly examines itself
+- No ego, no blame — just the delta between expected and actual
 
 ---
 
@@ -65,28 +67,44 @@ Closes the loop: Feeds learning back to Prospective phase
 
 **Boyd's OODA Loop**: Observe → Orient → Decide → Act
 
-Reflective Convergence is the **feedback arc**:
+Systematic Improvement is the **feedback arc**:
 - From Act back to Observe
 - Closes the continuous improvement loop
-- "The team that learns fastest wins"
+- "The team that improves itself fastest wins"
 
 ---
 
-# Three Sub-Pillars of Reflective Convergence
+# Three Sub-Pillars of Systematic Improvement
 
-**Framework**: State Estimation + Double-Loop Learning + Statistical Process Control
+**Framework**: Kaizen + Musk's Five-Step Algorithm + Recursive Self-Improvement
 
 **Fractal Pattern**: Each sub-pillar mirrors Prospective → Actuation → Retrospective
 
-1. **State Estimation** (Prospective of learning) - Look forward at data
-2. **Pattern Synthesis** (Actuation of learning) - Act on findings
-3. **Learning Calibration** (Retrospective of learning) - Calibrate understanding against reality
+1. **Continuous Integration** (Prospective of improving) - Is this still true?
+2. **Deliberate Practice** (Actuation of improving) - How do we make this better?
+3. **Update Propagation** (Retrospective of improving) - How do we make this permanent and spread it everywhere?
 
 ---
 
-# Sub-Pillar 1: State Estimation
+# Inner Loop Structure
 
-**Look forward at the data — measure actual vs expected, gather signals**
+```
+┌──→ Continuous Integration (Is this still true?)
+│           ↓
+│    Deliberate Practice (do less / keep / do more)
+│           │
+│     converged? ──NO──┘
+│           │
+│          YES
+│           ↓
+└── Update Propagation (eliminate → prevent → automate → propagate)
+```
+
+---
+
+# Sub-Pillar 1: Continuous Integration
+
+**Constantly test state against expected state. Lock in the truth.**
 
 - Compare Prediction vs Reality
   - Expected: "P95 < 200ms"
@@ -95,14 +113,13 @@ Reflective Convergence is the **feedback arc**:
 - Identify Contributing Factors (Root Cause Analysis)
   - Technical, process, communication factors
   - Five Whys technique
-- Assess Impact
-  - Who affected? What cost? What learned?
+- Document Without Blame
 
 ---
 
-# Sub-Pillar 1: State Estimation (cont.)
+# Sub-Pillar 1: Continuous Integration (cont.)
 
-**Document Without Blame** (Blameless Postmortems)
+**Blameless Hansei** (honest self-reflection without blame)
 
 - Separate person from action
   - "The deploy script failed" not "Bob failed"
@@ -110,12 +127,11 @@ Reflective Convergence is the **feedback arc**:
   - What about the system allowed this?
 - Psychological safety
   - Honesty requires safety from punishment
-- Full context
-  - Decisions made sense given information at the time
+- The system constantly examines itself — continuous, not periodic
 
 ---
 
-# Example: Bad State Estimation
+# Example: Bad Continuous Integration
 
 > "The outage happened because Sarah deployed on Friday afternoon. She should have known better. Let's add a policy: no Friday deploys."
 
@@ -123,7 +139,7 @@ Reflective Convergence is the **feedback arc**:
 
 ---
 
-# Example: Good State Estimation
+# Example: Good Continuous Integration
 
 > "We had an outage during Friday deploy. Our rollback took 45 minutes because automated rollback failed and manual process was undocumented.
 >
@@ -135,35 +151,36 @@ Reflective Convergence is the **feedback arc**:
 
 ---
 
-# Sub-Pillar 2: Pattern Synthesis
+# Sub-Pillar 2: Deliberate Practice
 
-**Act on findings — identify patterns (both what failed and what succeeded), synthesize observations into understanding, and revise mental models, docs, and processes**
+**The practiced routine of improvement. Do less of / keep doing / do more of.**
 
+- Sort Every Process
+  - Do less of (waste, friction, low value)
+  - Keep doing (what's working)
+  - Do more of (what generates value)
 - Distinguish Signal from Noise
   - One-off incident vs systemic issue
   - Special cause vs common cause variation
-  - Statistical significance
+
+---
+
+# Sub-Pillar 2: Deliberate Practice (cont.)
+
+**Kata (型)** — the practiced improvement routine
+
 - Recognize System Archetypes
   - Success to the Successful
   - Tragedy of the Commons
   - Fixes that Backfire
-
----
-
-# Sub-Pillar 2: Pattern Synthesis (cont.)
-
-- Identify Feedback Loops
-  - Reinforcing loops (amplify changes)
-  - Balancing loops (stabilize systems)
-  - Delays (time lag between action and effect)
 - Extract Generalizable Lessons
   - What's the underlying principle?
   - Where else might this apply?
-  - What's the mental model?
+  - Each cycle refines the system further — inner loop with CI
 
 ---
 
-# Example: Bad Pattern Synthesis
+# Example: Bad Deliberate Practice
 
 > "We had 3 incidents this month caused by config errors. Let's add more code review for config changes."
 
@@ -171,71 +188,57 @@ Reflective Convergence is the **feedback arc**:
 
 ---
 
-# Example: Good Pattern Synthesis
+# Example: Good Deliberate Practice
 
-> "We've had 12 incidents in 6 months, 8 involved config. Pattern: Config changes bypass automated testing and deploy directly to prod.
+> "We've had 12 incidents in 6 months, 8 involved config. Do less of: direct config deploys without validation. Keep: manual review for high-risk changes. Do more of: config-as-code with staged rollout.
 >
-> This is a 'Tragedy of the Commons' — config is shared infrastructure but no one owns config testing.
+> Root pattern: We treat config as 'not code' but it controls production behavior.
 >
-> Underlying: We treat config as 'not code' but it controls production behavior.
->
-> Solution: Config-as-code in version control, automated validation, staged rollout."
+> Experiment: Move config to version control with automated validation for 30 days."
 
-**Success**: Identifies systemic pattern and root mental model
+**Success**: Do-less/keep/more framing with root pattern identification
 
 ---
 
-# Sub-Pillar 3: Learning Calibration
+# Sub-Pillar 3: Update Propagation
 
-**Look back at how you learn — calibrate what you learned against reality, adjust understanding**
+**Eliminate, prevent, automate, propagate. Each cycle faster than the last.**
 
-- Update Mental Models (Map Revision)
-  - What did we believe?
-  - What evidence contradicts?
-  - How should model change?
-- Revise Strategies (Behavioral Change)
-  - What worked? What didn't?
-  - What should we do differently?
-  - What should we keep doing?
+- Eliminate Waste Permanently (Muda elimination — don't defer, delete)
+- Mistake-Proof the System (Poka-yoke — make regression structurally impossible)
+- Automate with Intelligence (Jidoka — human judgment stays in the loop)
+- Standardize Before Propagating (SDCA — lock in gains, then spread)
+- Propagate Horizontally (Yokoten — spread to every place it applies)
 
 ---
 
-# Sub-Pillar 3: Learning Calibration (cont.)
+# Sub-Pillar 3: Update Propagation (cont.)
 
-- Adjust Processes (System Improvement)
-  - Where did process fail?
-  - How can we improve?
-  - How ensure adoption?
-- Close the Loop (Prospective Integration)
-  - Document for future reference (ADRs, runbooks)
-  - Update cognitive artifacts
-  - Set new expectations (SLOs, timelines)
-  - **Feed learning back to Prospective phase**
+**Yokoten (横展)** — Horizontal deployment
+
+- When one team finds a better way, it spreads to every team with the same problem
+- Never keep improvements local
+- Recursive Self-Improvement: each cycle faster than the last
+
+**The ratchet**: SDCA locks in gains before next PDCA cycle
 
 ---
 
-# Example: Bad Learning Calibration
+# Example: Bad Update Propagation
 
 > "We had an incident, wrote a postmortem, and moved on. Same incident happened 2 months later."
 
-**Problem**: No actual change, learning didn't close the loop
+**Problem**: No structural fix, no propagation, regression possible
 
 ---
 
-# Example: Good Learning Calibration
+# Example: Good Update Propagation
 
-> "Incident: Deploy caused outage. Root cause: Health check didn't catch issue.
+> "Structural fix: Added health check to CI (Poka-yoke). Standardized: Updated deploy checklist, ADR-042, updated runbook (SDCA). Propagated: Found 3 other services with same issue, applied fix to all (Yokoten). Automated: Health check runs automatically on every deploy (Jidoka).
 >
-> Model update: Our staging environment is not production-like enough.
->
-> Strategy revision:
-> 1. Added health check to CI (immediate)
-> 2. Scheduled project to bring staging to prod parity (Q2)
-> 3. Updated deploy checklist to verify health checks pass
->
-> Documented in ADR-042 and updated runbook. Tracked: Zero outages from this failure mode in 6 months."
+> Result: Zero outages from this failure mode in 6 months."
 
-**Success**: Closed loop with concrete actions and verification
+**Success**: Eliminate → prevent → automate → propagate
 
 ---
 
@@ -249,133 +252,135 @@ Reflective Convergence is the **feedback arc**:
 2. **Clear Strategy** (Actuation/ACTING)
    - Set goals, align difficulty, execute with feedback
 
-3. **Reflective Convergence** (Retrospective/LEARNING)
-   - Analyze outcomes, recognize patterns, update models
+3. **Systematic Improvement** (Retrospective/IMPROVING)
+   - Test state continuously, practice improvement routines, propagate gains permanently
 
-4. **Loop back to Prospective** (Improved understanding for next cycle)
-
----
-
-# Integration: Reflective Convergence ↔ Clear Strategy
-
-- **State Estimation** feeds **Adaptive Control**
-  - Immediate feedback for real-time adjustment
-- **Pattern Synthesis** informs **Challenge Matching**
-  - Identify if challenges are too hard/easy
-- **Learning Calibration** refines **Directed Intentionality**
-  - Adjust goals based on what we learned
+4. **Loop back to Prospective** (Permanently improved system for next cycle)
 
 ---
 
-# Integration: Reflective Convergence ↔ Contextual Awareness
+# Integration: Systematic Improvement ↔ Clear Strategy
 
-- **State Estimation** enriches **Proactive Curiosity**
-  - Adds experiential data to crawled information
-- **Pattern Synthesis** improves **Cohesive Narrative**
-  - Patterns reveal system structure and failure modes
-- **Learning Calibration** maintains **Shared Understanding**
-  - Documented learnings become cognitive artifacts
+- **Continuous Integration** feeds **Adaptive Control**
+  - Continuous state testing provides real-time adjustment data
+- **Deliberate Practice** informs **Challenge Matching**
+  - Practiced routines identify if challenges are too hard/easy
+- **Update Propagation** refines **Directed Intentionality**
+  - Permanently improved system enables clearer, better-calibrated goals
 
 ---
 
-# Integration: Reflective Convergence ↔ Objective Function
+# Integration: Systematic Improvement ↔ Contextual Awareness
 
-- **State Estimation** demonstrates **Reward Signal** progress
+- **Continuous Integration** enriches **Proactive Curiosity**
+  - Continuous state testing adds experiential data to knowledge base
+- **Deliberate Practice** improves **Cohesive Narrative**
+  - Practiced routines reveal system structure and failure modes
+- **Update Propagation** maintains **Shared Understanding**
+  - Propagated improvements become permanent cognitive artifacts
+
+---
+
+# Integration: Systematic Improvement ↔ Objective Function
+
+- **Continuous Integration** demonstrates **Reward Signal** progress
   - Human: See improvement over time (Mastery)
   - Agent: Validate loss decrease (Reward Function)
-- **Pattern Synthesis** enhances **Degrees of Freedom**
+- **Deliberate Practice** enhances **Degrees of Freedom**
   - Human: Understanding enables decisions (Autonomy)
   - Agent: Patterns expand action coverage (Action Space)
-- **Learning Calibration** clarifies **Alignment Function**
-  - Human: Connect learnings to meaning (Purpose)
-  - Agent: Verify optimization target (Value Alignment)
+- **Update Propagation** clarifies **Alignment Function**
+  - Human: Permanent improvements connect to meaning (Purpose)
+  - Agent: Propagated improvements verify optimization target (Value Alignment)
 
 ---
 
 # Anti-Patterns to Avoid
 
-**No Retrospectives**
-- Symptom: Ship and move on, never look back
-- Solution: Make retrospectives required in Definition of Done
+**No Continuous Integration**
+- Symptom: Ship and move on, never test current state
+- Solution: Make CI required; treat broken CI as stop-the-line event
 
 **Blame Culture**
 - Symptom: Incidents lead to punishment, hide mistakes
-- Solution: Blameless postmortems, celebrate transparency
+- Solution: Blameless postmortems grounded in Hansei, celebrate transparency
 
-**Action Items Without Follow-Through**
-- Symptom: Long lists that never get addressed
-- Solution: Top 3 items, assign owners, track completion
+**Automating Inefficiency**
+- Symptom: Automate a broken or wasteful process to "save time"
+- Solution: Question → Delete → Simplify before Automate. Never automate waste.
 
 ---
 
 # Anti-Patterns to Avoid (cont.)
 
-**Surface-Level Analysis**
-- Symptom: Stop at first cause, miss deeper patterns
-- Solution: Five Whys, require root cause analysis
+**Action Items Without Follow-Through**
+- Symptom: Long lists that never get addressed, same incidents recur
+- Solution: Top 3 items, structural fix (not intent), assign owners, track completion
 
-**Learning Without Sharing**
-- Symptom: Individual learns, rest of team repeats mistake
-- Solution: Cognitive artifacts (postmortems, ADRs, runbooks)
+**Local Improvements Only**
+- Symptom: One team solves a problem; other teams have the same problem and don't know
+- Solution: Yokoten — make horizontal propagation a standard part of completing any improvement
 
 ---
 
-# Measuring Reflective Convergence
+# Measuring Systematic Improvement
 
-**State Estimation Metrics**
-- % of incidents with root cause analysis
-- Time from incident to published postmortem
-- Prediction accuracy (actual vs expected outcomes)
+**Continuous Integration Metrics**
+- % of system state continuously tested against expected state
+- Time to detect when reality drifts from intention
+- Blameless postmortem rate (not blame-focused)
 
-**Pattern Synthesis Metrics**
-- % of incidents that are recurring patterns
-- Number of documented archetypes/anti-patterns
-- Issues caught before production based on patterns
+**Deliberate Practice Metrics**
+- Improvement cycle time (from identifying problem to running experiment)
+- Signal vs noise accuracy (% of investigated issues that were systemic)
+- Practice consistency (applied routinely, not just after incidents)
 
-**Learning Calibration Metrics**
-- % of retrospective actions completed
-- Frequency of ADR, runbook, wiki updates
-- Knowledge retention (new members benefit from docs)
+**Update Propagation Metrics**
+- Recurrence rate (% of incidents that are repeats — should trend to zero)
+- Propagation coverage (% of improvements spread to all applicable areas)
+- Improvement velocity (rate of improvement is increasing — recursive acceleration)
 
 ---
 
 # Key Behaviors by IC Level
 
-**IC 0-1**: Review feedback, compare expected vs actual, participate in retrospectives
+**IC 0-1**: Participate in CI, ask "is this still true?", share improvements with the team
 
-**IC 2-3**: Conduct postmortems, analyze metrics, document lessons in ADRs
+**IC 2-3**: Conduct blameless postmortems, apply do-less/keep/more sorting, automate manual steps after simplifying
 
-**IC 4-5**: Write detailed postmortems, track system behavior over time, identify systemic issues
+**IC 4-5**: Build structural mistake-proofing, track improvement velocity, implement Yokoten practice
 
-**IC 6-7+**: Establish postmortem culture, analyze multi-system patterns, connect incidents to architecture
+**IC 6-7+**: Establish organizational improvement culture, build recursive improvement systems, spread gains to every team
 
 ---
 
 # References
 
-- **Control Theory**: Kalman filtering, state estimation, feedback control
+- **Kaizen** (Imai): Ongoing improvement involving everybody
+- **Toyota Production System** (Ohno): Muda, Poka-yoke, Jidoka, Yokoten
+- **Toyota Kata** (Rother): The Improvement Kata
+- **Deliberate Practice** (Ericsson): Structured practice at the edge of current ability
+- **Five-Step Algorithm** (Musk): Question → Delete → Simplify → Accelerate → Automate
 - **OODA Loop** (Boyd): Feedback from Act back to Observe
-- **Double-Loop Learning** (Argyris & Schön): Question assumptions
+- **Double-Loop Learning** (Argyris): Question underlying assumptions
 - **Blameless Postmortems** (Etsy, Google): Psychological safety
 - **Statistical Process Control** (Deming): Signal vs noise
-- **Systems Thinking** (Meadows): Feedback loops, archetypes
-- **After-Action Review** (US Army): Structured reflection
 
 ---
 
 # Summary
 
-**Reflective Convergence: The LEARNING Pillar**
+**Systematic Improvement: The IMPROVING Pillar**
 
-**Etymology**: _Reflectere_ (bend back) + _Convergere_ (incline together toward a point)
+**Etymology**: _Kaizen_ (改善) — "change for the better"
 
-**Cycle Role**: Retrospective — closes the improvement loop
+**Cycle Role**: Retrospective — closes the improvement loop permanently
 
 **Fractal Pattern**: Sub-pillars mirror Prospective → Actuation → Retrospective
 
 **Three Sub-Pillars**:
-1. State Estimation (Prospective of learning) - Look forward at data
-2. Pattern Synthesis (Actuation of learning) - Act on findings
-3. Learning Calibration (Retrospective of learning) - Calibrate understanding against reality
+1. Continuous Integration (Prospective of improving) - Is this still true?
+2. Deliberate Practice (Actuation of improving) - How do we make this better?
+3. Update Propagation (Retrospective of improving) - How do we make this permanent and spread it everywhere?
 
-**Philosophy**: "Every result is data — the system that examines itself improves itself"
+**Philosophy**: "The system that improves itself outlasts every other"
