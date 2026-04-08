@@ -479,7 +479,7 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Four Pillar Specification Files**:
 1. `pillars/contextual_awareness.md` (Prospective/KNOWING)
 2. `pillars/clear_strategy.md` (Actuation/ACTING)
-3. `pillars/reflective_convergence.md` (Retrospective/IMPROVING)
+3. `pillars/systematic_improvement.md` (Retrospective/IMPROVING)
 4. `pillars/objective_function.md` (Objective Function/WHY) — positioned above cycle, works for any agent (human or AI)
 
 ---

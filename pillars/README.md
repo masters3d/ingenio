@@ -32,7 +32,7 @@ pillars/
 ├── README.md                       # This file
 ├── contextual_awareness.md         # Prospective/KNOWING specification
 ├── clear_strategy.md               # Actuation/ACTING specification
-├── reflective_convergence.md       # Retrospective/IMPROVING specification
+├── systematic_improvement.md       # Retrospective/IMPROVING specification
 ├── objective_function.md           # Objective Function/WHY specification
 └── FRAMEWORK_STRUCTURE.md          # Complete Framework 4.0 structure
 ```
