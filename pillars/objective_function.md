@@ -51,7 +51,7 @@ A poorly specified objective function leads to goal misalignment whether the age
 
 **Human-Agent Extension**: In collaborative systems, the objective function has two instantiations that must stay synchronized:
 - **Human instantiation**: Mastery, Autonomy, Purpose → see [Intrinsic Motivation](./intrinsic_motivation.md)
-- **Agent instantiation**: Reward Signal, Action Space, Value Alignment → defined below
+- **Agent instantiation**: Reward Signal, Action Space, Value Alignment → see Search, Drive, and Renew sections below
 
 ---
 
@@ -140,7 +140,7 @@ Human Autonomy and agent Action Space are complementary degrees of freedom that 
 #### Interaction Patterns
 
 **Well-scoped delegation**
-> "This agent can: read any file in the repo, run tests, create PRs, and suggest code changes. It CANNOT: push directly to main, delete files without confirmation, or access production databases. All actions are logged." — The human retains final merge authority while delegating search, draft, and verify.
+> "This agent can: read any file in the repo, run tests, create PRs, and suggest code changes. It CANNOT: push directly to main, delete files without confirmation, or access production databases. All actions are logged. The human retains final merge authority while delegating search, draft, and verify."
 
 **Trust gradient in practice**
 > Month 1: Agent suggests changes, human implements. Month 3: Agent creates PRs, human reviews and merges. Month 6: Agent merges approved PRs autonomously. Each expansion is earned by demonstrated reliability.
