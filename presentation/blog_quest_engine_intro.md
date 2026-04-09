@@ -28,9 +28,9 @@ This is the Objective Function — the WHY at the center of the framework. Every
 
 The Objective Function has three dimensions — and they follow the same fractal shape as the rest of the framework:
 
-- **Search** (Look Forward): "What does better look like?" — The drive to grow. For humans: Mastery. For agents: Reward Signal. If you don't know what improvement looks like, you can't recognize it when it happens.
-- **Drive** (Take Action): "What can I control?" — The desire to own. For humans: Autonomy. For agents: Action Space. Control without direction is noise; direction without control is frustration.
-- **Renew** (Look Back): "Am I optimizing for the right thing?" — The check. For humans: Purpose. For agents: Value Alignment. The most dangerous failure mode is optimizing efficiently toward the wrong goal.
+- **Search** (KNOWING): "What does better look like?" — The drive to grow. For humans: Mastery. For agents: Reward Signal. If you don't know what improvement looks like, you can't recognize it when it happens.
+- **Drive** (ACTING): "What can I control?" — The desire to own. For humans: Autonomy. For agents: Action Space. Control without direction is noise; direction without control is frustration.
+- **Renew** (IMPROVING): "Am I optimizing for the right thing?" — The check. For humans: Purpose. For agents: Value Alignment. The most dangerous failure mode is optimizing efficiently toward the wrong goal.
 
 These three are the WHY. They are not part of the operational cycle — they sit above it, defining what the cycle is optimizing for. Get the Objective Function wrong, and excellent execution makes things worse faster.
 
@@ -42,39 +42,49 @@ The framework is designed so that the WHY is always explicit, always visible, an
 
 ## The How: Three Moves
 
-With the WHY established, the operational cycle does the work. It has three moves — and you repeat them continuously:
+With the WHY established, the operational cycle does the work. It has three moves — and you repeat them continuously.
+
+This framework uses several equivalent naming conventions. They all describe the same structure:
+
+| Blog (primary) | Formal | Pillar name | Phase label |
+|---|---|---|---|
+| **KNOWING** | Prospective | Contextual Awareness | KNOWING |
+| **ACTING** | Actuation | Clear Strategy | ACTING |
+| **IMPROVING** | Retrospective | Systematic Improvement | IMPROVING |
+
+The rest of this post uses **KNOWING / ACTING / IMPROVING** as the primary labels. The formal names (Prospective / Actuation / Retrospective) and pillar names appear in the deeper specs.
 
 ```
          Objective Function (WHY)
          Defines success criteria
                  ↓
-    ┌────────────────────────────────────┐
-    │  Look Forward → Take Action → Look Back  │
-    └────────────────────────────────────┘
+    ┌────────────────────────────────┐
+    │  KNOWING → ACTING → IMPROVING  │
+    └────────────────────────────────┘
                  ↑
          Feeds improvement back
 ```
 
-**Move 1 — Look Forward** (Contextual Awareness / Prospective / KNOWING)  
+**Move 1 — KNOWING** (Contextual Awareness)  
 Understand the environment before acting. What's true right now? What dependencies exist? What will change? What do you know that others don't? What do you not know that you should?
 
-**Move 2 — Take Action** (Clear Strategy / Actuation / ACTING)  
+**Move 2 — ACTING** (Clear Strategy)  
 Execute based on what you know. Set a clear goal. Match the challenge to your capability. Act with tight feedback. Don't overthink — move, and use the results to correct course.
 
-**Move 3 — Look Back** (Systematic Improvement / Retrospective / IMPROVING)  
+**Move 3 — IMPROVING** (Systematic Improvement)  
 Examine what happened against what you expected. Find the root pattern, not just the symptom. Make the improvement permanent. Spread it to everyone with the same problem.
 
-Three moves. Look forward, take action, look back. Repeat. Each cycle leaves you better than the last.
+Three moves. KNOWING, ACTING, IMPROVING. Repeat. Each cycle leaves you better than the last.
 
-Here's the key: the three moves are not equal. **Look Forward** shapes **Take Action** — you can't execute well on a context you don't understand. **Take Action** creates data for **Look Back** — you need real outcomes to improve from. And **Look Back** feeds directly into the next **Look Forward** — the improved system creates a richer context for the next cycle.
+Here's the key: the three moves are not equal. **KNOWING** shapes **ACTING** — you can't execute well on a context you don't understand. **ACTING** creates data for **IMPROVING** — you need real outcomes to improve from. And **IMPROVING** feeds directly into the next **KNOWING** — the improved system creates a richer context for the next cycle.
 
 This is a compounding loop, not a checklist.
 
 ---
 
-## Look Forward: Contextual Awareness
+## KNOWING: Contextual Awareness
 
-**KNOWING the environment before you act.**
+**Understand the environment before you act.**
 
 Every engineering decision is context-relative. The right answer depends on system load, team maturity, technical debt, business priorities, organizational culture. The philosophy: "it depends" — everything is relative. Contextual Awareness is the structured process of understanding those dependencies.
 
@@ -84,17 +94,17 @@ Three sub-pillars:
 
 2. **Cohesive Narrative** — Create accurate mental models and continuously update them. Raw data isn't useful — you need a synthesized picture of how the system works, who it serves, and where it's headed. Like SLAM (Simultaneous Localization and Mapping) in robotics: not just raw sensor data, but a coherent map updated as you move through the environment.
 
-3. **Shared Understanding** — Externalize knowledge into durable cognitive artifacts: documentation, ADRs, diagrams, runbooks. Knowledge trapped in individual heads is as good as lost. When that engineer leaves, the knowledge leaves with them. Async-first by default: write it down so the team can act on it without you in the room.
+3. **Shared Understanding** — The active, ongoing alignment of mental models across the team. Writing a document is the beginning, not the end. A document creates a signal; Shared Understanding is the culture and the system that ensures the signal is received, understood, and kept current. It means: Does the person reading that runbook build the same mental model as the person who wrote it? Is that model still accurate six months later? When something changes, does the whole team's understanding update — or does it silently fragment into private versions? Shared Understanding is the discipline of continuously pulling the system's context into your working memory, verifying your model against reality, and maintaining the conditions under which others can do the same.
 
-**Concrete example**: An engineer onboarding to a new team spends the first two weeks practicing all three sub-pillars. They read the codebase and trace service interactions (Proactive Curiosity). They synthesize that into a mental model of how the system fits together and what problems it was designed to solve (Cohesive Narrative). Then they write it down in a document future engineers can use (Shared Understanding). Two weeks of investment, years of compounded return.
+**Concrete example**: An engineer onboarding to a new team spends the first two weeks practicing all three sub-pillars. They read the codebase and trace service interactions (Proactive Curiosity). They synthesize that into a mental model of how the system fits together and what problems it was designed to solve (Cohesive Narrative). Then they write up what they found — not just as a filing exercise, but as a verification: they share the document, ask senior engineers to point out where their mental model diverged from reality, and update it until the team agrees the picture is accurate (Shared Understanding). Two weeks of investment, years of compounded return.
 
 **Robotics foundation**: Perception — sensors, SLAM, environment mapping.
 
 ---
 
-## Take Action: Clear Strategy
+## ACTING: Clear Strategy
 
-**ACTING in the environment based on what you know.**
+**Execute in the environment based on what you know.**
 
 Clear Strategy is how understanding becomes execution. Its theoretical foundation is Csikszentmihalyi's Flow Theory — the psychological state of complete absorption and peak performance. Most frameworks wait for Flow to happen. The Quest Engine engineers it deliberately.
 
@@ -112,9 +122,9 @@ Three sub-pillars:
 
 ---
 
-## Look Back: Systematic Improvement
+## IMPROVING: Systematic Improvement
 
-**IMPROVING from what happened — making the next cycle better than this one.**
+**Learn from what happened — make the next cycle better than this one.**
 
 Systematic Improvement is the discipline that transforms raw results into permanent gains. Its core principle: **"Never automate inefficiency."** Question first, simplify, then accelerate, then automate. Anchored in Kaizen (改善) — "change for the better" — and Musk's Five-Step Manufacturing Algorithm as an ordering discipline.
 
@@ -138,21 +148,21 @@ Here's the piece that makes the Quest Engine a system and not a checklist: **the
 
 Each cycle doesn't just produce better outputs — it recalibrates the objective function itself.
 
-- **Look Forward → Renew**: Deep context exposes where the WHY has drifted from reality. When you understand the system better, you discover the thing you were optimizing for was a proxy for what you actually needed. The map updates; the goal updates with it.
-- **Take Action → Search**: Execution outcomes validate or invalidate what "better" looks like. You discover that the reward signal you specified rewarded the wrong behavior. You update it.
-- **Look Back → Drive**: Pattern recognition across improvements reveals which actions actually matter. The action space expands as trust is established — between humans, between humans and agents, between teams.
+- **KNOWING → Renew**: Deep context exposes where the WHY has drifted from reality. When you understand the system better, you discover the thing you were optimizing for was a proxy for what you actually needed. The map updates; the goal updates with it.
+- **ACTING → Search**: Execution outcomes validate or invalidate what "better" looks like. You discover that the reward signal you specified rewarded the wrong behavior. You update it.
+- **IMPROVING → Drive**: Pattern recognition across improvements reveals which actions actually matter. The action space expands as trust is established — between humans, between humans and agents, between teams.
 
 ```
          Objective Function (WHY)
           Search — Drive — Renew
                  ↓ drives
     ┌────────────────────────────────┐
-    │  Look Forward → Act → Look Back  │
+    │  KNOWING → ACTING → IMPROVING  │
     └────────────────────────────────┘
                  ↑ reshapes
 ```
 
-**This is why the system compounds.** Each cycle of HOW produces better context (Look Forward is richer), better execution (Take Action is more calibrated), and better learning (Look Back is more precise). And each cycle also refines the WHY — so the next cycle is optimizing for something more accurate, not just executing better on the same objective.
+**This is why the system compounds.** Each cycle of HOW produces better context (KNOWING is richer), better execution (ACTING is more calibrated), and better learning (IMPROVING is more precise). And each cycle also refines the WHY — so the next cycle is optimizing for something more accurate, not just executing better on the same objective.
 
 The system that improves what it does AND improves what it's optimizing for — that system outlasts every other.
 
@@ -162,10 +172,10 @@ The system that improves what it does AND improves what it's optimizing for — 
 
 One more property worth naming: **the structure is self-similar at every level.**
 
-Each of the three HOW pillars has its own internal Look Forward / Take Action / Look Back:
-- Contextual Awareness: Proactive Curiosity (look forward) → Cohesive Narrative (act, synthesize) → Shared Understanding (look back, preserve)
-- Clear Strategy: Challenge Matching (look forward, assess) → Directed Intentionality (act, focus) → Adaptive Control (look back, correct)
-- Systematic Improvement: Continuous Integration (look forward, test state) → Deliberate Practice (act, improve) → Update Propagation (look back, make permanent)
+Each of the three HOW pillars has its own internal KNOWING / ACTING / IMPROVING:
+- Contextual Awareness: Proactive Curiosity (KNOWING) → Cohesive Narrative (ACTING, synthesize) → Shared Understanding (IMPROVING, align and maintain)
+- Clear Strategy: Challenge Matching (KNOWING, assess) → Directed Intentionality (ACTING, focus) → Adaptive Control (IMPROVING, correct)
+- Systematic Improvement: Continuous Integration (KNOWING, test state) → Deliberate Practice (ACTING, improve) → Update Propagation (IMPROVING, make permanent)
 
 And the WHY itself follows the same pattern:
 - Search (look forward — what does better look like?)
@@ -183,9 +193,9 @@ The Quest Engine was designed from the start to work for any agent — human or 
 In practice: when you deploy an AI agent alongside human engineers, the same framework applies to both:
 
 - The agent needs an Objective Function (WHY) — not just a task specification, but a legible reward signal grounded in the human's actual intent
-- The agent needs to Look Forward — it needs context, not just instructions
-- The agent needs to Take Action with appropriate scope — the action space must match the trust relationship
-- The agent needs to Look Back — it needs feedback loops to improve, not just to execute
+- The agent needs KNOWING — it needs context, not just instructions
+- The agent needs ACTING with appropriate scope — the action space must match the trust relationship
+- The agent needs IMPROVING — it needs feedback loops to improve, not just to execute
 
 The failure modes are symmetric: wrong objective function (agent optimizes for the wrong thing), incomplete environment model (agent acts on stale context), no improvement loop (agent repeats mistakes instead of compounding).
 
@@ -202,9 +212,9 @@ This document is an introduction. The full specifications are in the [`pillars/`
 - **[FRAMEWORK_STRUCTURE.md](../pillars/FRAMEWORK_STRUCTURE.md)** — Complete architectural overview: quick reference matrix, fractal pattern table, framework evolution from 3.0 to 4.0, IC level application, anti-patterns.
 - **[objective_function.md](../pillars/objective_function.md)** — The WHY pillar: Search, Drive, Renew; human-agent interaction layer.
 - **[intrinsic_motivation.md](../pillars/intrinsic_motivation.md)** — Human motivation foundation: Mastery, Autonomy, Purpose, SDT, Flow.
-- **[contextual_awareness.md](../pillars/contextual_awareness.md)** — Full specification of Look Forward (KNOWING).
-- **[clear_strategy.md](../pillars/clear_strategy.md)** — Full specification of Take Action (ACTING).
-- **[systematic_improvement.md](../pillars/systematic_improvement.md)** — Full specification of Look Back (IMPROVING).
+- **[contextual_awareness.md](../pillars/contextual_awareness.md)** — Full specification of KNOWING (Prospective).
+- **[clear_strategy.md](../pillars/clear_strategy.md)** — Full specification of ACTING (Actuation).
+- **[systematic_improvement.md](../pillars/systematic_improvement.md)** — Full specification of IMPROVING (Retrospective).
 
 The [`README.md`](../README.md) provides broader context. The [`career.md`](../career.md) applies the framework to individual career development across IC levels 0–7+.
 
