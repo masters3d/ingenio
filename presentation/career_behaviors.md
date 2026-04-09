@@ -86,13 +86,17 @@ SMART is an acronym that stands for Specific, Measurable, Achievable, Realistic,
 :::-->
 ---
 
-# Intrinsic Drive
+# Objective Function
 
-- Motivation
-  - Mastery
-  - Autonomy
-    - Ownership
-- Alignment on Directives
+**Human: Intrinsic Motivation**
+- Mastery (Search)
+- Autonomy (Drive)
+- Purpose (Renew)
+
+**Agent: Optimization Target**
+- Reward Signal
+- Action Space
+- Value Alignment
 
 <!--::: notes
 * Sense of Ownership 

@@ -7,31 +7,67 @@
 - Like chariots, careers are powered by engines (*ingenium*)
 - Movement requires both direction (strategy) and power (drive)
 
-This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine** framework: Clear Strategy, Intrinsic Drive, and Contextual Awareness.
+This document provides guidance on software engineering career progression based on the **Three Pillars Quest Engine (Framework 4.0)**: A three-phase operational cycle (Prospective → Actuation → Retrospective) guided by an Objective Function that works for any agent (human or AI).
 
-## Three Pillars Quest Engine Framework
+## Three Pillars Quest Engine Framework (Version 4.0)
 
-The foundational framework for engineering career excellence:
+The foundational framework for engineering career excellence introduces a three-phase operational cycle:
 
-### 1. Clear Strategy
-**Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
-- **Clear Goals**: Milestones defined, scope clear, time boxed
-- **Coherent Action**: Behaviors with feedback loops
-- **Exit Strategy**: Definition of done for entire projects
+```
+Objective Function (WHY)
+         ↓ defines success criteria
+┌────────────────────────────────────┐
+│  Prospective → Actuation → Retrospective  │
+└────────────────────────────────────┘
+         ↑ feeds improvement back
+```
 
-### 2. Intrinsic Drive  
-**Focus**: Internal motivation over external rewards
-- **Mastery**: Continuous skill development
-- **Autonomy**: Ownership and self-direction
-- **Purpose**: Alignment on meaningful directives
-- **vs Extrinsic**: Moving beyond carrot/stick motivation
-
-### 3. Contextual Awareness
+### Contextual Awareness (Prospective - KNOWING)
+**Cycle Phase**: Prospective - understand environment before acting
 **Philosophy**: "It depends" - everything is relative and contextual
-- **Documentation**: Async context sharing that scales
-- **Observability**: Logs, metrics, traces for systems and career
-- **Communication**: Push vs pull models for information sharing
-- **Economics**: Avoiding tragedy of the commons in knowledge sharing
+**Robotics**: Perception (sensors, SLAM, environment mapping)
+
+**Three Sub-Pillars:**
+1. **Proactive Curiosity** - Systematically discover and index knowledge (Scout Mindset)
+2. **Cohesive Narrative** - Build accurate mental models (SLAM replanning)
+3. **Shared Understanding** - Externalize knowledge for organizational memory (cognitive artifacts)
+
+### Clear Strategy (Actuation - ACTING)
+**Cycle Phase**: Actuation - execute based on knowledge
+**Architecture**: Vision Doc → Design Doc → Sprint Plan → Daily Plan
+**Robotics**: Actuation (kinematics, path planning, PID control)
+
+**Three Sub-Pillars:**
+1. **Challenge Matching** - Challenge-Skill Balance (prevents anxiety/boredom, maintains Flow Channel)
+2. **Directed Intentionality** - Clear Goals (eliminates psychic entropy, enables action-awareness merger)
+3. **Adaptive Control** - Immediate Feedback (closed-loop adjustment, real-time data)
+
+### Systematic Improvement (Retrospective - IMPROVING)
+**Cycle Phase**: Retrospective - improve from what happened
+**Philosophy**: "The system that improves itself outlasts every other" — never automate inefficiency
+**Kaizen Foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA
+
+**Three Sub-Pillars:**
+1. **Continuous Integration** - Constantly test state against expected state ("Is this still true?")
+2. **Deliberate Practice** - Practiced routine of improvement: do less of / keep doing / do more of ("How do we make this better?")
+3. **Update Propagation** - Eliminate waste permanently, mistake-proof, automate, propagate horizontally ("How do we make this permanent and spread it?")
+
+### Objective Function (WHY)
+**Position**: Above the operational cycle - defines success criteria for any agent (human or AI)
+**Focus**: The interface between human intent and agent capability — how humans and agents jointly define and maintain alignment
+**Robotics**: Reward/Cost Function (defines what to optimize for)
+**Human Detail**: See [`pillars/intrinsic_motivation.md`](./pillars/intrinsic_motivation.md) for full Mastery, Autonomy, and Purpose treatment with IC-level behaviors
+
+**Three Sub-Pillars (Agent-Agnostic)**:
+1. **Search** (Prospective) - What does *better* look like, together?
+   - Human: **Mastery** (continuous skill development and growth)
+   - Agent: **Reward Signal** (scalar/vector signals, loss minimization)
+2. **Drive** (Actuation) - What can we each control, and how do we share it?
+   - Human: **Autonomy** (ownership and self-direction in work)
+   - Agent: **Action Space** (available tools, permissions)
+3. **Renew** (Retrospective) - Are we still aligned with each other?
+   - Human: **Purpose** (alignment on meaningful directives beyond personal gain)
+   - Agent: **Value Alignment** (RLHF, constitutional AI, safety constraints)
 
 ## People Systems Framework
 
@@ -569,6 +605,8 @@ Self-reflection questions to cultivate adaptive locus:
 Career advancement follows capability development rather than time-based promotion. Each level represents expanded scope of influence and technical complexity, not just increased experience.
 
 ### Growth Strategies
+
+_See [`pillars/intrinsic_motivation.md`](./pillars/intrinsic_motivation.md) for the full treatment of Mastery, Autonomy, and Purpose with IC-level-specific engineering behaviors._
 
 #### Mastery Development
 - **Technical Depth**: Deep expertise in core domains

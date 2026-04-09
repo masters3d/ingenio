@@ -6,7 +6,7 @@ marp: true
 # Contextual Awareness
 
 Chéyo Jiménez, MSE
-_Oct, 2021_
+_Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 
 
 
@@ -40,9 +40,91 @@ _Oct, 2021_
 
 ---
 
+# Three Sub-Pillars of Contextual Awareness
+
+**Cycle Phase**: Prospective (KNOWING the environment)
+**Framework**: OODA loop (Observe + Orient), Robotics Perception, Search Engines
+**Robotics Foundation**: Perception (sensors, SLAM, environment mapping)
+
+1. **Proactive Curiosity** - Systematically discover and index knowledge
+2. **Cohesive Narrative** - Build mental models through cognitive artifacts
+3. **Shared Understanding** - Externalize knowledge for organizational memory
+
+---
+
+# Framework 4.0 Context
+
+**Contextual Awareness** is the **Prospective** phase in the operational cycle:
+
+```
+Objective Function (WHY)
+         ↓
+Prospective (KNOWING) → Actuation (ACTING) → Retrospective (IMPROVING)
+     ↑
+You are here
+```
+
+Understanding the environment before acting.
+
+---
+
+# Sub-Pillar 1: Proactive Curiosity
+
+**Systematically find and organize information for retrieval**
+
+- Crawl Your Domain (code, docs, people, systems)
+- Index for Retrieval (search-friendly, metadata, cross-references)
+- Multi-Sensor Fusion (combine code, logs, metrics, docs, people)
+- Continuous Refresh (fight information decay)
+- Scout Mindset (actively seeking truth)
+
+**Theoretical Roots**: Search engines, robotics sensors, OODA Observe, Information Foraging Theory
+
+---
+
+# Sub-Pillar 2: Cohesive Narrative
+
+**Create accurate mental models and continuously update them**
+
+- Create Mental Models (architecture, data flow, business logic)
+- Update Models Continuously (SLAM replanning - reality check)
+- Contextualize Information (audience-aware: SLA/SLO/SLI)
+- Map Dependencies (component, data, team dependencies)
+- Build narrative through cognitive artifacts
+
+**Theoretical Roots**: Robotics SLAM, OODA Orient, mental models theory, cognitive artifacts
+
+---
+
+# Sub-Pillar 3: Shared Understanding
+
+**Externalize knowledge into durable cognitive artifacts**
+
+- Create Cognitive Artifacts (docs, ADRs, diagrams, runbooks)
+- Maintain the Commons (fight knowledge decay, ownership, review cycles)
+- Systemic Incentives (make it easy, visible, required, integrated, rewarded)
+- Async-First Context Sharing (documentation default, meetings case-by-case)
+
+**Theoretical Roots**: Cognitive artifacts (Donald Norman), distributed cognition, tragedy of the commons
+
+**From original "Economics: Tragedy of the commons"**
+
+- Context as Shared Resource
+  - Benefits: Everyone gains from good docs
+  - Costs: Individual time to create/maintain
+  - Problem: Everyone consumes, few contribute
+- Systemic Solutions:
+  - Make it Easy (reduce cost)
+  - Make it Visible (reward contributors)
+  - Make it Required (enforce via process)
+  - Make it Integrated (docs live with code)
+- Context Decay: Half-life of knowledge without maintenance
+
+---
+
 # Etymology of context
 
-- Root Latin `contextus`, from `con`- ‘together’ + `texere` ‘to weave’.
+- Root Latin `contextus`, from `con`- 'together' + `texere` 'to weave'.
 - Same root word as text.
 
 
@@ -181,3 +263,24 @@ Reference:
 https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli
 
 :::-->
+
+---
+
+# Integration with Framework 4.0
+
+**Prospective (KNOWING)** connects to:
+
+**→ To Actuation (ACTING)**:
+- Clear Strategy uses the context we've built
+- Mental models inform goal-setting and execution
+- Cognitive artifacts enable informed decision-making
+
+**→ From Retrospective (IMPROVING)**:
+- Systematic Improvement propagates gains into our knowledge base
+- Pattern recognition improves mental models
+- Model updates become shared understanding
+
+**↑ Guided by Objective Function (WHY)**:
+- Defines what success means for any agent (human or AI)
+- Human: Intrinsic Motivation drives curiosity and learning
+- Agent: Reward function guides information gathering

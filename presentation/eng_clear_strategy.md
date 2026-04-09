@@ -6,7 +6,7 @@ marp: true
 # Clear Strategy
 
 Chéyo Jiménez, MSE
-_Oct, 2021_
+_Oct, 2021 (Updated Apr 2026 - Framework 4.0)_
 
 
 ---
@@ -17,7 +17,7 @@ _Oct, 2021_
  - Mile Stone Defined
 - Definition of Done
   - Scope Clear
-  - Time Boxed 
+  - Time Boxed
 ---
 
 # Strategy
@@ -28,6 +28,84 @@ _Oct, 2021_
   - Mantain
 - Exit Strategy
    - Definition of Done for the whole project
+
+---
+
+# Three Sub-Pillars of Clear Strategy
+
+**Cycle Phase**: Actuation (ACTING in the environment)
+**Framework**: Csikszentmihalyi's Flow Theory + Robotics Actuation
+**Robotics Foundation**: Kinematics, Path Planning, PID Control
+
+1. **Challenge Matching** - Challenge-Skill Balance
+2. **Directed Intentionality** - Clear Goals
+3. **Adaptive Control** - Immediate Feedback
+
+---
+
+# Framework 4.0 Context
+
+**Clear Strategy** is the **Actuation** phase in the operational cycle:
+
+```
+Objective Function (WHY)
+         ↓
+Prospective (KNOWING) → Actuation (ACTING) → Retrospective (IMPROVING)
+                              ↑
+                         You are here
+```
+
+Creating optimal performance states through Flow Theory.
+
+---
+
+# Sub-Pillar 1: Challenge Matching
+
+**The active synchronization of internal capabilities with external demands**
+
+- Challenge-Skill Balance (The Flow Channel)
+  - Too Hard (Anxiety) → stress, overwhelm
+  - Too Easy (Boredom) → apathy, disengagement
+  - Just Right (Flow) → growth, engagement, peak performance
+- Continuous Task Calibration
+  - If challenge exceeds skill: simplify or upskill
+  - If skill exceeds challenge: increase complexity
+- Prevent Burnout and Apathy
+
+---
+
+# Sub-Pillar 2: Directed Intentionality
+
+**The sharp projection of consciousness toward a specific objective**
+
+- Clear Goals Eliminate Distraction
+  - Psychic entropy reduction
+  - Singular focus, one objective at a time
+- Singular Vector of Intent
+  - Exactly what success looks like RIGHT NOW
+  - Binary success criteria (done or not done)
+- Minimize Cognitive Load
+  - Reduce decisions, eliminate ambiguity
+  - Remove interruptions, simplify environment
+- Action-Awareness Merger
+  - Doing = Being, ego dissolution
+
+---
+
+# Sub-Pillar 3: Adaptive Control
+
+**A closed-loop behavioral system using real-time feedback**
+
+- Immediate Feedback (Closed-Loop Data)
+  - Know within seconds/minutes if action is working
+  - Unit tests (seconds), CI/CD (minutes), metrics (hours)
+- Execute with Sensorimotor Sensitivity
+  - Feel the system, instrument for feedback
+- Every Result is Data (Not Failure)
+  - No judgment, only information
+  - Immediate adjustment based on data
+- Seamless Action-Awareness Loop
+  - Self-correcting performance, ego vanishes
 
 ---
 
@@ -115,3 +193,24 @@ Reference:
 <!--::: notes
 Reference:
 :::-->
+
+---
+
+# Integration with Framework 4.0
+
+**Actuation (ACTING)** connects to:
+
+**← From Prospective (KNOWING)**:
+- Contextual Awareness provides the knowledge needed to act
+- Mental models inform goal-setting and difficulty calibration
+
+**→ To Retrospective (IMPROVING)**:
+- Systematic Improvement tests outcomes and propagates gains
+- Pattern recognition identifies what worked
+- Model updates feed back to improve future actions
+
+**↑ Guided by Objective Function (WHY)**:
+- Defines what success means for any agent (human or AI)
+- Human: Intrinsic Motivation (Mastery, Autonomy, Purpose)
+- Agent: Optimization Target (Reward Signal, Action Space, Value Alignment)
+
