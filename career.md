@@ -54,17 +54,18 @@ Objective Function (WHY)
 
 ### Objective Function (WHY)
 **Position**: Above the operational cycle - defines success criteria for any agent (human or AI)
-**Focus**: The mathematical formalization of "what does better look like?"
+**Focus**: The interface between human intent and agent capability — how humans and agents jointly define and maintain alignment
 **Robotics**: Reward/Cost Function (defines what to optimize for)
+**Human Detail**: See [`pillars/intrinsic_motivation.md`](./pillars/intrinsic_motivation.md) for full Mastery, Autonomy, and Purpose treatment with IC-level behaviors
 
 **Three Sub-Pillars (Agent-Agnostic)**:
-1. **Search** (Prospective) - What does *better* look like?
+1. **Search** (Prospective) - What does *better* look like, together?
    - Human: **Mastery** (continuous skill development and growth)
    - Agent: **Reward Signal** (scalar/vector signals, loss minimization)
-2. **Drive** (Actuation) - What can I control?
+2. **Drive** (Actuation) - What can we each control, and how do we share it?
    - Human: **Autonomy** (ownership and self-direction in work)
    - Agent: **Action Space** (available tools, permissions)
-3. **Renew** (Retrospective) - Am I optimizing for the right thing?
+3. **Renew** (Retrospective) - Are we still aligned with each other?
    - Human: **Purpose** (alignment on meaningful directives beyond personal gain)
    - Agent: **Value Alignment** (RLHF, constitutional AI, safety constraints)
 
@@ -604,6 +605,8 @@ Self-reflection questions to cultivate adaptive locus:
 Career advancement follows capability development rather than time-based promotion. Each level represents expanded scope of influence and technical complexity, not just increased experience.
 
 ### Growth Strategies
+
+_See [`pillars/intrinsic_motivation.md`](./pillars/intrinsic_motivation.md) for the full treatment of Mastery, Autonomy, and Purpose with IC-level-specific engineering behaviors._
 
 #### Mastery Development
 - **Technical Depth**: Deep expertise in core domains

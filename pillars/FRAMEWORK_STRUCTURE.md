@@ -32,7 +32,7 @@ Three-Phase Operational Cycle:
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
 | **Clear Strategy** (Actuation) | Challenge Matching | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
 | **Systematic Improvement** (Retrospective) | Continuous Integration | Deliberate Practice | Update Propagation | IMPROVING | Kaizen | Loop back |
-| **Objective Function** (WHY) | Search (Mastery/Reward Signal) | Drive (Autonomy/Action Space) | Renew (Purpose/Value Alignment) | WHY | Reward/Cost Function | Defines success |
+| **Objective Function** (WHY) | Search (Mastery/Reward Signal — [intrinsic_motivation.md](./intrinsic_motivation.md)) | Drive (Autonomy/Action Space — [intrinsic_motivation.md](./intrinsic_motivation.md)) | Renew (Purpose/Value Alignment — [intrinsic_motivation.md](./intrinsic_motivation.md)) | WHY / Interface | Reward/Cost Function | Defines success |
 
 ## Fractal Pattern: Sub-Pillars Mirror the Cycle
 
@@ -77,8 +77,11 @@ This fractal structure means each pillar contains a miniature version of the ful
 **Retained from 3.0**:
 - Flow Theory (Clear Strategy)
 - OODA Loop (Contextual Awareness + Clear Strategy)
-- Self-Determination Theory (Objective Function - human instantiation)
+- Self-Determination Theory (Objective Function - human instantiation, now detailed in [`intrinsic_motivation.md`](./intrinsic_motivation.md))
 - Search engines, SLAM, cognitive artifacts
+
+**Companion Document Added**:
+- [`intrinsic_motivation.md`](./intrinsic_motivation.md) — The human motivation companion document. Extracts all human-specific content (Mastery, Autonomy, Purpose, SDT, Flow, IC-level behaviors) from the Objective Function pillar into a focused reference. `objective_function.md` now focuses on the human-agent interaction layer.
 
 ---
 

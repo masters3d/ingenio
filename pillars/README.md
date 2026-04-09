@@ -33,7 +33,8 @@ pillars/
 ├── contextual_awareness.md         # Prospective/KNOWING specification
 ├── clear_strategy.md               # Actuation/ACTING specification
 ├── systematic_improvement.md       # Retrospective/IMPROVING specification
-├── objective_function.md           # Objective Function/WHY specification
+├── objective_function.md           # Objective Function/WHY — human-agent interaction layer
+├── intrinsic_motivation.md         # Human motivation companion (Mastery, Autonomy, Purpose)
 └── FRAMEWORK_STRUCTURE.md          # Complete Framework 4.0 structure
 ```
 
@@ -98,21 +99,22 @@ pillars/
 ### Objective Function (WHY)
 
 **Position**: Above the operational cycle - defines success criteria for any agent (human or AI)
+**Focus**: The **interface between human intent and agent capability** — how humans and agents jointly define, act within, and continuously realign their shared objective function.
 **Framework**: Self-Determination Theory (human), Reinforcement Learning (agent), Objective Function optimization
+**Human Details**: Full treatment of Mastery, Autonomy, Purpose → see [`intrinsic_motivation.md`](./intrinsic_motivation.md)
 
-**Three Sub-Pillars (Agent-Agnostic)**:
-1. **Search** (Prospective) - "What does *better* look like?"
-   - Human: Mastery | Agent: Reward Signal
-2. **Drive** (Actuation) - "What can I control?"
-   - Human: Autonomy | Agent: Action Space
-3. **Renew** (Retrospective) - "Am I optimizing for the right thing?"
-   - Human: Purpose | Agent: Value Alignment
+**Three Sub-Pillars (Reframed for Human-Agent Interaction)**:
+1. **Search** (Prospective) - "What does *better* look like, together?"
+   - Human: Mastery goals → Agent: Reward Signal; the interaction between them
+2. **Drive** (Actuation) - "What can we each control, and how do we share it?"
+   - Human: Autonomy → Agent: Action Space; delegation patterns and trust gradients
+3. **Renew** (Retrospective) - "Are we still aligned with each other?"
+   - Human: Purpose → Agent: Value Alignment; RLHF and feedback loops as communication
 
-**Key Behaviors**: Deliberate practice, ownership, meaningful alignment (human); reward shaping, tool access, RLHF (agent)
+**Key Behaviors**: Explicit delegation, phased trust expansion, alignment check-ins, reward specification review, escalation paths
 
 **Robotics Foundation**: Reward/Cost Function (defines what to optimize for)
 **OODA Mapping**: The criteria by which Observe/Orient/Decide/Act are judged
-**Focus**: The mathematical formalization of "what does better look like?"
 
 ---
 
@@ -388,6 +390,7 @@ For deeper exploration:
 - **Clear Strategy (Actuation)**: See presentation at `/presentation/eng_clear_strategy.md`
 - **Systematic Improvement (Retrospective)**: See presentation at `/presentation/eng_systematic_improvement.md`
 - **Objective Function**: See presentation at `/presentation/eng_objective_function.md`
+- **Intrinsic Motivation (Human)**: See `/pillars/intrinsic_motivation.md` for Mastery, Autonomy, Purpose detail
 - **Complete Framework Structure**: See `/pillars/FRAMEWORK_STRUCTURE.md`
 - **Career Application**: See `/career.md` for IC-level-specific guidance
 - **Repository Context**: See `/AGENTS.md` for overall framework

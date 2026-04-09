@@ -11,6 +11,14 @@ _Apr, 2026_
 
 ---
 
+# Note on Human Motivation Content
+
+Full detail on the human instantiation (Mastery, Autonomy, Purpose, SDT, Flow, IC-level behaviors) is in [`pillars/intrinsic_motivation.md`](../pillars/intrinsic_motivation.md).
+
+`objective_function.md` focuses on the human-agent interaction layer.
+
+---
+
 # Objective
 
 - From Medieval Latin _objectivus_
