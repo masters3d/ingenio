@@ -89,7 +89,7 @@ Sub-Pillars 1 and 2 form a tight inner loop — verify current condition, run an
 #### Applied Example
 
 **System-Based (Good)**
-> "We had an outage during a Friday deploy. Rollback took 45 minutes because automated rollback failed and the manual process was undocumented. Root cause: missing health check let a bad deploy pass CI. Staging differs from prod. Actions: (1) Add health check to CI, (2) Document rollback, (3) Align staging with prod."
+> "We had an outage during a Friday deploy. Rollback took 45 minutes because automated rollback failed and the manual process was undocumented. Root cause: missing health check let a bad deploy pass CI because staging environment differs from prod. Actions: (1) Add health check to CI, (2) Document rollback procedure, (3) Align staging with prod."
 
 **Judgment-Based (Anti-Example)**
 > "The outage happened because Sarah deployed on Friday. Let's ban Friday deploys." — Fixes the person, not the system. The next deploy breaks something different.

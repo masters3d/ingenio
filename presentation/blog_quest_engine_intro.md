@@ -8,7 +8,7 @@ _An introduction to Framework 4.0 of the Quest Engine, the engineering operating
 
 Engineering teams don't fail because they lack smart people.
 
-They fail because smart people, working hard in isolation, without a shared system for building knowledge, executing on it, and improving over time, produce chaos that looks like velocity. Code that ships but breaks. Systems that grow but can't be understood. Engineers who are busy but not growing. Teams that learn lessons in isolation, make the same mistakes again, and wonder why their velocity feels stuck even though everyone is working flat out.
+They fail because smart people work hard in isolation, without a shared system. Knowledge isn't built together. Decisions aren't grounded in shared context. Improvements don't compound. The result is chaos that looks like velocity: code that ships but breaks, systems that grow but can't be understood, engineers who are busy but not growing. Teams that learn lessons in isolation, make the same mistakes again, and wonder why their velocity feels stuck even though everyone is working flat out.
 
 The common answer is to add more process: more planning ceremonies, more documentation requirements, more retrospectives. The result is more friction, less execution, and engineers who feel managed rather than empowered. The process overhead becomes the product.
 
@@ -95,7 +95,7 @@ Contextual Awareness is the structured process of understanding those dependenci
 
 3. **Shared Understanding**: Externalize knowledge into durable cognitive artifacts — documentation, ADRs, diagrams, runbooks. Knowledge trapped in individual heads is as good as lost. When that engineer leaves, the knowledge leaves with them. Async-first by default.
 
-**Concrete example**: An engineer onboarding to a new team practices Contextual Awareness by spending the first two weeks not just reading the codebase (Proactive Curiosity), but building a mental model of how services interact and what problems the system was designed to solve (Cohesive Narrative), and writing that understanding down in a document that future engineers can use (Shared Understanding). Two weeks of investment, years of compounded return.
+**Concrete example**: An engineer onboarding to a new team spends the first two weeks practicing all three sub-pillars. They read the codebase and trace service interactions (Proactive Curiosity). They synthesize that into a mental model of how the system fits together and what problems it was designed to solve (Cohesive Narrative). Then they write it down in a document future engineers can use (Shared Understanding). Two weeks of investment, years of compounded return.
 
 **Robotics foundation**: Perception — sensors, SLAM, environment mapping.
 
@@ -115,7 +115,7 @@ Three sub-pillars:
 
 3. **Adaptive Control**: Act with immediate feedback. Every action is a data point, not a judgment. The difference between expert performance and novice performance is the speed of the feedback loop and the precision of the adjustment. Expert debugging looks effortless because the engineer has developed tight action-feedback-adjustment loops. These loops can be built deliberately.
 
-**Concrete example**: A team using Clear Strategy explicitly writes down what "done" looks like for a sprint before it begins (Directed Intentionality), matches stories to engineers based on current skill levels with explicit stretch targets (Challenge Matching), and runs daily demos with real deployment feedback rather than periodic status meetings (Adaptive Control). The result: higher velocity, fewer surprises, and engineers who actually grow.
+**Concrete example**: Before each sprint begins, a team writes down exactly what "done" looks like for every story (Directed Intentionality). They assign work based on current skill levels with explicit stretch targets (Challenge Matching). They run daily demos with real deployment feedback instead of periodic status meetings (Adaptive Control). The result: higher velocity, fewer surprises, and engineers who actually grow.
 
 **Robotics foundation**: Actuation — kinematics, path planning, PID control.
 
@@ -135,7 +135,7 @@ Three sub-pillars:
 
 3. **Update Propagation**: Improvements don't stay local. Eliminate waste permanently (Muda elimination — don't defer, delete), mistake-proof the system (Poka-yoke — make regression structurally impossible), automate what's proven (Jidoka — keep human judgment in the loop), standardize before spreading (SDCA — lock in the gain before the next improvement cycle), and propagate horizontally (Yokoten — find every team with the same problem, apply the fix everywhere).
 
-**Concrete example**: After a production outage, a team practicing Systematic Improvement runs a blameless postmortem comparing what they expected with what happened (Continuous Integration), identifies the root pattern ("we treat config as 'not code' but it controls production behavior") and creates a concrete do-less / keep / do-more plan (Deliberate Practice), then implements config-as-code, updates the ADR, and shares the fix with three other teams that have the same exposure (Update Propagation). The outage becomes a system-wide improvement, not a one-team lesson.
+**Concrete example**: After a production outage, the team runs a blameless postmortem to compare what they expected with what actually happened (Continuous Integration). They identify the root pattern: "we treat config as 'not code,' but config controls production behavior." They build a concrete do-less / keep / do-more plan (Deliberate Practice). Then they implement config-as-code, update the ADR, and share the fix with three other teams who have the same exposure (Update Propagation). The outage becomes a system-wide improvement, not a one-team lesson.
 
 **Kaizen foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA.
 
