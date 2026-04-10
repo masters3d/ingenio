@@ -226,7 +226,7 @@ Sub-Pillars 1 and 2 form a tight inner loop — verify current condition, run an
 
 ## Anti-Patterns
 
-**No Iterative Integration** — Symptom: team ships, moves on, never tests current state. Root Cause: no automated state testing, no culture of continuous verification. Solution: make state testing required; treat broken tests as a stop-the-line event.
+**No Iterative Integration** — Symptom: team ships, moves on, never tests current state. Root Cause: no automated state testing, no culture of continuous verification. Solution: make CI required; treat broken CI as a stop-the-line event.
 
 **Blame Culture** — Symptom: incidents lead to punishment, people hide mistakes. Root Cause: focus on who rather than what, lack of psychological safety. Solution: blameless postmortems grounded in Hansei; focus on system failures, celebrate transparency.
 

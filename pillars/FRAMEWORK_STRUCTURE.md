@@ -195,7 +195,7 @@ NOT part of the operational cycle — it defines what the cycle optimizes for.
 | Prospective | Stale Documentation | Assign owners, quarterly reviews, DoD includes docs |
 | Actuation | Analysis Paralysis | Time-box planning, default to action |
 | Actuation | Scope Creep | Ruthless exit strategy enforcement |
-| Retrospective | No Iterative Integration | Make state testing required; treat broken tests as stop-the-line event |
+| Retrospective | No Iterative Integration | Make CI required; treat broken CI as stop-the-line event |
 | Retrospective | Blame Culture | Blameless postmortems grounded in Hansei, psychological safety |
 | Retrospective | Automating Inefficiency | Question → Delete → Simplify before Automate |
 | Objective Function | Learned Helplessness | Explicitly grant decision authority |

@@ -301,7 +301,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 **No Iterative Integration**
 - Symptom: Ship and move on, never test current state
-- Solution: Make state testing required; treat broken tests as stop-the-line event
+- Solution: Make CI required; treat broken CI as stop-the-line event
 
 **Blame Culture**
 - Symptom: Incidents lead to punishment, hide mistakes
