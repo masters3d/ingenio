@@ -48,7 +48,7 @@ Objective Function (WHY)
 **Kaizen Foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA
 
 **Three Sub-Pillars:**
-1. **Continuous Integration** - Constantly test state against expected state ("Is this still true?")
+1. **Iterative Integration** - Constantly test state against expected state ("Is this still true?")
 2. **Deliberate Practice** - Practiced routine of improvement: do less of / keep doing / do more of ("How do we make this better?")
 3. **Update Propagation** - Eliminate waste permanently, mistake-proof, automate, propagate horizontally ("How do we make this permanent and spread it?")
 

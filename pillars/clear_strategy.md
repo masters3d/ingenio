@@ -280,7 +280,7 @@ The value isn't in rigid adherence to a plan, but in the clarity gained through 
 - **Adaptive Control** depends on **Shared Understanding** (observable systems, documented feedback loops)
 
 ### With Systematic Improvement (Retrospective)
-- **Challenge Matching** outcomes feed **Continuous Integration** (was difficulty right-sized? CI verifies continuously)
+- **Challenge Matching** outcomes feed **Iterative Integration** (was difficulty right-sized? Iterative testing verifies continuously)
 - **Directed Intentionality** clarity enables **Deliberate Practice** (clear goals make improvement routines more targeted)
 - **Adaptive Control** real-time feedback informs **Update Propagation** (immediate data becomes permanent improvement)
 

@@ -20,7 +20,7 @@ Three-Phase Operational Cycle:
 │   ├── Directed Intentionality
 │   └── Adaptive Control
 └── Systematic Improvement (Retrospective - IMPROVING)
-    ├── Continuous Integration
+    ├── Iterative Integration
     ├── Deliberate Practice
     └── Update Propagation
 ```
@@ -31,7 +31,7 @@ Three-Phase Operational Cycle:
 |-----------|--------------|--------------|--------------|------|----------|------|
 | **Contextual Awareness** (Prospective) | Proactive Curiosity | Cohesive Narrative | Shared Understanding | KNOWING | Perception | Observe + Orient |
 | **Clear Strategy** (Actuation) | Challenge Matching | Directed Intentionality | Adaptive Control | ACTING | Actuation | Decide + Act |
-| **Systematic Improvement** (Retrospective) | Continuous Integration | Deliberate Practice | Update Propagation | IMPROVING | Kaizen | Loop back |
+| **Systematic Improvement** (Retrospective) | Iterative Integration | Deliberate Practice | Update Propagation | IMPROVING | Kaizen | Loop back |
 | **Objective Function** (WHY) | Search (Mastery/Reward Signal — [intrinsic_motivation.md](./intrinsic_motivation.md)) | Drive (Autonomy/Action Space — [intrinsic_motivation.md](./intrinsic_motivation.md)) | Renew (Purpose/Value Alignment — [intrinsic_motivation.md](./intrinsic_motivation.md)) | WHY / Interface | Reward/Cost Function | Defines success |
 
 ## Fractal Pattern: Sub-Pillars Mirror the Cycle
@@ -42,7 +42,7 @@ Three-Phase Operational Cycle:
 |-------------|----------------------------|--------------------------|------------------------------|
 | **Contextual Awareness** | **Proactive Curiosity** — look forward, crawl, discover, sense the environment | **Cohesive Narrative** — act on data, build mental models, synthesize | **Shared Understanding** — look back, externalize learnings, preserve for future |
 | **Clear Strategy** | **Challenge Matching** — look forward, assess capabilities vs demands | **Directed Intentionality** — execute, project consciousness toward objective | **Adaptive Control** — look back at feedback, correct course in real-time |
-| **Systematic Improvement** | **Continuous Integration** — test state against reality ("Is this still true?") | **Deliberate Practice** — do less of / keep doing / do more of ("How do we make this better?") | **Update Propagation** — eliminate, prevent, automate, propagate ("How do we make this permanent?") |
+| **Systematic Improvement** | **Iterative Integration** — test state against reality ("Is this still true?") | **Deliberate Practice** — do less of / keep doing / do more of ("How do we make this better?") | **Update Propagation** — eliminate, prevent, automate, propagate ("How do we make this permanent?") |
 | **Objective Function** | **Search** — define what "better" looks like (Mastery/Reward Signal) | **Drive** — determine what can be controlled (Autonomy/Action Space) | **Renew** — verify optimizing for right thing (Purpose/Value Alignment) |
 
 **Pattern Explanation**:
@@ -121,7 +121,7 @@ The ACTING phase — transforming ambiguous directives into concrete, achievable
 
 The IMPROVING phase — closing the improvement loop by continuously testing state, practicing improvement routines, and propagating gains permanently.
 
-- **Continuous Integration**: Constantly test state against expected state — blameless postmortems, compare prediction vs reality ("Is this still true?")
+- **Iterative Integration**: Constantly test state against expected state — blameless postmortems, compare prediction vs reality ("Is this still true?")
 - **Deliberate Practice**: Practiced improvement routine — do less of / keep doing / do more of, distinguish signal from noise ("How do we make this better?")
 - **Update Propagation**: Eliminate waste permanently, mistake-proof the system, automate what's proven, propagate horizontally ("How do we make this permanent and spread it everywhere?")
 
@@ -195,7 +195,7 @@ NOT part of the operational cycle — it defines what the cycle optimizes for.
 | Prospective | Stale Documentation | Assign owners, quarterly reviews, DoD includes docs |
 | Actuation | Analysis Paralysis | Time-box planning, default to action |
 | Actuation | Scope Creep | Ruthless exit strategy enforcement |
-| Retrospective | No Continuous Integration | Make CI required; treat broken CI as stop-the-line event |
+| Retrospective | No Iterative Integration | Make CI required; treat broken CI as stop-the-line event |
 | Retrospective | Blame Culture | Blameless postmortems grounded in Hansei, psychological safety |
 | Retrospective | Automating Inefficiency | Question → Delete → Simplify before Automate |
 | Objective Function | Learned Helplessness | Explicitly grant decision authority |

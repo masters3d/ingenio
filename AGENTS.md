@@ -129,7 +129,7 @@ The IMPROVING phase - closing the improvement loop by continuously testing state
 
 #### Three Sub-Pillars
 
-1. **Continuous Integration**: Constantly test the state of the system against expected state. "Is this still true?"
+1. **Iterative Integration**: Constantly test the state of the system against expected state. "Is this still true?"
    - Compare prediction vs reality (measurement gap)
    - Identify contributing factors (root cause analysis, Five Whys)
    - Document without blame (blameless postmortems, psychological safety)
