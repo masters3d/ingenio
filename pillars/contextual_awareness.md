@@ -331,7 +331,7 @@ Context changes constantly. Yesterday's best practice becomes tomorrow's anti-pa
 - **Shared Understanding** clarifies **Renew** (see why work matters → Purpose/Value Alignment)
 
 ### With Systematic Improvement (Retrospective)
-- **Proactive Curiosity** enriched by **Continuous Integration** (continuous state testing adds experiential data to knowledge base)
+- **Proactive Curiosity** enriched by **Iterative Integration** (continuous state testing adds experiential data to knowledge base)
 - **Cohesive Narrative** improved by **Deliberate Practice** (practiced improvement routines reveal system structure)
 - **Shared Understanding** maintained by **Update Propagation** (propagated improvements become permanent cognitive artifacts)
 

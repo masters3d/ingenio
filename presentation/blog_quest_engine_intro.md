@@ -130,13 +130,13 @@ Systematic Improvement is the discipline that transforms raw results into perman
 
 Three sub-pillars:
 
-1. **Continuous Integration** — Constantly test the state of the system against expected state. Run automated tests — but also human tests: postmortems, retrospectives, assumption checks. Ask "is this still true?" continuously. Grounded in Genchi Genbutsu (go to the source, verify with real data) and Hansei (honest self-reflection — no blame, just the delta between expected and actual).
+1. **Iterative Integration** — Constantly test the state of the system against expected state. Run automated tests — but also human tests: postmortems, retrospectives, assumption checks. Ask "is this still true?" continuously. Grounded in Genchi Genbutsu (go to the source, verify with real data) and Hansei (honest self-reflection — no blame, just the delta between expected and actual).
 
 2. **Deliberate Practice** — For every process, behavior, or component: do less of / keep doing / do more of. This is Kata — a practiced improvement routine — applied to engineering. Don't fix this incident; fix the class of incidents. Distinguish signal from noise, recognize recurring archetypes, extract lessons general enough to be useful beyond the specific case.
 
 3. **Update Propagation** — Improvements don't stay local. Eliminate waste permanently (Muda — don't defer, delete), mistake-proof the system (Poka-yoke — make regression structurally impossible), automate what's proven (Jidoka — keep human judgment in the loop), standardize before spreading (SDCA — lock in the gain), and propagate horizontally (Yokoten — find every team with the same problem, apply the fix everywhere).
 
-**Concrete example**: After a production outage, the team runs a blameless postmortem to compare what they expected with what actually happened (Continuous Integration). They identify the root pattern: "we treat config as 'not code,' but config controls production behavior." They build a concrete do-less / keep / do-more plan (Deliberate Practice). Then they implement config-as-code, update the ADR, and share the fix with three other teams who have the same exposure (Update Propagation). The outage becomes a system-wide improvement, not a one-team lesson.
+**Concrete example**: After a production outage, the team runs a blameless postmortem to compare what they expected with what actually happened (Iterative Integration). They identify the root pattern: "we treat config as 'not code,' but config controls production behavior." They build a concrete do-less / keep / do-more plan (Deliberate Practice). Then they implement config-as-code, update the ADR, and share the fix with three other teams who have the same exposure (Update Propagation). The outage becomes a system-wide improvement, not a one-team lesson.
 
 **Kaizen foundation**: Genchi Genbutsu, Hansei, Kata, Muda, Yokoten, Poka-yoke, Jidoka, PDCA/SDCA.
 
@@ -175,7 +175,7 @@ One more property worth naming: **the structure is self-similar at every level.*
 Each of the three HOW pillars has its own internal KNOWING / ACTING / IMPROVING:
 - Contextual Awareness: Proactive Curiosity (KNOWING) → Cohesive Narrative (ACTING, synthesize) → Shared Understanding (IMPROVING, align and maintain)
 - Clear Strategy: Challenge Matching (KNOWING, assess) → Directed Intentionality (ACTING, focus) → Adaptive Control (IMPROVING, correct)
-- Systematic Improvement: Continuous Integration (KNOWING, test state) → Deliberate Practice (ACTING, improve) → Update Propagation (IMPROVING, make permanent)
+- Systematic Improvement: Iterative Integration (KNOWING, test state) → Deliberate Practice (ACTING, improve) → Update Propagation (IMPROVING, make permanent)
 
 And the WHY itself follows the same pattern:
 - Search (look forward — what does better look like?)

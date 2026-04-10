@@ -80,7 +80,7 @@ Systematic Improvement is the **feedback arc**:
 
 **Fractal Pattern**: Each sub-pillar mirrors Prospective → Actuation → Retrospective
 
-1. **Continuous Integration** (Prospective of improving) - Is this still true?
+1. **Iterative Integration** (Prospective of improving) - Is this still true?
 2. **Deliberate Practice** (Actuation of improving) - How do we make this better?
 3. **Update Propagation** (Retrospective of improving) - How do we make this permanent and spread it everywhere?
 
@@ -89,7 +89,7 @@ Systematic Improvement is the **feedback arc**:
 # Inner Loop Structure
 
 ```
-┌──→ Continuous Integration (Is this still true?)
+┌──→ Iterative Integration (Is this still true?)
 │           ↓
 │    Deliberate Practice (do less of / keep doing / do more of)
 │           │
@@ -104,7 +104,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 ---
 
-# Sub-Pillar 1: Continuous Integration
+# Sub-Pillar 1: Iterative Integration
 
 **Constantly test state against expected state. Lock in the truth.**
 
@@ -119,7 +119,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 ---
 
-# Sub-Pillar 1: Continuous Integration (cont.)
+# Sub-Pillar 1: Iterative Integration (cont.)
 
 **Blameless Hansei** (honest self-reflection without blame)
 
@@ -133,7 +133,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 ---
 
-# Example: Bad Continuous Integration
+# Example: Bad Iterative Integration
 
 > "The outage happened because Sarah deployed on Friday afternoon. She should have known better. Let's add a policy: no Friday deploys."
 
@@ -141,7 +141,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 ---
 
-# Example: Good Continuous Integration
+# Example: Good Iterative Integration
 
 > "We had an outage during Friday deploy. Our rollback took 45 minutes because automated rollback failed and manual process was undocumented.
 >
@@ -263,7 +263,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 # Integration: Systematic Improvement ↔ Clear Strategy
 
-- **Continuous Integration** feeds **Adaptive Control**
+- **Iterative Integration** feeds **Adaptive Control**
   - Continuous state testing provides real-time adjustment data
 - **Deliberate Practice** informs **Challenge Matching**
   - Practiced routines identify if challenges are too hard/easy
@@ -274,7 +274,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 # Integration: Systematic Improvement ↔ Contextual Awareness
 
-- **Continuous Integration** enriches **Proactive Curiosity**
+- **Iterative Integration** enriches **Proactive Curiosity**
   - Continuous state testing adds experiential data to knowledge base
 - **Deliberate Practice** improves **Cohesive Narrative**
   - Practiced routines reveal system structure and failure modes
@@ -285,7 +285,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 # Integration: Systematic Improvement ↔ Objective Function
 
-- **Continuous Integration** demonstrates **Search** progress
+- **Iterative Integration** demonstrates **Search** progress
   - Human: See improvement over time (Mastery)
   - Agent: Validate loss decrease (Reward Signal)
 - **Deliberate Practice** enhances **Drive**
@@ -299,9 +299,9 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 # Anti-Patterns to Avoid
 
-**No Continuous Integration**
+**No Iterative Integration**
 - Symptom: Ship and move on, never test current state
-- Solution: Make CI required; treat broken CI as stop-the-line event
+- Solution: Make state testing required; treat broken tests as stop-the-line event
 
 **Blame Culture**
 - Symptom: Incidents lead to punishment, hide mistakes
@@ -327,7 +327,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 
 # Measuring Systematic Improvement
 
-**Continuous Integration Metrics**
+**Iterative Integration Metrics**
 - % of system state continuously tested against expected state
 - Time to detect when reality drifts from intention
 - Blameless postmortem rate (not blame-focused)
@@ -381,7 +381,7 @@ Sub-Pillars 1 and 2 cycle rapidly together until the improvement is stable. Only
 **Fractal Pattern**: Sub-pillars mirror Prospective → Actuation → Retrospective
 
 **Three Sub-Pillars**:
-1. Continuous Integration (Prospective of improving) - Is this still true?
+1. Iterative Integration (Prospective of improving) - Is this still true?
 2. Deliberate Practice (Actuation of improving) - How do we make this better?
 3. Update Propagation (Retrospective of improving) - How do we make this permanent and spread it everywhere?
 

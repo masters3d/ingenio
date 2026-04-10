@@ -398,7 +398,7 @@ Whether human or AI, agents need well-defined objective functions to sustain per
 # Integration with Operational Cycle (cont.)
 
 **With Systematic Improvement (Retrospective)**:
-- Search ↔ Continuous Integration: Did I actually get better? CI verifies continuously.
+- Search ↔ Iterative Integration: Did I actually get better? Iterative testing verifies continuously.
 - Drive ↔ Deliberate Practice: What should I change about what I control?
 - Renew ↔ Update Propagation: Should I change what I'm optimizing for, and is that change spreading?
 

@@ -29,7 +29,7 @@ The value of action lies not just in the outcome, but in what the system does wi
 ## The Three Sub-Pillars
 
 **Fractal Pattern**: The three sub-pillars internally mirror the Prospective → Actuation → Retrospective cycle:
-1. **Continuous Integration** (Prospective) — Constantly test the state of the system against expected state. "Is this still true?"
+1. **Iterative Integration** (Prospective) — Constantly test the state of the system against expected state. "Is this still true?"
 2. **Deliberate Practice** (Actuation) — The practiced routine: do less of / keep doing / do more of. "How do we make this better?"
 3. **Update Propagation** (Retrospective) — Eliminate waste permanently, prevent errors structurally, automate, propagate horizontally. "How do we make this permanent and spread it everywhere?"
 
@@ -41,7 +41,7 @@ Sub-Pillars 1 and 2 form a tight inner loop — verify current condition, run an
 
 ---
 
-### 1. Continuous Integration
+### 1. Iterative Integration
 
 **Definition**: Constantly test the state of the system against expected state. Lock in the truth. Know immediately when reality drifts from intention. This is the Prospective phase of improving.
 
@@ -208,17 +208,17 @@ Sub-Pillars 1 and 2 form a tight inner loop — verify current condition, run an
 ## Integration with Other Pillars
 
 **With Contextual Awareness (Prospective)**:
-- Continuous Integration enriches Proactive Curiosity — experiential data added to the knowledge base
+- Iterative Integration enriches Proactive Curiosity — experiential data added to the knowledge base
 - Deliberate Practice improves the Cohesive Narrative — practiced routines reveal system structure and failure modes
 - Update Propagation maintains Shared Understanding — propagated improvements become permanent cognitive artifacts
 
 **With Clear Strategy (Actuation)**:
-- Continuous Integration feeds Adaptive Control — continuous state testing provides real-time adjustment data
+- Iterative Integration feeds Adaptive Control — continuous state testing provides real-time adjustment data
 - Deliberate Practice informs Challenge Matching — improvement routines identify if challenges are right-sized
 - Update Propagation refines Directed Intentionality — permanently improved systems enable clearer goals
 
 **With Objective Function (WHY)**:
-- Continuous Integration demonstrates progress toward Search (Mastery/Reward Signal)
+- Iterative Integration demonstrates progress toward Search (Mastery/Reward Signal)
 - Deliberate Practice enhances Drive (Autonomy/Action Space) by expanding decision confidence
 - Update Propagation clarifies Renew (Purpose/Value Alignment) — permanent improvements verify we're optimizing for the right thing
 
@@ -226,7 +226,7 @@ Sub-Pillars 1 and 2 form a tight inner loop — verify current condition, run an
 
 ## Anti-Patterns
 
-**No Continuous Integration** — Symptom: team ships, moves on, never tests current state. Root Cause: no automated state testing, no culture of continuous verification. Solution: make CI required; treat broken CI as a stop-the-line event.
+**No Iterative Integration** — Symptom: team ships, moves on, never tests current state. Root Cause: no automated state testing, no culture of continuous verification. Solution: make state testing required; treat broken tests as a stop-the-line event.
 
 **Blame Culture** — Symptom: incidents lead to punishment, people hide mistakes. Root Cause: focus on who rather than what, lack of psychological safety. Solution: blameless postmortems grounded in Hansei; focus on system failures, celebrate transparency.
 
@@ -242,7 +242,7 @@ Sub-Pillars 1 and 2 form a tight inner loop — verify current condition, run an
 
 | Sub-Pillar | Key Metrics |
 |------------|-------------|
-| **Continuous Integration** | Time to detect drift; % incidents with blameless postmortem; psychological safety score |
+| **Iterative Integration** | Time to detect drift; % incidents with blameless postmortem; psychological safety score |
 | **Deliberate Practice** | Improvement cycle time; % investigated issues that were systemic (vs noise); waste identification rate |
 | **Update Propagation** | Recurrence rate (target: zero); % improvements propagated to all applicable areas; improvement velocity over time |
 

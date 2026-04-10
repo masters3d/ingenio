@@ -84,7 +84,7 @@ pillars/
 **Framework**: Kaizen (Imai/Toyota), Toyota Kata (Rother), Musk's Five-Step Algorithm, Recursive Self-Improvement
 
 **Three Sub-Pillars**:
-1. **Continuous Integration** - Constantly test state against expected state ("Is this still true?")
+1. **Iterative Integration** - Constantly test state against expected state ("Is this still true?")
 2. **Deliberate Practice** - The practiced routine of improvement: do less of / keep doing / do more of ("How do we make this better?")
 3. **Update Propagation** - Eliminate waste permanently, mistake-proof, automate, propagate horizontally ("How do we make this permanent and spread it everywhere?")
 
@@ -212,12 +212,12 @@ When creating new content for ingenio:
 - Shared Understanding → Adaptive Control: Observable systems, documented feedback loops
 
 **Actuation → Retrospective**:
-- Challenge Matching → Continuous Integration: Was challenge right-sized? CI verifies continuously.
+- Challenge Matching → Iterative Integration: Was challenge right-sized? Iterative testing verifies continuously.
 - Directed Intentionality → Deliberate Practice: Clear goals make improvement routines more targeted
 - Adaptive Control → Update Propagation: Real-time feedback becomes permanent improvement
 
 **Retrospective → Prospective (Loop Closure)**:
-- Continuous Integration → Proactive Curiosity: Continuous state testing enriches knowledge base
+- Iterative Integration → Proactive Curiosity: Continuous state testing enriches knowledge base
 - Deliberate Practice → Cohesive Narrative: Practiced improvement routines reveal system structure
 - Update Propagation → Shared Understanding: Propagated improvements become permanent cognitive artifacts
 
@@ -263,7 +263,7 @@ Each component specification includes detailed measurement sections. Key indicat
 - **Adaptive Control**: Feedback loop speed, deployment frequency, MTTR
 
 ### Retrospective (Systematic Improvement) Metrics
-- **Continuous Integration**: % of system state continuously tested, time to detect drift, blameless postmortem rate
+- **Iterative Integration**: % of system state continuously tested, time to detect drift, blameless postmortem rate
 - **Deliberate Practice**: Improvement cycle time, signal vs noise accuracy, waste identification rate
 - **Update Propagation**: Recurrence rate (should trend to zero), propagation coverage %, improvement velocity
 
