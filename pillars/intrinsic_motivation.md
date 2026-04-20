@@ -98,7 +98,7 @@ In practice: engineers with a growth mindset treat code reviews as data, postmor
 
 **Mastery Domains**: Technical (languages, frameworks, systems), Domain (business context, user needs), Process (debugging, optimization, workflows), People (communication, mentoring, collaboration).
 
-### Engineering Behaviors by IC Level
+### Engineering Behaviors by Individual Contributor (IC) Level
 
 **Level 0–3**
 - Actively seeks code review feedback and applies learnings; asks "why" questions to understand deeper principles
@@ -107,7 +107,7 @@ In practice: engineers with a growth mindset treat code reviews as data, postmor
 
 **Level 4–7+**
 - Develops deep expertise in critical system components; stays current with industry trends
-- Contributes to technical communities (blog posts, talks, OSS); builds mastery in cross-system integration
+- Contributes to technical communities (blog posts, talks, open-source software (OSS)); builds mastery in cross-system integration
 - Recognized domain expert; shapes engineering culture through technical leadership; mentors senior engineers toward expertise
 
 ### Applied Example
@@ -140,7 +140,7 @@ Autonomy is the opposite of micromanagement. It's the trust and freedom to deter
 
 **Autonomy Constraints**: Alignment (decisions must serve team/org goals), visibility (communicate rationale), reversibility (prefer undoable decisions), consultation (seek input on irreversible choices).
 
-### Engineering Behaviors by IC Level
+### Engineering Behaviors by Individual Contributor (IC) Level
 
 **Level 0–3**
 - Makes implementation decisions within clear design constraints; owns task completion; manages own time
@@ -178,7 +178,7 @@ Teresa Amabile and Steven Kramer's research (*The Progress Principle*, 2011) ide
 
 Small wins compound: a test passing, a migration step completed, a user problem resolved. The daily record of forward movement is more motivating than quarterly retrospective acknowledgment.
 
-This connects directly to [Systematic Improvement](./systematic_improvement.md) and its Update Propagation sub-pillar. Making wins visible — through commit histories, done columns, demo recordings, incident resolution notes — is not just process hygiene; it is a motivational intervention. Yokoten (spreading improvements) and SDCA (locking in gains) create the artifact trail that makes progress legible to the people doing the work. The implication for managers: *protect meaningful work time* and *make progress visible* — these two levers have higher day-to-day motivational return than compensation or vision communication.
+This connects directly to [Systematic Improvement](./systematic_improvement.md) and its Update Propagation sub-pillar. Making wins visible — through commit histories, done columns, demo recordings, incident resolution notes — is not just process hygiene; it is a motivational intervention. Yokoten (spreading improvements) and Standardize-Do-Check-Act (SDCA, locking in gains) create the artifact trail that makes progress legible to the people doing the work. The implication for managers: *protect meaningful work time* and *make progress visible* — these two levers have higher day-to-day motivational return than compensation or vision communication.
 
 ### Components
 
@@ -190,7 +190,7 @@ This connects directly to [Systematic Improvement](./systematic_improvement.md) 
 
 **Purpose Erosion**: Pointless work, values misalignment, disconnection from impact, cynicism ("synergistic cloud solutions to drive stakeholder value").
 
-### Engineering Behaviors by IC Level
+### Engineering Behaviors by Individual Contributor (IC) Level
 
 **Level 0–3**
 - Asks "why are we building this?"; connects tasks to user stories and customer needs
@@ -231,11 +231,11 @@ Adding extrinsic rewards to intrinsically motivating activities can reduce motiv
 
 ## The Regulation Continuum
 
-SDT does not treat extrinsic motivation as a single enemy — it describes a **continuum of regulation** from fully external to fully internal:
+Self-Determination Theory (SDT) does not treat extrinsic motivation as a single enemy — it describes a **continuum of regulation** from fully external to fully internal:
 
 | Regulation Type | Definition | Engineering Example |
 |-----------------|------------|---------------------|
-| **External** | Do it to get a reward or avoid punishment | "I'll write tests because the PR checklist requires it." |
+| **External** | Do it to get a reward or avoid punishment | "I'll write tests because the pull request (PR) checklist requires it." |
 | **Introjected** | Do it to avoid guilt or protect self-image | "I'll write tests because I'd feel like a bad engineer if I didn't." |
 | **Identified** | Do it because it matters to your personal goals | "I'll write tests because I want to ship reliable software — that's what I care about." |
 | **Integrated** | Do it because it's part of who you are | "I write tests. It's just how I build things." |
@@ -243,7 +243,7 @@ SDT does not treat extrinsic motivation as a single enemy — it describes a **c
 
 The goal is not "intrinsic motivation only." Identified and Integrated regulation are extrinsic in origin — the initial impulse came from outside — but are functionally indistinguishable from intrinsic motivation in terms of quality, persistence, and well-being. An engineer who ships reliable software because reliability is personally important (Identified) performs just as sustainably as one who intrinsically loves testing.
 
-**The strawman to avoid**: "All extrinsic motivation is bad." What SDT actually warns against is *External* and *Introjected* regulation — motivation that remains dependent on external reinforcement or ego protection and has never been internalized. The Overjustification Effect applies here: adding External rewards to Intrinsic activity can push motivation leftward on the continuum, not just reduce it.
+**The strawman to avoid**: "All extrinsic motivation is bad." What Self-Determination Theory (SDT) actually warns against is *External* and *Introjected* regulation — motivation that remains dependent on external reinforcement or ego protection and has never been internalized. The Overjustification Effect applies here: adding External rewards to Intrinsic activity can push motivation leftward on the continuum, not just reduce it.
 
 ---
 
@@ -278,8 +278,8 @@ This is the human analog of Reward Hacking in [objective_function.md](./objectiv
 | Sub-Pillar | Key Indicators | Validated Instruments |
 |------------|----------------|-----------------------|
 | **Mastery (Search)** | Skill growth, learning time allocation, knowledge sharing frequency, challenge seeking | Intrinsic Motivation Inventory (IMI) — competence subscale; 360° skill assessments |
-| **Autonomy (Drive)** | Decision velocity, escalation rate (% requiring manager approval), ownership distribution | IMI — autonomy subscale; Work Extrinsic and Intrinsic Motivation Scale (WEIMS) — autonomous subscales |
-| **Purpose (Renew)** | Mission understanding, work alignment %, engagement levels, retention of motivated engineers | WEIMS — identified/integrated subscales; eNPS (Employee Net Promoter Score); Spotify Squad Health Check |
+| **Autonomy (Drive)** | Decision velocity, escalation rate (% requiring manager approval), ownership distribution | Intrinsic Motivation Inventory (IMI) — autonomy subscale; Work Extrinsic and Intrinsic Motivation Scale (WEIMS) — autonomous subscales |
+| **Purpose (Renew)** | Mission understanding, work alignment %, engagement levels, retention of motivated engineers | Work Extrinsic and Intrinsic Motivation Scale (WEIMS) — identified/integrated subscales; Employee Net Promoter Score (eNPS); Spotify Squad Health Check |
 
 ---
 
@@ -295,10 +295,10 @@ This is the human analog of Reward Hacking in [objective_function.md](./objectiv
 
 ## Limitations and Open Questions
 
-- **WEIRD context**: SDT was developed largely in Western, Educated, Industrialized, Rich, Democratic contexts. The individualist framing of Autonomy — personal decision-making authority as a core need — may not translate cleanly to collectivist engineering cultures where interdependence and group harmony are primary. The framework should be applied with cultural calibration, not as a universal.
+- **WEIRD (Western, Educated, Industrialized, Rich, Democratic) context**: Self-Determination Theory (SDT) was developed largely in these contexts. The individualist framing of Autonomy — personal decision-making authority as a core need — may not translate cleanly to collectivist engineering cultures where interdependence and group harmony are primary. The framework should be applied with cultural calibration, not as a universal.
 - **Temporal dynamics not modeled**: Motivation decays and recovers; career-stage variation is significant. Mastery tends to dominate early career (novelty, skill-building, rapid feedback loops); Purpose tends to dominate mid and late career (legacy, impact, mentorship). See [career.md](../career.md) for career-stage guidance. This document treats the three sub-pillars as stable needs, which understates the dynamics.
 - **Identity-based motivation underweighted**: The framework treats motivation as need-satisfaction but undermodels identity-based motivation — "I am the kind of engineer who writes tests / ships on time / leaves code better than I found it." James Clear's identity loop and Csikszentmihalyi's autotelic personality concept both point at this layer; it is a future extension.
-- **Measurement instruments listed but not validated for engineering context**: WEIMS, IMI, and eNPS are established instruments but were not developed specifically for software engineering teams. Psychometric validation in engineering-specific populations is an open research gap.
+- **Measurement instruments listed but not validated for engineering context**: Work Extrinsic and Intrinsic Motivation Scale (WEIMS), Intrinsic Motivation Inventory (IMI), and Employee Net Promoter Score (eNPS) are established instruments but were not developed specifically for software engineering teams. Psychometric validation in engineering-specific populations is an open research gap.
 - **Motivation Gaming anti-pattern is hard to detect**: The Motivation Gaming anti-pattern (above) is structurally difficult to distinguish from genuine intrinsic motivation without outcome tracking. Organizations that only measure proxies have no signal for it. Detection requires longitudinal outcome data, which most engineering organizations don't collect.
 - **Interaction effects between sub-pillars are not modeled**: The framework treats Mastery, Autonomy, and Purpose as additive. In practice, they interact: high Purpose can temporarily compensate for low Autonomy (crunch mode on something meaningful), and high Mastery can partially compensate for low Purpose (the craft itself is motivating). These interactions matter for predicting burnout and retention.
 
@@ -322,6 +322,6 @@ This is the human analog of Reward Hacking in [objective_function.md](./objectiv
 - **[Objective Function](./objective_function.md)** — The agent-agnostic framework this document instantiates for humans; the **Motivation Gaming** anti-pattern here is the human analog of **Reward Hacking** there — both are Goodhart's Law applied to motivation/reward
 - **[Clear Strategy](./clear_strategy.md)** — Challenge Matching maps to Mastery; Flow state is the intersection of all three sub-pillars
 - **[Contextual Awareness](./contextual_awareness.md)** — Shared Understanding enables Purpose alignment; Proactive Curiosity fuels Mastery
-- **[Systematic Improvement](./systematic_improvement.md)** — Deliberate Practice is the operational expression of Mastery; Update Propagation (Yokoten, SDCA) makes progress visible, directly driving the **Progress Principle**
+- **[Systematic Improvement](./systematic_improvement.md)** — Deliberate Practice is the operational expression of Mastery; Update Propagation (Yokoten, Standardize-Do-Check-Act (SDCA)) makes progress visible, directly driving the **Progress Principle**
 - **[career.md](../career.md)** — Career-stage motivation variation: Mastery dominates early career, Purpose mid and late career
 - **[FRAMEWORK_STRUCTURE.md](./FRAMEWORK_STRUCTURE.md)** — Complete framework architecture
