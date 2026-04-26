@@ -54,6 +54,22 @@ Developed by Edward Deci and Richard Ryan, SDT identifies three fundamental psyc
 
 When all three needs are satisfied, humans experience intrinsic motivation. When any one is chronically unmet, motivation degrades into compliance, apathy, or exit.
 
+### Relatedness within Purpose
+
+SDT maps **Relatedness** → **Purpose** in this framework. That collapse is intentional but deserves explanation because the two constructs are genuinely distinct.
+
+- **Purpose** = connection to *meaningful work* — mission, user impact, "why does this matter?"
+- **Relatedness** = connection to *people* — belonging, team bonds, psychological safety
+
+In an engineering context, sustained belonging tends to flow from shared mission. A team aligned on a hard, meaningful problem builds genuine bonds through the work itself. Pure social belonging without shared purpose produces cliques — comfortable but not generative. That is why Purpose serves as the umbrella: Relatedness, in this framework, is the social dimension of Purpose rather than a separate need.
+
+**Failure mode — high Purpose, low Relatedness**: The "lone-wolf hero" archetype. An engineer deeply connected to the mission but disconnected from teammates. Symptoms include silo behavior, knowledge hoarding, and burnout from carrying too much without a support structure. Mission intensity without relational safety is unsustainable.
+
+**Behaviors that satisfy Relatedness specifically** — these belong under Purpose but are worth naming:
+- **Pairing and mob/ensemble programming** — shared context and real-time trust building
+- **Blameless postmortems** — psychological safety that turns incidents into learning rather than finger-pointing
+- **Team rituals** (team norms docs, retros, shared demos) — low-cost, high-signal practices that make shared mission tangible
+
 ---
 
 ## Sub-Pillar 1: Mastery (Search — Human Instantiation)
@@ -66,6 +82,12 @@ When all three needs are satisfied, humans experience intrinsic motivation. When
 
 Mastery is the difference between doing the same year of work 10 times versus 10 years of progressive growth.
 
+### Growth Mindset Foundation
+
+Mastery requires a **growth mindset** (Dweck, 2006) — the belief that ability is developed rather than fixed. Without it, engineers avoid the deliberate-practice edge that Mastery depends on: the uncomfortable zone just beyond current capability where real learning happens. A fixed-mindset engineer interprets failure as evidence of permanent incompetence and retreats to the comfort of already-mastered skills. The result is stagnation disguised as expertise.
+
+In practice: engineers with a growth mindset treat code reviews as data, postmortems as curriculum, and difficult problems as training reps. Engineers with a fixed mindset filter feedback for confirmation that they are already good. The two orientations produce radically different slopes over a five-year period. The practical implication is that Mastery sub-pillar behaviors — challenge-seeking, feedback integration, deliberate practice — are _only_ available to engineers who have adopted the underlying belief that growth is possible.
+
 ### Components
 
 **Skill Development**: Deliberate practice just beyond current capability; feedback integration from code reviews and incidents; depth building in core technologies; T-shaped breadth expansion into adjacent domains.
@@ -76,7 +98,7 @@ Mastery is the difference between doing the same year of work 10 times versus 10
 
 **Mastery Domains**: Technical (languages, frameworks, systems), Domain (business context, user needs), Process (debugging, optimization, workflows), People (communication, mentoring, collaboration).
 
-### Engineering Behaviors by IC Level
+### Engineering Behaviors by Individual Contributor (IC) Level
 
 **Level 0–3**
 - Actively seeks code review feedback and applies learnings; asks "why" questions to understand deeper principles
@@ -85,7 +107,7 @@ Mastery is the difference between doing the same year of work 10 times versus 10
 
 **Level 4–7+**
 - Develops deep expertise in critical system components; stays current with industry trends
-- Contributes to technical communities (blog posts, talks, OSS); builds mastery in cross-system integration
+- Contributes to technical communities (blog posts, talks, open-source software (OSS)); builds mastery in cross-system integration
 - Recognized domain expert; shapes engineering culture through technical leadership; mentors senior engineers toward expertise
 
 ### Applied Example
@@ -118,7 +140,7 @@ Autonomy is the opposite of micromanagement. It's the trust and freedom to deter
 
 **Autonomy Constraints**: Alignment (decisions must serve team/org goals), visibility (communicate rationale), reversibility (prefer undoable decisions), consultation (seek input on irreversible choices).
 
-### Engineering Behaviors by IC Level
+### Engineering Behaviors by Individual Contributor (IC) Level
 
 **Level 0–3**
 - Makes implementation decisions within clear design constraints; owns task completion; manages own time
@@ -150,6 +172,14 @@ Autonomy is the opposite of micromanagement. It's the trust and freedom to deter
 
 Purpose answers "Why does this matter?" It's the alignment between individual work, team objectives, organizational mission, and personal values. Purpose prevents the optimization of meaningless metrics.
 
+### Progress Principle
+
+Teresa Amabile and Steven Kramer's research (*The Progress Principle*, 2011) identifies the single biggest day-to-day driver of positive inner work life — and therefore intrinsic motivation — as **perceived progress on meaningful work**. Not mission clarity in the abstract, not long-term career vision, but the felt sense of moving forward on something that matters *today*.
+
+Small wins compound: a test passing, a migration step completed, a user problem resolved. The daily record of forward movement is more motivating than quarterly retrospective acknowledgment.
+
+This connects directly to [Systematic Improvement](./systematic_improvement.md) and its Update Propagation sub-pillar. Making wins visible — through commit histories, done columns, demo recordings, incident resolution notes — is not just process hygiene; it is a motivational intervention. Yokoten (spreading improvements) and Standardize-Do-Check-Act (SDCA, locking in gains) create the artifact trail that makes progress legible to the people doing the work. The implication for managers: *protect meaningful work time* and *make progress visible* — these two levers have higher day-to-day motivational return than compensation or vision communication.
+
 ### Components
 
 **Meaning Sources**: User impact (how this improves people's lives), technical challenge (solving hard, interesting problems), team mission, organizational goals, personal values alignment.
@@ -160,7 +190,7 @@ Purpose answers "Why does this matter?" It's the alignment between individual wo
 
 **Purpose Erosion**: Pointless work, values misalignment, disconnection from impact, cynicism ("synergistic cloud solutions to drive stakeholder value").
 
-### Engineering Behaviors by IC Level
+### Engineering Behaviors by Individual Contributor (IC) Level
 
 **Level 0–3**
 - Asks "why are we building this?"; connects tasks to user stories and customer needs
@@ -199,6 +229,24 @@ Adding extrinsic rewards to intrinsically motivating activities can reduce motiv
 
 ---
 
+## The Regulation Continuum
+
+Self-Determination Theory (SDT) does not treat extrinsic motivation as a single enemy — it describes a **continuum of regulation** from fully external to fully internal:
+
+| Regulation Type | Definition | Engineering Example |
+|-----------------|------------|---------------------|
+| **External** | Do it to get a reward or avoid punishment | "I'll write tests because the pull request (PR) checklist requires it." |
+| **Introjected** | Do it to avoid guilt or protect self-image | "I'll write tests because I'd feel like a bad engineer if I didn't." |
+| **Identified** | Do it because it matters to your personal goals | "I'll write tests because I want to ship reliable software — that's what I care about." |
+| **Integrated** | Do it because it's part of who you are | "I write tests. It's just how I build things." |
+| **Intrinsic** | Do it because the activity itself is enjoyable | "I love designing test scenarios — it's a puzzle I find genuinely satisfying." |
+
+The goal is not "intrinsic motivation only." Identified and Integrated regulation are extrinsic in origin — the initial impulse came from outside — but are functionally indistinguishable from intrinsic motivation in terms of quality, persistence, and well-being. An engineer who ships reliable software because reliability is personally important (Identified) performs just as sustainably as one who intrinsically loves testing.
+
+**The strawman to avoid**: "All extrinsic motivation is bad." What Self-Determination Theory (SDT) actually warns against is *External* and *Introjected* regulation — motivation that remains dependent on external reinforcement or ego protection and has never been internalized. The Overjustification Effect applies here: adding External rewards to Intrinsic activity can push motivation leftward on the continuum, not just reduce it.
+
+---
+
 ## Flow State Connection
 
 Csikszentmihalyi's "flow" — complete absorption in activity — is what happens when intrinsic motivation is well-calibrated and conditions are right.
@@ -219,15 +267,19 @@ Flow is the observable output of well-calibrated intrinsic motivation. When engi
 
 **Analysis Paralysis from Excessive Autonomy** — Symptom: "I have so many options I can't decide." Root Cause: Drive (Autonomy) without constraints — unlimited degrees of freedom exceed cognitive bandwidth. Solution: clear non-negotiable constraints, defined decision space, timebox exploration.
 
+**Motivation Gaming / Performative Intrinsic Motivation** — Symptom: engineers perform Mastery (visible learning theater: conference talks without applied learning), Autonomy (ownership claims without end-to-end accountability), or Purpose (mission-washing: quoting company values without connecting them to daily decisions) to satisfy organizational signals rather than internal drive. Root Cause: the organization measures proxies — conference attendance, commit volume, mission-statement fluency — rather than outcomes, so the proxies get optimized. Solution: measure outcomes (skill applied to novel problems, decisions made and owned end-to-end, work that demonstrably improves user experience), not activity proxies.
+
+This is the human analog of Reward Hacking in [objective_function.md](./objective_function.md) — Goodhart's Law applied to motivation: when a measure becomes a target, it ceases to be a good measure.
+
 ---
 
 ## Measuring Human Motivation
 
-| Sub-Pillar | Key Indicators |
-|------------|----------------|
-| **Mastery (Search)** | Skill growth, learning time allocation, knowledge sharing frequency, challenge seeking |
-| **Autonomy (Drive)** | Decision velocity, escalation rate (% requiring manager approval), ownership distribution |
-| **Purpose (Renew)** | Mission understanding, work alignment %, engagement levels, retention of motivated engineers |
+| Sub-Pillar | Key Indicators | Validated Instruments |
+|------------|----------------|-----------------------|
+| **Mastery (Search)** | Skill growth, learning time allocation, knowledge sharing frequency, challenge seeking | Intrinsic Motivation Inventory (IMI) — competence subscale; 360° skill assessments |
+| **Autonomy (Drive)** | Decision velocity, escalation rate (% requiring manager approval), ownership distribution | Intrinsic Motivation Inventory (IMI) — autonomy subscale; Work Extrinsic and Intrinsic Motivation Scale (WEIMS) — autonomous subscales |
+| **Purpose (Renew)** | Mission understanding, work alignment %, engagement levels, retention of motivated engineers | Work Extrinsic and Intrinsic Motivation Scale (WEIMS) — identified/integrated subscales; Employee Net Promoter Score (eNPS); Spotify Squad Health Check |
 
 ---
 
@@ -241,21 +293,35 @@ Flow is the observable output of well-calibrated intrinsic motivation. When engi
 
 ---
 
+## Limitations and Open Questions
+
+- **WEIRD (Western, Educated, Industrialized, Rich, Democratic) context**: Self-Determination Theory (SDT) was developed largely in these contexts. The individualist framing of Autonomy — personal decision-making authority as a core need — may not translate cleanly to collectivist engineering cultures where interdependence and group harmony are primary. The framework should be applied with cultural calibration, not as a universal.
+- **Temporal dynamics not modeled**: Motivation decays and recovers; career-stage variation is significant. Mastery tends to dominate early career (novelty, skill-building, rapid feedback loops); Purpose tends to dominate mid and late career (legacy, impact, mentorship). See [career.md](../career.md) for career-stage guidance. This document treats the three sub-pillars as stable needs, which understates the dynamics.
+- **Identity-based motivation underweighted**: The framework treats motivation as need-satisfaction but undermodels identity-based motivation — "I am the kind of engineer who writes tests / ships on time / leaves code better than I found it." James Clear's identity loop and Csikszentmihalyi's autotelic personality concept both point at this layer; it is a future extension.
+- **Measurement instruments listed but not validated for engineering context**: Work Extrinsic and Intrinsic Motivation Scale (WEIMS), Intrinsic Motivation Inventory (IMI), and Employee Net Promoter Score (eNPS) are established instruments but were not developed specifically for software engineering teams. Psychometric validation in engineering-specific populations is an open research gap.
+- **Motivation Gaming anti-pattern is hard to detect**: The Motivation Gaming anti-pattern (above) is structurally difficult to distinguish from genuine intrinsic motivation without outcome tracking. Organizations that only measure proxies have no signal for it. Detection requires longitudinal outcome data, which most engineering organizations don't collect.
+- **Interaction effects between sub-pillars are not modeled**: The framework treats Mastery, Autonomy, and Purpose as additive. In practice, they interact: high Purpose can temporarily compensate for low Autonomy (crunch mode on something meaningful), and high Mastery can partially compensate for low Purpose (the craft itself is motivating). These interactions matter for predicting burnout and retention.
+
+---
+
 ## References
 
 - **Self-Determination Theory** — Deci & Ryan (2000)
+- **The Progress Principle** — Amabile & Kramer (2011)
 - **Flow** — Csikszentmihalyi (1990)
-- **Drive** — Pink (2009)
+- **Mindset: The New Psychology of Success** — Dweck (2006)
 - **Kill It with Fire** — Bellotti (2021)
 - **Overjustification Effect** — Lepper, Greene & Nisbett (1973)
+- **Drive** — Pink (2009)
 - **Expertise Levels** — Dreyfus & Dreyfus (1980)
 
 ---
 
 ## Cross-References
 
-- **[Objective Function](./objective_function.md)** — The agent-agnostic framework this document instantiates for humans
+- **[Objective Function](./objective_function.md)** — The agent-agnostic framework this document instantiates for humans; the **Motivation Gaming** anti-pattern here is the human analog of **Reward Hacking** there — both are Goodhart's Law applied to motivation/reward
 - **[Clear Strategy](./clear_strategy.md)** — Challenge Matching maps to Mastery; Flow state is the intersection of all three sub-pillars
 - **[Contextual Awareness](./contextual_awareness.md)** — Shared Understanding enables Purpose alignment; Proactive Curiosity fuels Mastery
-- **[Systematic Improvement](./systematic_improvement.md)** — Deliberate Practice is the operational expression of Mastery
+- **[Systematic Improvement](./systematic_improvement.md)** — Deliberate Practice is the operational expression of Mastery; Update Propagation (Yokoten, Standardize-Do-Check-Act (SDCA)) makes progress visible, directly driving the **Progress Principle**
+- **[career.md](../career.md)** — Career-stage motivation variation: Mastery dominates early career, Purpose mid and late career
 - **[FRAMEWORK_STRUCTURE.md](./FRAMEWORK_STRUCTURE.md)** — Complete framework architecture
